@@ -18,11 +18,11 @@ import {
 	Suspense,
 } from "solid-js";
 import { CapErrorBoundary } from "~/components/CapErrorBoundary";
-import { SignInButton } from "~/components/SignInButton";
 
-import { authStore, userProfileStore } from "~/store";
+
+
 import { trackEvent } from "~/utils/analytics";
-import { createSignInMutation } from "~/utils/auth";
+
 import {
 	apiClient,
 	getConfiguredServerUrl,
@@ -534,7 +534,7 @@ export default function Settings(props: RouteSectionProps) {
 								Sign Out
 							</Button>
 						) : (
-							<SignInButton>Sign In</SignInButton>
+							<div></div>
 						)}
 					</Show>
 				</div>

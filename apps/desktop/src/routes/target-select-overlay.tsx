@@ -1758,7 +1758,7 @@ function RecordingControls(props: {
 									<span class="text-[0.95rem] font-medium text-white text-nowrap">
 										{(() => {
 											if (rawOptions.mode === "instant" && !auth.data)
-												return "Sign In To Use";
+												return "Start Recording";
 											if (rawOptions.mode === "screenshot")
 												return "Take Screenshot";
 											return "Start Recording";
