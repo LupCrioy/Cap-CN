@@ -1,0 +1,91 @@
+﻿2026-06-11T12:44:17.7292274Z ##[group]Run actions/checkout@v4
+2026-06-11T12:44:17.7293763Z with:
+2026-06-11T12:44:17.7294501Z   repository: LupCrioy/Cap-CN
+2026-06-11T12:44:17.7305623Z   token: ***
+2026-06-11T12:44:17.7306319Z   ssh-strict: true
+2026-06-11T12:44:17.7307043Z   ssh-user: git
+2026-06-11T12:44:17.7307786Z   persist-credentials: true
+2026-06-11T12:44:17.7308589Z   clean: true
+2026-06-11T12:44:17.7309336Z   sparse-checkout-cone-mode: true
+2026-06-11T12:44:17.7310211Z   fetch-depth: 1
+2026-06-11T12:44:17.7310910Z   fetch-tags: false
+2026-06-11T12:44:17.7311670Z   show-progress: true
+2026-06-11T12:44:17.7312470Z   lfs: false
+2026-06-11T12:44:17.7313145Z   submodules: false
+2026-06-11T12:44:17.7313885Z   set-safe-directory: true
+2026-06-11T12:44:17.7314900Z ##[endgroup]
+2026-06-11T12:44:17.9073521Z Syncing repository: LupCrioy/Cap-CN
+2026-06-11T12:44:17.9076697Z ##[group]Getting Git version info
+2026-06-11T12:44:17.9077799Z Working directory is 'D:\a\Cap-CN\Cap-CN'
+2026-06-11T12:44:18.0090786Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-06-11T12:44:18.3970939Z git version 2.54.0.windows.1
+2026-06-11T12:44:18.4022117Z ##[endgroup]
+2026-06-11T12:44:18.4041787Z Temporarily overriding HOME='D:\a\_temp\2d920bf0-795e-42ad-a9cf-10a010d29bbc' before making global git config changes
+2026-06-11T12:44:18.4044072Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-11T12:44:18.4053148Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\Cap-CN\Cap-CN
+2026-06-11T12:44:18.4611740Z Deleting the contents of 'D:\a\Cap-CN\Cap-CN'
+2026-06-11T12:44:18.4618302Z ##[group]Initializing the repository
+2026-06-11T12:44:18.4628785Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\Cap-CN\Cap-CN
+2026-06-11T12:44:18.5452933Z Initialized empty Git repository in D:/a/Cap-CN/Cap-CN/.git/
+2026-06-11T12:44:18.5490825Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/LupCrioy/Cap-CN
+2026-06-11T12:44:18.5951087Z ##[endgroup]
+2026-06-11T12:44:18.5952617Z ##[group]Disabling automatic garbage collection
+2026-06-11T12:44:18.5960698Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2026-06-11T12:44:18.6189764Z ##[endgroup]
+2026-06-11T12:44:18.6191195Z ##[group]Setting up auth
+2026-06-11T12:44:18.6202367Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-06-11T12:44:18.6441199Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-06-11T12:44:20.0392359Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-11T12:44:20.0633372Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-06-11T12:44:20.4736818Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-11T12:44:20.4972577Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-06-11T12:44:20.9277065Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2026-06-11T12:44:20.9512484Z ##[endgroup]
+2026-06-11T12:44:20.9513348Z ##[group]Fetching the repository
+2026-06-11T12:44:20.9526743Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c3afab24de223ecbb49188d8808fc05ce57f56ab:refs/remotes/origin/main
+2026-06-11T12:44:24.1073240Z From https://github.com/LupCrioy/Cap-CN
+2026-06-11T12:44:24.1074236Z  * [new ref]         c3afab24de223ecbb49188d8808fc05ce57f56ab -> origin/main
+2026-06-11T12:44:24.1377524Z ##[endgroup]
+2026-06-11T12:44:24.1378212Z ##[group]Determining the checkout info
+2026-06-11T12:44:24.1381185Z ##[endgroup]
+2026-06-11T12:44:24.1393072Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+2026-06-11T12:44:24.1808418Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+2026-06-11T12:44:24.2050826Z ##[group]Checking out the ref
+2026-06-11T12:44:24.2060212Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B main refs/remotes/origin/main
+2026-06-11T12:44:25.2485853Z Updating files:  70% (1954/2762)
+2026-06-11T12:44:25.2540919Z Updating files:  71% (1962/2762)
+2026-06-11T12:44:25.2621835Z Updating files:  72% (1989/2762)
+2026-06-11T12:44:25.2703104Z Updating files:  73% (2017/2762)
+2026-06-11T12:44:25.2773467Z Updating files:  74% (2044/2762)
+2026-06-11T12:44:25.2841303Z Updating files:  75% (2072/2762)
+2026-06-11T12:44:25.2905516Z Updating files:  76% (2100/2762)
+2026-06-11T12:44:25.2963127Z Updating files:  77% (2127/2762)
+2026-06-11T12:44:25.3016165Z Updating files:  78% (2155/2762)
+2026-06-11T12:44:25.3062266Z Updating files:  79% (2182/2762)
+2026-06-11T12:44:25.3097934Z Updating files:  80% (2210/2762)
+2026-06-11T12:44:25.3179860Z Updating files:  81% (2238/2762)
+2026-06-11T12:44:25.3235678Z Updating files:  82% (2265/2762)
+2026-06-11T12:44:25.3281200Z Updating files:  83% (2293/2762)
+2026-06-11T12:44:25.3312797Z Updating files:  84% (2321/2762)
+2026-06-11T12:44:25.3355269Z Updating files:  85% (2348/2762)
+2026-06-11T12:44:25.3407598Z Updating files:  86% (2376/2762)
+2026-06-11T12:44:25.3453316Z Updating files:  87% (2403/2762)
+2026-06-11T12:44:25.3497897Z Updating files:  88% (2431/2762)
+2026-06-11T12:44:25.3544178Z Updating files:  89% (2459/2762)
+2026-06-11T12:44:25.3593965Z Updating files:  90% (2486/2762)
+2026-06-11T12:44:25.3704447Z Updating files:  91% (2514/2762)
+2026-06-11T12:44:25.3768279Z Updating files:  92% (2542/2762)
+2026-06-11T12:44:25.3813066Z Updating files:  93% (2569/2762)
+2026-06-11T12:44:25.3877527Z Updating files:  94% (2597/2762)
+2026-06-11T12:44:25.3937952Z Updating files:  95% (2624/2762)
+2026-06-11T12:44:25.4005538Z Updating files:  96% (2652/2762)
+2026-06-11T12:44:25.4067230Z Updating files:  97% (2680/2762)
+2026-06-11T12:44:25.4133925Z Updating files:  98% (2707/2762)
+2026-06-11T12:44:25.4206678Z Updating files:  99% (2735/2762)
+2026-06-11T12:44:25.4207250Z Updating files: 100% (2762/2762)
+2026-06-11T12:44:25.4207853Z Updating files: 100% (2762/2762), done.
+2026-06-11T12:44:25.4344662Z Switched to a new branch 'main'
+2026-06-11T12:44:25.4363963Z branch 'main' set up to track 'origin/main'.
+2026-06-11T12:44:25.4507189Z ##[endgroup]
+2026-06-11T12:44:25.4862641Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+2026-06-11T12:44:25.5071422Z c3afab24de223ecbb49188d8808fc05ce57f56ab

@@ -1,0 +1,36 @@
+﻿2026-06-11T12:44:15.6269179Z Current runner version: '2.335.1'
+2026-06-11T12:44:15.6315659Z ##[group]Runner Image Provisioner
+2026-06-11T12:44:15.6316523Z Hosted Compute Agent
+2026-06-11T12:44:15.6317043Z Version: 20260520.533
+2026-06-11T12:44:15.6317618Z Commit: 189110e25284a9812c124fd27b339e2fb4f2f9db
+2026-06-11T12:44:15.6318307Z Build Date: 2026-05-20T17:44:04Z
+2026-06-11T12:44:15.6318916Z Worker ID: {e6c210cc-7e54-4463-a395-57ade1bdbc94}
+2026-06-11T12:44:15.6319576Z Azure Region: westus2
+2026-06-11T12:44:15.6320088Z ##[endgroup]
+2026-06-11T12:44:15.6321374Z ##[group]Operating System
+2026-06-11T12:44:15.6321999Z Microsoft Windows Server 2022
+2026-06-11T12:44:15.6322556Z 10.0.20348
+2026-06-11T12:44:15.6323005Z Datacenter
+2026-06-11T12:44:15.6323478Z ##[endgroup]
+2026-06-11T12:44:15.6323953Z ##[group]Runner Image
+2026-06-11T12:44:15.6324499Z Image: windows-2022
+2026-06-11T12:44:15.6325026Z Version: 20260525.178.1
+2026-06-11T12:44:15.6326006Z Included Software: https://github.com/actions/runner-images/blob/win22/20260525.178/images/windows/Windows2022-Readme.md
+2026-06-11T12:44:15.6327865Z Image Release: https://github.com/actions/runner-images/releases/tag/win22%2F20260525.178
+2026-06-11T12:44:15.6329271Z ##[endgroup]
+2026-06-11T12:44:15.6330335Z ##[group]GITHUB_TOKEN Permissions
+2026-06-11T12:44:15.6332262Z Contents: read
+2026-06-11T12:44:15.6332853Z Metadata: read
+2026-06-11T12:44:15.6333348Z Packages: read
+2026-06-11T12:44:15.6333875Z ##[endgroup]
+2026-06-11T12:44:15.6335966Z Secret source: Actions
+2026-06-11T12:44:15.6336692Z Prepare workflow directory
+2026-06-11T12:44:15.6655429Z Prepare all required actions
+2026-06-11T12:44:15.6692117Z Getting action download info
+2026-06-11T12:44:16.3203627Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-06-11T12:44:16.4313824Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-06-11T12:44:16.5705441Z Download action repository 'pnpm/action-setup@v4' (SHA:b906affcce14559ad1aafd4ab0e942779e9f58b1)
+2026-06-11T12:44:16.8477230Z Download action repository 'dtolnay/rust-toolchain@stable' (SHA:29eef336d9b2848a0b548edc03f92a220660cdb8)
+2026-06-11T12:44:17.0426110Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+2026-06-11T12:44:17.1609554Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-06-11T12:44:17.5739164Z Complete job name: build

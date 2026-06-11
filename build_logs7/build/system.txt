@@ -1,0 +1,8 @@
+2026-06-11T12:44:12.5370000Z Evaluating build.if
+2026-06-11T12:44:12.5370000Z Evaluating: success()
+2026-06-11T12:44:12.5370000Z Result: true
+2026-06-11T12:44:12.5410000Z Job is waiting for a hosted runner to come online.
+2026-06-11T12:44:12.5420000Z Job is about to start running on the hosted runner: GitHub Actions 1000000080
+2026-06-11T12:44:12.5390000Z Requested labels: windows-2022
+2026-06-11T12:44:12.5390000Z Job defined at: LupCrioy/Cap-CN/.github/workflows/build-windows.yml@refs/heads/main
+2026-06-11T12:44:12.5390000Z Waiting for a runner to pick up this job...

@@ -55,7 +55,6 @@ use crate::camera::{CameraPreviewManager, CameraPreviewShape};
 #[cfg(target_os = "macos")]
 use crate::general_settings;
 use crate::permissions;
-use crate::web_api::AuthedApiError;
 use crate::{
     App, CameraWindowOperationLock, CurrentRecordingChanged, FinalizingRecordings, MutableState,
     NewStudioRecordingAdded, RecordingStarted, RecordingState, RecordingStopped, VideoUploadInfo,
@@ -1327,7 +1326,7 @@ pub async fn start_recording(
             let instant_mode_max_resolution =
                 cap_recording::FREE_INSTANT_MODE_MAX_RESOLUTION;
 
-            (None, instant_mode_max_resolution)
+            (None::<VideoUploadInfo>, instant_mode_max_resolution)
         }
         RecordingMode::Studio => (None, cap_recording::PRO_INSTANT_MODE_MAX_RESOLUTION),
         RecordingMode::Screenshot => return Err("Use take_screenshot for screenshots".to_string()),
