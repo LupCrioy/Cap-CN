@@ -5,7 +5,7 @@ import { createEffect } from "solid-js";
 import { generalSettingsStore } from "~/store";
 import { commands } from "~/utils/tauri";
 import { ScreenshotEditorProvider } from "./context";
-import { 编辑器 } from "./编辑器";
+import { Editor } from "./Editor";
 
 export default function ScreenshotEditorRoute() {
 	const generalSettings = generalSettingsStore.createQuery();

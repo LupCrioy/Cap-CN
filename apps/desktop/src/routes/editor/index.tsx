@@ -4,7 +4,7 @@ import { cx } from "cva";
 import { createEffect, Suspense } from "solid-js";
 import { generalSettingsStore } from "~/store";
 import { commands } from "~/utils/tauri";
-import { 编辑器 } from "./编辑器";
+import { Editor } from "./Editor";
 import { EditorSkeleton } from "./editor-skeleton";
 
 export default function () {
