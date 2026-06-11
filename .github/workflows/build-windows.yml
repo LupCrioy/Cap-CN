@@ -42,15 +42,26 @@ jobs:
         shell: bash
         run: ./scripts/build-desktop-binaries.sh x86_64-pc-windows-msvc
 
-      - name: Build Tauri app
+      - name: Run prepare script
         working-directory: apps/desktop
-        run: pnpm build:tauri --target x86_64-pc-windows-msvc
+        run: pnpm run preparescript
+        env:
+          CI: false
+
+      - name: Build Tauri app (skip signing)
+        continue-on-error: true
+        working-directory: apps/desktop
+        run: pnpm tauri build --target x86_64-pc-windows-msvc
         env:
           CI: false
           RUST_TARGET_TRIPLE: x86_64-pc-windows-msvc
+          TAURI_SIGNING_PRIVATE_KEY: ${{ env.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ env.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
 
       - name: Upload installer
         uses: actions/upload-artifact@v4
         with:
           name: Cap-CN-Windows
-          path: apps/desktop/src-tauri/target/release/bundle/nsis/*.exe
+          path: |
+            **/target/**/bundle/nsis/*.exe
+            **/target/**/bundle/msi/*.msi
