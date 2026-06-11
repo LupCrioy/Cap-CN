@@ -1,0 +1,44 @@
+name: "Build Windows"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10.5.2
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo
+            apps/desktop/src-tauri/target
+          key: ${{ runner.os }}-tauri-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build Tauri app
+        run: pnpm tauri:build
+        working-directory: apps/desktop
+
+      - name: Upload installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: Cap-CN-Windows
+          path: apps/desktop/src-tauri/target/release/*.msi
