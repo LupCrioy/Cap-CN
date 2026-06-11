@@ -1,0 +1,18 @@
+﻿2026-06-11T12:34:16.3784076Z ##[group]Run actions/upload-artifact@v4
+2026-06-11T12:34:16.3785870Z with:
+2026-06-11T12:34:16.3786123Z   name: Cap-CN-Windows
+2026-06-11T12:34:16.3787986Z   path: **/target/**/bundle/nsis/*.exe
+**/target/**/bundle/msi/*.msi
+
+2026-06-11T12:34:16.3788400Z   if-no-files-found: warn
+2026-06-11T12:34:16.3790062Z   compression-level: 6
+2026-06-11T12:34:16.3790370Z   overwrite: false
+2026-06-11T12:34:16.3790625Z   include-hidden-files: false
+2026-06-11T12:34:16.3792311Z env:
+2026-06-11T12:34:16.3792629Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-11T12:34:16.3794108Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-11T12:34:16.3794494Z   CARGO_INCREMENTAL: 0
+2026-06-11T12:34:16.3794775Z   CARGO_TERM_COLOR: always
+2026-06-11T12:34:16.3796416Z ##[endgroup]
+2026-06-11T12:35:31.1582742Z ##[warning]No files were found with the provided path: **/target/**/bundle/nsis/*.exe
+**/target/**/bundle/msi/*.msi. No artifacts will be uploaded.

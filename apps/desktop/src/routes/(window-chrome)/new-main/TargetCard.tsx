@@ -336,7 +336,7 @@ export default function TargetCard(props: TargetCardProps) {
 						<img
 							src={src()}
 							alt={`${
-								local.variant === "display" ? "显示器" : "窗口"
+								local.variant === "display" ? "显示器" : "Window"
 							} preview for ${label()}`}
 							class="object-cover w-full h-full"
 							loading="lazy"

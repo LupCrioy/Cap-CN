@@ -22,7 +22,7 @@ export const DEFAULT_BACKGROUND_ROUNDING = 7.5;
 // segment's fade-in / fade-out takes by default.
 export const DEFAULT_SCENE_TRANSITION = 0.3;
 
-// Matches `摄像头::default_scale_during_zoom` in crates/project: the camera
+// Matches `Camera::default_scale_during_zoom` in crates/project: the camera
 // shrinks to 70% of its size during a zoom segment. 1.0 keeps it fixed.
 export const DEFAULT_CAMERA_SCALE_DURING_ZOOM = 0.7;
 

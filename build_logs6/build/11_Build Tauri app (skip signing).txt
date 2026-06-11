@@ -1,0 +1,239 @@
+﻿2026-06-11T12:33:45.5892656Z ##[group]Run pnpm tauri build --target x86_64-pc-windows-msvc
+2026-06-11T12:33:45.5893303Z [36;1mpnpm tauri build --target x86_64-pc-windows-msvc[0m
+2026-06-11T12:33:45.5924654Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-06-11T12:33:45.5925237Z env:
+2026-06-11T12:33:45.5925564Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-11T12:33:45.5925963Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-11T12:33:45.5926312Z   CARGO_INCREMENTAL: 0
+2026-06-11T12:33:45.5926592Z   CARGO_TERM_COLOR: always
+2026-06-11T12:33:45.5926866Z   CI: false
+2026-06-11T12:33:45.5927136Z   RUST_TARGET_TRIPLE: x86_64-pc-windows-msvc
+2026-06-11T12:33:45.5927467Z   TAURI_SIGNING_PRIVATE_KEY: 
+2026-06-11T12:33:45.5927795Z   TAURI_SIGNING_PRIVATE_KEY_PASSWORD: 
+2026-06-11T12:33:45.5928101Z ##[endgroup]
+2026-06-11T12:33:46.2158200Z 
+2026-06-11T12:33:46.2159023Z > @cap/desktop@ tauri D:\a\Cap-CN\Cap-CN\apps\desktop
+2026-06-11T12:33:46.2159616Z > tauri "build" "--target" "x86_64-pc-windows-msvc"
+2026-06-11T12:33:46.2159997Z 
+2026-06-11T12:33:47.7234295Z         Info Looking up installed tauri packages to check mismatched versions...
+2026-06-11T12:33:48.4702430Z      Running beforeBuildCommand `pnpm turbo build --filter @cap/desktop`
+2026-06-11T12:33:49.0262636Z 
+2026-06-11T12:33:49.0263608Z Attention:
+2026-06-11T12:33:49.0264154Z Turborepo now collects completely anonymous telemetry regarding usage.
+2026-06-11T12:33:49.0264823Z This information is used to shape the Turborepo roadmap and prioritize features.
+2026-06-11T12:33:49.0265733Z You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+2026-06-11T12:33:49.0266490Z https://turborepo.com/docs/telemetry
+2026-06-11T12:33:49.0266830Z 
+2026-06-11T12:33:49.2288224Z • Packages in scope: @cap/desktop
+2026-06-11T12:33:49.2288804Z • Running build in 1 packages
+2026-06-11T12:33:49.2289177Z • Remote caching disabled
+2026-06-11T12:33:50.5838482Z ##[group]@cap/env:build
+2026-06-11T12:33:50.5839615Z cache miss, executing ee4f14b811e65266
+2026-06-11T12:33:50.5840948Z 
+2026-06-11T12:33:50.5841304Z > @cap/env@ build D:\a\Cap-CN\Cap-CN\packages\env
+2026-06-11T12:33:50.5841863Z > tsdown
+2026-06-11T12:33:50.5842073Z 
+2026-06-11T12:33:50.5845214Z [34mℹ[39m tsdown [2mv0.15.6[22m powered by rolldown [2mv1.0.1[22m
+2026-06-11T12:33:50.5846589Z [34mℹ[39m Using tsdown config: [4mD:\a\Cap-CN\Cap-CN\packages\env\tsdown.config.ts[24m
+2026-06-11T12:33:50.5847497Z [34mℹ[39m entry: [34mindex.ts[39m
+2026-06-11T12:33:50.5848196Z [34mℹ[39m tsconfig: [34mtsconfig.json[39m
+2026-06-11T12:33:50.5848776Z [34mℹ[39m Build start
+2026-06-11T12:33:50.5849417Z [33mWarning: Invalid input options (1 issue found)
+2026-06-11T12:33:50.5850406Z - For the "define". Invalid key: Expected never but received "define". [0m
+2026-06-11T12:33:50.5851586Z [34mℹ[39m [2mdist\[22m[1mindex.js[22m  [2m5.62 kB[22m [2m│ gzip: 1.77 kB[22m
+2026-06-11T12:33:50.5852454Z [34mℹ[39m 1 files, total: 5.62 kB
+2026-06-11T12:33:50.5853119Z [32m✔[39m Build complete in [32m94ms[39m
+2026-06-11T12:33:50.5853983Z ##[endgroup]
+2026-06-11T12:33:50.5854713Z ##[group]@cap/web-domain:build
+2026-06-11T12:33:50.5855261Z cache miss, executing db391b2f6463623e
+2026-06-11T12:33:50.5855628Z 
+2026-06-11T12:33:50.5856040Z > @cap/web-domain@ build D:\a\Cap-CN\Cap-CN\packages\web-domain
+2026-06-11T12:33:50.5856630Z > tsdown
+2026-06-11T12:33:50.5856829Z 
+2026-06-11T12:33:50.5857358Z [34mℹ[39m tsdown [2mv0.15.6[22m powered by rolldown [2mv1.0.1[22m
+2026-06-11T12:33:50.5859317Z [34mℹ[39m Using tsdown config: [4mD:\a\Cap-CN\Cap-CN\packages\web-domain\tsdown.config.ts[24m
+2026-06-11T12:33:50.5860275Z [34mℹ[39m entry: [34msrc\index.ts[39m
+2026-06-11T12:33:50.5860990Z [34mℹ[39m tsconfig: [34mtsconfig.json[39m
+2026-06-11T12:33:50.5861581Z [34mℹ[39m Build start
+2026-06-11T12:33:50.5862225Z [33mWarning: Invalid input options (1 issue found)
+2026-06-11T12:33:50.5865684Z - For the "define". Invalid key: Expected never but received "define". [0m
+2026-06-11T12:33:50.5866557Z [34mℹ[39m [2mdist\[22m[1mindex.js[22m  [2m32.45 kB[22m [2m│ gzip: 7.44 kB[22m
+2026-06-11T12:33:50.5867174Z [34mℹ[39m 1 files, total: 32.45 kB
+2026-06-11T12:33:50.5867819Z [32m✔[39m Build complete in [32m94ms[39m
+2026-06-11T12:33:50.5868431Z ##[endgroup]
+2026-06-11T12:33:51.2683066Z ##[group]@cap/utils:build
+2026-06-11T12:33:51.2683877Z cache miss, executing dd3424d59e71b16f
+2026-06-11T12:33:51.2684248Z 
+2026-06-11T12:33:51.2684584Z > @cap/utils@ build D:\a\Cap-CN\Cap-CN\packages\utils
+2026-06-11T12:33:51.2685104Z > tsdown
+2026-06-11T12:33:51.2685671Z 
+2026-06-11T12:33:51.2686560Z [34mℹ[39m tsdown [2mv0.15.6[22m powered by rolldown [2mv1.0.1[22m
+2026-06-11T12:33:51.2687702Z [34mℹ[39m Using tsdown config: [4mD:\a\Cap-CN\Cap-CN\packages\utils\tsdown.config.ts[24m
+2026-06-11T12:33:51.2688331Z [34mℹ[39m entry: [34msrc\index.ts[39m
+2026-06-11T12:33:51.2688947Z [34mℹ[39m target: [34mnode20.0.0[39m
+2026-06-11T12:33:51.2689678Z [34mℹ[39m tsconfig: [34mtsconfig.json[39m
+2026-06-11T12:33:51.2690333Z [34mℹ[39m Build start
+2026-06-11T12:33:51.2690997Z [33mWarning: Invalid input options (1 issue found)
+2026-06-11T12:33:51.2691959Z - For the "define". Invalid key: Expected never but received "define". [0m
+2026-06-11T12:33:51.2693116Z [34mℹ[39m [2mdist\[22m[1mindex.js[22m  [2m3.84 kB[22m [2m│ gzip: 1.47 kB[22m
+2026-06-11T12:33:51.2693941Z [34mℹ[39m 1 files, total: 3.84 kB
+2026-06-11T12:33:51.2694477Z [32m✔[39m Build complete in [32m26ms[39m
+2026-06-11T12:33:51.2695044Z ##[endgroup]
+2026-06-11T12:33:52.2315606Z ##[group]@cap/database:build
+2026-06-11T12:33:52.2316740Z cache miss, executing 2831486b5f0f8362
+2026-06-11T12:33:52.2317004Z 
+2026-06-11T12:33:52.2317286Z > @cap/database@ build D:\a\Cap-CN\Cap-CN\packages\database
+2026-06-11T12:33:52.2317718Z > tsdown
+2026-06-11T12:33:52.2317843Z 
+2026-06-11T12:33:52.2318549Z [34mℹ[39m tsdown [2mv0.15.6[22m powered by rolldown [2mv1.0.1[22m
+2026-06-11T12:33:52.2319510Z [34mℹ[39m Using tsdown config: [4mD:\a\Cap-CN\Cap-CN\packages\database\tsdown.config.ts[24m
+2026-06-11T12:33:52.2320518Z [34mℹ[39m entry: [34mcrypto.ts, helpers.ts, index.ts, migrate.ts, schema.ts, auth\auth-options.ts, auth\session.ts, types\index.ts[39m
+2026-06-11T12:33:52.2321251Z [34mℹ[39m target: [34mnode20.0.0[39m
+2026-06-11T12:33:52.2321690Z [34mℹ[39m tsconfig: [34mtsconfig.json[39m
+2026-06-11T12:33:52.2322098Z [34mℹ[39m Build start
+2026-06-11T12:33:52.2322531Z [33mWarning: Invalid input options (1 issue found)
+2026-06-11T12:33:52.2323148Z - For the "define". Invalid key: Expected never but received "define". [0m
+2026-06-11T12:33:52.2323932Z [34mℹ[39m [2mdist\[22m[1mschema.js[22m                 [2m 37.53 kB[22m [2m│ gzip:  6.25 kB[22m
+2026-06-11T12:33:52.2324755Z [34mℹ[39m [2mdist\[22m[1mmigrate.js[22m                [2m  5.80 kB[22m [2m│ gzip:  1.63 kB[22m
+2026-06-11T12:33:52.2325513Z [34mℹ[39m [2mdist\[22m[1mcrypto.js[22m                 [2m  3.86 kB[22m [2m│ gzip:  1.13 kB[22m
+2026-06-11T12:33:52.2326240Z [34mℹ[39m [2mdist\[22m[1mauth\session.js[22m           [2m  0.86 kB[22m [2m│ gzip:  0.41 kB[22m
+2026-06-11T12:33:52.2327007Z [34mℹ[39m [2mdist\[22m[1mindex.js[22m                  [2m  0.67 kB[22m [2m│ gzip:  0.39 kB[22m
+2026-06-11T12:33:52.2327722Z [34mℹ[39m [2mdist\[22m[1mhelpers.js[22m                [2m  0.46 kB[22m [2m│ gzip:  0.25 kB[22m
+2026-06-11T12:33:52.2328456Z [34mℹ[39m [2mdist\[22m[1mauth\auth-options.js[22m      [2m  0.23 kB[22m [2m│ gzip:  0.16 kB[22m
+2026-06-11T12:33:52.2329234Z [34mℹ[39m [2mdist\[22m[1mtypes\index.js[22m            [2m  0.01 kB[22m [2m│ gzip:  0.03 kB[22m
+2026-06-11T12:33:52.2330005Z [34mℹ[39m [2mdist\[22mauth-options-B93QUKxn.js  [2m247.89 kB[22m [2m│ gzip: 50.61 kB[22m
+2026-06-11T12:33:52.2330762Z [34mℹ[39m [2mdist\[22mreact-C_VaR0mj.js         [2m 51.82 kB[22m [2m│ gzip: 11.47 kB[22m
+2026-06-11T12:33:52.2332596Z [34mℹ[39m [2mdist\[22motp-email-94lsOsm2.js     [2m 15.99 kB[22m [2m│ gzip:  4.46 kB[22m
+2026-06-11T12:33:52.2333157Z [34mℹ[39m 11 files, total: 365.11 kB
+2026-06-11T12:33:52.2333759Z [32m✔[39m Build complete in [32m300ms[39m
+2026-06-11T12:33:52.2334375Z ##[endgroup]
+2026-06-11T12:34:16.1064982Z [;31m@cap/desktop:build[;0m
+2026-06-11T12:34:16.1065645Z cache miss, executing 2c0b0f18166c80af
+2026-06-11T12:34:16.1066012Z 
+2026-06-11T12:34:16.1066323Z > @cap/desktop@ build D:\a\Cap-CN\Cap-CN\apps\desktop
+2026-06-11T12:34:16.1066898Z > vinxi build
+2026-06-11T12:34:16.1067115Z 
+2026-06-11T12:34:16.1067611Z [2m[34mvinxi[39m[22m [2m[33mv0.5.6[39m[22m
+2026-06-11T12:34:16.1067951Z 
+2026-06-11T12:34:16.1067959Z 
+2026-06-11T12:34:16.1068296Z ⚙  [32mBuilding your app...[39m
+2026-06-11T12:34:16.1068960Z [2m[34mvinxi[39m[22m [2m[33mv0.5.6[39m[22m
+2026-06-11T12:34:16.1069185Z 
+2026-06-11T12:34:16.1069220Z 
+2026-06-11T12:34:16.1069492Z ⚙ [32mBuilding your router ssr...[39m
+2026-06-11T12:34:16.1069728Z 
+2026-06-11T12:34:16.1069734Z 
+2026-06-11T12:34:16.1070145Z [32m📦 Compiling ssr router...[39m
+2026-06-11T12:34:16.1070624Z [2m[34mvinxi[39m[22m building router ssr in http mode
+2026-06-11T12:34:16.1071221Z [36mvite v6.3.5 [32mbuilding SSR bundle for production...[36m[39m
+2026-06-11T12:34:16.1071645Z transforming...
+2026-06-11T12:34:16.1072510Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+2026-06-11T12:34:16.1073587Z [32m✓[39m 22 modules transformed.
+2026-06-11T12:34:16.1073929Z rendering chunks...
+2026-06-11T12:34:16.1075299Z [2m.vinxi/build/ssr/[22m[32m.vite/manifest.json  [39m[1m[2m 0.14 kB[22m[1m[22m
+2026-06-11T12:34:16.1076378Z [2m.vinxi/build/ssr/[22m[36mssr.js               [39m[1m[2m17.63 kB[22m[1m[22m
+2026-06-11T12:34:16.1076914Z [32m✓ built in 1.16s[39m
+2026-06-11T12:34:16.1077263Z [success] build done
+2026-06-11T12:34:16.1077895Z ⚙ [32mBuilt your router ssr successfully[39m
+2026-06-11T12:34:16.1078411Z [2m[34mvinxi[39m[22m [2m[33mv0.5.6[39m[22m
+2026-06-11T12:34:16.1078653Z 
+2026-06-11T12:34:16.1078680Z 
+2026-06-11T12:34:16.1078901Z ⚙ [32mBuilding your router client...[39m
+2026-06-11T12:34:16.1079307Z 
+2026-06-11T12:34:16.1079318Z 
+2026-06-11T12:34:16.1079638Z [32m📦 Compiling client router...[39m
+2026-06-11T12:34:16.1080366Z [2m[34mvinxi[39m[22m building router client in client mode
+2026-06-11T12:34:16.1081045Z [36mvite v6.3.5 [32mbuilding for production...[36m[39m
+2026-06-11T12:34:16.1082134Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+2026-06-11T12:34:16.1082844Z transforming...
+2026-06-11T12:34:16.1083312Z Browserslist: browsers data (caniuse-lite) is 14 months old. Please run:
+2026-06-11T12:34:16.1083851Z   npx update-browserslist-db@latest
+2026-06-11T12:34:16.1084350Z   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+2026-06-11T12:34:16.1085836Z [33m virtual:$vinxi/handler/client (1:96): "default" is not exported by "src/entry-client.tsx", imported by " virtual:$vinxi/handler/client".[39m
+2026-06-11T12:34:16.1086655Z [32m✓[39m 728 modules transformed.
+2026-06-11T12:34:16.1087052Z [31m✗[39m Build failed in 13.94s
+2026-06-11T12:34:16.1088559Z [error] [31msrc/routes/(window-chrome)/upgrade.tsx?pick=default&pick=$css (3:27): "窗口" is not exported by "../../node_modules/.pnpm/@tauri-apps+api@2.8.0/node_modules/@tauri-apps/api/window.js", imported by "src/routes/(window-chrome)/upgrade.tsx?pick=default&pick=$css".[39m
+2026-06-11T12:34:16.1090097Z file: [36mD:/a/Cap-CN/Cap-CN/apps/desktop/src/routes/(window-chrome)/upgrade.tsx?pick=default&pick=$css:3:27[39m
+2026-06-11T12:34:16.1090692Z [33m
+2026-06-11T12:34:16.1091006Z 1: import { Button } from "@cap/ui-solid";
+2026-06-11T12:34:16.1091830Z 2: import { createMutation, useQueryClient } from "@tanstack/solid-query";
+2026-06-11T12:34:16.1092482Z 3: import { getCurrentWindow, 窗口 } from "@tauri-apps/api/window";
+2026-06-11T12:34:16.1092905Z                               ^
+2026-06-11T12:34:16.1093505Z 4: import { type Accessor, createSignal, Show } from "solid-js";
+2026-06-11T12:34:16.1093998Z 5: import { generalSettingsStore } from "~/store";
+2026-06-11T12:34:16.1094382Z [39m
+2026-06-11T12:34:16.1094975Z   at getRollupError (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/parseAst.js:397:41)
+2026-06-11T12:34:16.1095870Z   at error (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/parseAst.js:393:42)
+2026-06-11T12:34:16.1096724Z   at Module.error (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:16759:16)
+2026-06-11T12:34:16.1097634Z   at Module.traceVariable (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:17208:29)
+2026-06-11T12:34:16.1098650Z   at ModuleScope.findVariable (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:14864:39)
+2026-06-11T12:34:16.1099860Z   at FunctionScope.findVariable (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:5582:38)
+2026-06-11T12:34:16.1127045Z ##[error]@cap/desktop#build: command (D:\a\Cap-CN\Cap-CN\apps\desktop) C:\Users\runneradmin\setup-pnpm\node_modules\.bin\pnpm.CMD run build exited (1)
+2026-06-11T12:34:16.1135259Z   at FunctionBodyScope.findVariable (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:5582:38)
+2026-06-11T12:34:16.1136402Z   at ReturnValueScope.findVariable (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:5582:38)
+2026-06-11T12:34:16.1137482Z   at FunctionBodyScope.findVariable (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:5582:38)
+2026-06-11T12:34:16.1138539Z   at BlockScope.findVariable (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:5582:38)
+2026-06-11T12:34:16.1139529Z   at TrackingScope.findVariable (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:5582:38)
+2026-06-11T12:34:16.1140525Z   at BlockScope.findVariable (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:5582:38)
+2026-06-11T12:34:16.1141488Z   at MemberExpression.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:7285:49)
+2026-06-11T12:34:16.1142419Z   at CallExpression.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:2783:23)
+2026-06-11T12:34:16.1143360Z   at CallExpression.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:11929:15)
+2026-06-11T12:34:16.1144291Z   at AwaitExpression.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:2783:23)
+2026-06-11T12:34:16.1145257Z   at VariableDeclarator.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:2783:23)
+2026-06-11T12:34:16.1146248Z   at VariableDeclaration.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:2779:28)
+2026-06-11T12:34:16.1147183Z   at BlockStatement.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:2779:28)
+2026-06-11T12:34:16.1148118Z   at IfStatement.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:2783:23)
+2026-06-11T12:34:16.1149008Z   at BlockStatement.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:2779:28)
+2026-06-11T12:34:16.1150323Z   at TryStatement.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:2783:23)
+2026-06-11T12:34:16.1151414Z   at BlockStatement.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:2779:28)
+2026-06-11T12:34:16.1152396Z   at ArrowFunctionExpression.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:2783:23)
+2026-06-11T12:34:16.1153430Z   at VariableDeclarator.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:2783:23)
+2026-06-11T12:34:16.1154964Z   at VariableDeclaration.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:2779:28)
+2026-06-11T12:34:16.1156453Z   at BlockStatement.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:2779:28)
+2026-06-11T12:34:16.1157573Z   at FunctionDeclaration.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:2783:23)
+2026-06-11T12:34:16.1158588Z   at ExportDefaultDeclaration.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:2783:23)
+2026-06-11T12:34:16.1159545Z   at Program.bind (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:2779:28)
+2026-06-11T12:34:16.1160452Z   at Module.bindReferences (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:16738:18)
+2026-06-11T12:34:16.1161427Z   at Graph.sortModules (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:22505:20)
+2026-06-11T12:34:16.1162315Z   at Graph.build (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:22403:14)
+2026-06-11T12:34:16.1163166Z   at async /D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:23086:13
+2026-06-11T12:34:16.1164235Z   at async catchUnfinishedHookActions (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:22562:16)
+2026-06-11T12:34:16.1165255Z   at async rollupInternal (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/rollup@4.40.2/node_modules/rollup/dist/es/shared/node-entry.js:23081:5)
+2026-06-11T12:34:16.1166457Z   at async buildEnvironment (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/vite@6.3.5_@types+node@22.1_007d9c213e0a638b9f06a38f3b396833/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:46206:14)
+2026-06-11T12:34:16.1167776Z   at async createViteBuild (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/vinxi@0.5.6_@planetscale+da_672cc4719ca3f8fbc50e5e18a3d9b8d3/node_modules/vinxi/lib/build.js:395:17)
+2026-06-11T12:34:16.1169063Z   at async createRouterBuild (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/vinxi@0.5.6_@planetscale+da_672cc4719ca3f8fbc50e5e18a3d9b8d3/node_modules/vinxi/lib/build.js:529:2)
+2026-06-11T12:34:16.1170214Z   at async /D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/vinxi@0.5.6_@planetscale+da_672cc4719ca3f8fbc50e5e18a3d9b8d3/node_modules/vinxi/lib/build.js:59:5
+2026-06-11T12:34:16.1171371Z   at async createBuild (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/vinxi@0.5.6_@planetscale+da_672cc4719ca3f8fbc50e5e18a3d9b8d3/node_modules/vinxi/lib/build.js:58:4)
+2026-06-11T12:34:16.1172485Z   at async Object.run (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/vinxi@0.5.6_@planetscale+da_672cc4719ca3f8fbc50e5e18a3d9b8d3/node_modules/vinxi/bin/cli.mjs:245:5)
+2026-06-11T12:34:16.1173442Z   at async runCommand (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/citty@0.1.6/node_modules/citty/dist/index.mjs:316:16)
+2026-06-11T12:34:16.1174241Z   at async runCommand (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/citty@0.1.6/node_modules/citty/dist/index.mjs:307:11)
+2026-06-11T12:34:16.1176251Z   at async runMain (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/citty@0.1.6/node_modules/citty/dist/index.mjs:445:7) 
+2026-06-11T12:34:16.1176655Z 
+2026-06-11T12:34:16.1178138Z [error] [31msrc/routes/(window-chrome)/upgrade.tsx?pick=default&pick=$css (3:27): "窗口" is not exported by "../../node_modules/.pnpm/@tauri-apps+api@2.8.0/node_modules/@tauri-apps/api/window.js", imported by "src/routes/(window-chrome)/upgrade.tsx?pick=default&pick=$css".[39m
+2026-06-11T12:34:16.1179847Z file: [36mD:/a/Cap-CN/Cap-CN/apps/desktop/src/routes/(window-chrome)/upgrade.tsx?pick=default&pick=$css:3:27[39m
+2026-06-11T12:34:16.1180471Z [33m
+2026-06-11T12:34:16.1183565Z 1: import { Button } from "@cap/ui-solid";
+2026-06-11T12:34:16.1188560Z 2: import { createMutation, useQueryClient } from "@tanstack/solid-query";
+2026-06-11T12:34:16.1197305Z 3: import { getCurrentWindow, 窗口 } from "@tauri-apps/api/window";
+2026-06-11T12:34:16.1197886Z                               ^
+2026-06-11T12:34:16.1198437Z 4: import { type Accessor, createSignal, Show } from "solid-js";
+2026-06-11T12:34:16.1203402Z 5: import { generalSettingsStore } from "~/store";
+2026-06-11T12:34:16.1204035Z [39m
+2026-06-11T12:34:16.1204338Z [error] Exited with code: 1
+2026-06-11T12:34:16.1205042Z   at CommandChild.pipedStdoutBuffer (/D:/a/Cap-CN/Cap-CN/node_modules/.pnpm/dax-sh@0.43.0/node_modules/dax-sh/esm/mod.js:7981:19)
+2026-06-11T12:34:16.1205991Z   at process.processTicksAndRejections (node:internal/process/task_queues:103:5) 
+2026-06-11T12:34:16.1206379Z 
+2026-06-11T12:34:16.1206505Z [error] Exited with code: 1
+2026-06-11T12:34:16.1206982Z  ELIFECYCLE  Command failed with exit code 1.
+2026-06-11T12:34:16.1207816Z [ERROR] command finished with error: command (D:\a\Cap-CN\Cap-CN\apps\desktop) C:\Users\runneradmin\setup-pnpm\node_modules\.bin\pnpm.CMD run build exited (1)
+2026-06-11T12:34:16.1208395Z 
+2026-06-11T12:34:16.1208530Z  Tasks:    4 successful, 5 total
+2026-06-11T12:34:16.1208814Z Cached:    0 cached, 5 total
+2026-06-11T12:34:16.1209084Z   Time:    27.033s 
+2026-06-11T12:34:16.1209325Z Failed:    @cap/desktop#build
+2026-06-11T12:34:16.1209484Z 
+2026-06-11T12:34:16.1220557Z  ERROR  run failed: command  exited (1)
+2026-06-11T12:34:16.1563336Z beforeBuildCommand `pnpm turbo build --filter @cap/desktop` failed with exit code 1
+2026-06-11T12:34:16.1566010Z        Error beforeBuildCommand `pnpm turbo build --filter @cap/desktop` failed with exit code 1
+2026-06-11T12:34:16.1702156Z  ELIFECYCLE  Command failed with exit code 1.
+2026-06-11T12:34:16.3610834Z ##[error]Process completed with exit code 1.

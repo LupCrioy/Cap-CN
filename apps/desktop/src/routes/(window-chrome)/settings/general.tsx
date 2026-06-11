@@ -1037,7 +1037,7 @@ function DefaultProjectNameCard(props: {
 		const formatted = await commands.formatProjectName(
 			val,
 			macos ? "Safari" : "Chrome",
-			"窗口",
+			"Window",
 			"instant",
 			datetime,
 		);
@@ -1049,7 +1049,7 @@ function DefaultProjectNameCard(props: {
 			.formatProjectName(
 				MOMENT_EXAMPLE_TEMPLATE,
 				macos ? "Safari" : "Chrome",
-				"窗口",
+				"Window",
 				"instant",
 				datetime,
 			)
@@ -1166,7 +1166,7 @@ function DefaultProjectNameCard(props: {
 							<div class="space-y-1">
 								<p class="font-medium text-gray-12">Target</p>
 								<p>
-									<CodeView>{"{target_kind}"}</CodeView> → "显示器", "窗口",
+									<CodeView>{"{target_kind}"}</CodeView> → "显示器", "Window",
 									or "区域"
 								</p>
 								<p>
@@ -1313,7 +1313,7 @@ function ExcludedWindowsCard(props: {
 									Recommended Cap windows are not excluded
 								</p>
 								<p class="text-[10px] leading-snug text-amber-11">
-									摄像头, settings, or recording windows can appear as black
+									Camera, settings, or recording windows can appear as black
 									boxes in screen recordings. Missing: {missingDefaultLabels()}.
 								</p>
 							</div>

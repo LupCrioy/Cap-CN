@@ -45,7 +45,7 @@ const screenshotsQuery = queryOptions<Screenshot[]>({
 	reconcile: "path",
 });
 
-export default function 截图() {
+export default function Screenshots() {
 	const [search, setSearch] = createSignal("");
 	const trimmedSearch = createMemo(() => search().trim());
 	const normalizedSearch = createMemo(() => trimmedSearch().toLowerCase());

@@ -105,7 +105,7 @@ function getPreviewProjectConfig(
 	return config;
 }
 
-export function 编辑器() {
+export function Editor() {
 	const [projectPath] = createResource(() => commands.getEditorProjectPath());
 
 	const rawMetaQuery = createQuery(() => ({

@@ -109,7 +109,7 @@ const FORMAT_OPTIONS = [
 
 type ExportToOption = (typeof EXPORT_TO_OPTIONS)[number]["value"];
 
-interface 设置 {
+interface Settings {
 	format: ExportFormat;
 	fps: number;
 	exportTo: ExportToOption;
@@ -120,7 +120,7 @@ interface 设置 {
 }
 
 function buildExportSettings(
-	settings: 设置,
+	settings: Settings,
 	cursorOnly: boolean,
 	compressionBpp: number | null,
 	forceFfmpegDecoder: boolean,
@@ -230,7 +230,7 @@ export function ExportPage() {
 	};
 
 	const settings = mergeProps(_settings, () => {
-		const ret: Partial<设置> = {};
+		const ret: Partial<Settings> = {};
 		if (!["Mp4", "Gif"].includes(_settings.format)) ret.format = "Mp4";
 		else if (!cursorOnly()) {
 			if (requiresTransparentExport() && _settings.format === "Mp4")

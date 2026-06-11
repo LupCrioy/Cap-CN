@@ -100,7 +100,7 @@ const recordingsQuery = queryOptions<Recording[]>({
 	},
 });
 
-export default function 录制管理() {
+export default function Recordings() {
 	const [activeTab, setActiveTab] = createSignal<(typeof Tabs)[number]["id"]>(
 		Tabs[0].id,
 	);

@@ -1,0 +1,20 @@
+﻿2026-06-11T12:14:10.7183998Z ##[group]Run pnpm -w cap-setup
+2026-06-11T12:14:10.7184426Z [36;1mpnpm -w cap-setup[0m
+2026-06-11T12:14:10.7215417Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-06-11T12:14:10.7215788Z env:
+2026-06-11T12:14:10.7216068Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-11T12:14:10.7216420Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-11T12:14:10.7216698Z   CARGO_INCREMENTAL: 0
+2026-06-11T12:14:10.7216921Z   CARGO_TERM_COLOR: always
+2026-06-11T12:14:10.7217180Z   RUST_TARGET_TRIPLE: x86_64-pc-windows-msvc
+2026-06-11T12:14:10.7217463Z ##[endgroup]
+2026-06-11T12:14:11.3496162Z 
+2026-06-11T12:14:11.3496946Z > cap@ cap-setup D:\a\Cap-CN\Cap-CN
+2026-06-11T12:14:11.3497577Z > dotenv -e .env -- node scripts/setup.js
+2026-06-11T12:14:11.3497900Z 
+2026-06-11T12:14:11.8786696Z sccache not found, using rustc directly
+2026-06-11T12:14:12.2581132Z MSVC toolchain 17.14 OK (full: 17.14.37314.3)
+2026-06-11T12:14:12.9808371Z Downloaded ffmpeg-7.1.zip
+2026-06-11T12:14:19.0216883Z Extracted ffmpeg
+2026-06-11T12:14:19.1382558Z Copied ffmpeg DLLs to target/debug and target/release
+2026-06-11T12:14:19.2620903Z Copied ffmpeg/lib and ffmpeg/include to target/native-deps

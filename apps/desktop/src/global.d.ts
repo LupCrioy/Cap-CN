@@ -1883,7 +1883,7 @@ export namespace Log {
 
 declare var FLAGS: Flags;
 declare global {
-	interface 窗口 {
+	interface Window {
 		FLAGS: Flags;
 		__CAP__: {
 			cameraWsPort: number;

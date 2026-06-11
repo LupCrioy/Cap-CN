@@ -49,7 +49,7 @@ type State =
 type RecordingInputState = Record<RecordingInputKind, boolean>;
 
 declare global {
-	interface 窗口 {
+	interface Window {
 		COUNTDOWN: number;
 	}
 }
@@ -139,7 +139,7 @@ function InProgressRecordingInner() {
 			);
 		if (disconnectedInputs.camera)
 			issues.push(
-				"摄像头 disconnected. Recording continues without camera overlay.",
+				"Camera disconnected. Recording continues without camera overlay.",
 			);
 		const failure = recordingFailure();
 		if (failure) issues.push(failure);
@@ -473,7 +473,7 @@ function InProgressRecordingInner() {
 				const cameraWindow = await getCameraWindow();
 				if (cameraWindow) await cameraWindow.close();
 			} else {
-				await commands.showWindow({ 摄像头: { centered: false } });
+				await commands.showWindow({ Camera: { centered: false } });
 			}
 			await refreshCameraWindowState();
 		},
@@ -546,7 +546,7 @@ function InProgressRecordingInner() {
 			)[] = [];
 			items.push(
 				await CheckMenuItem.new({
-					text: "Show 摄像头 Preview",
+					text: "Show Camera Preview",
 					checked: cameraWindowOpen(),
 					enabled: startedWithCameraInput && hasCameraInput(),
 					action: () => {
@@ -820,7 +820,7 @@ function InProgressRecordingInner() {
 									<Show when={hasCameraInput() && disconnectedInputs.camera}>
 										<div
 											class="flex h-8 w-8 items-center justify-center"
-											title="摄像头 disconnected - recording continues without camera overlay"
+											title="Camera disconnected - recording continues without camera overlay"
 										>
 											<IconLucideVideoOff class="size-5 text-amber-11" />
 										</div>

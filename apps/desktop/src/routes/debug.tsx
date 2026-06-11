@@ -64,7 +64,7 @@ export default function Debug() {
 					class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-sm"
 					onClick={() => commands.showWindow("Onboarding")}
 				>
-					Show Onboarding 窗口
+					Show Onboarding Window
 				</button>
 				<button
 					class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-sm"
@@ -72,7 +72,7 @@ export default function Debug() {
 						commands.showWindow({ InProgressRecording: { countdown: 3 } })
 					}
 				>
-					Show Recording Controls 窗口
+					Show Recording Controls Window
 				</button>
 			</div>
 

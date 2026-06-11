@@ -90,9 +90,9 @@ export function SceneTrack(props: {
 	const getSceneLabel = (mode: string | undefined) => {
 		switch (mode) {
 			case "cameraOnly":
-				return "摄像头 Only";
+				return "Camera Only";
 			case "hideCamera":
-				return "Hide 摄像头";
+				return "Hide Camera";
 			case "splitScreen":
 				return "Split 屏幕";
 			default:

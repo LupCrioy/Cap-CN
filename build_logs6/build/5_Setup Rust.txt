@@ -1,0 +1,173 @@
+﻿2026-06-11T12:11:45.4449815Z ##[group]Run dtolnay/rust-toolchain@stable
+2026-06-11T12:11:45.4450256Z with:
+2026-06-11T12:11:45.4450453Z   toolchain: stable
+2026-06-11T12:11:45.4450656Z env:
+2026-06-11T12:11:45.4450934Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-11T12:11:45.4451506Z ##[endgroup]
+2026-06-11T12:11:45.4702588Z ##[group]Run : parse toolchain version
+2026-06-11T12:11:45.4703000Z [36;1m: parse toolchain version[0m
+2026-06-11T12:11:45.4703288Z [36;1mif [[ -z $toolchain ]]; then[0m
+2026-06-11T12:11:45.4703824Z [36;1m  # GitHub does not enforce `required: true` inputs itself. https://github.com/actions/runner/issues/1070[0m
+2026-06-11T12:11:45.4704369Z [36;1m  echo "'toolchain' is a required input" >&2[0m
+2026-06-11T12:11:45.4704651Z [36;1m  exit 1[0m
+2026-06-11T12:11:45.4704990Z [36;1melif [[ $toolchain =~ ^stable' '[0-9]+' '(year|month|week|day)s?' 'ago$ ]]; then[0m
+2026-06-11T12:11:45.4705397Z [36;1m  if [[ Windows == macOS ]]; then[0m
+2026-06-11T12:11:45.4705908Z [36;1m    echo "toolchain=1.$((($(date -v-$(sed 's/stable \([0-9]*\) \(.\).*/\1\2/' <<< $toolchain) +%s)/60/60/24-16569)/7/6))" >> $GITHUB_OUTPUT[0m
+2026-06-11T12:11:45.4706456Z [36;1m  else[0m
+2026-06-11T12:11:45.4706851Z [36;1m    echo "toolchain=1.$((($(date --date "${toolchain#stable }" +%s)/60/60/24-16569)/7/6))" >> $GITHUB_OUTPUT[0m
+2026-06-11T12:11:45.4707330Z [36;1m  fi[0m
+2026-06-11T12:11:45.4707630Z [36;1melif [[ $toolchain =~ ^stable' 'minus' '[0-9]+' 'releases?$ ]]; then[0m
+2026-06-11T12:11:45.4708148Z [36;1m  echo "toolchain=1.$((($(date +%s)/60/60/24-16569)/7/6-${toolchain//[^0-9]/}))" >> $GITHUB_OUTPUT[0m
+2026-06-11T12:11:45.4708593Z [36;1melif [[ $toolchain =~ ^1\.[0-9]+$ ]]; then[0m
+2026-06-11T12:11:45.4709088Z [36;1m  echo "toolchain=1.$((i=${toolchain#1.}, c=($(date +%s)/60/60/24-16569)/7/6, i+9*i*(10*i<=c)+90*i*(100*i<=c)))" >> $GITHUB_OUTPUT[0m
+2026-06-11T12:11:45.4709555Z [36;1melse[0m
+2026-06-11T12:11:45.4709798Z [36;1m  echo "toolchain=$toolchain" >> $GITHUB_OUTPUT[0m
+2026-06-11T12:11:45.4710089Z [36;1mfi[0m
+2026-06-11T12:11:45.4724656Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-06-11T12:11:45.4725072Z env:
+2026-06-11T12:11:45.4725354Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-11T12:11:45.4725718Z   toolchain: stable
+2026-06-11T12:11:45.4725930Z ##[endgroup]
+2026-06-11T12:11:45.6649471Z ##[group]Run : construct rustup command line
+2026-06-11T12:11:45.6649826Z [36;1m: construct rustup command line[0m
+2026-06-11T12:11:45.6650267Z [36;1mecho "targets=$(for t in ${targets//,/ }; do echo -n ' --target' $t; done)" >> $GITHUB_OUTPUT[0m
+2026-06-11T12:11:45.6650902Z [36;1mecho "components=$(for c in ${components//,/ }; do echo -n ' --component' $c; done)" >> $GITHUB_OUTPUT[0m
+2026-06-11T12:11:45.6651364Z [36;1mecho "downgrade=" >> $GITHUB_OUTPUT[0m
+2026-06-11T12:11:45.6661253Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-06-11T12:11:45.6661655Z env:
+2026-06-11T12:11:45.6661944Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-11T12:11:45.6662261Z   targets: 
+2026-06-11T12:11:45.6662442Z   components: 
+2026-06-11T12:11:45.6662625Z ##[endgroup]
+2026-06-11T12:11:45.7227559Z ##[group]Run : set $CARGO_HOME
+2026-06-11T12:11:45.7227852Z [36;1m: set $CARGO_HOME[0m
+2026-06-11T12:11:45.7228187Z [36;1mecho CARGO_HOME=${CARGO_HOME:-"$USERPROFILE\.cargo"} >> $GITHUB_ENV[0m
+2026-06-11T12:11:45.7238459Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-06-11T12:11:45.7238860Z env:
+2026-06-11T12:11:45.7239131Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-11T12:11:45.7239458Z ##[endgroup]
+2026-06-11T12:11:45.7623217Z ##[group]Run : install rustup if needed on windows
+2026-06-11T12:11:45.7623587Z [36;1m: install rustup if needed on windows[0m
+2026-06-11T12:11:45.7623899Z [36;1mif ! command -v rustup &>/dev/null; then[0m
+2026-06-11T12:11:45.7624651Z [36;1m  curl --proto '=https' --tlsv1.2 --retry 10 --retry-connrefused --location --silent --show-error --fail https://win.rustup.rs/x86_64 --output 'D:\a\_temp\rustup-init.exe'[0m
+2026-06-11T12:11:45.7627344Z [36;1m  'D:\a\_temp\rustup-init.exe' --default-toolchain none --no-modify-path -y[0m
+2026-06-11T12:11:45.7627948Z [36;1m  echo "$CARGO_HOME\bin" >> $GITHUB_PATH[0m
+2026-06-11T12:11:45.7628231Z [36;1mfi[0m
+2026-06-11T12:11:45.7638163Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-06-11T12:11:45.7638543Z env:
+2026-06-11T12:11:45.7638809Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-11T12:11:45.7639156Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-11T12:11:45.7639416Z ##[endgroup]
+2026-06-11T12:11:45.8088453Z ##[group]Run rustup toolchain install stable --profile minimal --no-self-update
+2026-06-11T12:11:45.8089001Z [36;1mrustup toolchain install stable --profile minimal --no-self-update[0m
+2026-06-11T12:11:45.8098951Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-06-11T12:11:45.8099372Z env:
+2026-06-11T12:11:45.8099638Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-11T12:11:45.8099985Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-11T12:11:45.8100275Z   RUSTUP_PERMIT_COPY_RENAME: 1
+2026-06-11T12:11:45.8100506Z ##[endgroup]
+2026-06-11T12:11:49.0177601Z info: syncing channel updates for stable-x86_64-pc-windows-msvc
+2026-06-11T12:11:49.5980845Z info: latest update on 2026-05-28 for version 1.96.0 (ac68faa20 2026-05-25)
+2026-06-11T12:11:49.6431771Z info: removing previous version of component clippy
+2026-06-11T12:11:49.6634781Z info: removing previous version of component rustfmt
+2026-06-11T12:11:49.6772774Z info: removing previous version of component rust-std for target x86_64-pc-windows-gnu
+2026-06-11T12:11:49.7566826Z info: removing previous version of component rust-std for target i686-pc-windows-msvc
+2026-06-11T12:11:49.8389172Z info: removing previous version of component cargo
+2026-06-11T12:11:49.9091933Z info: removing previous version of component rust-std
+2026-06-11T12:11:49.9895632Z info: removing previous version of component rustc
+2026-06-11T12:11:50.0617329Z info: downloading 7 components
+2026-06-11T12:12:03.2923212Z 
+2026-06-11T12:12:04.6655534Z   stable-x86_64-pc-windows-msvc updated - rustc 1.96.0 (ac68faa20 2026-05-25) (from rustc 1.95.0 (59807616e 2026-04-14))
+2026-06-11T12:12:04.6657560Z 
+2026-06-11T12:12:04.6895777Z ##[group]Run rustup default stable
+2026-06-11T12:12:04.6896126Z [36;1mrustup default stable[0m
+2026-06-11T12:12:04.6907003Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-06-11T12:12:04.6907412Z env:
+2026-06-11T12:12:04.6907690Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-11T12:12:04.6908044Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-11T12:12:04.6908302Z ##[endgroup]
+2026-06-11T12:12:04.7602173Z info: using existing install for stable-x86_64-pc-windows-msvc
+2026-06-11T12:12:04.7755337Z info: default toolchain set to stable-x86_64-pc-windows-msvc
+2026-06-11T12:12:04.7755857Z 
+2026-06-11T12:12:04.7959022Z   stable-x86_64-pc-windows-msvc unchanged - rustc 1.96.0 (ac68faa20 2026-05-25)
+2026-06-11T12:12:04.7959740Z 
+2026-06-11T12:12:04.8021272Z info: note that the toolchain '1.88.0-x86_64-pc-windows-msvc' is currently in use (overridden by 'D:\a\Cap-CN\Cap-CN\rust-toolchain.toml')
+2026-06-11T12:12:04.8226204Z ##[group]Run : create cachekey
+2026-06-11T12:12:04.8226807Z [36;1m: create cachekey[0m
+2026-06-11T12:12:04.8227435Z [36;1mDATE=$(rustc +stable --version --verbose | sed -ne 's/^commit-date: \(20[0-9][0-9]\)-\([01][0-9]\)-\([0-3][0-9]\)$/\1\2\3/p')[0m
+2026-06-11T12:12:04.8228639Z [36;1mHASH=$(rustc +stable --version --verbose | sed -ne 's/^commit-hash: //p')[0m
+2026-06-11T12:12:04.8229577Z [36;1mecho "cachekey=$(echo $DATE$HASH | head -c12)" >> $GITHUB_OUTPUT[0m
+2026-06-11T12:12:04.8244415Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-06-11T12:12:04.8246356Z env:
+2026-06-11T12:12:04.8246855Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-11T12:12:04.8247289Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-11T12:12:04.8248864Z ##[endgroup]
+2026-06-11T12:12:05.6159051Z ##[group]Run : disable incremental compilation
+2026-06-11T12:12:05.6159464Z [36;1m: disable incremental compilation[0m
+2026-06-11T12:12:05.6159795Z [36;1mif [ -z "${CARGO_INCREMENTAL+set}" ]; then[0m
+2026-06-11T12:12:05.6160131Z [36;1m  echo CARGO_INCREMENTAL=0 >> $GITHUB_ENV[0m
+2026-06-11T12:12:05.6160408Z [36;1mfi[0m
+2026-06-11T12:12:05.6174612Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-06-11T12:12:05.6175067Z env:
+2026-06-11T12:12:05.6175364Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-11T12:12:05.6175966Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-11T12:12:05.6176251Z ##[endgroup]
+2026-06-11T12:12:05.6637893Z ##[group]Run : enable colors in Cargo output
+2026-06-11T12:12:05.6638286Z [36;1m: enable colors in Cargo output[0m
+2026-06-11T12:12:05.6638618Z [36;1mif [ -z "${CARGO_TERM_COLOR+set}" ]; then[0m
+2026-06-11T12:12:05.6639005Z [36;1m  echo CARGO_TERM_COLOR=always >> $GITHUB_ENV[0m
+2026-06-11T12:12:05.6639347Z [36;1mfi[0m
+2026-06-11T12:12:05.6650224Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-06-11T12:12:05.6650644Z env:
+2026-06-11T12:12:05.6650929Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-11T12:12:05.6651298Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-11T12:12:05.6651576Z   CARGO_INCREMENTAL: 0
+2026-06-11T12:12:05.6651787Z ##[endgroup]
+2026-06-11T12:12:05.8207105Z ##[group]Run : enable Cargo sparse registry
+2026-06-11T12:12:05.8207480Z [36;1m: enable Cargo sparse registry[0m
+2026-06-11T12:12:05.8207838Z [36;1m# implemented in 1.66, stabilized in 1.68, made default in 1.70[0m
+2026-06-11T12:12:05.8208500Z [36;1mif [ -z "${CARGO_REGISTRIES_CRATES_IO_PROTOCOL+set}" -o -f "D:\a\_temp"/.implicit_cargo_registries_crates_io_protocol ]; then[0m
+2026-06-11T12:12:05.8209190Z [36;1m  if rustc +stable --version --verbose | grep -q '^release: 1\.6[89]\.'; then[0m
+2026-06-11T12:12:05.8209702Z [36;1m    touch "D:\a\_temp"/.implicit_cargo_registries_crates_io_protocol || true[0m
+2026-06-11T12:12:05.8210168Z [36;1m    echo CARGO_REGISTRIES_CRATES_IO_PROTOCOL=sparse >> $GITHUB_ENV[0m
+2026-06-11T12:12:05.8210638Z [36;1m  elif rustc +stable --version --verbose | grep -q '^release: 1\.6[67]\.'; then[0m
+2026-06-11T12:12:05.8211121Z [36;1m    touch "D:\a\_temp"/.implicit_cargo_registries_crates_io_protocol || true[0m
+2026-06-11T12:12:05.8211560Z [36;1m    echo CARGO_REGISTRIES_CRATES_IO_PROTOCOL=git >> $GITHUB_ENV[0m
+2026-06-11T12:12:05.8211891Z [36;1m  fi[0m
+2026-06-11T12:12:05.8212082Z [36;1mfi[0m
+2026-06-11T12:12:05.8222608Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-06-11T12:12:05.8223030Z env:
+2026-06-11T12:12:05.8223306Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-11T12:12:05.8223768Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-11T12:12:05.8224050Z   CARGO_INCREMENTAL: 0
+2026-06-11T12:12:05.8224291Z   CARGO_TERM_COLOR: always
+2026-06-11T12:12:05.8224510Z ##[endgroup]
+2026-06-11T12:12:06.0318640Z ##[group]Run : work around spurious network errors in curl 8.0
+2026-06-11T12:12:06.0319258Z [36;1m: work around spurious network errors in curl 8.0[0m
+2026-06-11T12:12:06.0319943Z [36;1m# https://rust-lang.zulipchat.com/#narrow/stream/246057-t-cargo/topic/timeout.20investigation[0m
+2026-06-11T12:12:06.0320943Z [36;1mif rustc +stable --version --verbose | grep -q '^release: 1\.7[01]\.'; then[0m
+2026-06-11T12:12:06.0321697Z [36;1m  echo CARGO_HTTP_MULTIPLEXING=false >> $GITHUB_ENV[0m
+2026-06-11T12:12:06.0322197Z [36;1mfi[0m
+2026-06-11T12:12:06.0336047Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-06-11T12:12:06.0336727Z env:
+2026-06-11T12:12:06.0337157Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-11T12:12:06.0337769Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-11T12:12:06.0338239Z   CARGO_INCREMENTAL: 0
+2026-06-11T12:12:06.0338763Z   CARGO_TERM_COLOR: always
+2026-06-11T12:12:06.0339034Z ##[endgroup]
+2026-06-11T12:12:06.1640116Z ##[group]Run rustc +stable --version --verbose
+2026-06-11T12:12:06.1640671Z [36;1mrustc +stable --version --verbose[0m
+2026-06-11T12:12:06.1657016Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-06-11T12:12:06.1657640Z env:
+2026-06-11T12:12:06.1658060Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-11T12:12:06.1658592Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-11T12:12:06.1659018Z   CARGO_INCREMENTAL: 0
+2026-06-11T12:12:06.1659342Z   CARGO_TERM_COLOR: always
+2026-06-11T12:12:06.1659658Z ##[endgroup]
+2026-06-11T12:12:06.2515859Z rustc 1.96.0 (ac68faa20 2026-05-25)
+2026-06-11T12:12:06.2516522Z binary: rustc
+2026-06-11T12:12:06.2517037Z commit-hash: ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96
+2026-06-11T12:12:06.2517514Z commit-date: 2026-05-25
+2026-06-11T12:12:06.2517854Z host: x86_64-pc-windows-msvc
+2026-06-11T12:12:06.2518220Z release: 1.96.0
+2026-06-11T12:12:06.2519656Z LLVM version: 22.1.2

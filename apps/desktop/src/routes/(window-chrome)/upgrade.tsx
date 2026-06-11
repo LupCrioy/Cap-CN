@@ -1,6 +1,6 @@
 import { Button } from "@cap/ui-solid";
 import { createMutation, useQueryClient } from "@tanstack/solid-query";
-import { getCurrentWindow, 窗口 } from "@tauri-apps/api/window";
+import { getCurrentWindow, Window } from "@tauri-apps/api/window";
 import { type Accessor, createSignal, Show } from "solid-js";
 import { generalSettingsStore } from "~/store";
 import { getProPlanId } from "~/utils/plans";
@@ -100,7 +100,7 @@ export default function Page() {
 				console.log("Opening checkout URL in external browser");
 				commands.openExternalLink(response.body.url);
 				console.log("Minimizing upgrade window");
-				const window = await 窗口.getByLabel("upgrade");
+				const window = await Window.getByLabel("upgrade");
 				if (window) await window.minimize();
 			} else {
 				console.error("Failed to get checkout URL, status:", response.status);
@@ -122,7 +122,7 @@ export default function Page() {
 				console.log("Opening checkout URL in external browser");
 				commands.openExternalLink(resp.body.url);
 				console.log("Minimizing upgrade window");
-				const window = await 窗口.getByLabel("upgrade");
+				const window = await Window.getByLabel("upgrade");
 				if (window) {
 					await window.minimize();
 				}
@@ -184,7 +184,7 @@ export default function Page() {
 	//       await new Promise((resolve) => setTimeout(resolve, 500));
 
 	//       console.log("Getting upgrade window reference");
-	//       const upgradeWindow = await 窗口.getByLabel("upgrade");
+	//       const upgradeWindow = await Window.getByLabel("upgrade");
 	//       if (upgradeWindow) {
 	//         try {
 	//           console.log("Setting focus on upgrade window");

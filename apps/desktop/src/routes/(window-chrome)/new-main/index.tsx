@@ -936,7 +936,7 @@ function DeviceListPanel(props: DeviceListPanelProps) {
 				>
 					<IconLucideCircleOff class="size-4 shrink-0" />
 					<span class="truncate flex-1">
-						{props.variant === "camera" ? "No 摄像头" : "No 麦克风"}
+						{props.variant === "camera" ? "No Camera" : "No 麦克风"}
 					</span>
 					<Show when={isNoneSelected()}>
 						<IconLucideCheck class="size-4 shrink-0" />
@@ -1079,7 +1079,7 @@ function TargetMenuPanel(props: TargetMenuPanelProps & SharedTargetMenuProps) {
 	};
 
 	const settingsSubtitle = () =>
-		props.variant === "camera" ? "摄像头 settings" : "麦克风 settings";
+		props.variant === "camera" ? "Camera settings" : "麦克风 settings";
 
 	const settingsTitle = () => {
 		const target = settingsTarget();
@@ -1993,7 +1993,7 @@ function Page() {
 
 	const windowErrorMessage = () => {
 		if (!windowTargets.error) return undefined;
-		return "Unable to load windows. Try using the 窗口 button.";
+		return "Unable to load windows. Try using the Window button.";
 	};
 
 	const selectDisplayTarget = async (target: CaptureDisplayWithThumbnail) => {
@@ -2496,7 +2496,7 @@ function Page() {
 								onClick={() => {
 									toggleTargetMode("window");
 								}}
-								name="窗口"
+								name="Window"
 								class="flex-1 rounded-none border-0 focus-visible:ring-0 focus-visible:ring-offset-0 pl-5"
 							/>
 							<TargetDropdownButton
@@ -2539,7 +2539,7 @@ function Page() {
 							onClick={() => {
 								toggleTargetMode("camera");
 							}}
-							name="摄像头 Only"
+							name="Camera Only"
 							class="flex-1"
 						/>
 					</div>

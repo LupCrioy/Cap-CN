@@ -2588,7 +2588,7 @@ function CameraConfig(props: { scrollRef: HTMLDivElement }) {
 			value={TAB_IDS.camera}
 			class="flex flex-col flex-1 gap-6 p-4 min-h-0"
 		>
-			<Field icon={<IconCapCamera class="size-4" />} name="摄像头">
+			<Field icon={<IconCapCamera class="size-4" />} name="Camera">
 				<div class="flex flex-col gap-6">
 					<div>
 						<Subfield name="Position" />
@@ -2641,13 +2641,13 @@ function CameraConfig(props: { scrollRef: HTMLDivElement }) {
 							</For>
 						</KRadioGroup>
 					</div>
-					<Subfield name="Hide 摄像头">
+					<Subfield name="Hide Camera">
 						<Toggle
 							checked={project.camera.hide}
 							onChange={(hide) => setProject("camera", "hide", hide)}
 						/>
 					</Subfield>
-					<Subfield name="Mirror 摄像头">
+					<Subfield name="Mirror Camera">
 						<Toggle
 							checked={project.camera.mirror}
 							onChange={(mirror) => setProject("camera", "mirror", mirror)}
@@ -2774,7 +2774,7 @@ function CameraConfig(props: { scrollRef: HTMLDivElement }) {
 						</KSelect>
 					</Subfield>
 
-					{/* <Subfield name="Use 摄像头 Aspect Ratio">
+					{/* <Subfield name="Use Camera Aspect Ratio">
             <Toggle
               checked={project.camera.use_camera_aspect}
               onChange={(v) => setProject("camera", "use_camera_aspect", v)}
@@ -4142,7 +4142,7 @@ function ClipSegmentConfig(props: {
 			)}
 			{meta().hasCamera && (
 				<SourceOffsetField
-					name="摄像头 Offset"
+					name="Camera Offset"
 					value={offsets().camera}
 					onChange={(offset) => {
 						setOffset("camera", offset);
@@ -4325,7 +4325,7 @@ function SceneSegmentConfig(props: {
 					删除
 				</EditorButton>
 			</div>
-			<Field name="摄像头 Layout" icon={<IconLucideLayout />}>
+			<Field name="Camera Layout" icon={<IconLucideLayout />}>
 				<KTabs
 					class="space-y-3"
 					value={props.segment.mode || "default"}
@@ -4359,11 +4359,11 @@ function SceneSegmentConfig(props: {
 						</KTabs.Trigger>
 						<KTabs.Trigger value="cameraOnly" class={SCENE_MODE_TRIGGER_CLASS}>
 							<IconLucideVideo class="size-3.5" />
-							摄像头 Only
+							Camera Only
 						</KTabs.Trigger>
 						<KTabs.Trigger value="hideCamera" class={SCENE_MODE_TRIGGER_CLASS}>
 							<IconLucideEyeOff class="size-3.5" />
-							Hide 摄像头
+							Hide Camera
 						</KTabs.Trigger>
 						<KTabs.Trigger
 							value="splitScreen"
@@ -4442,7 +4442,7 @@ function SceneSegmentConfig(props: {
 					/>
 				</Field>
 				<div class="w-full border-t border-dashed border-gray-5" />
-				<Field name="摄像头 Zoom" icon={<IconCapEnlarge class="size-4" />}>
+				<Field name="Camera Zoom" icon={<IconCapEnlarge class="size-4" />}>
 					<Slider
 						value={[split().cameraZoom * 100]}
 						onChange={(v) => updateSplit({ cameraZoom: v[0] / 100 })}
@@ -4452,7 +4452,7 @@ function SceneSegmentConfig(props: {
 						formatTooltip="%"
 					/>
 				</Field>
-				<Field name="摄像头 Position" icon={<IconLucideMove class="size-4" />}>
+				<Field name="Camera Position" icon={<IconLucideMove class="size-4" />}>
 					<PositionPad
 						value={() => split().cameraPosition}
 						onChange={(pos) => updateSplit({ cameraPosition: pos })}

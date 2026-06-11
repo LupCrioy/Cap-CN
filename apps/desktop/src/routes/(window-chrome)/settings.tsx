@@ -129,7 +129,7 @@ function SettingsContentSkeleton() {
 	);
 }
 
-export default function 设置(props: RouteSectionProps) {
+export default function Settings(props: RouteSectionProps) {
 	const navigate = useNavigate();
 	const queryClient = useQueryClient();
 	const signIn = createSignInMutation();

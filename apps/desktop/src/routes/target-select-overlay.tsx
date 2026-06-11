@@ -330,7 +330,7 @@ function Inner() {
 				<div class="relative w-screen h-screen flex flex-col items-center justify-center bg-black/70">
 					<div class="absolute inset-0 bg-black/60 -z-10" />
 					<div class="flex flex-col items-center text-white mb-4">
-						<span class="mb-2 text-3xl font-semibold">摄像头 Only</span>
+						<span class="mb-2 text-3xl font-semibold">Camera Only</span>
 						<span class="text-xs text-gray-11">
 							Record using only your camera and microphone
 						</span>
@@ -1478,7 +1478,7 @@ function CameraPreviewInline() {
 							fallback={
 								<div class="flex flex-col items-center gap-2 text-center px-4">
 									<div class="text-sm text-red-400">
-										摄像头 connection failed
+										Camera connection failed
 									</div>
 									<button
 										type="button"

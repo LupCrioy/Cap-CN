@@ -16,7 +16,7 @@ import {
 	type Annotation,
 	type AnnotationType,
 	type AudioConfiguration,
-	type 摄像头,
+	type Camera,
 	type CursorConfiguration,
 	commands,
 	type HotkeysConfiguration,
@@ -96,7 +96,7 @@ export type CurrentDialog =
 
 export type DialogState = { open: false } | ({ open: boolean } & CurrentDialog);
 
-const DEFAULT_CAMERA: 摄像头 = {
+const DEFAULT_CAMERA: Camera = {
 	hide: false,
 	mirror: false,
 	position: { x: "right", y: "bottom" },
@@ -107,7 +107,7 @@ const DEFAULT_CAMERA: 摄像头 = {
 	advancedShadow: null,
 	shape: "square",
 	roundingType: "squircle",
-} as unknown as 摄像头;
+} as unknown as Camera;
 
 const DEFAULT_AUDIO: AudioConfiguration = {
 	mute: false,

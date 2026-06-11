@@ -151,7 +151,7 @@ export function EditorErrorScreen(props: {
 							onClick={() => window.close()}
 							class="text-sm text-gray-10 hover:text-gray-11 transition-colors"
 						>
-							关闭 窗口
+							关闭 Window
 						</button>
 					</div>
 				</div>

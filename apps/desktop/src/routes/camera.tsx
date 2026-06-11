@@ -56,7 +56,7 @@ type CameraPreviewIssue = {
 const CAMERA_PREVIEW_ERROR_EVENT = "camera-preview-error";
 const CAMERA_PREVIEW_CLEAR_EVENT = "camera-preview-clear";
 const CAMERA_DISCONNECTED_ISSUE: CameraPreviewIssue = {
-	title: "摄像头 disconnected",
+	title: "Camera disconnected",
 	message: "The selected camera stopped sending video.",
 };
 
