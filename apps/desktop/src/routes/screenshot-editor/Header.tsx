@@ -131,13 +131,13 @@ export function Header() {
 					onClick={() => {
 						exportImage("clipboard");
 					}}
-					tooltipText="Copy to Clipboard"
+					tooltipText="复制 to Clipboard"
 					disabled={isExporting()}
 					leftIcon={<IconLucideCopy class="w-4" />}
 				/>
 
 				<EditorButton
-					tooltipText="Save"
+					tooltipText="保存"
 					onClick={() => exportImage("file")}
 					disabled={isExporting()}
 					leftIcon={<IconLucideSave class="size-4" />}
@@ -180,7 +180,7 @@ export function Header() {
 										}}
 									>
 										<IconCapTrash class="size-4 text-gray-11" />
-										<span>Delete</span>
+										<span>删除</span>
 									</DropdownItem>
 								</MenuItemList>
 							</PopperContent>

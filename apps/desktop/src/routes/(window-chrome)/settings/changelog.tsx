@@ -8,28 +8,28 @@ import { apiClient } from "~/utils/web-api";
 import { SettingsPageContent } from "./Setting";
 
 export default function Page() {
-	console.log("[Changelog] Component mounted");
+	console.log("[更新日志] Component mounted");
 
 	const changelog = createQuery(() => {
-		console.log("[Changelog] Creating query");
+		console.log("[更新日志] Creating query");
 		return {
 			queryKey: ["changelog"],
 			queryFn: async () => {
-				console.log("[Changelog] Executing query function");
+				console.log("[更新日志] Executing query function");
 				try {
 					const response = await apiClient.desktop.getChangelogPosts({
 						query: { origin: window.location.origin },
 					});
 
-					console.log("[Changelog] Response", response);
+					console.log("[更新日志] Response", response);
 
 					if (response.status !== 200) {
-						console.error("[Changelog] Error status:", response.status);
+						console.error("[更新日志] Error status:", response.status);
 						throw new Error("Failed to fetch changelog");
 					}
 					return response.body;
 				} catch (error) {
-					console.error("[Changelog] Error in query:", error);
+					console.error("[更新日志] Error in query:", error);
 					throw error;
 				}
 			},
@@ -37,7 +37,7 @@ export default function Page() {
 	});
 
 	onMount(() => {
-		console.log("[Changelog] Query state:", {
+		console.log("[更新日志] Query state:", {
 			isLoading: changelog.isLoading,
 			isError: changelog.isError,
 			error: changelog.error,

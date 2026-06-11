@@ -1,6 +1,6 @@
 import { Button } from "@cap/ui-solid";
 import { createMutation, useQueryClient } from "@tanstack/solid-query";
-import { getCurrentWindow, Window } from "@tauri-apps/api/window";
+import { getCurrentWindow, 窗口 } from "@tauri-apps/api/window";
 import { type Accessor, createSignal, Show } from "solid-js";
 import { generalSettingsStore } from "~/store";
 import { getProPlanId } from "~/utils/plans";
@@ -14,7 +14,7 @@ import { authStore } from "../../store";
 import { Dialog, DialogContent, Input } from "../editor/ui";
 
 const proFeatures = [
-	"Commercial License Included",
+	"Commercial 许可证 Included",
 	"Unlimited cloud storage & Shareable links",
 	"Connect custom S3 storage bucket",
 	"Advanced teams features",
@@ -100,7 +100,7 @@ export default function Page() {
 				console.log("Opening checkout URL in external browser");
 				commands.openExternalLink(response.body.url);
 				console.log("Minimizing upgrade window");
-				const window = await Window.getByLabel("upgrade");
+				const window = await 窗口.getByLabel("upgrade");
 				if (window) await window.minimize();
 			} else {
 				console.error("Failed to get checkout URL, status:", response.status);
@@ -122,7 +122,7 @@ export default function Page() {
 				console.log("Opening checkout URL in external browser");
 				commands.openExternalLink(resp.body.url);
 				console.log("Minimizing upgrade window");
-				const window = await Window.getByLabel("upgrade");
+				const window = await 窗口.getByLabel("upgrade");
 				if (window) {
 					await window.minimize();
 				}
@@ -148,7 +148,7 @@ export default function Page() {
 	//         return;
 	//       }
 
-	//       console.log("Processing auth URL");
+	//       console.log("处理中 auth URL");
 	//       const urlObject = new URL(url);
 	//       const token = urlObject.searchParams.get("token");
 	//       const user_id = urlObject.searchParams.get("user_id");
@@ -184,7 +184,7 @@ export default function Page() {
 	//       await new Promise((resolve) => setTimeout(resolve, 500));
 
 	//       console.log("Getting upgrade window reference");
-	//       const upgradeWindow = await Window.getByLabel("upgrade");
+	//       const upgradeWindow = await 窗口.getByLabel("upgrade");
 	//       if (upgradeWindow) {
 	//         try {
 	//           console.log("Setting focus on upgrade window");
@@ -267,7 +267,7 @@ export default function Page() {
 							variant="primary"
 							size="lg"
 						>
-							Close window
+							关闭 window
 						</Button>
 					</div>
 				</div>
@@ -277,7 +277,7 @@ export default function Page() {
 					<div class="p-8 mx-auto w-full max-w-[700px] rounded-xl border shadow-xs bg-gray-2 border-gray-3">
 						<div class="space-y-6">
 							<div class="flex flex-col items-center mb-6 text-center">
-								<h3 class="text-2xl font-medium">Commercial License</h3>
+								<h3 class="text-2xl font-medium">Commercial 许可证</h3>
 								<p class="text-sm text-gray-11">
 									Your license details for Cap commercial use
 								</p>
@@ -286,7 +286,7 @@ export default function Page() {
 							<div class="space-y-6">
 								<div>
 									<label class="block mb-2 text-sm text-gray-12">
-										License Key
+										许可证 Key
 									</label>
 									<p class="overflow-x-auto p-3 font-mono text-xs whitespace-pre-wrap break-all rounded-lg border border-gray-4 text-gray-9 bg-gray-3">
 										{license.data.licenseKey}
@@ -318,7 +318,7 @@ export default function Page() {
 									>
 										{resetLicense.isPending
 											? "Deactivating..."
-											: "Deactivate License"}
+											: "Deactivate 许可证"}
 									</Button>
 								</div>
 							</div>
@@ -336,7 +336,7 @@ export default function Page() {
 								onMouseEnter={() => {
 									const riveInstance = CommercialRive();
 									if (riveInstance) {
-										// Stop any current animations first
+										// 停止 any current animations first
 										riveInstance.stop();
 										// Play the enter animation
 										riveInstance.play("cards");
@@ -345,7 +345,7 @@ export default function Page() {
 								onMouseLeave={() => {
 									const riveInstance = CommercialRive();
 									if (riveInstance) {
-										// Stop any current animations first
+										// 停止 any current animations first
 										riveInstance.stop();
 										// Play the leave animation
 										riveInstance.play("card-stack");
@@ -358,7 +358,7 @@ export default function Page() {
 										<Commercial class="w-[250px]" />
 										<div class="space-y-1 text-center">
 											<h3 class="text-2xl font-medium tracking-tight leading-5">
-												Commercial License
+												Commercial 许可证
 											</h3>
 											<p class="mt-2 text-sm text-(--text-tertiary)">
 												For commercial use
@@ -394,7 +394,7 @@ export default function Page() {
 										</div>
 										<ul class="flex flex-col gap-2 justify-center list-none">
 											{[
-												"Commercial Use of Cap Recorder + Editor",
+												"Commercial Use of Cap Recorder + 编辑器",
 												"Community Support",
 												"Local-only features",
 												"Perpetual license option",
@@ -424,8 +424,8 @@ export default function Page() {
 										size="lg"
 									>
 										{openCommercialCheckout.isPending
-											? "Loading..."
-											: "Purchase License"}
+											? "加载中..."
+											: "Purchase 许可证"}
 									</Button>
 									<p
 										onClick={() => setOpenLicenseDialog(true)}
@@ -441,7 +441,7 @@ export default function Page() {
 								onMouseEnter={() => {
 									const riveInstance = ProRive();
 									if (riveInstance) {
-										// Stop any current animations first
+										// 停止 any current animations first
 										riveInstance.stop();
 										// Play the enter animation
 										riveInstance.play("items-coming-out");
@@ -450,7 +450,7 @@ export default function Page() {
 								onMouseLeave={() => {
 									const riveInstance = ProRive();
 									if (riveInstance) {
-										// Stop any current animations first
+										// 停止 any current animations first
 										riveInstance.stop();
 										// Play the leave animation
 										riveInstance.play("items-coming-in");
@@ -514,7 +514,7 @@ export default function Page() {
 										class="rounded-full! text-lg! w-full mx-auto"
 										onClick={openCheckoutInExternalBrowser}
 									>
-										{loading() ? "Loading..." : "Upgrade to Cap Pro"}
+										{loading() ? "加载中..." : "Upgrade to Cap Pro"}
 									</Button>
 								</div>
 							</div>
@@ -569,7 +569,7 @@ const ActivateLicenseDialog = ({ open, onOpenChange }: Props) => {
 	return (
 		<Dialog.Root open={open()} onOpenChange={onOpenChange}>
 			<DialogContent
-				title="Activate License"
+				title="Activate 许可证"
 				confirm={
 					<Dialog.ConfirmButton
 						disabled={activateLicenseKey.isPending}

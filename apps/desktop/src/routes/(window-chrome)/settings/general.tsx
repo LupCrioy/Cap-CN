@@ -557,7 +557,7 @@ function Inner(props: { initialStore: GeneralSettingsStore | null }) {
 								handleChange("mainWindowRecordingStartBehaviour", value)
 							}
 							options={[
-								{ text: "Close", value: "close" },
+								{ text: "关闭", value: "close" },
 								{ text: "Minimise", value: "minimise" },
 							]}
 						/>
@@ -587,7 +587,7 @@ function Inner(props: { initialStore: GeneralSettingsStore | null }) {
 							]}
 						/>
 						<ToggleSettingItem
-							label="Delete Instant recordings after upload"
+							label="删除 Instant recordings after upload"
 							description="Cap removes the local file once it has uploaded successfully."
 							value={settings.deleteInstantRecordingsAfterUpload ?? false}
 							onChange={(v) =>
@@ -695,7 +695,7 @@ function TelemetryCard(props: {
 		<Section title="Privacy">
 			<SectionRows>
 				<ToggleSettingItem
-					label="Share anonymous telemetry"
+					label="分享 anonymous telemetry"
 					description="Cap uses anonymous telemetry to improve reliability and fix bugs. We never collect recording contents, window titles, file paths, or personal information."
 					value={props.value}
 					onChange={props.onChange}
@@ -844,7 +844,7 @@ function InstantQualitySetting(props: {
 			(t) => (
 				<div class="flex gap-3 items-center px-4 py-3 rounded-xl border shadow-lg bg-gray-1 border-gray-4 text-gray-12">
 					<p class="text-sm">
-						Upgrade to Cap Pro to record Instant Mode videos above 720p.
+						Upgrade to Cap Pro to record 即时模式 videos above 720p.
 					</p>
 					<button
 						type="button"
@@ -865,7 +865,7 @@ function InstantQualitySetting(props: {
 	return (
 		<SettingItem
 			id="settings-section-instant-quality"
-			label="Instant Mode quality"
+			label="即时模式 quality"
 			description={
 				props.hasCapPro
 					? "Choose the maximum upload resolution for Instant recordings."
@@ -912,7 +912,7 @@ function CapProSection(props: {
 	return (
 		<Section
 			title="Cap Pro"
-			description="Settings available with a Cap Pro license."
+			description="设置 available with a Cap Pro license."
 			pro
 		>
 			<SectionRows>
@@ -1037,7 +1037,7 @@ function DefaultProjectNameCard(props: {
 		const formatted = await commands.formatProjectName(
 			val,
 			macos ? "Safari" : "Chrome",
-			"Window",
+			"窗口",
 			"instant",
 			datetime,
 		);
@@ -1049,7 +1049,7 @@ function DefaultProjectNameCard(props: {
 			.formatProjectName(
 				MOMENT_EXAMPLE_TEMPLATE,
 				macos ? "Safari" : "Chrome",
-				"Window",
+				"窗口",
 				"instant",
 				datetime,
 			)
@@ -1115,7 +1115,7 @@ function DefaultProjectNameCard(props: {
 							await updatePreview();
 						}}
 					>
-						Save
+						保存
 					</Button>
 				</>
 			}
@@ -1166,8 +1166,8 @@ function DefaultProjectNameCard(props: {
 							<div class="space-y-1">
 								<p class="font-medium text-gray-12">Target</p>
 								<p>
-									<CodeView>{"{target_kind}"}</CodeView> → "Display", "Window",
-									or "Area"
+									<CodeView>{"{target_kind}"}</CodeView> → "显示器", "窗口",
+									or "区域"
 								</p>
 								<p>
 									<CodeView>{"{target_name}"}</CodeView> → Monitor name or
@@ -1257,7 +1257,7 @@ function ExcludedWindowsCard(props: {
 
 			const menu = await Menu.new({ items });
 
-			// Save scroll position before popup
+			// 保存 scroll position before popup
 			const scrollPos = window.scrollY;
 
 			await menu.popup();
@@ -1313,7 +1313,7 @@ function ExcludedWindowsCard(props: {
 									Recommended Cap windows are not excluded
 								</p>
 								<p class="text-[10px] leading-snug text-amber-11">
-									Camera, settings, or recording windows can appear as black
+									摄像头, settings, or recording windows can appear as black
 									boxes in screen recordings. Missing: {missingDefaultLabels()}.
 								</p>
 							</div>

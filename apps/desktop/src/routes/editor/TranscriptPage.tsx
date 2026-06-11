@@ -457,7 +457,7 @@ function TranscriptEditor(props: {
 		const selected = selectedIndices();
 		if (selected.size === 0) return;
 
-		if (e.key === "Backspace" || e.key === "Delete") {
+		if (e.key === "Backspace" || e.key === "删除") {
 			e.preventDefault();
 			const indices = [...selected];
 			if (indices.length === 1) {

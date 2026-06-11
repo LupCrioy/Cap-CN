@@ -138,7 +138,7 @@ export function PlayerContent() {
 		}
 	});
 
-	// Continue to update current caption when playback time changes
+	// 继续 to update current caption when playback time changes
 	// This is still needed for CaptionsTab to highlight the current caption
 	createEffect(() => {
 		const time = editorState.playbackTime;
@@ -407,7 +407,7 @@ export function PlayerContent() {
 					>
 						<IconCapPrev class="text-gray-12 size-3" />
 					</button>
-					<Tooltip kbd={["Space"]} content="Play/Pause video">
+					<Tooltip kbd={["Space"]} content="Play/暂停 video">
 						<button
 							type="button"
 							onClick={handlePlayPauseClick}

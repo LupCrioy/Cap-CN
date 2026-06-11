@@ -164,7 +164,7 @@ export function AnnotationConfigBar() {
 								class="text-xs text-blue-11 font-medium hover:text-blue-9 transition-colors"
 								onClick={() => setSelectedAnnotationId(null)}
 							>
-								Done
+								完成
 							</button>
 						</div>
 					</div>

@@ -427,7 +427,7 @@ export function Preview(props: { zoom: number; setZoom: (z: number) => void }) {
 
 	return (
 		<div class="flex flex-col flex-1 overflow-hidden bg-gray-1 dark:bg-gray-2">
-			{/* Preview Area */}
+			{/* Preview 区域 */}
 			<div
 				ref={setCanvasContainerRef}
 				class="flex-1 relative flex items-center justify-center overflow-hidden outline-hidden"
@@ -461,7 +461,7 @@ export function Preview(props: { zoom: number; setZoom: (z: number) => void }) {
 				</div>
 				<Show
 					when={!!latestFrame()}
-					fallback={<div class="text-gray-11">Loading preview...</div>}
+					fallback={<div class="text-gray-11">加载中 preview...</div>}
 				>
 					{(_) => {
 						createEffect(

@@ -223,13 +223,13 @@ function BrandSettingsDialog(props: {
 							disabled={saving()}
 							onClick={() => props.onOpenChange(false)}
 						>
-							Cancel
+							取消
 						</Button>
 						<Dialog.ConfirmButton
 							disabled={saving() || !props.organization}
 							onClick={() => void save()}
 						>
-							{saving() ? "Saving..." : "Save"}
+							{saving() ? "Saving..." : "保存"}
 						</Dialog.ConfirmButton>
 					</>
 				}
@@ -357,13 +357,13 @@ export function OrganizationDropdown() {
 		if (availability === "available") {
 			return selectedOrganization()?.name ?? "Organization";
 		}
-		if (availability === "loading") return "Loading...";
+		if (availability === "loading") return "加载中...";
 		if (availability === "unavailable") return "Organization";
 		return "Sign in";
 	});
 	const fallbackTitle = createMemo(() => {
 		const availability = organizationSelection.availability();
-		if (availability === "loading") return "Loading organizations";
+		if (availability === "loading") return "加载中 organizations";
 		if (availability === "unavailable") return "Unable to load organizations";
 		return "Organization branding requires sign in";
 	});

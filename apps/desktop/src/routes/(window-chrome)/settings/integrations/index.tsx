@@ -105,7 +105,7 @@ export default function AppsTab() {
 		<div class="cap-settings-page flex flex-col h-full custom-scroll">
 			<SettingsPageContent>
 				<Section
-					title="Integrations"
+					title="集成"
 					description="Configure integrations to extend Cap's functionality and connect with third-party services."
 				>
 					<div class="space-y-3">

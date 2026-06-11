@@ -84,19 +84,19 @@ export const EXPORT_TO_OPTIONS = [
 		label: "File",
 		value: "file",
 		icon: IconCapFile,
-		description: "Save to your computer",
+		description: "保存 to your computer",
 	},
 	{
 		label: "Clipboard",
 		value: "clipboard",
 		icon: IconCapCopy,
-		description: "Copy to paste anywhere",
+		description: "复制 to paste anywhere",
 	},
 	{
 		label: "Shareable Link",
 		value: "link",
 		icon: IconCapLink,
-		description: "Share via Cap cloud",
+		description: "分享 via Cap cloud",
 	},
 ] as const;
 
@@ -109,7 +109,7 @@ const FORMAT_OPTIONS = [
 
 type ExportToOption = (typeof EXPORT_TO_OPTIONS)[number]["value"];
 
-interface Settings {
+interface 设置 {
 	format: ExportFormat;
 	fps: number;
 	exportTo: ExportToOption;
@@ -120,7 +120,7 @@ interface Settings {
 }
 
 function buildExportSettings(
-	settings: Settings,
+	settings: 设置,
 	cursorOnly: boolean,
 	compressionBpp: number | null,
 	forceFfmpegDecoder: boolean,
@@ -188,14 +188,14 @@ export function ExportPage() {
 
 	const isCancellationError = (error: unknown) =>
 		error instanceof SilentError ||
-		error === "Export cancelled" ||
-		error === "Save dialog cancelled" ||
+		error === "导出 cancelled" ||
+		error === "保存 dialog cancelled" ||
 		(error instanceof Error &&
-			(error.message === "Export cancelled" ||
-				error.message === "Save dialog cancelled"));
+			(error.message === "导出 cancelled" ||
+				error.message === "保存 dialog cancelled"));
 
 	const [_settings, setSettings] = makePersisted(
-		createStore<Settings>({
+		createStore<设置>({
 			format: "Mp4",
 			fps: 30,
 			exportTo: "file",
@@ -230,7 +230,7 @@ export function ExportPage() {
 	};
 
 	const settings = mergeProps(_settings, () => {
-		const ret: Partial<Settings> = {};
+		const ret: Partial<设置> = {};
 		if (!["Mp4", "Gif"].includes(_settings.format)) ret.format = "Mp4";
 		else if (!cursorOnly()) {
 			if (requiresTransparentExport() && _settings.format === "Mp4")
@@ -523,7 +523,7 @@ export function ExportPage() {
 	const handleCancel = async () => {
 		if (
 			await ask("Are you sure you want to cancel the export?", {
-				title: "Cancel Export",
+				title: "取消 导出",
 				kind: "warning",
 			})
 		) {
@@ -750,7 +750,7 @@ export function ExportPage() {
 				class="flex relative flex-row items-center w-full h-14 border-b border-gray-3 shrink-0"
 			>
 				<h1 class="absolute inset-0 flex items-center justify-center text-sm font-medium text-gray-12 pointer-events-none">
-					Export
+					导出
 				</h1>
 				<div
 					data-tauri-drag-region
@@ -766,7 +766,7 @@ export function ExportPage() {
 						class="flex items-center gap-1.5"
 					>
 						<IconLucideArrowLeft class="size-4" />
-						<span>Back to Editor</span>
+						<span>Back to 编辑器</span>
 					</Button>
 					<div data-tauri-drag-region class="flex-1 h-full" />
 					{ostype() === "windows" && <CaptionControlsWindows11 />}
@@ -810,7 +810,7 @@ export function ExportPage() {
 								<>
 									<img
 										src={url()}
-										alt="Export preview"
+										alt="导出 preview"
 										class="relative z-0 w-full h-full object-contain"
 									/>
 									<Show when={previewLoading()}>
@@ -1264,7 +1264,7 @@ export function ExportPage() {
 											/>
 										</div>
 										<div class="text-left">
-											<span class="block">Export cursor only</span>
+											<span class="block">导出 cursor only</span>
 											<span class="text-[10px] text-gray-9">
 												Keeps the same cursor motion and clicks on a transparent
 												background
@@ -1360,7 +1360,7 @@ export function ExportPage() {
 														<div class="text-left">
 															<span class="block">Force FFmpeg decoder</span>
 															<span class="text-[10px] text-gray-9">
-																Skip hardware decoder (auto-fallback enabled)
+																跳过 hardware decoder (auto-fallback enabled)
 															</span>
 														</div>
 													</button>
@@ -1385,7 +1385,7 @@ export function ExportPage() {
 									class="text-xs font-medium text-gray-12 transition-colors hover:underline underline-offset-2"
 									onClick={handleBack}
 								>
-									Back to Editor
+									Back to 编辑器
 								</button>
 							</div>
 						) : (
@@ -1403,19 +1403,19 @@ export function ExportPage() {
 									{settings.exportTo === "file" && (
 										<>
 											<IconCapFile class="size-5" />
-											Export to File
+											导出 to File
 										</>
 									)}
 									{settings.exportTo === "clipboard" && (
 										<>
 											<IconCapCopy class="size-5" />
-											Export to Clipboard
+											导出 to Clipboard
 										</>
 									)}
 									{settings.exportTo === "link" && (
 										<>
 											<IconCapLink class="size-5" />
-											Export to Link
+											导出 to Link
 										</>
 									)}
 								</Button>
@@ -1424,7 +1424,7 @@ export function ExportPage() {
 									class="text-xs font-medium text-gray-12 transition-colors hover:underline underline-offset-2"
 									onClick={handleBack}
 								>
-									Back to Editor
+									Back to 编辑器
 								</button>
 							</div>
 						)}
@@ -1454,7 +1454,7 @@ export function ExportPage() {
 							{(url) => (
 								<img
 									src={url()}
-									alt="Export preview full size"
+									alt="导出 preview full size"
 									class="w-full h-full object-contain"
 								/>
 							)}
@@ -1562,7 +1562,7 @@ export function ExportPage() {
 											</Match>
 											<Match when={saveState.type === "done"}>
 												<CompletedExport
-													title="Export complete"
+													title="导出 complete"
 													subtitle={`Your ${exportMediumLabel()} is ready`}
 												/>
 											</Match>
@@ -1643,7 +1643,7 @@ export function ExportPage() {
 													) : (
 														<IconLucideCheck class="transition-colors duration-200 text-gray-1 size-4 svgpathanimation group-hover:text-gray-12" />
 													)}
-													<p>Copy Link</p>
+													<p>复制 Link</p>
 												</Button>
 												<a href={link()} target="_blank" rel="noreferrer">
 													<Button
@@ -1695,7 +1695,7 @@ export function ExportPage() {
 												) : (
 													<IconLucideCheck class="size-4 svgpathanimation" />
 												)}
-												Copy to Clipboard
+												复制 to Clipboard
 											</Button>
 										</div>
 									</Show>
@@ -1709,7 +1709,7 @@ export function ExportPage() {
 										}}
 									>
 										<IconLucideArrowLeft class="size-4" />
-										Back to Editor
+										Back to 编辑器
 									</Button>
 								</div>
 							</Show>
@@ -1717,7 +1717,7 @@ export function ExportPage() {
 							<Show when={exportState.type !== "done"}>
 								<p class="max-w-sm text-xs leading-relaxed text-center text-gray-11">
 									<span class="font-semibold text-gray-12">Tip:</span> Use
-									Instant Mode for your next recording to record and upload on
+									即时模式 for your next recording to record and upload on
 									the fly, with no exporting required.
 								</p>
 							</Show>
@@ -1805,7 +1805,7 @@ function ActiveExport(props: {
 			</div>
 			<Show when={props.onCancel}>
 				<Button variant="gray" size="sm" onClick={() => props.onCancel?.()}>
-					Cancel
+					取消
 				</Button>
 			</Show>
 		</div>

@@ -1315,7 +1315,7 @@ export function Cropper(
 				<button
 					type="button"
 					class="absolute inset-0 z-20 bg-transparent p-0 m-0 border-0"
-					aria-label="Start selection"
+					aria-label="开始 selection"
 					onPointerDown={onOverlayPointerDown}
 					style={{ cursor: cursorStyle() ?? "crosshair" }}
 				/>

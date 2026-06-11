@@ -461,7 +461,7 @@ export function ZoomTrack(props: {
 													setEditorState("timeline", "selection", null);
 												}
 											} else {
-												// Start new multi-selection
+												// 开始 new multi-selection
 												setEditorState("timeline", "selection", {
 													type: "zoom",
 													indices: [segmentIndex],

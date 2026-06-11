@@ -35,7 +35,7 @@ import { Preview } from "./Preview";
 import { ScreenshotEditorSkeleton } from "./screenshot-editor-skeleton";
 import { Dialog, EditorButton } from "./ui";
 
-export function Editor() {
+export function 编辑器() {
 	const [zoom, setZoom] = createSignal(1);
 	const {
 		projectHistory,
@@ -473,7 +473,7 @@ function Dialogs() {
 													setDialog({ open: false });
 												}}
 											>
-												Save
+												保存
 											</Button>
 										</Dialog.Footer>
 									</>

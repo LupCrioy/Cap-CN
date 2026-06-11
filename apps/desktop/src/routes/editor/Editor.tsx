@@ -105,7 +105,7 @@ function getPreviewProjectConfig(
 	return config;
 }
 
-export function Editor() {
+export function 编辑器() {
 	const [projectPath] = createResource(() => commands.getEditorProjectPath());
 
 	const rawMetaQuery = createQuery(() => ({
@@ -172,7 +172,7 @@ export function Editor() {
 			}
 		}
 		if (importAborted()) return;
-		console.error("Import verification timed out");
+		console.error("导入 verification timed out");
 		window.location.reload();
 	};
 
@@ -191,7 +191,7 @@ export function Editor() {
 					<ImportProgress
 						projectPath={path()}
 						onComplete={handleImportComplete}
-						onError={(error) => console.error("Import failed:", error)}
+						onError={(error) => console.error("导入 failed:", error)}
 					/>
 				)}
 			</Match>
@@ -311,10 +311,10 @@ function Inner() {
 				const resumeExport = await ask(
 					"An export is currently running. Keep this editor open to continue it, or quit the editor and cancel the export.",
 					{
-						title: "Export in Progress",
+						title: "导出 in Progress",
 						kind: "warning",
-						okLabel: "Resume Export",
-						cancelLabel: "Quit Editor",
+						okLabel: "继续录制 导出",
+						cancelLabel: "Quit 编辑器",
 					},
 				);
 
@@ -465,7 +465,7 @@ function Inner() {
 			);
 		} catch (e) {
 			console.error(
-				"[Editor] doConfigUpdate - ERROR sending config to Rust:",
+				"[编辑器] doConfigUpdate - ERROR sending config to Rust:",
 				e,
 			);
 		} finally {
@@ -827,14 +827,14 @@ function Dialogs() {
 
 								return (
 									<DialogContent
-										title="Delete Preset"
+										title="删除 Preset"
 										confirm={
 											<Dialog.ConfirmButton
 												variant="destructive"
 												onClick={() => deletePreset.mutate()}
 												disabled={deletePreset.isPending}
 											>
-												Delete
+												删除
 											</Dialog.ConfirmButton>
 										}
 									>
@@ -956,7 +956,7 @@ function Dialogs() {
 										})
 										.catch((error: unknown) => {
 											if (cancelled) return;
-											console.warn("Display frame fetch failed:", error);
+											console.warn("显示器 frame fetch failed:", error);
 											logCropProfile("accurate-frame-request-failed", {
 												elapsedMs: Number(
 													(performance.now() - cropOpenedAt).toFixed(2),
@@ -1266,7 +1266,7 @@ function Dialogs() {
 													setDialog((d) => ({ ...d, open: false }));
 												}}
 											>
-												Save
+												保存
 											</Button>
 										</Dialog.Footer>
 									</>

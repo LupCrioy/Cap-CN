@@ -399,7 +399,7 @@ export function CaptionsTab(props: {
 
 	const generateCaptions = async () => {
 		if (!editorInstance) {
-			toast.error("Editor instance not found");
+			toast.error("编辑器 instance not found");
 			return;
 		}
 
@@ -676,7 +676,7 @@ export function CaptionsTab(props: {
 							!hasCaptions() && "opacity-50 pointer-events-none",
 						)}
 					>
-						<Field name="Font Settings" icon={<IconCapMessageBubble />}>
+						<Field name="Font 设置" icon={<IconCapMessageBubble />}>
 							<div class="space-y-3">
 								<div class="flex flex-col gap-2">
 									<span class="text-gray-11 text-sm">Font Family</span>
@@ -773,7 +773,7 @@ export function CaptionsTab(props: {
 							</div>
 						</Field>
 
-						<Field name="Background Settings" icon={<IconCapMessageBubble />}>
+						<Field name="Background 设置" icon={<IconCapMessageBubble />}>
 							<div class="space-y-3">
 								<div class="flex flex-col gap-2">
 									<span class="text-gray-11 text-sm">Background Color</span>
@@ -942,8 +942,8 @@ export function CaptionsTab(props: {
 							</KSelect>
 						</Field>
 
-						<Field name="Export Options" icon={<IconCapMessageBubble />}>
-							<Subfield name="Export with Subtitles">
+						<Field name="导出 Options" icon={<IconCapMessageBubble />}>
+							<Subfield name="导出 with Subtitles">
 								<Toggle
 									checked={getSetting("exportWithSubtitles")}
 									onChange={(checked) =>
@@ -970,7 +970,7 @@ export function CaptionsTab(props: {
 									<Show when={selectedCaptionSegment()}>
 										{(seg) => (
 											<div class="space-y-3">
-												<Subfield name="Start Time">
+												<Subfield name="开始 Time">
 													<Input
 														type="number"
 														value={seg().start.toFixed(2)}

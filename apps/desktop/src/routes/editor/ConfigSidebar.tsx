@@ -576,7 +576,7 @@ export function ConfigSidebar() {
 							/>
 						</Subfield>
 						{editorInstance.recordings.segments[0].mic?.channels === 2 && (
-							<Subfield name="Microphone Stereo Mode">
+							<Subfield name="麦克风 Stereo Mode">
 								<KSelect<{ name: string; value: StereoMode }>
 									options={STEREO_MODES}
 									optionValue="value"
@@ -645,7 +645,7 @@ export function ConfigSidebar() {
 					</Field>
 					{meta().hasMicrophone && (
 						<Field
-							name="Microphone Volume"
+							name="麦克风 Volume"
 							icon={<IconCapMicrophone class="size-4" />}
 						>
 							<Slider
@@ -663,7 +663,7 @@ export function ConfigSidebar() {
 					)}
 					{meta().hasSystemAudio && (
 						<Field
-							name="System Audio Volume"
+							name="系统音频 Volume"
 							icon={<IconLucideMonitor class="size-4" />}
 						>
 							<Slider
@@ -916,7 +916,7 @@ export function ConfigSidebar() {
           </Field> */}
 				</KTabs.Content>
 				<KTabs.Content value="hotkeys" class="flex flex-1 p-4 min-h-0">
-					<Field name="Hotkeys" icon={<IconCapHotkeys />}>
+					<Field name="快捷键" icon={<IconCapHotkeys />}>
 						<ComingSoonTooltip>
 							<Subfield name="Show hotkeys">
 								<Toggle disabled />
@@ -988,7 +988,7 @@ export function ConfigSidebar() {
 													}
 													leftIcon={<IconLucideCheck />}
 												>
-													Done
+													完成
 												</EditorButton>
 												<span class="text-sm text-gray-10">
 													{value().segments.length} caption{" "}
@@ -1007,7 +1007,7 @@ export function ConfigSidebar() {
 												}
 												leftIcon={<IconCapTrash />}
 											>
-												Delete
+												删除
 											</EditorButton>
 										</div>
 										<For each={value().segments}>
@@ -1061,7 +1061,7 @@ export function ConfigSidebar() {
 													}}
 													leftIcon={<IconLucideCheck />}
 												>
-													Done
+													完成
 												</EditorButton>
 												<span class="text-sm text-gray-10">
 													{value().segments.length} keyboard{" "}
@@ -1080,7 +1080,7 @@ export function ConfigSidebar() {
 												}
 												leftIcon={<IconCapTrash />}
 											>
-												Delete
+												删除
 											</EditorButton>
 										</div>
 										<For each={value().segments}>
@@ -1128,7 +1128,7 @@ export function ConfigSidebar() {
 													}
 													leftIcon={<IconLucideCheck />}
 												>
-													Done
+													完成
 												</EditorButton>
 												<span class="text-sm text-gray-10">
 													{value().segments.length} text{" "}
@@ -1147,7 +1147,7 @@ export function ConfigSidebar() {
 												}
 												leftIcon={<IconCapTrash />}
 											>
-												Delete
+												删除
 											</EditorButton>
 										</div>
 										<For each={value().segments}>
@@ -1196,7 +1196,7 @@ export function ConfigSidebar() {
 													}
 													leftIcon={<IconLucideCheck />}
 												>
-													Done
+													完成
 												</EditorButton>
 												<span class="text-sm text-gray-10">
 													{value().segments.length} mask{" "}
@@ -1215,7 +1215,7 @@ export function ConfigSidebar() {
 												}
 												leftIcon={<IconCapTrash />}
 											>
-												Delete
+												删除
 											</EditorButton>
 										</div>
 										<For each={value().segments}>
@@ -1263,7 +1263,7 @@ export function ConfigSidebar() {
 													}
 													leftIcon={<IconLucideCheck />}
 												>
-													Done
+													完成
 												</EditorButton>
 												<span class="text-sm text-gray-10">
 													{value().segments.length} zoom{" "}
@@ -1282,7 +1282,7 @@ export function ConfigSidebar() {
 												}}
 												leftIcon={<IconCapTrash />}
 											>
-												Delete
+												删除
 											</EditorButton>
 										</div>
 										<Show
@@ -1356,7 +1356,7 @@ export function ConfigSidebar() {
 																}
 																leftIcon={<IconLucideCheck />}
 															>
-																Done
+																完成
 															</EditorButton>
 															<span class="text-sm text-gray-10">
 																{value().segments.length} scene{" "}
@@ -1371,7 +1371,7 @@ export function ConfigSidebar() {
 															onClick={() => {
 																const indices = value().selection.indices;
 
-																// Delete segments in reverse order to maintain indices
+																// 删除 segments in reverse order to maintain indices
 																[...indices]
 																	.sort((a, b) => b - a)
 																	.forEach((idx) => {
@@ -1380,7 +1380,7 @@ export function ConfigSidebar() {
 															}}
 															leftIcon={<IconCapTrash />}
 														>
-															Delete
+															删除
 														</EditorButton>
 													</div>
 												</div>
@@ -1429,7 +1429,7 @@ export function ConfigSidebar() {
 																}
 																leftIcon={<IconLucideCheck />}
 															>
-																Done
+																完成
 															</EditorButton>
 															<span class="text-sm text-gray-10">
 																{value().segments.length} clip{" "}
@@ -1444,7 +1444,7 @@ export function ConfigSidebar() {
 															onClick={() => {
 																const indices = value().selection.indices;
 
-																// Delete segments in reverse order to maintain indices
+																// 删除 segments in reverse order to maintain indices
 																[...indices]
 																	.sort((a, b) => b - a)
 																	.forEach((idx) => {
@@ -1453,7 +1453,7 @@ export function ConfigSidebar() {
 															}}
 															leftIcon={<IconCapTrash />}
 														>
-															Delete
+															删除
 														</EditorButton>
 													</div>
 												</div>
@@ -1999,7 +1999,7 @@ function BackgroundConfig(props: {
 									>
 										{importingDesktopBackground()
 											? "Importing..."
-											: "Import desktop background"}
+											: "导入 desktop background"}
 									</EditorButton>
 								</div>
 							}
@@ -2115,7 +2115,7 @@ function BackgroundConfig(props: {
 									<div class="flex col-span-7 justify-center items-center h-32 text-gray-11">
 										<div class="flex flex-col gap-2 items-center">
 											<div class="w-6 h-6 rounded-full border-2 animate-spin border-gray-5 border-t-blue-400" />
-											<span>Loading wallpapers...</span>
+											<span>加载中 wallpapers...</span>
 										</div>
 									</div>
 								}
@@ -2588,7 +2588,7 @@ function CameraConfig(props: { scrollRef: HTMLDivElement }) {
 			value={TAB_IDS.camera}
 			class="flex flex-col flex-1 gap-6 p-4 min-h-0"
 		>
-			<Field icon={<IconCapCamera class="size-4" />} name="Camera">
+			<Field icon={<IconCapCamera class="size-4" />} name="摄像头">
 				<div class="flex flex-col gap-6">
 					<div>
 						<Subfield name="Position" />
@@ -2641,13 +2641,13 @@ function CameraConfig(props: { scrollRef: HTMLDivElement }) {
 							</For>
 						</KRadioGroup>
 					</div>
-					<Subfield name="Hide Camera">
+					<Subfield name="Hide 摄像头">
 						<Toggle
 							checked={project.camera.hide}
 							onChange={(hide) => setProject("camera", "hide", hide)}
 						/>
 					</Subfield>
-					<Subfield name="Mirror Camera">
+					<Subfield name="Mirror 摄像头">
 						<Toggle
 							checked={project.camera.mirror}
 							onChange={(mirror) => setProject("camera", "mirror", mirror)}
@@ -2774,7 +2774,7 @@ function CameraConfig(props: { scrollRef: HTMLDivElement }) {
 						</KSelect>
 					</Subfield>
 
-					{/* <Subfield name="Use Camera Aspect Ratio">
+					{/* <Subfield name="Use 摄像头 Aspect Ratio">
             <Toggle
               checked={project.camera.use_camera_aspect}
               onChange={(v) => setProject("camera", "use_camera_aspect", v)}
@@ -3266,7 +3266,7 @@ function KeyboardSegmentConfig(props: {
 					<div class="grid grid-cols-[1fr_auto_1fr] gap-2 items-start">
 						<div class="rounded-lg border border-gray-3 bg-gray-1/80 p-2.5 space-y-2">
 							<div class="flex items-center justify-between text-[10px] uppercase tracking-[0.08em] text-gray-10">
-								<span>Start</span>
+								<span>开始</span>
 								<span>{formatTime(props.segment.start)}</span>
 							</div>
 							<Input
@@ -3380,7 +3380,7 @@ function CaptionSegmentConfig(props: {
 					<div class="grid grid-cols-[1fr_auto_1fr] gap-2 items-start">
 						<div class="rounded-lg border border-gray-3 bg-gray-1/80 p-2.5 space-y-2">
 							<div class="flex items-center justify-between text-[10px] uppercase tracking-[0.08em] text-gray-10">
-								<span>Start</span>
+								<span>开始</span>
 								<span>{formatTime(props.segment.start)}</span>
 							</div>
 							<Input
@@ -3716,7 +3716,7 @@ function ZoomSegmentPreview(props: {
 					/>
 					<Show when={!loaded()}>
 						<p class="flex absolute inset-0 justify-center items-center text-xs text-gray-11">
-							Loading...
+							加载中...
 						</p>
 					</Show>
 				</div>
@@ -4010,7 +4010,7 @@ function ZoomSegmentConfig(props: {
 											<Show when={!loaded()}>
 												<div class="flex absolute inset-0 justify-center items-center bg-gray-2">
 													<div class="text-sm text-gray-11">
-														Loading preview...
+														加载中 preview...
 													</div>
 												</div>
 											</Show>
@@ -4066,7 +4066,7 @@ function ClipSegmentConfig(props: {
 						onClick={() => setEditorState("timeline", "selection", null)}
 						leftIcon={<IconLucideCheck />}
 					>
-						Done
+						完成
 					</EditorButton>
 				</div>
 				<EditorButton
@@ -4077,12 +4077,12 @@ function ClipSegmentConfig(props: {
 					disabled={(project.timeline?.segments.length ?? 0) < 2}
 					leftIcon={<IconCapTrash />}
 				>
-					Delete
+					删除
 				</EditorButton>
 			</div>
 
 			<div class="space-y-0.5">
-				<h3 class="font-medium text-gray-12">Segment Settings</h3>
+				<h3 class="font-medium text-gray-12">Segment 设置</h3>
 				<p class="text-gray-11">
 					These settings apply to only the selected segment
 				</p>
@@ -4116,7 +4116,7 @@ function ClipSegmentConfig(props: {
 			</Field>
 
 			<div class="space-y-0.5 pt-2">
-				<h3 class="font-medium text-gray-12">Clip Settings</h3>
+				<h3 class="font-medium text-gray-12">Clip 设置</h3>
 				<p class="text-gray-11">
 					These settings apply to all segments for the current clip
 				</p>
@@ -4124,7 +4124,7 @@ function ClipSegmentConfig(props: {
 
 			{meta().hasSystemAudio && (
 				<SourceOffsetField
-					name="System Audio Offset"
+					name="系统音频 Offset"
 					value={offsets().system_audio}
 					onChange={(offset) => {
 						setOffset("system_audio", offset);
@@ -4133,7 +4133,7 @@ function ClipSegmentConfig(props: {
 			)}
 			{meta().hasMicrophone && (
 				<SourceOffsetField
-					name="Microphone Offset"
+					name="麦克风 Offset"
 					value={offsets().mic}
 					onChange={(offset) => {
 						setOffset("mic", offset);
@@ -4142,7 +4142,7 @@ function ClipSegmentConfig(props: {
 			)}
 			{meta().hasCamera && (
 				<SourceOffsetField
-					name="Camera Offset"
+					name="摄像头 Offset"
 					value={offsets().camera}
 					onChange={(offset) => {
 						setOffset("camera", offset);
@@ -4291,7 +4291,7 @@ function SceneSegmentConfig(props: {
 			case "hideCamera":
 				return "Shows only the screen recording";
 			case "splitScreen":
-				return "Screen and camera side by side (auto-stacks in portrait)";
+				return "屏幕 and camera side by side (auto-stacks in portrait)";
 			default:
 				return "Shows both screen and camera";
 		}
@@ -4312,7 +4312,7 @@ function SceneSegmentConfig(props: {
 						onClick={() => setEditorState("timeline", "selection", null)}
 						leftIcon={<IconLucideCheck />}
 					>
-						Done
+						完成
 					</EditorButton>
 				</div>
 				<EditorButton
@@ -4322,10 +4322,10 @@ function SceneSegmentConfig(props: {
 					}}
 					leftIcon={<IconCapTrash />}
 				>
-					Delete
+					删除
 				</EditorButton>
 			</div>
-			<Field name="Camera Layout" icon={<IconLucideLayout />}>
+			<Field name="摄像头 Layout" icon={<IconLucideLayout />}>
 				<KTabs
 					class="space-y-3"
 					value={props.segment.mode || "default"}
@@ -4359,11 +4359,11 @@ function SceneSegmentConfig(props: {
 						</KTabs.Trigger>
 						<KTabs.Trigger value="cameraOnly" class={SCENE_MODE_TRIGGER_CLASS}>
 							<IconLucideVideo class="size-3.5" />
-							Camera Only
+							摄像头 Only
 						</KTabs.Trigger>
 						<KTabs.Trigger value="hideCamera" class={SCENE_MODE_TRIGGER_CLASS}>
 							<IconLucideEyeOff class="size-3.5" />
-							Hide Camera
+							Hide 摄像头
 						</KTabs.Trigger>
 						<KTabs.Trigger
 							value="splitScreen"
@@ -4371,7 +4371,7 @@ function SceneSegmentConfig(props: {
 							class={SCENE_MODE_TRIGGER_CLASS}
 						>
 							<IconLucideColumns2 class="size-3.5" />
-							Split Screen
+							Split 屏幕
 						</KTabs.Trigger>
 					</KTabs.List>
 					<div class="p-2.5 rounded-md bg-gray-2 border border-gray-3">
@@ -4425,7 +4425,7 @@ function SceneSegmentConfig(props: {
 
 			<Show when={props.segment.mode === "splitScreen"}>
 				<div class="w-full border-t border-dashed border-gray-5" />
-				<Field name="Screen Zoom" icon={<IconCapEnlarge class="size-4" />}>
+				<Field name="屏幕 Zoom" icon={<IconCapEnlarge class="size-4" />}>
 					<Slider
 						value={[split().screenZoom * 100]}
 						onChange={(v) => updateSplit({ screenZoom: v[0] / 100 })}
@@ -4435,14 +4435,14 @@ function SceneSegmentConfig(props: {
 						formatTooltip="%"
 					/>
 				</Field>
-				<Field name="Screen Position" icon={<IconLucideMove class="size-4" />}>
+				<Field name="屏幕 Position" icon={<IconLucideMove class="size-4" />}>
 					<PositionPad
 						value={() => split().screenPosition}
 						onChange={(pos) => updateSplit({ screenPosition: pos })}
 					/>
 				</Field>
 				<div class="w-full border-t border-dashed border-gray-5" />
-				<Field name="Camera Zoom" icon={<IconCapEnlarge class="size-4" />}>
+				<Field name="摄像头 Zoom" icon={<IconCapEnlarge class="size-4" />}>
 					<Slider
 						value={[split().cameraZoom * 100]}
 						onChange={(v) => updateSplit({ cameraZoom: v[0] / 100 })}
@@ -4452,7 +4452,7 @@ function SceneSegmentConfig(props: {
 						formatTooltip="%"
 					/>
 				</Field>
-				<Field name="Camera Position" icon={<IconLucideMove class="size-4" />}>
+				<Field name="摄像头 Position" icon={<IconLucideMove class="size-4" />}>
 					<PositionPad
 						value={() => split().cameraPosition}
 						onChange={(pos) => updateSplit({ cameraPosition: pos })}

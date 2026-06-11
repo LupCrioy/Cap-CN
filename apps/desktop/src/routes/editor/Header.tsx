@@ -67,7 +67,7 @@ const normalizeImportPath = (path: string) =>
 	path.replace(/\\/g, "/").replace(/\/+$/, "");
 
 const recordingModeLabel = (mode: RecordingMetaWithMetadata["mode"]) =>
-	mode === "studio" ? "Studio Mode" : "Instant Mode";
+	mode === "studio" ? "工作室模式" : "即时模式";
 
 export function Header() {
 	const {
@@ -277,7 +277,7 @@ export function Header() {
 
 						await commands.editorDeleteProject();
 					}}
-					tooltipText="Delete recording"
+					tooltipText="删除 recording"
 					leftIcon={<IconCapTrash class="w-5" />}
 				/>
 				<EditorButton
@@ -293,7 +293,7 @@ export function Header() {
 				<EditorButton
 					onClick={openImportMenu}
 					disabled={importingRecording()}
-					tooltipText="Import recording"
+					tooltipText="导入 recording"
 					leftIcon={<IconLucideImport class="w-5" />}
 				/>
 				<ImportRecordingDialog
@@ -470,7 +470,7 @@ export function Header() {
 					}}
 				>
 					<UploadIcon class="size-4" />
-					Export
+					导出
 				</Button>
 				{ostype() === "windows" && <CaptionControlsWindows11 />}
 			</div>
@@ -499,7 +499,7 @@ function ImportRecordingDialog(props: {
 			<Dialog.Header>
 				<div class="flex flex-col gap-0.5 min-w-0">
 					<KDialog.Title class="text-sm font-medium text-gray-12">
-						Import recording
+						导入 recording
 					</KDialog.Title>
 					<KDialog.Description class="text-xs text-gray-10">
 						Newest to oldest
@@ -529,7 +529,7 @@ function ImportRecordingDialog(props: {
 						when={!props.isLoading}
 						fallback={
 							<div class="flex h-48 items-center justify-center text-xs text-gray-10">
-								Loading recordings...
+								加载中 recordings...
 							</div>
 						}
 					>
@@ -565,7 +565,7 @@ function ImportRecordingDialog(props: {
 					}}
 					disabled={props.isImporting}
 				>
-					Import MP4
+					导入 MP4
 				</Button>
 			</Dialog.Footer>
 		</Dialog.Root>

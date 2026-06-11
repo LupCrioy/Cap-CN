@@ -26,7 +26,7 @@ export function EditorErrorScreen(props: {
 	const recoverMutation = createMutation(() => ({
 		mutationFn: async () => {
 			const result = await commands.recoverRecording(props.projectPath);
-			await commands.showWindow({ Editor: { project_path: result } });
+			await commands.showWindow({ 编辑器: { project_path: result } });
 			return result;
 		},
 		onSuccess: () => {
@@ -151,7 +151,7 @@ export function EditorErrorScreen(props: {
 							onClick={() => window.close()}
 							class="text-sm text-gray-10 hover:text-gray-11 transition-colors"
 						>
-							Close Window
+							关闭 窗口
 						</button>
 					</div>
 				</div>

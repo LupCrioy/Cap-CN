@@ -137,7 +137,7 @@ export default function TargetCard(props: TargetCardProps) {
 		if (target) return target.owner_name;
 		const recording = recordingTarget();
 		if (recording) {
-			return recording.mode === "studio" ? "Studio Mode" : "Instant Mode";
+			return recording.mode === "studio" ? "工作室模式" : "即时模式";
 		}
 		return undefined;
 	});
@@ -258,7 +258,7 @@ export default function TargetCard(props: TargetCardProps) {
 		const recording = recordingTarget();
 		if (!recording) return;
 		commands.showWindow({
-			Editor: { project_path: recording.path },
+			编辑器: { project_path: recording.path },
 		});
 	};
 
@@ -336,7 +336,7 @@ export default function TargetCard(props: TargetCardProps) {
 						<img
 							src={src()}
 							alt={`${
-								local.variant === "display" ? "Display" : "Window"
+								local.variant === "display" ? "显示器" : "窗口"
 							} preview for ${label()}`}
 							class="object-cover w-full h-full"
 							loading="lazy"
@@ -400,7 +400,7 @@ export default function TargetCard(props: TargetCardProps) {
 								<IconLucideEdit class="size-3.5" />
 							</div>
 						</Tooltip>
-						<Tooltip content="Copy to clipboard">
+						<Tooltip content="复制 to clipboard">
 							<div
 								role="button"
 								tabIndex={-1}
@@ -410,7 +410,7 @@ export default function TargetCard(props: TargetCardProps) {
 								<IconLucideCopy class="size-3.5" />
 							</div>
 						</Tooltip>
-						<Tooltip content="Save as...">
+						<Tooltip content="保存 as...">
 							<div
 								role="button"
 								tabIndex={-1}
@@ -495,7 +495,7 @@ export default function TargetCard(props: TargetCardProps) {
 										<IconLucideFolder class="size-3.5" />
 									</div>
 								</Tooltip>
-								<Tooltip content="Delete">
+								<Tooltip content="删除">
 									<div
 										role="button"
 										tabIndex={-1}

@@ -276,8 +276,8 @@ function ShareButton() {
 											</KSelect>
 										</Tooltip>
 									</Show>
-									{/** Copy button */}
-									<Tooltip content="Copy link">
+									{/** 复制 button */}
+									<Tooltip content="复制 link">
 										<div
 											class="flex justify-center items-center transition-colors duration-200 rounded-lg size-[22px] text-gray-12 bg-gray-6 hover:bg-gray-7"
 											onClick={copyLink}

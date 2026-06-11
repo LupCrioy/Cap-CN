@@ -27,7 +27,7 @@ import InfoPill from "./InfoPill";
 import TargetSelectInfoPill from "./TargetSelectInfoPill";
 import useRequestPermission from "./useRequestPermission";
 
-const NO_CAMERA = "No Camera";
+const NO_CAMERA = "No 摄像头";
 
 export default function CameraSelect(props: {
 	disabled?: boolean;
@@ -80,7 +80,7 @@ export default function CameraSelect(props: {
 					: { DeviceID: props.value.device_id };
 				await commands.setCameraInput(id, false);
 			} else {
-				await commands.showWindow({ Camera: { centered: false } });
+				await commands.showWindow({ 摄像头: { centered: false } });
 			}
 		} catch (error) {
 			console.warn("Failed to open camera preview:", error);
@@ -98,7 +98,7 @@ export default function CameraSelect(props: {
 	const label = () =>
 		props.value?.display_name ??
 		(hasSelection() ? props.selectedLabel : null) ??
-		(hasSelection() ? "Camera" : NO_CAMERA);
+		(hasSelection() ? "摄像头" : NO_CAMERA);
 
 	const showHiddenIndicator = () =>
 		props.value !== null &&
@@ -151,8 +151,8 @@ export default function CameraSelect(props: {
 							}}
 							onPointerDown={(e) => e.stopPropagation()}
 							class={DEVICE_SHORTCUT_BUTTON_CLASS}
-							title="Camera settings"
-							aria-label="Camera settings"
+							title="摄像头 settings"
+							aria-label="摄像头 settings"
 						>
 							<IconLucideSettings class="size-3.5" />
 						</button>
@@ -230,7 +230,7 @@ export function CameraSelectBase(props: {
 					: { DeviceID: props.value.device_id };
 				await commands.setCameraInput(id, false);
 			} else {
-				await commands.showWindow({ Camera: { centered: false } });
+				await commands.showWindow({ 摄像头: { centered: false } });
 			}
 		} catch (error) {
 			console.warn("Failed to open camera preview:", error);

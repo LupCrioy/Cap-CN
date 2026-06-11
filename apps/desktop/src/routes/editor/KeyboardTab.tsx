@@ -140,7 +140,7 @@ export function KeyboardTab(props: {
 						!getSetting("enabled") && "opacity-50 pointer-events-none",
 					)}
 				>
-					<Field name="Font Settings" icon={<IconLucideKeyboard />}>
+					<Field name="Font 设置" icon={<IconLucideKeyboard />}>
 						<div class="space-y-3">
 							<div class="flex flex-col gap-2">
 								<span class="text-gray-11 text-sm">Font Family</span>
@@ -214,7 +214,7 @@ export function KeyboardTab(props: {
 						</div>
 					</Field>
 
-					<Field name="Background Settings" icon={<IconLucideKeyboard />}>
+					<Field name="Background 设置" icon={<IconLucideKeyboard />}>
 						<div class="space-y-3">
 							<div class="flex flex-col gap-2">
 								<span class="text-gray-11 text-sm">Background Color</span>
@@ -448,7 +448,7 @@ export function KeyboardTab(props: {
 								icon={<IconLucideKeyboard />}
 							>
 								<div class="space-y-3">
-									<Subfield name="Start Time">
+									<Subfield name="开始 Time">
 										<Input
 											type="number"
 											value={seg().start.toFixed(2)}
@@ -482,7 +482,7 @@ export function KeyboardTab(props: {
 											}
 										/>
 									</Subfield>
-									<Subfield name="Display Text">
+									<Subfield name="显示器 Text">
 										<Input
 											type="text"
 											value={seg().displayText}

@@ -33,7 +33,7 @@ export function AnnotationPopover() {
 			<Popover.Trigger
 				as={EditorButton}
 				leftIcon={<IconLucidePencil class="size-4" />}
-				tooltipText="Annotation Settings"
+				tooltipText="Annotation 设置"
 				disabled={!selectedAnnotation()}
 			/>
 			<Popover.Portal>
@@ -198,7 +198,7 @@ export function AnnotationPopover() {
 												setSelectedAnnotationId(null);
 											}}
 										>
-											Delete Annotation
+											删除 Annotation
 										</EditorButton>
 									</div>
 								</div>

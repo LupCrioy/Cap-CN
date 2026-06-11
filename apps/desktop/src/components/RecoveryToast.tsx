@@ -48,7 +48,7 @@ export function RecoveryToast() {
 	const recoverMutation = createMutation(() => ({
 		mutationFn: async (projectPath: string) => {
 			const result = await commands.recoverRecording(projectPath);
-			await commands.showWindow({ Editor: { project_path: result } });
+			await commands.showWindow({ 编辑器: { project_path: result } });
 			await fetchIncompleteRecordings();
 			return result;
 		},

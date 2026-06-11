@@ -77,7 +77,7 @@ export function Slider(
 	const context = useEditorContext();
 	const history = props.history ?? context?.projectHistory;
 
-	// Pause history when slider is being dragged
+	// 暂停 history when slider is being dragged
 	let resumeHistory: (() => void) | null = null;
 
 	const [thumbRef, setThumbRef] = createSignal<HTMLDivElement>();
@@ -198,7 +198,7 @@ export const Dialog = {
 	CloseButton() {
 		return (
 			<KDialog.CloseButton as={Button} variant="gray">
-				Cancel
+				取消
 			</KDialog.CloseButton>
 		);
 	},

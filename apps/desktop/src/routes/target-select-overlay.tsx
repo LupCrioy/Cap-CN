@@ -330,7 +330,7 @@ function Inner() {
 				<div class="relative w-screen h-screen flex flex-col items-center justify-center bg-black/70">
 					<div class="absolute inset-0 bg-black/60 -z-10" />
 					<div class="flex flex-col items-center text-white mb-4">
-						<span class="mb-2 text-3xl font-semibold">Camera Only</span>
+						<span class="mb-2 text-3xl font-semibold">摄像头 Only</span>
 						<span class="text-xs text-gray-11">
 							Record using only your camera and microphone
 						</span>
@@ -1478,7 +1478,7 @@ function CameraPreviewInline() {
 							fallback={
 								<div class="flex flex-col items-center gap-2 text-center px-4">
 									<div class="text-sm text-red-400">
-										Camera connection failed
+										摄像头 connection failed
 									</div>
 									<button
 										type="button"
@@ -1499,7 +1499,7 @@ function CameraPreviewInline() {
 								style={canvasStyle()}
 							/>
 							<Show when={!hasFrame()}>
-								<div class="text-sm text-gray-11">Loading camera...</div>
+								<div class="text-sm text-gray-11">加载中 camera...</div>
 							</Show>
 						</Show>
 					</Show>
@@ -1584,7 +1584,7 @@ function RecordingControls(props: {
 		await Menu.new({
 			items: [
 				await CheckMenuItem.new({
-					text: "Studio Mode",
+					text: "工作室模式",
 					action: () => {
 						setOptions("mode", "studio");
 						commands.setRecordingMode("studio");
@@ -1592,7 +1592,7 @@ function RecordingControls(props: {
 					checked: rawOptions.mode === "studio",
 				}),
 				await CheckMenuItem.new({
-					text: "Instant Mode",
+					text: "即时模式",
 					action: () => {
 						setOptions("mode", "instant");
 						commands.setRecordingMode("instant");
@@ -1600,7 +1600,7 @@ function RecordingControls(props: {
 					checked: rawOptions.mode === "instant",
 				}),
 				await CheckMenuItem.new({
-					text: "Screenshot Mode",
+					text: "截图模式",
 					action: () => {
 						setOptions("mode", "screenshot");
 						commands.setRecordingMode("screenshot");
@@ -1758,10 +1758,10 @@ function RecordingControls(props: {
 									<span class="text-[0.95rem] font-medium text-white text-nowrap">
 										{(() => {
 											if (rawOptions.mode === "instant" && !auth.data)
-												return "Start Recording";
+												return "开始录制";
 											if (rawOptions.mode === "screenshot")
-												return "Take Screenshot";
-											return "Start Recording";
+												return "截图";
+											return "开始录制";
 										})()}
 									</span>
 									<span class="text-[11px] flex items-center text-nowrap gap-1 transition-opacity duration-200 text-white/90 font-light -mt-0.5">
@@ -1856,7 +1856,7 @@ function ShowCapFreeWarning(props: { isInstantMode: boolean }) {
 		<Suspense>
 			<Show when={props.isInstantMode && auth.data?.plan?.upgraded === false}>
 				<p class="text-sm text-center max-w-64 text-gray-3 mt-3">
-					Instant Mode recordings are limited to 5 mins,{" "}
+					即时模式 recordings are limited to 5 mins,{" "}
 					<button
 						class="underline font-bold text-gray-3"
 						onClick={() => commands.showWindow("Upgrade")}

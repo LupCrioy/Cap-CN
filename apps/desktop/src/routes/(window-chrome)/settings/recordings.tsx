@@ -100,7 +100,7 @@ const recordingsQuery = queryOptions<Recording[]>({
 	},
 });
 
-export default function Recordings() {
+export default function 录制管理() {
 	const [activeTab, setActiveTab] = createSignal<(typeof Tabs)[number]["id"]>(
 		Tabs[0].id,
 	);
@@ -185,7 +185,7 @@ export default function Recordings() {
 	const handleOpenEditor = (path: string) => {
 		trackEvent("recording_editor_clicked");
 		commands.showWindow({
-			Editor: { project_path: path },
+			编辑器: { project_path: path },
 		});
 	};
 
@@ -202,7 +202,7 @@ export default function Recordings() {
 		<div class="cap-settings-page flex relative flex-col w-full h-full custom-scroll">
 			<SettingsPageContent class="max-w-none space-y-4">
 				<Section
-					title="Recordings"
+					title="录制管理"
 					description="Manage your recordings and perform actions."
 					right={
 						<Button
@@ -212,7 +212,7 @@ export default function Recordings() {
 							onClick={handleVideoImport}
 						>
 							<IconLucideImport class="size-3.5" />
-							<span>Import</span>
+							<span>导入</span>
 						</Button>
 					}
 				>
@@ -513,7 +513,7 @@ function RecordingItem(props: {
 					<IconLucideFolder class="size-4" />
 				</TooltipIconButton>
 				<TooltipIconButton
-					tooltipText="Delete"
+					tooltipText="删除"
 					onClick={async () => {
 						if (!(await ask("Are you sure you want to delete this recording?")))
 							return;

@@ -1323,58 +1323,11 @@ pub async fn start_recording(
 
     let (video_upload_info, instant_mode_max_resolution) = match inputs.mode {
         RecordingMode::Instant => {
-            let Some(auth) = AuthStore::get(&app).ok().flatten() else {
-                return Err("Please sign in to use instant recording".to_string());
-            };
-            let instant_mode_max_resolution = if auth.is_upgraded() {
-                general_settings
-                    .map_or(cap_recording::PRO_INSTANT_MODE_MAX_RESOLUTION, |settings| {
-                        settings.instant_mode_max_resolution
-                    })
-            } else {
-                cap_recording::FREE_INSTANT_MODE_MAX_RESOLUTION
-            };
-            let upload_mode = if matches!(inputs.capture_target, ScreenCaptureTarget::CameraOnly) {
-                "desktopMP4"
-            } else {
-                "desktopSegments"
-            };
+            // Offline mode: skip auth check, record locally
+            let instant_mode_max_resolution =
+                cap_recording::FREE_INSTANT_MODE_MAX_RESOLUTION;
 
-            let s3_config = match crate::upload::create_or_get_video_with_mode(
-                &app,
-                false,
-                None,
-                Some(project_name.clone()),
-                None,
-                inputs.organization_id.clone(),
-                upload_mode,
-            )
-            .await
-            {
-                Ok(meta) => meta,
-                Err(AuthedApiError::InvalidAuthentication) => {
-                    return Ok(RecordingAction::InvalidAuthentication);
-                }
-                Err(AuthedApiError::UpgradeRequired) => {
-                    return Ok(RecordingAction::UpgradeRequired);
-                }
-                Err(err) => {
-                    error!("Error creating instant mode video: {err}");
-                    return Err(err.to_string());
-                }
-            };
-
-            let link = app.make_app_url(format!("/s/{}", s3_config.id)).await;
-            info!("Pre-created shareable link: {}", link);
-
-            (
-                Some(VideoUploadInfo {
-                    id: s3_config.id.to_string(),
-                    link: link.clone(),
-                    config: s3_config,
-                }),
-                instant_mode_max_resolution,
-            )
+            (None, instant_mode_max_resolution)
         }
         RecordingMode::Studio => (None, cap_recording::PRO_INSTANT_MODE_MAX_RESOLUTION),
         RecordingMode::Screenshot => return Err("Use take_screenshot for screenshots".to_string()),

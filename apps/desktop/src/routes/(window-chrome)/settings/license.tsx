@@ -30,7 +30,7 @@ export default function Page() {
 						<div class="flex flex-col items-center p-6 mx-auto space-y-3 w-full max-w-md text-white rounded-3xl border bg-gray-2 border-gray-3">
 							<div class="flex flex-col gap-2 items-center">
 								<h3 class="text-2xl font-medium text-gray-12">
-									Cap Pro License
+									Cap Pro 许可证
 								</h3>
 							</div>
 							<p class="text-center text-gray-11">
@@ -48,12 +48,12 @@ export default function Page() {
 								<div class="flex flex-col gap-2 items-center mb-4 text-center">
 									<span class="text-2xl text-green-400 fa fa-briefcase" />
 									<h3 class="text-2xl font-medium text-gray-12">
-										Commercial License
+										Commercial 许可证
 									</h3>
 								</div>
 								<div>
 									<label class="block mb-2 text-sm text-gray-12">
-										License Key
+										许可证 Key
 									</label>
 									<pre class="overflow-x-auto p-3 font-mono text-xs rounded-lg border border-gray-4 text-gray-9 bg-gray-3">
 										{license().licenseKey}
@@ -80,7 +80,7 @@ export default function Page() {
 											queryClient.refetchQueries({ queryKey: ["bruh"] });
 										}}
 									>
-										Deactivate License
+										Deactivate 许可证
 									</Button>
 								</div>
 							</div>
@@ -141,7 +141,7 @@ function LicenseKeyActivate(props: {
 							<div class="space-y-3">
 								<h3 class="mb-2 text-xl text-center">Have a license key?</h3>
 								<Input
-									placeholder="License key"
+									placeholder="许可证 key"
 									value={licenseKey()}
 									onInput={(e) => setLicenseKey(e.currentTarget.value)}
 									class="w-full bg-gray-3 border-gray-4"
@@ -158,7 +158,7 @@ function LicenseKeyActivate(props: {
 									>
 										{activateLicenseKey.isPending
 											? "Activating..."
-											: "Activate License"}
+											: "Activate 许可证"}
 									</Button>
 								</div>
 								<Show when={activateLicenseKey.isError}>
@@ -213,7 +213,7 @@ function CommercialLicensePurchase() {
 						onMouseEnter={() => {
 							const riveInstance = CommercialRive();
 							if (riveInstance) {
-								// Stop any current animations first
+								// 停止 any current animations first
 								riveInstance.stop();
 								// Play the enter animation
 								riveInstance.play("cards");
@@ -222,7 +222,7 @@ function CommercialLicensePurchase() {
 						onMouseLeave={() => {
 							const riveInstance = CommercialRive();
 							if (riveInstance) {
-								// Stop any current animations first
+								// 停止 any current animations first
 								riveInstance.stop();
 								// Play the leave animation
 								riveInstance.play("card-stack");
@@ -233,7 +233,7 @@ function CommercialLicensePurchase() {
 						<Commercial class="w-[200px]" />
 						<div class="space-y-1 text-center">
 							<h3 class="text-2xl font-medium tracking-tight leading-5">
-								Commercial License
+								Commercial 许可证
 							</h3>
 							<p class="mt-2 text-sm text-(--text-tertiary)">
 								For commercial use
@@ -267,8 +267,8 @@ function CommercialLicensePurchase() {
 							size="lg"
 						>
 							{openCommercialCheckout.isPending
-								? "Loading..."
-								: "Purchase License"}
+								? "加载中..."
+								: "Purchase 许可证"}
 						</Button>
 					</div>
 
@@ -276,7 +276,7 @@ function CommercialLicensePurchase() {
 					<div class="flex flex-col gap-4 justify-center items-center p-5 rounded-t-none rounded-b-xl border border-t-0 md:border-t md:border-l-0 md:rounded-bl-none md:rounded-tr-xl md:rounded-br-xl md:w-1/2 border-gray-3">
 						<ul class="flex flex-col gap-2 list-none">
 							{[
-								"Commercial Use of Cap Recorder + Editor",
+								"Commercial Use of Cap Recorder + 编辑器",
 								"Community Support",
 								"Local-only features",
 								"Perpetual license option",

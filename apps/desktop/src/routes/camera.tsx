@@ -56,7 +56,7 @@ type CameraPreviewIssue = {
 const CAMERA_PREVIEW_ERROR_EVENT = "camera-preview-error";
 const CAMERA_PREVIEW_CLEAR_EVENT = "camera-preview-clear";
 const CAMERA_DISCONNECTED_ISSUE: CameraPreviewIssue = {
-	title: "Camera disconnected",
+	title: "摄像头 disconnected",
 	message: "The selected camera stopped sending video.",
 };
 
@@ -344,7 +344,7 @@ function NativeCameraPreviewPage(props: {
 
 			<Show when={cameraPreviewReady.loading}>
 				<div class="w-full flex-1 flex items-center justify-center">
-					<div class="text-gray-11">Loading camera...</div>
+					<div class="text-gray-11">加载中 camera...</div>
 				</div>
 			</Show>
 		</div>
@@ -850,7 +850,7 @@ function Canvas(props: {
 function CameraLoadingState() {
 	return (
 		<div class="w-full flex-1 flex items-center justify-center">
-			<div class="text-gray-11">Loading camera...</div>
+			<div class="text-gray-11">加载中 camera...</div>
 		</div>
 	);
 }

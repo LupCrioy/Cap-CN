@@ -129,7 +129,7 @@ function SettingsContentSkeleton() {
 	);
 }
 
-export default function Settings(props: RouteSectionProps) {
+export default function 设置(props: RouteSectionProps) {
 	const navigate = useNavigate();
 	const queryClient = useQueryClient();
 	const signIn = createSignInMutation();
@@ -193,7 +193,7 @@ export default function Settings(props: RouteSectionProps) {
 	const settingsItems = [
 		{
 			href: "general",
-			name: "General",
+			name: "通用",
 			icon: IconCapSettings,
 		},
 		{
@@ -208,12 +208,12 @@ export default function Settings(props: RouteSectionProps) {
 		},
 		{
 			href: "recordings",
-			name: "Recordings",
+			name: "录制管理",
 			icon: IconLucideSquarePlay,
 		},
 		{
 			href: "screenshots",
-			name: "Screenshots",
+			name: "截图",
 			icon: IconLucideImage,
 		},
 		{
@@ -223,27 +223,27 @@ export default function Settings(props: RouteSectionProps) {
 		},
 		{
 			href: "integrations",
-			name: "Integrations",
+			name: "集成",
 			icon: IconLucideUnplug,
 		},
 		{
 			href: "license",
-			name: "License",
+			name: "许可证",
 			icon: IconLucideGift,
 		},
 		{
 			href: "experimental",
-			name: "Experimental",
+			name: "实验性",
 			icon: IconCapSettings,
 		},
 		{
 			href: "feedback",
-			name: "Feedback",
+			name: "反馈",
 			icon: IconLucideMessageSquarePlus,
 		},
 		{
 			href: "changelog",
-			name: "Changelog",
+			name: "更新日志",
 			icon: IconLucideBell,
 		},
 	];
@@ -517,7 +517,7 @@ export default function Settings(props: RouteSectionProps) {
 									>
 										{isCheckingForUpdates()
 											? "Checking..."
-											: "Check for updates"}
+											: "检查更新"}
 									</button>
 								</div>
 							</div>
@@ -531,7 +531,7 @@ export default function Settings(props: RouteSectionProps) {
 					>
 						{auth() ? (
 							<Button onClick={handleAuth} variant="gray" class="w-full">
-								Sign Out
+								退出登录
 							</Button>
 						) : (
 							<div></div>

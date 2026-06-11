@@ -914,7 +914,7 @@ function DeviceListPanel(props: DeviceListPanelProps) {
 				</div>
 			</Show>
 			<Show when={props.isLoading}>
-				<div class="py-6 text-sm text-center text-gray-11">Loading...</div>
+				<div class="py-6 text-sm text-center text-gray-11">加载中...</div>
 			</Show>
 			<Show when={!props.isLoading && !props.errorMessage}>
 				<button
@@ -936,7 +936,7 @@ function DeviceListPanel(props: DeviceListPanelProps) {
 				>
 					<IconLucideCircleOff class="size-4 shrink-0" />
 					<span class="truncate flex-1">
-						{props.variant === "camera" ? "No Camera" : "No Microphone"}
+						{props.variant === "camera" ? "No 摄像头" : "No 麦克风"}
 					</span>
 					<Show when={isNoneSelected()}>
 						<IconLucideCheck class="size-4 shrink-0" />
@@ -1079,7 +1079,7 @@ function TargetMenuPanel(props: TargetMenuPanelProps & SharedTargetMenuProps) {
 	};
 
 	const settingsSubtitle = () =>
-		props.variant === "camera" ? "Camera settings" : "Microphone settings";
+		props.variant === "camera" ? "摄像头 settings" : "麦克风 settings";
 
 	const settingsTitle = () => {
 		const target = settingsTarget();
@@ -1447,7 +1447,7 @@ function TargetMenuPanel(props: TargetMenuPanelProps & SharedTargetMenuProps) {
 								>
 									<IconLucideImport class="size-3.5" />
 									<span>
-										{props.variant === "screenshot" ? "Import image" : "Import"}
+										{props.variant === "screenshot" ? "导入 image" : "导入"}
 									</span>
 								</Button>
 							</Show>
@@ -1594,7 +1594,7 @@ function createUpdateCheck() {
 
 function MainWindowHelpButton() {
 	return (
-		<Tooltip content={<span>Help & Tour</span>}>
+		<Tooltip content={<span>帮助 & Tour</span>}>
 			<button
 				type="button"
 				onClick={() => {
@@ -1988,12 +1988,12 @@ function Page() {
 
 	const displayErrorMessage = () => {
 		if (!displayTargets.error) return undefined;
-		return "Unable to load displays. Try using the Display button.";
+		return "Unable to load displays. Try using the 显示器 button.";
 	};
 
 	const windowErrorMessage = () => {
 		if (!windowTargets.error) return undefined;
-		return "Unable to load windows. Try using the Window button.";
+		return "Unable to load windows. Try using the 窗口 button.";
 	};
 
 	const selectDisplayTarget = async (target: CaptureDisplayWithThumbnail) => {
@@ -2342,7 +2342,7 @@ function Page() {
 					`Failed to stop recording: ${
 						error instanceof Error ? error.message : String(error)
 					}`,
-					{ title: "Stop Recording", kind: "error" },
+					{ title: "停止录制", kind: "error" },
 				);
 			}
 		},
@@ -2458,7 +2458,7 @@ function Page() {
 								onClick={() => {
 									toggleTargetMode("display");
 								}}
-								name="Display"
+								name="显示器"
 								class="flex-1 rounded-none border-0 focus-visible:ring-0 focus-visible:ring-offset-0 pl-5"
 							/>
 							<TargetDropdownButton
@@ -2496,7 +2496,7 @@ function Page() {
 								onClick={() => {
 									toggleTargetMode("window");
 								}}
-								name="Window"
+								name="窗口"
 								class="flex-1 rounded-none border-0 focus-visible:ring-0 focus-visible:ring-offset-0 pl-5"
 							/>
 							<TargetDropdownButton
@@ -2529,7 +2529,7 @@ function Page() {
 							onClick={() => {
 								toggleTargetMode("area");
 							}}
-							name="Area"
+							name="区域"
 							class="flex-1"
 						/>
 						<TargetTypeButton
@@ -2539,7 +2539,7 @@ function Page() {
 							onClick={() => {
 								toggleTargetMode("camera");
 							}}
-							name="Camera Only"
+							name="摄像头 Only"
 							class="flex-1"
 						/>
 					</div>
@@ -2582,11 +2582,11 @@ function Page() {
 					<MainWindowHelpButton />
 					<div class="flex-1 min-h-9 min-w-0" data-tauri-drag-region />
 					<div class="flex gap-1 items-center shrink-0" data-tauri-drag-region>
-						<Tooltip content={<span>Settings</span>}>
+						<Tooltip content={<span>设置</span>}>
 							<button
 								type="button"
 								onClick={async () => {
-									await commands.showWindow({ Settings: { page: "general" } });
+									await commands.showWindow({ 设置: { page: "general" } });
 									getCurrentWindow().hide();
 								}}
 								class="flex items-center justify-center size-5 focus:outline-hidden"
@@ -2594,7 +2594,7 @@ function Page() {
 								<IconLucideSettings class="transition-colors text-gray-11 size-4 hover:text-gray-12" />
 							</button>
 						</Tooltip>
-						<Tooltip content={<span>Screenshots</span>}>
+						<Tooltip content={<span>截图</span>}>
 							<button
 								type="button"
 								onClick={() => {
@@ -2613,7 +2613,7 @@ function Page() {
 								<IconLucideImage class="transition-colors text-gray-11 size-4 hover:text-gray-12" />
 							</button>
 						</Tooltip>
-						<Tooltip content={<span>Recordings</span>}>
+						<Tooltip content={<span>录制管理</span>}>
 							<button
 								type="button"
 								onClick={() => {
@@ -2691,7 +2691,7 @@ function Page() {
 								variant="gray"
 								class="w-full"
 							>
-								Cancel Sign In
+								取消 Sign In
 							</Button>
 						</div>
 					</div>
@@ -2751,7 +2751,7 @@ function Page() {
 											}
 
 											await commands.showWindow({
-												Editor: { project_path: projectPath },
+												编辑器: { project_path: projectPath },
 											});
 										} else {
 											if (recording.sharing?.link) {
@@ -2766,7 +2766,7 @@ function Page() {
 									}}
 									onViewAll={async () => {
 										await commands.showWindow({
-											Settings: { page: "recordings" },
+											设置: { page: "recordings" },
 										});
 										getCurrentWindow().hide();
 									}}
@@ -2796,7 +2796,7 @@ function Page() {
 									}}
 									onViewAll={async () => {
 										await commands.showWindow({
-											Settings: { page: "screenshots" },
+											设置: { page: "screenshots" },
 										});
 										getCurrentWindow().hide();
 									}}
@@ -2884,7 +2884,7 @@ function Page() {
 							>
 								<IconCapStopCircle class="size-4" />
 							</Show>
-							<span>Stop Recording</span>
+							<span>停止录制</span>
 						</button>
 					</div>
 				</div>

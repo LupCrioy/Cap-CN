@@ -181,7 +181,7 @@ export default function CliSettings() {
 													}
 												>
 													Added <code class="font-mono text-gray-12">cap</code>{" "}
-													to your PATH. Restart your terminal to use it, or run
+													to your PATH. 重启 your terminal to use it, or run
 													this now:
 												</Show>
 											</p>
@@ -196,7 +196,7 @@ export default function CliSettings() {
 														copyPathCommand(currentStatus().shellCommand)
 													}
 												>
-													Copy
+													复制
 												</Button>
 											</div>
 										</div>

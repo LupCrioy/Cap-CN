@@ -4,7 +4,7 @@ import { cx } from "cva";
 import { createEffect, Suspense } from "solid-js";
 import { generalSettingsStore } from "~/store";
 import { commands } from "~/utils/tauri";
-import { Editor } from "./Editor";
+import { 编辑器 } from "./编辑器";
 import { EditorSkeleton } from "./editor-skeleton";
 
 export default function () {
@@ -28,7 +28,7 @@ export default function () {
 			)}
 		>
 			<Suspense fallback={<EditorSkeleton />}>
-				<Editor />
+				<编辑器 />
 			</Suspense>
 		</div>
 	);

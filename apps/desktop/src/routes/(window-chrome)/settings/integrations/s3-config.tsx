@@ -287,7 +287,7 @@ export default function S3ConfigPage() {
 							variant="primary"
 							onClick={() => saveConfig.mutate(s3Config())}
 						>
-							{saveConfig.isPending ? "Saving..." : "Save"}
+							{saveConfig.isPending ? "Saving..." : "保存"}
 						</Button>
 					</fieldset>
 				</div>

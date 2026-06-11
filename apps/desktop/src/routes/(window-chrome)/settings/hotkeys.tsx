@@ -23,11 +23,11 @@ import {
 import { Section, SectionCard, SettingsPageContent } from "./Setting";
 
 const ACTION_TEXT = {
-	startStudioRecording: "Start studio recording",
-	startInstantRecording: "Start instant recording",
-	restartRecording: "Restart recording",
-	stopRecording: "Stop recording",
-	togglePauseRecording: "Pause/resume recording",
+	startStudioRecording: "开始 studio recording",
+	startInstantRecording: "开始 instant recording",
+	restartRecording: "重启 recording",
+	stopRecording: "停止 recording",
+	togglePauseRecording: "暂停/resume recording",
 	cycleRecordingMode: "Cycle recording mode",
 	openRecordingPicker: "Open recording picker",
 	openRecordingPickerDisplay: "Record display",

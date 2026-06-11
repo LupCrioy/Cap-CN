@@ -78,12 +78,12 @@ export function ImportProgress(props: ImportProgressProps) {
 							</div>
 
 							<h2 class="text-lg font-medium text-gray-12 mb-2">
-								Import Failed
+								导入 Failed
 							</h2>
 							<p class="text-sm text-gray-11 mb-6">{errorMessage()}</p>
 
 							<Button variant="gray" onClick={handleClose}>
-								Close
+								关闭
 							</Button>
 						</div>
 					)}

@@ -433,7 +433,7 @@ export function Timeline(props: {
 		const menu = await Menu.new({
 			items: [
 				await MenuItem.new({
-					text: `Delete ${type === "text" ? "text" : "mask"} track`,
+					text: `删除 ${type === "text" ? "text" : "mask"} track`,
 					action: () => handleDeleteTrackLane(type, laneIndex),
 				}),
 			],
@@ -638,7 +638,7 @@ export function Timeline(props: {
 			return;
 		}
 
-		if (e.code === "Backspace" || (e.code === "Delete" && hasNoModifiers)) {
+		if (e.code === "Backspace" || (e.code === "删除" && hasNoModifiers)) {
 			const selection = editorState.timeline.selection;
 			if (!selection) return;
 
@@ -653,14 +653,14 @@ export function Timeline(props: {
 			} else if (selection.type === "text") {
 				projectActions.deleteTextSegments(selection.indices);
 			} else if (selection.type === "clip") {
-				// Delete all selected clips in reverse order
+				// 删除 all selected clips in reverse order
 				[...selection.indices]
 					.sort((a, b) => b - a)
 					.forEach((idx) => {
 						projectActions.deleteClipSegment(idx);
 					});
 			} else if (selection.type === "scene") {
-				// Delete all selected scenes in reverse order
+				// 删除 all selected scenes in reverse order
 				[...selection.indices]
 					.sort((a, b) => b - a)
 					.forEach((idx) => {
@@ -1034,7 +1034,7 @@ function TrackRow(props: {
 							props.onDelete?.();
 						}}
 						onMouseDown={(e) => e.stopPropagation()}
-						title="Delete track"
+						title="删除 track"
 					>
 						<IconCapTrash class="size-4" />
 					</button>

@@ -60,8 +60,8 @@ export default function FeedbackTab() {
 		<div class="cap-settings-page flex flex-col w-full h-full custom-scroll">
 			<SettingsPageContent>
 				<Section
-					title="Feedback"
-					description="Help us improve Cap by submitting feedback or reporting bugs. We'll get right on it."
+					title="反馈"
+					description="帮助 us improve Cap by submitting feedback or reporting bugs. We'll get right on it."
 				>
 					<form
 						class="space-y-4"
@@ -99,7 +99,7 @@ export default function FeedbackTab() {
 								disabled={feedback().trim().length < 4}
 								class="mt-2"
 							>
-								{submission.pending ? "Submitting..." : "Submit Feedback"}
+								{submission.pending ? "Submitting..." : "Submit 反馈"}
 							</Button>
 						</fieldset>
 					</form>
@@ -137,7 +137,7 @@ export default function FeedbackTab() {
 						when={!diagnostics.loading && diagnostics()}
 						fallback={
 							<p class="text-xs leading-relaxed text-gray-10">
-								Loading system information...
+								加载中 system information...
 							</p>
 						}
 					>
@@ -180,7 +180,7 @@ export default function FeedbackTab() {
 														: "bg-red-500/20 text-red-400"
 												}`}
 											>
-												Screen Capture:{" "}
+												屏幕 Capture:{" "}
 												{captureSupported ? "Supported" : "Not Supported"}
 											</span>
 										</div>

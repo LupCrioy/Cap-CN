@@ -292,7 +292,7 @@ export default function () {
 												>
 													<TooltipIconButton
 														class="absolute top-3 left-3 z-20"
-														tooltipText="Close"
+														tooltipText="关闭"
 														tooltipPlacement="right"
 														onClick={() => {
 															const setMedia = isRecording
@@ -332,7 +332,7 @@ export default function () {
 																	}),
 																);
 																commands.showWindow({
-																	Editor: { project_path: media.path },
+																	编辑器: { project_path: media.path },
 																});
 															}}
 														>
@@ -355,7 +355,7 @@ export default function () {
 														tooltipText={
 															copy.isPending
 																? "Copying to Clipboard"
-																: "Copy to Clipboard"
+																: "复制 to Clipboard"
 														}
 														tooltipPlacement="left"
 														onClick={() => copy.mutate()}
@@ -366,7 +366,7 @@ export default function () {
 														class="absolute right-3 bottom-3 z-998"
 														tooltipText={
 															recordingMeta.data?.sharing
-																? "Copy Shareable Link"
+																? "复制 Shareable Link"
 																: "Create Shareable Link"
 														}
 														tooltipPlacement="left"
@@ -380,7 +380,7 @@ export default function () {
 															size="sm"
 															onClick={() => save.mutate()}
 														>
-															Export
+															导出
 														</Button>
 													</div>
 												</div>

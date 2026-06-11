@@ -1034,7 +1034,7 @@ const createEditorInstanceContext = () => {
 
 	const [editorInstance, { refetch: refetchEditorInstance }] = createResource(
 		async () => {
-			console.log("[Editor] Creating editor instance...");
+			console.log("[编辑器] Creating editor instance...");
 
 			let instance: SerializedEditorInstance | undefined;
 			let lastError: unknown;
@@ -1049,7 +1049,7 @@ const createEditorInstanceContext = () => {
 						break;
 					}
 					console.warn(
-						`[Editor] Attempt ${attempt + 1}/5 failed:`,
+						`[编辑器] Attempt ${attempt + 1}/5 failed:`,
 						e,
 						"- retrying...",
 					);
@@ -1063,7 +1063,7 @@ const createEditorInstanceContext = () => {
 				throw lastError;
 			}
 
-			console.log("[Editor] Editor instance created, setting up WebSocket");
+			console.log("[编辑器] 编辑器 instance created, setting up WebSocket");
 
 			const requestFrame = () => {
 				events.renderFrameEvent.emit({

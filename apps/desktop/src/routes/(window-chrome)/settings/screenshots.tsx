@@ -45,7 +45,7 @@ const screenshotsQuery = queryOptions<Screenshot[]>({
 	reconcile: "path",
 });
 
-export default function Screenshots() {
+export default function 截图() {
 	const [search, setSearch] = createSignal("");
 	const trimmedSearch = createMemo(() => search().trim());
 	const normalizedSearch = createMemo(() => trimmedSearch().toLowerCase());
@@ -128,7 +128,7 @@ export default function Screenshots() {
 		<div class="cap-settings-page flex relative flex-col w-full h-full custom-scroll">
 			<SettingsPageContent class="max-w-none space-y-4">
 				<Section
-					title="Screenshots"
+					title="截图"
 					description="Manage your screenshots and perform actions."
 					right={
 						<Button
@@ -138,7 +138,7 @@ export default function Screenshots() {
 							onClick={handleImportImage}
 						>
 							<IconLucideImport class="size-3.5" />
-							<span>Import image</span>
+							<span>导入 image</span>
 						</Button>
 					}
 				>
@@ -270,14 +270,14 @@ function ScreenshotItem(props: {
 				</TooltipIconButton>
 
 				<TooltipIconButton
-					tooltipText="Copy image"
+					tooltipText="复制 image"
 					onClick={props.onCopyImageToClipboard}
 				>
 					<IconLucideCopy class="size-4" />
 				</TooltipIconButton>
 
 				<TooltipIconButton
-					tooltipText="Delete"
+					tooltipText="删除"
 					onClick={async () => {
 						if (
 							!(await ask("Are you sure you want to delete this screenshot?"))

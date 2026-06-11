@@ -68,14 +68,14 @@ export function AnnotationLayer(props: {
 	const clampValue = (value: number, min: number, max: number) =>
 		Math.min(Math.max(value, min), max);
 
-	// Delete key handler
+	// 删除 key handler
 	createEffect(() => {
 		const handleKeyDown = (e: KeyboardEvent) => {
 			if (textEditingId()) return;
-			if (e.key === "Backspace" || e.key === "Delete") {
+			if (e.key === "Backspace" || e.key === "删除") {
 				const id = selectedAnnotationId();
 				if (id) {
-					projectHistory.push(); // Save current state before delete
+					projectHistory.push(); // 保存 current state before delete
 					setAnnotations((prev) => prev.filter((a) => a.id !== id));
 					setSelectedAnnotationId(null);
 				}
@@ -579,7 +579,7 @@ export function AnnotationLayer(props: {
 							cursor: activeTool() === "select" ? "move" : "inherit",
 						}}
 					>
-						{/* Text Editor Overlay */}
+						{/* Text 编辑器 Overlay */}
 						<Show when={textEditingId() === ann.id}>
 							<foreignObject
 								x={ann.x}

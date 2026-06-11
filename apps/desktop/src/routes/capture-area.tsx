@@ -191,7 +191,7 @@ export default function CaptureArea() {
 							classList={{ "flex-row-reverse": ostype() === "windows" }}
 						>
 							<button
-								title="Close"
+								title="关闭"
 								class="group flex items-center justify-center size-12 text-gray-11 shadow-xl shadow-black/30 bg-gray-1 border border-gray-5 hover:bg-gray-4 active:bg-gray-6 rounded-full transition-colors duration-200 cursor-default"
 								type="button"
 								onClick={close}

@@ -94,7 +94,7 @@ export function PresetsDropdown() {
 															);
 														}}
 													>
-														Save settings to preset
+														保存 settings to preset
 													</DropdownItem>
 													<DropdownItem
 														onSelect={() => presets.setDefault(i())}
@@ -121,7 +121,7 @@ export function PresetsDropdown() {
 															})
 														}
 													>
-														Delete
+														删除
 													</DropdownItem>
 												</MenuItemList>
 											</KDropdownMenu.Portal>

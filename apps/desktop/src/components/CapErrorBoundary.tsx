@@ -23,7 +23,7 @@ export function CapErrorBoundary(props: ParentProps) {
 									writeText(`${e.toString()}\n\n${e.stack}`);
 								}}
 							>
-								Copy Error to Clipboard
+								复制 Error to Clipboard
 							</Button>
 							<Button
 								onClick={() => {
@@ -37,7 +37,7 @@ export function CapErrorBoundary(props: ParentProps) {
 								onClick={() => getCurrentWebviewWindow().close()}
 								variant="destructive"
 							>
-								Close
+								关闭
 							</Button>
 						</div>
 

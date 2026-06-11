@@ -197,10 +197,10 @@ export default function TargetMenuGrid(props: TargetMenuGridProps) {
 				<EmptyState
 					icon={<IconLucideSquarePlay class="size-5 text-gray-10" />}
 					title="No recordings yet"
-					description="Your screen recordings will appear here. Start recording to get started!"
+					description="Your screen recordings will appear here. 开始 recording to get started!"
 					action={
 						onViewAll
-							? { label: "View All Recordings", onClick: onViewAll }
+							? { label: "View All 录制管理", onClick: onViewAll }
 							: undefined
 					}
 				/>
@@ -215,7 +215,7 @@ export default function TargetMenuGrid(props: TargetMenuGridProps) {
 					description="Your screenshots will appear here. Take a screenshot to get started!"
 					action={
 						onViewAll
-							? { label: "View All Screenshots", onClick: onViewAll }
+							? { label: "View All 截图", onClick: onViewAll }
 							: undefined
 					}
 				/>
@@ -408,7 +408,7 @@ export default function TargetMenuGrid(props: TargetMenuGridProps) {
 											{(onViewAll) => (
 												<ViewAllButton
 													onClick={onViewAll()}
-													label="View All Recordings"
+													label="View All 录制管理"
 												/>
 											)}
 										</Show>
@@ -470,7 +470,7 @@ export default function TargetMenuGrid(props: TargetMenuGridProps) {
 											{(onViewAll) => (
 												<ViewAllButton
 													onClick={onViewAll()}
-													label="View All Screenshots"
+													label="View All 截图"
 												/>
 											)}
 										</Show>
