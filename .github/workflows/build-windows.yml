@@ -48,15 +48,21 @@ jobs:
         env:
           CI: false
 
-      - name: Build Tauri app (skip signing)
+      - name: Clear signing keys and build
+        shell: pwsh
+        run: |
+          # Remove any cached signing keys
+          Remove-Item -Path "$env:USERPROFILE\.tauri" -Recurse -Force -ErrorAction SilentlyContinue
+          Remove-Item -Path "$env:LOCALAPPDATA\tauri" -Recurse -Force -ErrorAction SilentlyContinue
+          echo "Cleared cached signing keys"
+
+      - name: Build Tauri app (no signing)
         continue-on-error: true
         working-directory: apps/desktop
         run: pnpm tauri build --target x86_64-pc-windows-msvc
         env:
           CI: false
           RUST_TARGET_TRIPLE: x86_64-pc-windows-msvc
-          TAURI_SIGNING_PRIVATE_KEY: ${{ env.TAURI_SIGNING_PRIVATE_KEY }}
-          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ env.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
 
       - name: Upload installer
         uses: actions/upload-artifact@v4
