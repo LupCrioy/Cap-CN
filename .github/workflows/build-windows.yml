@@ -48,7 +48,7 @@ jobs:
         env:
           CI: false
 
-      - name: Disable signing
+      - name: Disable signing and clean cache
         shell: pwsh
         run: |
           # Remove prod config entirely (it contains updater pubkey)
@@ -56,7 +56,9 @@ jobs:
           # Remove any cached signing keys
           Remove-Item -Path "$env:USERPROFILE\.tauri" -Recurse -Force -ErrorAction SilentlyContinue
           Remove-Item -Path "$env:LOCALAPPDATA\tauri" -Recurse -Force -ErrorAction SilentlyContinue
-          Write-Output "Signing disabled (prod config removed)"
+          # Clean cached build artifacts that may contain old pubkey
+          Remove-Item -Path "apps/desktop/src-tauri/target" -Recurse -Force -ErrorAction SilentlyContinue
+          Write-Output "Signing disabled and cache cleaned"
 
       - name: Build Tauri app (no signing)
         continue-on-error: true
