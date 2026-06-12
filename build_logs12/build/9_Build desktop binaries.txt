@@ -1,0 +1,721 @@
+﻿2026-06-12T06:17:00.4229934Z ##[group]Run ./scripts/build-desktop-binaries.sh x86_64-pc-windows-msvc
+2026-06-12T06:17:00.4230570Z [36;1m./scripts/build-desktop-binaries.sh x86_64-pc-windows-msvc[0m
+2026-06-12T06:17:00.4242158Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2026-06-12T06:17:00.4242558Z env:
+2026-06-12T06:17:00.4242822Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-12T06:17:00.4243175Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-12T06:17:00.4243459Z   CARGO_INCREMENTAL: 0
+2026-06-12T06:17:00.4243662Z   CARGO_TERM_COLOR: always
+2026-06-12T06:17:00.4243870Z ##[endgroup]
+2026-06-12T06:17:00.5605659Z Building cap-muxer for x86_64-pc-windows-msvc...
+2026-06-12T06:17:00.5955745Z info: syncing channel updates for 1.88.0-x86_64-pc-windows-msvc
+2026-06-12T06:17:00.7412590Z info: latest update on 2025-06-26 for version 1.88.0 (6b00bc388 2025-06-23)
+2026-06-12T06:17:00.7417302Z info: downloading 3 components
+2026-06-12T06:17:09.5171622Z [1m[32m   Compiling[0m proc-macro2 v1.0.101
+2026-06-12T06:17:09.5172565Z [1m[32m   Compiling[0m unicode-ident v1.0.19
+2026-06-12T06:17:09.5173373Z [1m[32m   Compiling[0m windows_x86_64_msvc v0.53.0
+2026-06-12T06:17:09.5174157Z [1m[32m   Compiling[0m glob v0.3.3
+2026-06-12T06:17:09.6335347Z [1m[32m   Compiling[0m libc v0.2.175
+2026-06-12T06:17:10.1540803Z [1m[32m   Compiling[0m clang-sys v1.8.1
+2026-06-12T06:17:13.6989082Z [1m[32m   Compiling[0m minimal-lexical v0.2.1
+2026-06-12T06:17:13.7194134Z [1m[32m   Compiling[0m regex-syntax v0.8.6
+2026-06-12T06:17:13.7360239Z [1m[32m   Compiling[0m windows-targets v0.53.3
+2026-06-12T06:17:13.7846043Z [1m[32m   Compiling[0m memchr v2.7.5
+2026-06-12T06:17:14.0569114Z [1m[32m   Compiling[0m libloading v0.8.8
+2026-06-12T06:17:14.4761379Z [1m[32m   Compiling[0m quote v1.0.40
+2026-06-12T06:17:14.9734831Z [1m[32m   Compiling[0m syn v2.0.106
+2026-06-12T06:17:14.9818668Z [1m[32m   Compiling[0m nom v7.1.3
+2026-06-12T06:17:15.3139700Z [1m[32m   Compiling[0m either v1.15.0
+2026-06-12T06:17:15.5273454Z [1m[32m   Compiling[0m regex-automata v0.4.10
+2026-06-12T06:17:17.5557191Z [1m[32m   Compiling[0m bindgen v0.70.1
+2026-06-12T06:17:17.9454969Z [1m[32m   Compiling[0m shlex v1.3.0
+2026-06-12T06:17:18.2238799Z [1m[32m   Compiling[0m regex v1.11.2
+2026-06-12T06:17:18.2560110Z [1m[32m   Compiling[0m cexpr v0.6.0
+2026-06-12T06:17:18.9682073Z [1m[32m   Compiling[0m itertools v0.13.0
+2026-06-12T06:17:20.3843630Z [1m[32m   Compiling[0m find-msvc-tools v0.1.1
+2026-06-12T06:17:20.4939783Z [1m[32m   Compiling[0m windows_x86_64_msvc v0.52.6
+2026-06-12T06:17:20.7249824Z [1m[32m   Compiling[0m rustc-hash v1.1.0
+2026-06-12T06:17:20.8033062Z [1m[32m   Compiling[0m bitflags v2.9.4
+2026-06-12T06:17:21.0755751Z [1m[32m   Compiling[0m cc v1.2.37
+2026-06-12T06:17:22.4397060Z [1m[32m   Compiling[0m vcpkg v0.2.15
+2026-06-12T06:17:24.3898570Z [1m[32m   Compiling[0m num_cpus v1.17.0
+2026-06-12T06:17:24.5087753Z [1m[32m   Compiling[0m pkg-config v0.3.32
+2026-06-12T06:17:25.8127006Z [1m[32m   Compiling[0m cfg-if v1.0.3
+2026-06-12T06:17:25.8603129Z [1m[32m   Compiling[0m once_cell v1.21.3
+2026-06-12T06:17:26.2726681Z [1m[32m   Compiling[0m tracing-core v0.1.34
+2026-06-12T06:17:26.7724160Z [1m[32m   Compiling[0m windows-targets v0.52.6
+2026-06-12T06:17:26.8218011Z [1m[32m   Compiling[0m crc32fast v1.5.0
+2026-06-12T06:17:27.6300597Z [1m[32m   Compiling[0m thiserror v1.0.69
+2026-06-12T06:17:28.1637836Z [1m[32m   Compiling[0m windows-sys v0.52.0
+2026-06-12T06:17:30.5381954Z [1m[32m   Compiling[0m thiserror-impl v1.0.69
+2026-06-12T06:17:33.8317748Z [1m[32m   Compiling[0m tracing-attributes v0.1.30
+2026-06-12T06:17:34.1368476Z [1m[32m   Compiling[0m pin-project-lite v0.2.16
+2026-06-12T06:17:34.2090670Z [1m[32m   Compiling[0m lazy_static v1.5.0
+2026-06-12T06:17:34.2789708Z [1m[32m   Compiling[0m log v0.4.28
+2026-06-12T06:17:34.5764141Z [1m[32m   Compiling[0m ffmpeg-next v7.1.0 (https://github.com/CapSoftware/rust-ffmpeg?rev=49db1fede112#49db1fed)
+2026-06-12T06:17:34.8149514Z [1m[32m   Compiling[0m anyhow v1.0.99
+2026-06-12T06:17:35.3665844Z [1m[32m   Compiling[0m tracing-log v0.2.0
+2026-06-12T06:17:35.7476567Z [1m[32m   Compiling[0m sharded-slab v0.1.7
+2026-06-12T06:17:36.7947964Z [1m[32m   Compiling[0m matchers v0.2.0
+2026-06-12T06:17:36.9187260Z [1m[32m   Compiling[0m nu-ansi-term v0.50.1
+2026-06-12T06:17:37.7859457Z [1m[32m   Compiling[0m tracing v0.1.41
+2026-06-12T06:17:37.9307616Z [1m[32m   Compiling[0m thread_local v1.1.9
+2026-06-12T06:17:38.1665468Z [1m[32m   Compiling[0m byteorder v1.5.0
+2026-06-12T06:17:38.2933218Z [1m[32m   Compiling[0m smallvec v1.15.1
+2026-06-12T06:17:38.5705042Z [1m[32m   Compiling[0m tracing-subscriber v0.3.20
+2026-06-12T06:17:38.9520415Z [1m[32m   Compiling[0m cap-muxer-protocol v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\cap-muxer-protocol)
+2026-06-12T06:17:39.1180846Z [1m[32m   Compiling[0m ffmpeg-sys-next v7.1.3
+2026-06-12T06:18:04.0428167Z [1m[32m   Compiling[0m cap-muxer v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\cap-muxer)
+2026-06-12T06:18:18.1793218Z [1m[32m    Finished[0m `release` profile [optimized + debuginfo] target(s) in 1m 10s
+2026-06-12T06:18:18.4257951Z Copied /d/a/Cap-CN/Cap-CN/target/x86_64-pc-windows-msvc/release/cap-muxer.exe -> /d/a/Cap-CN/Cap-CN/apps/desktop/src-tauri/binaries/cap-muxer-x86_64-pc-windows-msvc.exe
+2026-06-12T06:18:18.4259836Z Building cap-cli cap-exporter for x86_64-pc-windows-msvc...
+2026-06-12T06:18:19.6141165Z [1m[32m   Compiling[0m proc-macro2 v1.0.101
+2026-06-12T06:18:19.6142459Z [1m[32m   Compiling[0m serde_core v1.0.225
+2026-06-12T06:18:19.6143424Z [1m[32m   Compiling[0m serde v1.0.225
+2026-06-12T06:18:19.6144136Z [1m[32m   Compiling[0m cfg-if v1.0.3
+2026-06-12T06:18:19.6663752Z [1m[32m   Compiling[0m autocfg v1.5.0
+2026-06-12T06:18:20.1245471Z [1m[32m   Compiling[0m zerocopy v0.8.27
+2026-06-12T06:18:20.6702940Z [1m[32m   Compiling[0m smallvec v1.15.1
+2026-06-12T06:18:20.8189991Z [1m[32m   Compiling[0m memchr v2.7.5
+2026-06-12T06:18:20.9253634Z [1m[32m   Compiling[0m quote v1.0.40
+2026-06-12T06:18:21.4400240Z [1m[32m   Compiling[0m syn v2.0.106
+2026-06-12T06:18:22.0674418Z [1m[32m   Compiling[0m libm v0.2.15
+2026-06-12T06:18:25.7295334Z [1m[32m   Compiling[0m itoa v1.0.15
+2026-06-12T06:18:25.8582019Z [1m[32m   Compiling[0m num-traits v0.2.19
+2026-06-12T06:18:26.0400112Z [1m[32m   Compiling[0m once_cell v1.21.3
+2026-06-12T06:18:26.3179234Z [1m[32m   Compiling[0m ppv-lite86 v0.2.21
+2026-06-12T06:18:26.3723328Z [1m[32m   Compiling[0m icu_properties_data v2.0.1
+2026-06-12T06:18:26.5865398Z [1m[32m   Compiling[0m icu_normalizer_data v2.0.0
+2026-06-12T06:18:26.8034465Z [1m[32m   Compiling[0m synstructure v0.13.2
+2026-06-12T06:18:26.8193095Z [1m[32m   Compiling[0m getrandom v0.2.16
+2026-06-12T06:18:26.9777950Z [1m[32m   Compiling[0m stable_deref_trait v1.2.0
+2026-06-12T06:18:27.0393671Z [1m[32m   Compiling[0m rand_core v0.6.4
+2026-06-12T06:18:27.2977497Z [1m[32m   Compiling[0m lock_api v0.4.13
+2026-06-12T06:18:27.5614237Z [1m[32m   Compiling[0m serde_json v1.0.145
+2026-06-12T06:18:27.6154692Z [1m[32m   Compiling[0m rand_chacha v0.3.1
+2026-06-12T06:18:27.7751088Z [1m[32m   Compiling[0m thiserror v2.0.16
+2026-06-12T06:18:28.2074803Z [1m[32m   Compiling[0m rand v0.8.5
+2026-06-12T06:18:28.3849383Z [1m[32m   Compiling[0m version_check v0.9.5
+2026-06-12T06:18:28.4905102Z [1m[32m   Compiling[0m parking_lot_core v0.9.11
+2026-06-12T06:18:28.8070867Z [1m[32m   Compiling[0m libc v0.2.175
+2026-06-12T06:18:28.9166274Z [1m[32m   Compiling[0m futures-core v0.3.31
+2026-06-12T06:18:28.9728333Z [1m[32m   Compiling[0m windows-link v0.2.0
+2026-06-12T06:18:29.0203488Z [1m[32m   Compiling[0m windows-link v0.1.3
+2026-06-12T06:18:29.0540211Z [1m[32m   Compiling[0m bytes v1.10.1
+2026-06-12T06:18:29.0696086Z [1m[32m   Compiling[0m log v0.4.28
+2026-06-12T06:18:29.2965174Z [1m[32m   Compiling[0m windows-sys v0.61.0
+2026-06-12T06:18:29.3284066Z [1m[32m   Compiling[0m siphasher v0.3.11
+2026-06-12T06:18:29.5512532Z [1m[32m   Compiling[0m getrandom v0.3.3
+2026-06-12T06:18:30.1880948Z [1m[32m   Compiling[0m percent-encoding v2.3.2
+2026-06-12T06:18:30.2697475Z [1m[32m   Compiling[0m equivalent v1.0.2
+2026-06-12T06:18:30.3282758Z [1m[32m   Compiling[0m litemap v0.8.0
+2026-06-12T06:18:30.4617332Z [1m[32m   Compiling[0m siphasher v1.0.1
+2026-06-12T06:18:30.6003417Z [1m[32m   Compiling[0m allocator-api2 v0.2.21
+2026-06-12T06:18:30.6721766Z [1m[32m   Compiling[0m futures-sink v0.3.31
+2026-06-12T06:18:30.7548089Z [1m[32m   Compiling[0m writeable v0.6.1
+2026-06-12T06:18:31.0832079Z [1m[32m   Compiling[0m foldhash v0.1.5
+2026-06-12T06:18:31.3291743Z [1m[32m   Compiling[0m hashbrown v0.15.5
+2026-06-12T06:18:31.3369305Z [1m[32m   Compiling[0m phf_shared v0.11.3
+2026-06-12T06:18:31.7464613Z [1m[32m   Compiling[0m fnv v1.0.7
+2026-06-12T06:18:31.8171961Z [1m[32m   Compiling[0m ryu v1.0.20
+2026-06-12T06:18:32.2622362Z [1m[32m   Compiling[0m windows_x86_64_msvc v0.53.0
+2026-06-12T06:18:32.2713380Z [1m[32m   Compiling[0m getrandom v0.1.16
+2026-06-12T06:18:32.6175771Z [1m[32m   Compiling[0m arrayvec v0.7.6
+2026-06-12T06:18:33.5094729Z [1m[32m   Compiling[0m serde_derive v1.0.225
+2026-06-12T06:18:33.5119227Z [1m[32m   Compiling[0m zerofrom-derive v0.1.6
+2026-06-12T06:18:37.2241262Z [1m[32m   Compiling[0m yoke-derive v0.8.0
+2026-06-12T06:18:39.3625014Z [1m[32m   Compiling[0m zerovec-derive v0.11.1
+2026-06-12T06:18:40.5798706Z [1m[32m   Compiling[0m displaydoc v0.2.5
+2026-06-12T06:18:41.7359489Z [1m[32m   Compiling[0m bytemuck_derive v1.10.1
+2026-06-12T06:18:43.0891817Z [1m[32m   Compiling[0m zerofrom v0.1.6
+2026-06-12T06:18:43.5451919Z [1m[32m   Compiling[0m yoke v0.8.0
+2026-06-12T06:18:43.8544325Z [1m[32m   Compiling[0m thiserror-impl v2.0.16
+2026-06-12T06:18:43.8950883Z [1m[32m   Compiling[0m bitflags v2.9.4
+2026-06-12T06:18:43.8991880Z [1m[32m   Compiling[0m zerovec v0.11.4
+2026-06-12T06:18:44.8630985Z [1m[32m   Compiling[0m thiserror-impl v1.0.69
+2026-06-12T06:18:45.6692282Z [1m[32m   Compiling[0m tinystr v0.8.1
+2026-06-12T06:18:45.7299352Z [1m[32m   Compiling[0m bytemuck v1.23.2
+2026-06-12T06:18:46.0921946Z [1m[32m   Compiling[0m icu_locale_core v2.0.0
+2026-06-12T06:18:46.3226352Z [1m[32m   Compiling[0m potential_utf v0.1.3
+2026-06-12T06:18:46.8194423Z [1m[32m   Compiling[0m zerotrie v0.2.2
+2026-06-12T06:18:47.6397219Z [1m[32m   Compiling[0m icu_provider v2.0.0
+2026-06-12T06:18:48.3218341Z [1m[32m   Compiling[0m icu_collections v2.0.0
+2026-06-12T06:18:48.9096727Z [1m[32m   Compiling[0m phf_generator v0.11.3
+2026-06-12T06:18:48.9305742Z [1m[32m   Compiling[0m thiserror v1.0.69
+2026-06-12T06:18:49.0238033Z [1m[32m   Compiling[0m windows-result v0.3.4
+2026-06-12T06:18:49.3136412Z [1m[32m   Compiling[0m windows-sys v0.59.0
+2026-06-12T06:18:49.4147046Z [1m[32m   Compiling[0m scopeguard v1.2.0
+2026-06-12T06:18:49.4274269Z [1m[32m   Compiling[0m syn v1.0.109
+2026-06-12T06:18:49.4715356Z [1m[32m   Compiling[0m slab v0.4.11
+2026-06-12T06:18:50.2973149Z [1m[32m   Compiling[0m icu_properties v2.0.1
+2026-06-12T06:18:50.5668307Z [1m[32m   Compiling[0m icu_normalizer v2.0.0
+2026-06-12T06:18:52.8181937Z [1m[32m   Compiling[0m windows-targets v0.53.3
+2026-06-12T06:18:52.9902707Z [1m[32m   Compiling[0m indexmap v2.11.4
+2026-06-12T06:18:53.0528663Z [1m[32m   Compiling[0m futures-channel v0.3.31
+2026-06-12T06:18:53.2018267Z [1m[32m   Compiling[0m heck v0.5.0
+2026-06-12T06:18:53.3524152Z [1m[32m   Compiling[0m pin-utils v0.1.0
+2026-06-12T06:18:53.5823521Z [1m[32m   Compiling[0m mio v1.0.4
+2026-06-12T06:18:53.6362599Z [1m[32m   Compiling[0m socket2 v0.6.0
+2026-06-12T06:18:53.6961828Z [1m[32m   Compiling[0m rand_core v0.5.1
+2026-06-12T06:18:54.3200728Z [1m[32m   Compiling[0m idna_adapter v1.2.1
+2026-06-12T06:18:54.7732314Z [1m[32m   Compiling[0m tokio-macros v2.5.0
+2026-06-12T06:18:54.9158418Z [1m[32m   Compiling[0m futures-macro v0.3.31
+2026-06-12T06:18:55.4349218Z [1m[32m   Compiling[0m form_urlencoded v1.2.2
+2026-06-12T06:18:56.1147133Z [1m[32m   Compiling[0m tracing-core v0.1.34
+2026-06-12T06:18:56.9212971Z [1m[32m   Compiling[0m futures-task v0.3.31
+2026-06-12T06:18:57.2150371Z [1m[32m   Compiling[0m utf8_iter v1.0.4
+2026-06-12T06:18:57.2761546Z [1m[32m   Compiling[0m simd-adler32 v0.3.7
+2026-06-12T06:18:57.6660384Z [1m[32m   Compiling[0m futures-io v0.3.31
+2026-06-12T06:18:57.6746091Z [1m[32m   Compiling[0m idna v1.1.0
+2026-06-12T06:18:57.8659975Z [1m[32m   Compiling[0m futures-util v0.3.31
+2026-06-12T06:18:57.9758572Z [1m[32m   Compiling[0m tokio v1.47.1
+2026-06-12T06:19:02.9149186Z [1m[32m   Compiling[0m http v1.3.1
+2026-06-12T06:19:04.1794369Z [1m[32m   Compiling[0m tracing-attributes v0.1.30
+2026-06-12T06:19:05.8297588Z [1m[32m   Compiling[0m proc-macro-hack v0.5.20+deprecated
+2026-06-12T06:19:06.1747554Z [1m[32m   Compiling[0m byteorder v1.5.0
+2026-06-12T06:19:06.5933185Z [1m[32m   Compiling[0m parking_lot v0.12.4
+2026-06-12T06:19:07.7796432Z [1m[32m   Compiling[0m rand_chacha v0.2.2
+2026-06-12T06:19:08.0256800Z [1m[32m   Compiling[0m tracing v0.1.41
+2026-06-12T06:19:08.5014090Z [1m[32m   Compiling[0m rand_pcg v0.2.1
+2026-06-12T06:19:08.6286637Z [1m[32m   Compiling[0m uuid v1.18.1
+2026-06-12T06:19:08.7032319Z [1m[32m   Compiling[0m phf_shared v0.10.0
+2026-06-12T06:19:08.9407533Z [1m[32m   Compiling[0m phf_shared v0.8.0
+2026-06-12T06:19:09.1353485Z [1m[32m   Compiling[0m adler2 v2.0.1
+2026-06-12T06:19:09.3225247Z [1m[32m   Compiling[0m native-tls v0.2.14
+2026-06-12T06:19:09.4926851Z [1m[32m   Compiling[0m miniz_oxide v0.8.9
+2026-06-12T06:19:09.5568594Z [1m[32m   Compiling[0m phf_generator v0.10.0
+2026-06-12T06:19:09.7775856Z [1m[32m   Compiling[0m crc32fast v1.5.0
+2026-06-12T06:19:10.0772237Z [1m[32m   Compiling[0m rand v0.7.3
+2026-06-12T06:19:12.2519493Z [1m[32m   Compiling[0m url v2.5.7
+2026-06-12T06:19:12.6983366Z [1m[32m   Compiling[0m string_cache_codegen v0.5.4
+2026-06-12T06:19:13.5622108Z [1m[32m   Compiling[0m phf_codegen v0.11.3
+2026-06-12T06:19:13.6719126Z [1m[32m   Compiling[0m windows-strings v0.4.2
+2026-06-12T06:19:14.1755541Z [1m[32m   Compiling[0m either v1.15.0
+2026-06-12T06:19:14.2767602Z [1m[32m   Compiling[0m time-core v0.1.6
+2026-06-12T06:19:14.4403792Z [1m[32m   Compiling[0m powerfmt v0.2.0
+2026-06-12T06:19:14.4617514Z [1m[32m   Compiling[0m zlib-rs v0.5.2
+2026-06-12T06:19:14.7814972Z [1m[32m   Compiling[0m num-conv v0.1.0
+2026-06-12T06:19:14.9519654Z [1m[32m   Compiling[0m utf-8 v0.7.6
+2026-06-12T06:19:14.9551011Z [1m[32m   Compiling[0m rustversion v1.0.22
+2026-06-12T06:19:15.1364502Z [1m[32m   Compiling[0m time-macros v0.2.24
+2026-06-12T06:19:15.1702670Z [1m[32m   Compiling[0m deranged v0.5.3
+2026-06-12T06:19:15.5030341Z [1m[32m   Compiling[0m markup5ever v0.14.1
+2026-06-12T06:19:16.3928115Z [1m[32m   Compiling[0m phf_macros v0.10.0
+2026-06-12T06:19:17.2853935Z [1m[32m   Compiling[0m phf_generator v0.8.0
+2026-06-12T06:19:17.3779770Z [1m[32m   Compiling[0m cssparser v0.29.6
+2026-06-12T06:19:18.3668714Z [1m[32m   Compiling[0m libz-rs-sys v0.5.2
+2026-06-12T06:19:18.7156814Z [1m[32m   Compiling[0m phf_macros v0.11.3
+2026-06-12T06:19:18.8400118Z [1m[32m   Compiling[0m winapi-util v0.1.11
+2026-06-12T06:19:19.1930018Z [1m[32m   Compiling[0m aho-corasick v1.1.4
+2026-06-12T06:19:21.4225574Z [1m[32m   Compiling[0m typeid v1.0.3
+2026-06-12T06:19:21.8314684Z [1m[32m   Compiling[0m regex-syntax v0.8.6
+2026-06-12T06:19:21.8390294Z [1m[32m   Compiling[0m time v0.3.43
+2026-06-12T06:19:23.5083714Z [1m[32m   Compiling[0m flate2 v1.1.2
+2026-06-12T06:19:23.5674763Z [1m[32m   Compiling[0m phf_codegen v0.8.0
+2026-06-12T06:19:24.4262630Z [1m[32m   Compiling[0m clang-sys v1.8.1
+2026-06-12T06:19:24.8260221Z [1m[32m   Compiling[0m regex-automata v0.4.10
+2026-06-12T06:19:25.4734832Z [1m[32m   Compiling[0m num-integer v0.1.46
+2026-06-12T06:19:26.1236867Z [1m[32m   Compiling[0m windows_x86_64_msvc v0.52.6
+2026-06-12T06:19:26.1321958Z [1m[32m   Compiling[0m httparse v1.10.1
+2026-06-12T06:19:27.1649814Z [1m[32m   Compiling[0m typenum v1.18.0
+2026-06-12T06:19:28.1030579Z [1m[32m   Compiling[0m selectors v0.24.0
+2026-06-12T06:19:28.6360468Z [1m[32m   Compiling[0m http-body v1.0.1
+2026-06-12T06:19:28.7770093Z [1m[32m   Compiling[0m regex v1.11.2
+2026-06-12T06:19:28.9451005Z [1m[32m   Compiling[0m profiling-procmacros v1.0.17
+2026-06-12T06:19:29.5576630Z [1m[32m   Compiling[0m cssparser-macros v0.6.1
+2026-06-12T06:19:29.5739147Z [1m[32m   Compiling[0m generic-array v0.14.7
+2026-06-12T06:19:29.7600906Z [1m[32m   Compiling[0m indexmap v1.9.3
+2026-06-12T06:19:30.3253041Z [1m[32m   Compiling[0m new_debug_unreachable v1.0.6
+2026-06-12T06:19:30.3738205Z [1m[32m   Compiling[0m unicode-ident v1.0.19
+2026-06-12T06:19:30.4863008Z [1m[32m   Compiling[0m ident_case v1.0.1
+2026-06-12T06:19:31.0814514Z [1m[32m   Compiling[0m camino v1.2.0
+2026-06-12T06:19:31.5408020Z [1m[32m   Compiling[0m strsim v0.11.1
+2026-06-12T06:19:32.1637719Z [1m[32m   Compiling[0m erased-serde v0.4.8
+2026-06-12T06:19:32.5074925Z [1m[32m   Compiling[0m darling_core v0.20.11
+2026-06-12T06:19:36.4625911Z [1m[32m   Compiling[0m nom v7.1.3
+2026-06-12T06:19:38.1823903Z [1m[32m   Compiling[0m profiling v1.0.17
+2026-06-12T06:19:38.9076488Z [1m[32m   Compiling[0m windows-targets v0.52.6
+2026-06-12T06:19:39.2444998Z [1m[32m   Compiling[0m rgb v0.8.52
+2026-06-12T06:19:39.2782420Z [1m[32m   Compiling[0m ring v0.17.14
+2026-06-12T06:19:39.6258057Z [1m[32m   Compiling[0m semver v1.0.27
+2026-06-12T06:19:39.7570076Z [1m[32m   Compiling[0m convert_case v0.4.0
+2026-06-12T06:19:40.2418042Z [1m[32m   Compiling[0m bitflags v1.3.2
+2026-06-12T06:19:40.2928033Z [1m[32m   Compiling[0m tower-service v0.3.3
+2026-06-12T06:19:40.5766136Z [1m[32m   Compiling[0m derive_more v0.99.20
+2026-06-12T06:19:41.0841938Z [1m[32m   Compiling[0m darling_macro v0.20.11
+2026-06-12T06:19:48.1527239Z [1m[32m   Compiling[0m itertools v0.13.0
+2026-06-12T06:19:48.2555815Z [1m[32m   Compiling[0m tokio-util v0.7.16
+2026-06-12T06:19:49.7678640Z [1m[32m   Compiling[0m match_token v0.1.0
+2026-06-12T06:19:50.2891389Z [1m[32m   Compiling[0m rustc-hash v1.1.0
+2026-06-12T06:19:50.5824396Z [1m[32m   Compiling[0m weezl v0.1.10
+2026-06-12T06:19:50.7099770Z [1m[32m   Compiling[0m precomputed-hash v0.1.1
+2026-06-12T06:19:50.7710292Z [1m[32m   Compiling[0m base64 v0.22.1
+2026-06-12T06:19:51.4184031Z [1m[32m   Compiling[0m atomic-waker v1.1.2
+2026-06-12T06:19:51.5233154Z [1m[32m   Compiling[0m mac v0.1.1
+2026-06-12T06:19:51.5791533Z [1m[32m   Compiling[0m litrs v0.4.2
+2026-06-12T06:19:52.2971200Z [1m[32m   Compiling[0m schemars v0.8.22
+2026-06-12T06:19:52.5158359Z [1m[32m   Compiling[0m zeroize v1.8.1
+2026-06-12T06:19:52.7176942Z [1m[32m   Compiling[0m try-lock v0.2.5
+2026-06-12T06:19:52.7936488Z [1m[32m   Compiling[0m want v0.3.1
+2026-06-12T06:19:52.9231103Z [1m[32m   Compiling[0m rustls-pki-types v1.12.0
+2026-06-12T06:19:52.9608057Z [1m[32m   Compiling[0m document-features v0.2.11
+2026-06-12T06:19:53.7954460Z [1m[32m   Compiling[0m futf v0.1.5
+2026-06-12T06:19:53.9124363Z [1m[32m   Compiling[0m h2 v0.4.12
+2026-06-12T06:19:54.2237421Z [1m[32m   Compiling[0m darling v0.20.11
+2026-06-12T06:19:54.8614085Z [1m[32m   Compiling[0m windows-sys v0.60.2
+2026-06-12T06:19:54.9176971Z [1m[32m   Compiling[0m serde_derive_internals v0.29.1
+2026-06-12T06:19:56.2829165Z [1m[32m   Compiling[0m untrusted v0.9.0
+2026-06-12T06:19:56.4400311Z [1m[32m   Compiling[0m dtoa v1.0.10
+2026-06-12T06:19:56.5259755Z [1m[32m   Compiling[0m httpdate v1.0.3
+2026-06-12T06:19:56.5890241Z [1m[32m   Compiling[0m dtoa-short v0.3.5
+2026-06-12T06:19:57.6191713Z [1m[32m   Compiling[0m schemars_derive v0.8.22
+2026-06-12T06:19:58.1076026Z [1m[32m   Compiling[0m string_cache v0.8.9
+2026-06-12T06:19:58.3812467Z [1m[32m   Compiling[0m serde_with_macros v3.14.0
+2026-06-12T06:20:00.8626916Z [1m[32m   Compiling[0m hyper v1.7.0
+2026-06-12T06:20:01.0532513Z [1m[32m   Compiling[0m tendril v0.4.3
+2026-06-12T06:20:01.3628929Z [1m[32m   Compiling[0m block-buffer v0.10.4
+2026-06-12T06:20:01.4958156Z [1m[32m   Compiling[0m crypto-common v0.1.6
+2026-06-12T06:20:02.8014330Z [1m[32m   Compiling[0m num-bigint v0.4.6
+2026-06-12T06:20:03.3969852Z [1m[32m   Compiling[0m phf v0.11.3
+2026-06-12T06:20:03.5678433Z [1m[32m   Compiling[0m phf v0.10.1
+2026-06-12T06:20:04.4286350Z [1m[32m   Compiling[0m windows-registry v0.5.3
+2026-06-12T06:20:04.9235608Z [1m[32m   Compiling[0m sync_wrapper v1.0.2
+2026-06-12T06:20:05.0713003Z [1m[32m   Compiling[0m rustls v0.23.31
+2026-06-12T06:20:05.2604851Z [1m[32m   Compiling[0m unic-common v0.9.0
+2026-06-12T06:20:05.3983034Z [1m[32m   Compiling[0m anstyle v1.0.11
+2026-06-12T06:20:05.5374464Z [1m[32m   Compiling[0m color_quant v1.1.0
+2026-06-12T06:20:05.7321349Z [1m[32m   Compiling[0m paste v1.0.15
+2026-06-12T06:20:05.9119568Z [1m[32m   Compiling[0m unic-char-range v0.9.0
+2026-06-12T06:20:06.0365203Z [1m[32m   Compiling[0m utf8parse v0.2.2
+2026-06-12T06:20:06.0704339Z [1m[32m   Compiling[0m alloc-no-stdlib v2.0.4
+2026-06-12T06:20:06.0755938Z [1m[32m   Compiling[0m nodrop v0.1.14
+2026-06-12T06:20:06.1268031Z [1m[32m   Compiling[0m once_cell_polyfill v1.70.1
+2026-06-12T06:20:06.1690530Z [1m[32m   Compiling[0m matches v0.1.10
+2026-06-12T06:20:06.2142281Z [1m[32m   Compiling[0m ipnet v2.11.0
+2026-06-12T06:20:06.2158748Z [1m[32m   Compiling[0m tower-layer v0.3.3
+2026-06-12T06:20:06.6025176Z [1m[32m   Compiling[0m hyper-util v0.1.17
+2026-06-12T06:20:07.1198966Z [1m[32m   Compiling[0m anstyle-wincon v3.0.10
+2026-06-12T06:20:07.6364138Z [1m[32m   Compiling[0m alloc-stdlib v0.2.2
+2026-06-12T06:20:07.6592164Z [1m[32m   Compiling[0m servo_arc v0.2.0
+2026-06-12T06:20:07.7064198Z [1m[32m   Compiling[0m anstyle-parse v0.2.7
+2026-06-12T06:20:07.7650495Z [1m[32m   Compiling[0m unic-char-property v0.9.0
+2026-06-12T06:20:07.8525658Z [1m[32m   Compiling[0m gif v0.13.3
+2026-06-12T06:20:07.9710117Z [1m[32m   Compiling[0m unic-ucd-version v0.9.0
+2026-06-12T06:20:07.9915123Z [1m[32m   Compiling[0m num-rational v0.4.2
+2026-06-12T06:20:09.7721858Z [1m[32m   Compiling[0m digest v0.10.7
+2026-06-12T06:20:10.0034300Z [1m[32m   Compiling[0m rustls-webpki v0.103.6
+2026-06-12T06:20:10.2789848Z [1m[32m   Compiling[0m anstyle-query v1.1.4
+2026-06-12T06:20:10.8187803Z [1m[32m   Compiling[0m http-body-util v0.1.3
+2026-06-12T06:20:11.0947545Z [1m[32m   Compiling[0m phf v0.8.0
+2026-06-12T06:20:11.1014704Z [1m[32m   Compiling[0m fxhash v0.2.1
+2026-06-12T06:20:11.2002789Z [1m[32m   Compiling[0m schannel v0.1.28
+2026-06-12T06:20:11.2172409Z [1m[32m   Compiling[0m cookie v0.18.1
+2026-06-12T06:20:11.5011600Z [1m[32m   Compiling[0m windows-sys v0.52.0
+2026-06-12T06:20:11.5740306Z [1m[32m   Compiling[0m thread_local v1.1.9
+2026-06-12T06:20:12.0285463Z [1m[32m   Compiling[0m is_terminal_polyfill v1.70.1
+2026-06-12T06:20:12.0941834Z [1m[32m   Compiling[0m minimal-lexical v0.2.1
+2026-06-12T06:20:12.4476174Z [1m[32m   Compiling[0m winnow v1.0.3
+2026-06-12T06:20:12.5675262Z [1m[32m   Compiling[0m cpufeatures v0.2.17
+2026-06-12T06:20:12.6225148Z [1m[32m   Compiling[0m hashbrown v0.12.3
+2026-06-12T06:20:12.9674114Z [1m[32m   Compiling[0m mime v0.3.17
+2026-06-12T06:20:13.3291238Z [1m[32m   Compiling[0m subtle v2.6.1
+2026-06-12T06:20:13.5093785Z [1m[32m   Compiling[0m colorchoice v1.0.4
+2026-06-12T06:20:13.5964722Z [1m[32m   Compiling[0m unicase v2.8.1
+2026-06-12T06:20:13.6830859Z [1m[32m   Compiling[0m anstream v0.6.20
+2026-06-12T06:20:13.8353850Z [1m[32m   Compiling[0m mime_guess v2.0.5
+2026-06-12T06:20:15.3591153Z [1m[32m   Compiling[0m toml_parser v1.1.2+spec-1.1.0
+2026-06-12T06:20:17.3934152Z [1m[32m   Compiling[0m same-file v1.0.6
+2026-06-12T06:20:17.5528417Z [1m[32m   Compiling[0m html5ever v0.29.1
+2026-06-12T06:20:18.9896808Z [1m[32m   Compiling[0m unic-ucd-ident v0.9.0
+2026-06-12T06:20:19.4222232Z [1m[32m   Compiling[0m brotli-decompressor v5.0.0
+2026-06-12T06:20:19.6084541Z [1m[32m   Compiling[0m tower v0.5.2
+2026-06-12T06:20:20.5772163Z [1m[32m   Compiling[0m jsonptr v0.6.3
+2026-06-12T06:20:20.8172966Z [1m[32m   Compiling[0m cfb v0.7.3
+2026-06-12T06:20:21.7224358Z [1m[32m   Compiling[0m anyhow v1.0.99
+2026-06-12T06:20:21.8182643Z [1m[32m   Compiling[0m futures-executor v0.3.31
+2026-06-12T06:20:21.9184237Z [1m[32m   Compiling[0m cargo-platform v0.1.9
+2026-06-12T06:20:22.0314801Z [1m[32m   Compiling[0m ctor v0.2.9
+2026-06-12T06:20:22.2935052Z [1m[32m   Compiling[0m toml_datetime v0.7.2
+2026-06-12T06:20:22.3175536Z [1m[32m   Compiling[0m serde_spanned v1.1.0
+2026-06-12T06:20:23.0795516Z [1m[32m   Compiling[0m Inflector v0.11.4
+2026-06-12T06:20:23.5385006Z [1m[32m   Compiling[0m winnow v0.7.13
+2026-06-12T06:20:23.9848996Z [1m[32m   Compiling[0m dyn-clone v1.0.20
+2026-06-12T06:20:24.2115120Z [1m[32m   Compiling[0m psl-types v2.0.11
+2026-06-12T06:20:24.5045464Z [1m[32m   Compiling[0m toml_writer v1.1.1+spec-1.1.0
+2026-06-12T06:20:24.7422345Z [1m[32m   Compiling[0m clap_lex v0.7.5
+2026-06-12T06:20:25.8754521Z [1m[32m   Compiling[0m toml v0.9.7
+2026-06-12T06:20:27.1509667Z [1m[32m   Compiling[0m clap_builder v4.5.47
+2026-06-12T06:20:29.2364278Z [1m[32m   Compiling[0m publicsuffix v2.3.0
+2026-06-12T06:20:29.5040268Z [1m[32m   Compiling[0m specta-macros v2.0.0-rc.17
+2026-06-12T06:20:32.5612094Z [1m[32m   Compiling[0m cargo_metadata v0.19.2
+2026-06-12T06:20:33.9569419Z [1m[32m   Compiling[0m infer v0.19.0
+2026-06-12T06:20:34.4474377Z [1m[32m   Compiling[0m json-patch v3.0.1
+2026-06-12T06:20:34.8338850Z [1m[32m   Compiling[0m brotli v8.0.2
+2026-06-12T06:20:35.3276597Z [1m[32m   Compiling[0m tokio-rustls v0.26.3
+2026-06-12T06:20:35.6280446Z [1m[32m   Compiling[0m serde-untagged v0.1.9
+2026-06-12T06:20:35.8665264Z [1m[32m   Compiling[0m urlpattern v0.3.0
+2026-06-12T06:20:35.9503491Z [1m[32m   Compiling[0m kuchikiki v0.8.8-speedreader
+2026-06-12T06:20:37.9175569Z [1m[32m   Compiling[0m walkdir v2.5.0
+2026-06-12T06:20:38.5160421Z [1m[32m   Compiling[0m tokio-native-tls v0.3.1
+2026-06-12T06:20:38.6905822Z [1m[32m   Compiling[0m sha1 v0.10.6
+2026-06-12T06:20:39.1120366Z [1m[32m   Compiling[0m serde_with v3.14.0
+2026-06-12T06:20:40.1739618Z [1m[32m   Compiling[0m webpki-roots v1.0.2
+2026-06-12T06:20:40.3647347Z [1m[32m   Compiling[0m itertools v0.12.1
+2026-06-12T06:20:40.4419854Z [1m[32m   Compiling[0m serde_urlencoded v0.7.1
+2026-06-12T06:20:40.7566081Z [1m[32m   Compiling[0m clap_derive v4.5.47
+2026-06-12T06:20:42.5997576Z [1m[32m   Compiling[0m iri-string v0.7.8
+2026-06-12T06:20:43.3527813Z [1m[32m   Compiling[0m dunce v1.0.5
+2026-06-12T06:20:43.8267513Z [1m[32m   Compiling[0m data-encoding v2.9.0
+2026-06-12T06:20:44.6618754Z [1m[32m   Compiling[0m glob v0.3.3
+2026-06-12T06:20:45.5272131Z [1m[32m   Compiling[0m clap v4.5.47
+2026-06-12T06:20:45.5976485Z [1m[32m   Compiling[0m tower-http v0.6.6
+2026-06-12T06:20:46.1287544Z [1m[32m   Compiling[0m tungstenite v0.24.0
+2026-06-12T06:20:46.9056283Z [1m[32m   Compiling[0m tauri-utils v2.7.0
+2026-06-12T06:20:50.5704149Z [1m[32m   Compiling[0m hyper-rustls v0.27.7
+2026-06-12T06:20:50.6530495Z [1m[32m   Compiling[0m cookie_store v0.21.1
+2026-06-12T06:20:50.9662186Z [1m[32m   Compiling[0m hyper-tls v0.6.0
+2026-06-12T06:20:55.5336939Z [1m[32m   Compiling[0m async-trait v0.1.89
+2026-06-12T06:20:56.8457633Z [1m[32m   Compiling[0m encoding_rs v0.8.35
+2026-06-12T06:20:58.2561941Z [1m[32m   Compiling[0m crossbeam-utils v0.8.21
+2026-06-12T06:20:59.0531960Z [1m[32m   Compiling[0m reqwest v0.12.24 (https://github.com/CapSoftware/reqwest?rev=9b5ecbd5210a9510fde766015cabb724c1e70d2e#9b5ecbd5)
+2026-06-12T06:21:02.9970723Z [1m[32m   Compiling[0m axum-core v0.4.5
+2026-06-12T06:21:18.5678178Z [1m[32m   Compiling[0m tokio-tungstenite v0.24.0
+2026-06-12T06:21:18.9151132Z [1m[32m   Compiling[0m nu-ansi-term v0.50.1
+2026-06-12T06:21:19.6787502Z [1m[32m   Compiling[0m matchers v0.2.0
+2026-06-12T06:21:19.8045849Z [1m[32m   Compiling[0m tracing-log v0.2.0
+2026-06-12T06:21:20.0979490Z [1m[32m   Compiling[0m chrono v0.4.42
+2026-06-12T06:21:20.2058094Z [1m[32m   Compiling[0m axum-macros v0.4.2
+2026-06-12T06:21:21.9441407Z [1m[32m   Compiling[0m windows-interface v0.59.3
+2026-06-12T06:21:23.5514087Z [1m[32m   Compiling[0m serde_path_to_error v0.1.20
+2026-06-12T06:21:23.6649997Z [1m[32m   Compiling[0m matchit v0.7.3
+2026-06-12T06:21:24.3102870Z [1m[32m   Compiling[0m axum v0.7.9
+2026-06-12T06:21:24.3618193Z [1m[32m   Compiling[0m specta v2.0.0-rc.20
+2026-06-12T06:21:25.3601712Z [1m[32m   Compiling[0m workspace-hack v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\workspace-hack)
+2026-06-12T06:21:25.5742053Z [1m[32m   Compiling[0m tracing-subscriber v0.3.20
+2026-06-12T06:21:28.1821886Z [1m[32m   Compiling[0m windows-implement v0.59.0
+2026-06-12T06:21:29.6718441Z [1m[32m   Compiling[0m windows-strings v0.3.1
+2026-06-12T06:21:30.3145176Z [1m[32m   Compiling[0m windows-core v0.60.1
+2026-06-12T06:21:31.2806055Z [1m[32m   Compiling[0m windows-collections v0.1.1
+2026-06-12T06:21:31.5993496Z [1m[32m   Compiling[0m windows-numerics v0.1.1
+2026-06-12T06:21:31.8586385Z [1m[32m   Compiling[0m windows-future v0.1.1
+2026-06-12T06:21:32.2405832Z [1m[32m   Compiling[0m windows v0.60.0
+2026-06-12T06:21:32.3648787Z [1m[32m   Compiling[0m crossbeam-epoch v0.9.18
+2026-06-12T06:21:33.1914443Z [1m[32m   Compiling[0m rayon-core v1.13.0
+2026-06-12T06:21:33.4073680Z [1m[32m   Compiling[0m crossbeam-deque v0.8.6
+2026-06-12T06:21:33.6326349Z [1m[32m   Compiling[0m bindgen v0.70.1
+2026-06-12T06:21:34.2278413Z [1m[32m   Compiling[0m cexpr v0.6.0
+2026-06-12T06:21:35.9555263Z [1m[32m   Compiling[0m winapi v0.3.9
+2026-06-12T06:21:41.9840415Z [1m[32m   Compiling[0m rayon v1.11.0
+2026-06-12T06:21:45.6190454Z [1m[32m   Compiling[0m cfg_aliases v0.2.1
+2026-06-12T06:21:45.6922782Z [1m[32m   Compiling[0m half v2.6.0
+2026-06-12T06:21:46.5493240Z [1m[32m   Compiling[0m windows-result v0.1.2
+2026-06-12T06:21:46.8872047Z [1m[32m   Compiling[0m windows-core v0.54.0
+2026-06-12T06:21:49.5541536Z [1m[32m   Compiling[0m khronos_api v3.1.0
+2026-06-12T06:21:49.8761597Z [1m[32m   Compiling[0m windows v0.54.0
+2026-06-12T06:21:51.4650637Z [1m[32m   Compiling[0m ffmpeg-sys-next v7.1.3
+2026-06-12T06:22:01.5571703Z [1m[32m   Compiling[0m ffmpeg-next v7.1.0 (https://github.com/CapSoftware/rust-ffmpeg?rev=49db1fede112#49db1fed)
+2026-06-12T06:22:06.4036630Z [1m[32m   Compiling[0m windows-result v0.2.0
+2026-06-12T06:22:06.8270652Z [1m[32m   Compiling[0m windows_x86_64_msvc v0.48.5
+2026-06-12T06:22:07.0708016Z [1m[32m   Compiling[0m cpal v0.15.3 (https://github.com/CapSoftware/cpal?rev=3cc779a7b4ca#3cc779a7)
+2026-06-12T06:22:07.3224550Z [1m[32m   Compiling[0m windows-strings v0.1.0
+2026-06-12T06:22:08.0372785Z [1m[32m   Compiling[0m windows-implement v0.58.0
+2026-06-12T06:22:09.5704389Z [1m[32m   Compiling[0m windows-interface v0.58.0
+2026-06-12T06:22:11.6395495Z [1m[32m   Compiling[0m rand_core v0.9.3
+2026-06-12T06:22:12.1435239Z [1m[32m   Compiling[0m dasp_sample v0.11.0
+2026-06-12T06:22:12.5034767Z [1m[32m   Compiling[0m xml-rs v0.8.27
+2026-06-12T06:22:14.8149141Z [1m[32m   Compiling[0m gl_generator v0.14.0
+2026-06-12T06:22:16.3570006Z [1m[32m   Compiling[0m rand_chacha v0.9.0
+2026-06-12T06:22:18.0526071Z [1m[32m   Compiling[0m windows-core v0.58.0
+2026-06-12T06:22:19.2722788Z [1m[32m   Compiling[0m slotmap v1.0.7
+2026-06-12T06:22:21.2492405Z [1m[32m   Compiling[0m windows-targets v0.48.5
+2026-06-12T06:22:21.3016928Z [1m[32m   Compiling[0m windows v0.58.0
+2026-06-12T06:22:33.1850943Z [1m[32m   Compiling[0m rand v0.9.2
+2026-06-12T06:22:34.4379948Z [1m[32m   Compiling[0m glutin_wgl_sys v0.6.1
+2026-06-12T06:22:37.6497814Z [1m[32m   Compiling[0m naga v25.0.1
+2026-06-12T06:22:38.0673645Z [1m[32m   Compiling[0m strum_macros v0.26.4
+2026-06-12T06:22:42.7885588Z [1m[32m   Compiling[0m termcolor v1.4.1
+2026-06-12T06:22:43.5774703Z [1m[32m   Compiling[0m fdeflate v0.3.7
+2026-06-12T06:22:44.7136149Z [1m[32m   Compiling[0m libloading v0.8.8
+2026-06-12T06:22:45.0321105Z [1m[32m   Compiling[0m unicode-width v0.2.1
+2026-06-12T06:22:45.1262242Z [1m[32m   Compiling[0m bit-vec v0.8.0
+2026-06-12T06:22:45.3740234Z [1m[32m   Compiling[0m khronos-egl v6.0.0
+2026-06-12T06:22:45.4583087Z [1m[32m   Compiling[0m base64ct v1.8.0
+2026-06-12T06:22:45.5550161Z [1m[32m   Compiling[0m ash v0.38.0+1.3.281
+2026-06-12T06:22:45.7580981Z [1m[32m   Compiling[0m pem-rfc7468 v0.7.0
+2026-06-12T06:22:45.8397817Z [1m[32m   Compiling[0m bit-set v0.8.0
+2026-06-12T06:22:46.2779462Z [1m[32m   Compiling[0m codespan-reporting v0.12.0
+2026-06-12T06:22:47.7149017Z [1m[32m   Compiling[0m strum v0.26.3
+2026-06-12T06:22:48.6190438Z [1m[32m   Compiling[0m wgpu-hal v25.0.2 (D:\a\Cap-CN\Cap-CN\vendor\wgpu-hal)
+2026-06-12T06:22:50.3400429Z [1m[32m   Compiling[0m spirv v0.3.0+sdk-1.3.268.0
+2026-06-12T06:22:51.1640733Z [1m[32m   Compiling[0m gpu-alloc-types v0.3.0
+2026-06-12T06:22:51.6377786Z [1m[32m   Compiling[0m gpu-descriptor-types v0.2.0
+2026-06-12T06:22:52.0037990Z [1m[32m   Compiling[0m equator-macro v0.4.2
+2026-06-12T06:22:52.7019314Z [1m[32m   Compiling[0m unicode-segmentation v1.12.0
+2026-06-12T06:22:53.3941853Z [1m[32m   Compiling[0m quick-error v2.0.1
+2026-06-12T06:22:53.4797164Z [1m[32m   Compiling[0m hex v0.4.3
+2026-06-12T06:22:53.5468314Z [1m[32m   Compiling[0m presser v0.3.1
+2026-06-12T06:22:53.6947320Z [1m[32m   Compiling[0m option-ext v0.2.0
+2026-06-12T06:22:53.7663386Z [1m[32m   Compiling[0m tinyvec_macros v0.1.1
+2026-06-12T06:22:53.8362069Z [1m[32m   Compiling[0m hexf-parse v0.2.1
+2026-06-12T06:22:54.2816708Z [1m[32m   Compiling[0m ureq-proto v0.5.0
+2026-06-12T06:22:55.7609307Z [1m[32m   Compiling[0m tinyvec v1.10.0
+2026-06-12T06:22:56.3483227Z [1m[32m   Compiling[0m gpu-allocator v0.27.0
+2026-06-12T06:22:58.2858931Z [1m[32m   Compiling[0m equator v0.4.2
+2026-06-12T06:22:58.6119918Z [1m[32m   Compiling[0m gpu-descriptor v0.3.2
+2026-06-12T06:22:58.9604752Z [1m[32m   Compiling[0m gpu-alloc v0.6.0
+2026-06-12T06:22:59.8053921Z [1m[32m   Compiling[0m socks v0.3.4
+2026-06-12T06:23:00.8545219Z [1m[32m   Compiling[0m der v0.7.10
+2026-06-12T06:23:20.1006667Z [1m[32m   Compiling[0m webpki-root-certs v1.0.2
+2026-06-12T06:23:20.1942411Z [1m[32m   Compiling[0m rustls-pemfile v2.2.0
+2026-06-12T06:23:20.4242002Z [1m[32m   Compiling[0m debugid v0.8.0
+2026-06-12T06:23:20.8042093Z [1m[32m   Compiling[0m wgpu-types v25.0.0
+2026-06-12T06:23:24.9438687Z [1m[32m   Compiling[0m ordered-float v4.6.0
+2026-06-12T06:23:25.3580445Z [1m[32m   Compiling[0m matrixmultiply v0.3.10
+2026-06-12T06:23:25.6308444Z [1m[32m   Compiling[0m glow v0.16.0
+2026-06-12T06:23:25.6893726Z [1m[32m   Compiling[0m renderdoc-sys v1.1.0
+2026-06-12T06:23:25.8618407Z [1m[32m   Compiling[0m raw-window-handle v0.6.2
+2026-06-12T06:23:26.1937259Z [1m[32m   Compiling[0m unicode-script v0.5.7
+2026-06-12T06:23:27.0547678Z [1m[32m   Compiling[0m range-alloc v0.1.4
+2026-06-12T06:23:27.1774766Z [1m[32m   Compiling[0m memmap2 v0.9.8
+2026-06-12T06:23:27.4965475Z [1m[32m   Compiling[0m imgref v1.11.0
+2026-06-12T06:23:27.7401837Z [1m[32m   Compiling[0m unicode-properties v0.1.3
+2026-06-12T06:23:29.8213414Z [1m[32m   Compiling[0m sentry-types v0.42.0
+2026-06-12T06:23:38.9937460Z [1m[32m   Compiling[0m ureq v3.1.0
+2026-06-12T06:23:43.9751805Z [1m[32m   Compiling[0m aligned-vec v0.6.4
+2026-06-12T06:23:44.4720678Z [1m[32m   Compiling[0m png v0.17.16
+2026-06-12T06:23:46.6700132Z [1m[32m   Compiling[0m wgpu-core v25.0.2
+2026-06-12T06:23:47.2934354Z [1m[32m   Compiling[0m futures v0.3.31
+2026-06-12T06:23:47.3644836Z [1m[32m   Compiling[0m zune-inflate v0.2.54
+2026-06-12T06:23:47.5682704Z [1m[32m   Compiling[0m font-types v0.9.0
+2026-06-12T06:23:48.0095029Z [1m[32m   Compiling[0m windows-implement v0.60.2
+2026-06-12T06:23:48.1646872Z [1m[32m   Compiling[0m core_maths v0.1.1
+2026-06-12T06:23:48.2689576Z [1m[32m   Compiling[0m hmac-sha256 v1.1.14
+2026-06-12T06:23:48.5079451Z [1m[32m   Compiling[0m rawpointer v0.2.1
+2026-06-12T06:23:48.5891179Z [1m[32m   Compiling[0m lebe v0.5.3
+2026-06-12T06:23:48.8643925Z [1m[32m   Compiling[0m built v0.7.7
+2026-06-12T06:23:49.5001692Z [1m[32m   Compiling[0m lzma-rust2 v0.15.7
+2026-06-12T06:23:49.7071302Z [1m[32m   Compiling[0m float-cmp v0.9.0
+2026-06-12T06:23:49.8366142Z [1m[32m   Compiling[0m bit_field v0.10.3
+2026-06-12T06:23:50.0017235Z [1m[32m   Compiling[0m exr v1.73.0
+2026-06-12T06:23:50.8474573Z [1m[32m   Compiling[0m ort-sys v2.0.0-rc.12
+2026-06-12T06:23:52.5790190Z [1m[32m   Compiling[0m strict-num v0.1.1
+2026-06-12T06:23:52.7378383Z [1m[32m   Compiling[0m rav1e v0.7.1
+2026-06-12T06:23:53.0150385Z [1m[32m   Compiling[0m windows-core v0.61.2
+2026-06-12T06:23:53.9741294Z [1m[32m   Compiling[0m ttf-parser v0.25.1
+2026-06-12T06:23:56.9506936Z [1m[32m   Compiling[0m read-fonts v0.29.3
+2026-06-12T06:23:58.8146790Z [1m[32m   Compiling[0m v_frame v0.3.9
+2026-06-12T06:23:59.0922456Z [1m[32m   Compiling[0m wgpu-core-deps-windows-linux-android v25.0.0
+2026-06-12T06:23:59.1009823Z [1m[32m   Compiling[0m sentry-core v0.42.0
+2026-06-12T06:23:59.1493238Z [1m[32m   Compiling[0m loop9 v0.1.5
+2026-06-12T06:23:59.2536246Z [1m[32m   Compiling[0m cap-d3d-adapter v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\d3d-adapter)
+2026-06-12T06:24:00.1476832Z [1m[32m   Compiling[0m cap-media-info v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\media-info)
+2026-06-12T06:24:00.6678977Z [1m[32m   Compiling[0m windows-sys v0.48.0
+2026-06-12T06:24:02.5449352Z [1m[32m   Compiling[0m wgpu v25.0.2
+2026-06-12T06:24:03.4060134Z [1m[32m   Compiling[0m crossbeam-channel v0.5.15
+2026-06-12T06:24:03.8712457Z [1m[32m   Compiling[0m concurrent-queue v2.5.0
+2026-06-12T06:24:04.0001580Z [1m[32m   Compiling[0m nanorand v0.7.0
+2026-06-12T06:24:04.1101153Z [1m[32m   Compiling[0m spin v0.9.8
+2026-06-12T06:24:04.3619635Z [1m[32m   Compiling[0m qoi v0.4.1
+2026-06-12T06:24:04.4352184Z [1m[32m   Compiling[0m num-complex v0.4.6
+2026-06-12T06:24:04.4782647Z [1m[32m   Compiling[0m arrayref v0.3.9
+2026-06-12T06:24:04.5366159Z [1m[32m   Compiling[0m unicode-bidi v0.3.18
+2026-06-12T06:24:04.6561740Z [1m[32m   Compiling[0m parking v2.2.1
+2026-06-12T06:24:04.8440106Z [1m[32m   Compiling[0m zune-core v0.4.12
+2026-06-12T06:24:05.0515019Z [1m[32m   Compiling[0m event-listener v5.4.1
+2026-06-12T06:24:05.1468425Z [1m[32m   Compiling[0m zune-jpeg v0.4.21
+2026-06-12T06:24:05.4709679Z [1m[32m   Compiling[0m skrifa v0.31.3
+2026-06-12T06:24:06.0423004Z [1m[32m   Compiling[0m tiny-skia-path v0.11.4
+2026-06-12T06:24:06.9009551Z [1m[32m   Compiling[0m flume v0.11.1
+2026-06-12T06:24:07.3542024Z [1m[32m   Compiling[0m dirs-sys v0.4.1
+2026-06-12T06:24:07.9252576Z [1m[32m   Compiling[0m av1-grain v0.2.4
+2026-06-12T06:24:19.4970879Z [1m[32m   Compiling[0m maybe-rayon v0.1.1
+2026-06-12T06:24:19.5582207Z [1m[32m   Compiling[0m strum_macros v0.27.2
+2026-06-12T06:24:21.1617015Z [1m[32m   Compiling[0m num-derive v0.4.2
+2026-06-12T06:24:22.9919957Z [1m[32m   Compiling[0m fax_derive v0.2.0
+2026-06-12T06:24:24.3057717Z [1m[32m   Compiling[0m arg_enum_proc_macro v0.3.4
+2026-06-12T06:24:25.0842823Z [1m[32m   Compiling[0m kurbo v0.11.3
+2026-06-12T06:24:25.8377035Z [1m[32m   Compiling[0m simd_helpers v0.1.0
+2026-06-12T06:24:26.2565648Z [1m[32m   Compiling[0m unicode-ccc v0.4.0
+2026-06-12T06:24:26.4019065Z [1m[32m   Compiling[0m ttf-parser v0.21.1
+2026-06-12T06:24:27.3171138Z [1m[32m   Compiling[0m ntapi v0.4.2
+2026-06-12T06:24:27.6431745Z [1m[32m   Compiling[0m fastrand v2.3.0
+2026-06-12T06:24:27.9854262Z [1m[32m   Compiling[0m virtue v0.0.18
+2026-06-12T06:24:28.7144981Z [1m[32m   Compiling[0m static_assertions v1.1.0
+2026-06-12T06:24:28.7792391Z [1m[32m   Compiling[0m ttf-parser v0.20.0
+2026-06-12T06:24:29.3346068Z [1m[32m   Compiling[0m unicode-bidi-mirroring v0.2.0
+2026-06-12T06:24:29.4527531Z [1m[32m   Compiling[0m byteorder-lite v0.1.0
+2026-06-12T06:24:29.8168433Z [1m[32m   Compiling[0m rustc-demangle v0.1.26
+2026-06-12T06:24:31.1537270Z [1m[32m   Compiling[0m noop_proc_macro v0.3.0
+2026-06-12T06:24:31.5042649Z [1m[32m   Compiling[0m zeno v0.3.3
+2026-06-12T06:24:32.8360597Z [1m[32m   Compiling[0m yazi v0.2.1
+2026-06-12T06:24:34.2313849Z [1m[32m   Compiling[0m unicode-bidi-mirroring v0.4.0
+2026-06-12T06:24:34.3586423Z [1m[32m   Compiling[0m bitstream-io v2.6.0
+2026-06-12T06:24:34.7718277Z [1m[32m   Compiling[0m unicode-ccc v0.2.0
+2026-06-12T06:24:34.9173245Z [1m[32m   Compiling[0m rustybuzz v0.14.1
+2026-06-12T06:24:36.2068962Z [1m[32m   Compiling[0m rustybuzz v0.20.1
+2026-06-12T06:24:44.4982747Z [1m[32m   Compiling[0m swash v0.2.5
+2026-06-12T06:24:45.3799709Z [1m[32m   Compiling[0m fontdb v0.16.2
+2026-06-12T06:24:46.2978402Z [1m[32m   Compiling[0m backtrace v0.3.75
+2026-06-12T06:24:46.8397671Z [1m[32m   Compiling[0m image-webp v0.2.4
+2026-06-12T06:24:47.2892538Z [1m[32m   Compiling[0m bincode_derive v2.0.1
+2026-06-12T06:24:48.5440708Z [1m[32m   Compiling[0m tempfile v3.23.0
+2026-06-12T06:24:49.5570668Z [1m[32m   Compiling[0m svgtypes v0.15.3
+2026-06-12T06:24:50.7800840Z [1m[32m   Compiling[0m strum v0.27.2
+2026-06-12T06:24:50.8819365Z [1m[32m   Compiling[0m fax v0.2.6
+2026-06-12T06:24:51.4751018Z [1m[32m   Compiling[0m event-listener-strategy v0.5.4
+2026-06-12T06:24:51.6006793Z [1m[32m   Compiling[0m ndarray v0.17.2
+2026-06-12T06:24:52.8758117Z [1m[32m   Compiling[0m fontdb v0.23.0
+2026-06-12T06:24:54.6992947Z [1m[32m   Compiling[0m cap-mediafoundation-utils v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\mediafoundation-utils)
+2026-06-12T06:24:54.9290796Z [1m[32m   Compiling[0m crossterm_winapi v0.9.1
+2026-06-12T06:24:55.5105366Z [1m[32m   Compiling[0m rustc_version v0.4.1
+2026-06-12T06:24:56.0917301Z [1m[32m   Compiling[0m avif-serialize v0.8.6
+2026-06-12T06:24:56.7756788Z [1m[32m   Compiling[0m findshlibs v0.10.2
+2026-06-12T06:24:57.0445929Z [1m[32m   Compiling[0m euclid v0.22.11
+2026-06-12T06:24:57.1684636Z [1m[32m   Compiling[0m pxfm v0.1.23
+2026-06-12T06:24:57.5779613Z [1m[32m   Compiling[0m simplecss v0.2.2
+2026-06-12T06:24:58.1301938Z [1m[32m   Compiling[0m unty v0.0.4
+2026-06-12T06:24:58.1919224Z [1m[32m   Compiling[0m smol_str v0.2.2
+2026-06-12T06:24:58.1989685Z [1m[32m   Compiling[0m self_cell v1.2.0
+2026-06-12T06:24:58.2861822Z [1m[32m   Compiling[0m unicode-linebreak v0.1.5
+2026-06-12T06:24:58.5509529Z [1m[32m   Compiling[0m xmlwriter v0.1.0
+2026-06-12T06:24:58.6526856Z [1m[32m   Compiling[0m unicode-vo v0.1.0
+2026-06-12T06:24:58.7961963Z [1m[32m   Compiling[0m data-url v0.3.2
+2026-06-12T06:24:58.9402765Z [1m[32m   Compiling[0m roxmltree v0.20.0
+2026-06-12T06:24:58.9813533Z [1m[32m   Compiling[0m rangemap v1.6.0
+2026-06-12T06:24:59.4036747Z [1m[32m   Compiling[0m imagesize v0.13.0
+2026-06-12T06:24:59.7046419Z [1m[32m   Compiling[0m rustc-hash v2.1.1
+2026-06-12T06:24:59.8075750Z [1m[32m   Compiling[0m sys-locale v0.3.2
+2026-06-12T06:25:00.0205689Z [1m[32m   Compiling[0m pico-args v0.5.0
+2026-06-12T06:25:00.4085750Z [1m[32m   Compiling[0m svg_fmt v0.4.5
+2026-06-12T06:25:00.4892636Z [1m[32m   Compiling[0m usvg v0.45.1
+2026-06-12T06:25:00.7955224Z [1m[32m   Compiling[0m etagere v0.2.15
+2026-06-12T06:25:01.3602438Z [1m[32m   Compiling[0m moxcms v0.7.5
+2026-06-12T06:25:01.7000189Z [1m[32m   Compiling[0m cosmic-text v0.14.2
+2026-06-12T06:25:08.1373116Z [1m[32m   Compiling[0m bincode v2.0.1
+2026-06-12T06:25:09.7650550Z [1m[32m   Compiling[0m ort v2.0.0-rc.12
+2026-06-12T06:25:10.6329999Z [1m[32m   Compiling[0m ravif v0.11.20
+2026-06-12T06:25:13.8080742Z [1m[32m   Compiling[0m sentry-contexts v0.42.0
+2026-06-12T06:25:14.1514274Z [1m[32m   Compiling[0m crossterm v0.25.0
+2026-06-12T06:25:16.2620529Z [1m[32m   Compiling[0m async-lock v3.4.1
+2026-06-12T06:25:16.7125573Z [1m[32m   Compiling[0m tiff v0.10.3
+2026-06-12T06:25:17.2420839Z [1m[32m   Compiling[0m cap-cursor-info v0.0.0 (D:\a\Cap-CN\Cap-CN\crates\cursor-info)
+2026-06-12T06:25:20.2961091Z [1m[32m   Compiling[0m sentry-backtrace v0.42.0
+2026-06-12T06:25:20.4683613Z [1m[32m   Compiling[0m tiny-skia v0.11.4
+2026-06-12T06:25:21.9161739Z [1m[32m   Compiling[0m ndarray v0.16.1
+2026-06-12T06:25:26.7855815Z [1m[32m   Compiling[0m windows-numerics v0.2.0
+2026-06-12T06:25:27.0831866Z [1m[32m   Compiling[0m any_spawner v0.2.0
+2026-06-12T06:25:27.2925353Z [1m[32m   Compiling[0m newline-converter v0.3.0
+2026-06-12T06:25:27.3936471Z [1m[32m   Compiling[0m png v0.18.0
+2026-06-12T06:25:29.5272790Z [1m[32m   Compiling[0m ffmpeg-hw-device v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\ffmpeg-hw-device)
+2026-06-12T06:25:29.7394695Z [1m[32m   Compiling[0m jpeg-decoder v0.3.2
+2026-06-12T06:25:30.9076367Z [1m[32m   Compiling[0m fuzzy-matcher v0.3.7
+2026-06-12T06:25:32.1662274Z [1m[32m   Compiling[0m relative-path v1.9.3
+2026-06-12T06:25:32.7588236Z [1m[32m   Compiling[0m lru v0.12.5
+2026-06-12T06:25:32.9552939Z [1m[32m   Compiling[0m send_wrapper v0.6.0
+2026-06-12T06:25:33.0366809Z [1m[32m   Compiling[0m num_cpus v1.17.0
+2026-06-12T06:25:33.0703320Z [1m[32m   Compiling[0m guardian v1.3.0
+2026-06-12T06:25:33.1759535Z [1m[32m   Compiling[0m cap-frame-converter v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\frame-converter)
+2026-06-12T06:25:33.1922025Z [1m[32m   Compiling[0m unicode-width v0.1.14
+2026-06-12T06:25:33.3750320Z [1m[32m   Compiling[0m or_poisoned v0.1.0
+2026-06-12T06:25:33.4485794Z [1m[32m   Compiling[0m reactive_graph v0.1.8
+2026-06-12T06:25:33.5505402Z [1m[32m   Compiling[0m inquire v0.7.5
+2026-06-12T06:25:36.7163119Z [1m[32m   Compiling[0m cap-video-decode v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\video-decode)
+2026-06-12T06:25:38.0689946Z [1m[32m   Compiling[0m glyphon v0.9.0
+2026-06-12T06:25:38.0759964Z [1m[32m   Compiling[0m cap-project v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\project)
+2026-06-12T06:25:39.1018193Z [1m[32m   Compiling[0m tiff v0.9.1
+2026-06-12T06:25:39.1539359Z [1m[32m   Compiling[0m image v0.25.8
+2026-06-12T06:25:41.1098120Z [1m[32m   Compiling[0m cap-camera-effects v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\camera-effects)
+2026-06-12T06:25:42.8570685Z [1m[32m   Compiling[0m resvg v0.45.1
+2026-06-12T06:25:47.4439356Z [1m[32m   Compiling[0m cap-camera-mediafoundation v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\camera-mediafoundation)
+2026-06-12T06:25:48.0795124Z [1m[32m   Compiling[0m dirs v5.0.1
+2026-06-12T06:25:48.1717972Z [1m[32m   Compiling[0m cap-camera-directshow v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\camera-directshow)
+2026-06-12T06:25:49.0991781Z [1m[32m   Compiling[0m cap-flags v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\flags)
+2026-06-12T06:25:49.2745836Z [1m[32m   Compiling[0m device_query v4.0.1
+2026-06-12T06:25:49.5426036Z [1m[32m   Compiling[0m os_info v3.12.0
+2026-06-12T06:25:49.6709466Z [1m[32m   Compiling[0m futures-intrusive v0.5.0
+2026-06-12T06:25:50.4289501Z [1m[32m   Compiling[0m windows-threading v0.1.0
+2026-06-12T06:25:50.4743305Z [1m[32m   Compiling[0m hostname v0.4.1
+2026-06-12T06:25:50.5627660Z [1m[32m   Compiling[0m bezier_easing v0.1.1
+2026-06-12T06:25:50.7150500Z [1m[32m   Compiling[0m cap-rendering v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\rendering)
+2026-06-12T06:25:50.9413179Z [1m[32m   Compiling[0m windows-future v0.2.1
+2026-06-12T06:25:51.4656963Z [1m[32m   Compiling[0m cap-camera-windows v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\camera-windows)
+2026-06-12T06:25:52.8310472Z [1m[32m   Compiling[0m sentry-debug-images v0.42.0
+2026-06-12T06:25:53.3772833Z [1m[32m   Compiling[0m image v0.24.9
+2026-06-12T06:26:03.2129342Z [1m[32m   Compiling[0m sentry-panic v0.42.0
+2026-06-12T06:26:03.5955294Z [1m[32m   Compiling[0m sentry-anyhow v0.42.0
+2026-06-12T06:26:03.9580010Z [1m[32m   Compiling[0m sysinfo v0.32.1
+2026-06-12T06:26:10.0529817Z [1m[32m   Compiling[0m directories v5.0.1
+2026-06-12T06:26:10.5928789Z [1m[32m   Compiling[0m ordered-channel v1.2.0
+2026-06-12T06:26:10.7087843Z [1m[32m   Compiling[0m pbr v1.1.1
+2026-06-12T06:26:12.1434970Z [1m[32m   Compiling[0m cap-media v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\media)
+2026-06-12T06:26:12.3818058Z [1m[32m   Compiling[0m scap-direct3d v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\scap-direct3d)
+2026-06-12T06:26:13.5037944Z [1m[32m   Compiling[0m windows-collections v0.2.0
+2026-06-12T06:26:14.0054855Z [1m[32m   Compiling[0m gif-dispose v5.0.1
+2026-06-12T06:26:14.4594615Z [1m[32m   Compiling[0m cap-audio v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\audio)
+2026-06-12T06:26:16.1358124Z [1m[32m   Compiling[0m windows v0.48.0
+2026-06-12T06:26:16.9079272Z [1m[32m   Compiling[0m resize v0.8.8
+2026-06-12T06:26:17.0922616Z [1m[32m   Compiling[0m imagequant v4.4.1
+2026-06-12T06:26:17.8451510Z [1m[32m   Compiling[0m ringbuf v0.4.8
+2026-06-12T06:26:18.2622181Z [1m[32m   Compiling[0m wild v2.2.1
+2026-06-12T06:26:18.9279795Z [1m[32m   Compiling[0m lodepng v3.12.1
+2026-06-12T06:26:22.0283010Z [1m[32m   Compiling[0m yuv v0.1.9
+2026-06-12T06:26:22.2838299Z [1m[32m   Compiling[0m natord v1.0.9
+2026-06-12T06:26:22.7096093Z [1m[32m   Compiling[0m y4m v0.8.0
+2026-06-12T06:26:24.2128129Z [1m[32m   Compiling[0m windows v0.61.3
+2026-06-12T06:26:25.2634623Z [1m[32m   Compiling[0m cap-utils v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\utils)
+2026-06-12T06:26:26.0788610Z [1m[32m   Compiling[0m cap-enc-ffmpeg v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\enc-ffmpeg)
+2026-06-12T06:26:26.3185697Z [1m[32m   Compiling[0m gifski v1.34.0
+2026-06-12T06:26:36.3938718Z [1m[32m   Compiling[0m sentry v0.42.0
+2026-06-12T06:26:38.2361582Z [1m[32m   Compiling[0m scap-targets v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\scap-targets)
+2026-06-12T06:26:41.5359728Z [1m[32m   Compiling[0m cap-camera v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\camera)
+2026-06-12T06:26:42.2136070Z [1m[32m   Compiling[0m dirs-sys v0.5.0
+2026-06-12T06:26:42.3473984Z [1m[32m   Compiling[0m kameo_macros v0.17.0
+2026-06-12T06:26:42.3628001Z [1m[32m   Compiling[0m inventory v0.3.21
+2026-06-12T06:26:42.4705219Z [1m[32m   Compiling[0m downcast-rs v2.0.2
+2026-06-12T06:26:42.6019977Z [1m[32m   Compiling[0m cap-fail v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\fail)
+2026-06-12T06:26:42.9153625Z [1m[32m   Compiling[0m dirs v6.0.0
+2026-06-12T06:26:43.0115704Z [1m[32m   Compiling[0m cap-enc-gif v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\enc-gif)
+2026-06-12T06:26:43.3270573Z [1m[32m   Compiling[0m cap-camera-ffmpeg v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\camera-ffmpeg)
+2026-06-12T06:26:44.3014539Z [1m[32m   Compiling[0m cap-cursor-capture v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\cursor-capture)
+2026-06-12T06:26:44.5646900Z [1m[32m   Compiling[0m cap-editor v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\editor)
+2026-06-12T06:26:44.9355857Z [1m[32m   Compiling[0m kameo v0.17.2
+2026-06-12T06:26:46.7792972Z [1m[32m   Compiling[0m scap-ffmpeg v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\scap-ffmpeg)
+2026-06-12T06:26:47.2557161Z [1m[32m   Compiling[0m cap-enc-mediafoundation v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\enc-mediafoundation)
+2026-06-12T06:26:48.5850481Z [1m[32m   Compiling[0m cap-mediafoundation-ffmpeg v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\mediafoundation-ffmpeg)
+2026-06-12T06:26:49.2510400Z [1m[32m   Compiling[0m cap-timestamp v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\timestamp)
+2026-06-12T06:26:49.6926781Z [1m[32m   Compiling[0m scap-cpal v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\scap-cpal)
+2026-06-12T06:26:49.8936448Z [1m[32m   Compiling[0m retry v2.1.0
+2026-06-12T06:26:50.1112507Z [1m[32m   Compiling[0m sha2 v0.10.9
+2026-06-12T06:26:50.8854452Z [1m[32m   Compiling[0m mp4 v0.14.0
+2026-06-12T06:26:51.5988112Z [1m[32m   Compiling[0m cap-muxer-protocol v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\cap-muxer-protocol)
+2026-06-12T06:26:51.9235254Z [1m[32m   Compiling[0m replace_with v0.1.8
+2026-06-12T06:26:52.0127535Z [1m[32m   Compiling[0m cap-cli-install v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\cli-install)
+2026-06-12T06:26:53.2287413Z [1m[32m   Compiling[0m cap-export v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\export)
+2026-06-12T06:26:56.7754896Z [1m[32m   Compiling[0m clap_complete v4.6.5
+2026-06-12T06:27:12.1697560Z [1m[32m   Compiling[0m sysinfo v0.35.2
+2026-06-12T06:27:13.0025991Z [1m[32m   Compiling[0m cap-recording v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\recording)
+2026-06-12T06:27:50.0468448Z [1m[32m   Compiling[0m cap v0.1.0 (D:\a\Cap-CN\Cap-CN\apps\cli)
+2026-06-12T06:27:51.9679317Z [0m[1m[38;5;11mwarning[0m[0m[1m[38;5;15m: function `update_error` is never used[0m
+2026-06-12T06:27:51.9680231Z [0m   [0m[0m[1m[38;5;14m--> [0m[0mapps\cli\src\update.rs:120:4[0m
+2026-06-12T06:27:51.9680748Z [0m    [0m[0m[1m[38;5;14m|[0m
+2026-06-12T06:27:51.9681909Z [0m[1m[38;5;14m120[0m[0m [0m[0m[1m[38;5;14m|[0m[0m [0m[0mfn update_error(output: &Output) -> String {[0m
+2026-06-12T06:27:51.9683473Z [0m    [0m[0m[1m[38;5;14m|[0m[0m    [0m[0m[1m[38;5;11m^^^^^^^^^^^^[0m
+2026-06-12T06:27:51.9684310Z [0m    [0m[0m[1m[38;5;14m|[0m
+2026-06-12T06:27:51.9685206Z [0m    [0m[0m[1m[38;5;14m= [0m[0m[1m[38;5;15mnote[0m[0m: `#[warn(dead_code)]` on by default[0m
+2026-06-12T06:27:51.9685548Z 
+2026-06-12T06:27:51.9685964Z [0m[1m[38;5;11mwarning[0m[0m[1m[38;5;15m: function `print_output` is never used[0m
+2026-06-12T06:27:51.9686611Z [0m   [0m[0m[1m[38;5;14m--> [0m[0mapps\cli\src\update.rs:134:4[0m
+2026-06-12T06:27:51.9687088Z [0m    [0m[0m[1m[38;5;14m|[0m
+2026-06-12T06:27:51.9687716Z [0m[1m[38;5;14m134[0m[0m [0m[0m[1m[38;5;14m|[0m[0m [0m[0mfn print_output(output: &Output) {[0m
+2026-06-12T06:27:51.9688384Z [0m    [0m[0m[1m[38;5;14m|[0m[0m    [0m[0m[1m[38;5;11m^^^^^^^^^^^^[0m
+2026-06-12T06:27:51.9688670Z 
+2026-06-12T06:27:51.9689016Z [0m[1m[38;5;11mwarning[0m[0m[1m[38;5;15m: function `text` is never used[0m
+2026-06-12T06:27:51.9689613Z [0m   [0m[0m[1m[38;5;14m--> [0m[0mapps\cli\src\update.rs:146:4[0m
+2026-06-12T06:27:51.9690058Z [0m    [0m[0m[1m[38;5;14m|[0m
+2026-06-12T06:27:51.9690678Z [0m[1m[38;5;14m146[0m[0m [0m[0m[1m[38;5;14m|[0m[0m [0m[0mfn text(bytes: &[u8]) -> String {[0m
+2026-06-12T06:27:51.9691282Z [0m    [0m[0m[1m[38;5;14m|[0m[0m    [0m[0m[1m[38;5;11m^^^^[0m
+2026-06-12T06:27:51.9691548Z 
+2026-06-12T06:35:49.9364645Z [1m[33mwarning[0m[1m:[0m `cap` (bin "cap") generated 3 warnings
+2026-06-12T06:35:49.9400805Z [1m[32m    Finished[0m `release` profile [optimized + debuginfo] target(s) in 17m 31s
+2026-06-12T06:35:51.0027573Z Copied /d/a/Cap-CN/Cap-CN/target/x86_64-pc-windows-msvc/release/cap.exe -> /d/a/Cap-CN/Cap-CN/apps/desktop/src-tauri/binaries/cap-cli-x86_64-pc-windows-msvc.exe
+2026-06-12T06:35:51.0585190Z Copied /d/a/Cap-CN/Cap-CN/target/x86_64-pc-windows-msvc/release/cap.exe -> /d/a/Cap-CN/Cap-CN/apps/desktop/src-tauri/binaries/cap-exporter-x86_64-pc-windows-msvc.exe

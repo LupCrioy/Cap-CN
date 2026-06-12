@@ -1,0 +1,17 @@
+﻿2026-06-12T06:35:54.9166566Z ##[group]Run # Remove prod config entirely (it contains updater pubkey)
+2026-06-12T06:35:54.9167224Z [36;1m# Remove prod config entirely (it contains updater pubkey)[0m
+2026-06-12T06:35:54.9167894Z [36;1mRemove-Item -Path "apps/desktop/src-tauri/tauri.prod.conf.json" -Force -ErrorAction SilentlyContinue[0m
+2026-06-12T06:35:54.9168486Z [36;1m# Remove any cached signing keys[0m
+2026-06-12T06:35:54.9168998Z [36;1mRemove-Item -Path "$env:USERPROFILE\.tauri" -Recurse -Force -ErrorAction SilentlyContinue[0m
+2026-06-12T06:35:54.9169680Z [36;1mRemove-Item -Path "$env:LOCALAPPDATA\tauri" -Recurse -Force -ErrorAction SilentlyContinue[0m
+2026-06-12T06:35:54.9170257Z [36;1m# Clean cached build artifacts that may contain old pubkey[0m
+2026-06-12T06:35:54.9170869Z [36;1mRemove-Item -Path "apps/desktop/src-tauri/target" -Recurse -Force -ErrorAction SilentlyContinue[0m
+2026-06-12T06:35:54.9171448Z [36;1mWrite-Output "Signing disabled and cache cleaned"[0m
+2026-06-12T06:35:54.9330193Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-06-12T06:35:54.9330665Z env:
+2026-06-12T06:35:54.9331165Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-12T06:35:54.9331559Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-12T06:35:54.9331880Z   CARGO_INCREMENTAL: 0
+2026-06-12T06:35:54.9332125Z   CARGO_TERM_COLOR: always
+2026-06-12T06:35:54.9332376Z ##[endgroup]
+2026-06-12T06:35:55.7374427Z Signing disabled and cache cleaned

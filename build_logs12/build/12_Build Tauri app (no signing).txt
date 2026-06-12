@@ -1,0 +1,1190 @@
+﻿2026-06-12T06:35:55.7910440Z ##[group]Run pnpm tauri build --target x86_64-pc-windows-msvc
+2026-06-12T06:35:55.7911350Z [36;1mpnpm tauri build --target x86_64-pc-windows-msvc[0m
+2026-06-12T06:35:55.7966297Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-06-12T06:35:55.7966997Z env:
+2026-06-12T06:35:55.7967445Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-12T06:35:55.7967875Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-12T06:35:55.7968214Z   CARGO_INCREMENTAL: 0
+2026-06-12T06:35:55.7968465Z   CARGO_TERM_COLOR: always
+2026-06-12T06:35:55.7968712Z   CI: false
+2026-06-12T06:35:55.7969018Z   RUST_TARGET_TRIPLE: x86_64-pc-windows-msvc
+2026-06-12T06:35:55.7969326Z ##[endgroup]
+2026-06-12T06:35:56.4361602Z 
+2026-06-12T06:35:56.4362339Z > @cap/desktop@ tauri D:\a\Cap-CN\Cap-CN\apps\desktop
+2026-06-12T06:35:56.4365657Z > tauri "build" "--target" "x86_64-pc-windows-msvc"
+2026-06-12T06:35:56.4366108Z 
+2026-06-12T06:35:58.0417105Z         Info Looking up installed tauri packages to check mismatched versions...
+2026-06-12T06:35:58.9164383Z      Running beforeBuildCommand `pnpm turbo build --filter @cap/desktop`
+2026-06-12T06:35:59.5591298Z 
+2026-06-12T06:35:59.5592023Z Attention:
+2026-06-12T06:35:59.5592613Z Turborepo now collects completely anonymous telemetry regarding usage.
+2026-06-12T06:35:59.5593205Z This information is used to shape the Turborepo roadmap and prioritize features.
+2026-06-12T06:35:59.5594022Z You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+2026-06-12T06:35:59.5594688Z https://turborepo.com/docs/telemetry
+2026-06-12T06:35:59.5594907Z 
+2026-06-12T06:35:59.8414347Z • Packages in scope: @cap/desktop
+2026-06-12T06:35:59.8414861Z • Running build in 1 packages
+2026-06-12T06:35:59.8415176Z • Remote caching disabled
+2026-06-12T06:36:01.4361794Z ##[group]@cap/web-domain:build
+2026-06-12T06:36:01.4362524Z cache miss, executing 839588cd9ed17ce5
+2026-06-12T06:36:01.4362741Z 
+2026-06-12T06:36:01.4363025Z > @cap/web-domain@ build D:\a\Cap-CN\Cap-CN\packages\web-domain
+2026-06-12T06:36:01.4363374Z > tsdown
+2026-06-12T06:36:01.4363470Z 
+2026-06-12T06:36:01.4397441Z [34mℹ[39m tsdown [2mv0.15.6[22m powered by rolldown [2mv1.0.1[22m
+2026-06-12T06:36:01.4398967Z [34mℹ[39m Using tsdown config: [4mD:\a\Cap-CN\Cap-CN\packages\web-domain\tsdown.config.ts[24m
+2026-06-12T06:36:01.4399880Z [34mℹ[39m entry: [34msrc\index.ts[39m
+2026-06-12T06:36:01.4400625Z [34mℹ[39m tsconfig: [34mtsconfig.json[39m
+2026-06-12T06:36:01.4401232Z [34mℹ[39m Build start
+2026-06-12T06:36:01.4401757Z [33mWarning: Invalid input options (1 issue found)
+2026-06-12T06:36:01.4402325Z - For the "define". Invalid key: Expected never but received "define". [0m
+2026-06-12T06:36:01.4403024Z [34mℹ[39m [2mdist\[22m[1mindex.js[22m  [2m32.45 kB[22m [2m│ gzip: 7.44 kB[22m
+2026-06-12T06:36:01.4403665Z [34mℹ[39m 1 files, total: 32.45 kB
+2026-06-12T06:36:01.4404316Z [32m✔[39m Build complete in [32m147ms[39m
+2026-06-12T06:36:01.4404808Z ##[endgroup]
+2026-06-12T06:36:01.4405132Z ##[group]@cap/env:build
+2026-06-12T06:36:01.4405400Z cache miss, executing 5a7bb41ff8de0aaf
+2026-06-12T06:36:01.4405583Z 
+2026-06-12T06:36:01.4405743Z > @cap/env@ build D:\a\Cap-CN\Cap-CN\packages\env
+2026-06-12T06:36:01.4406027Z > tsdown
+2026-06-12T06:36:01.4406119Z 
+2026-06-12T06:36:01.4406445Z [34mℹ[39m tsdown [2mv0.15.6[22m powered by rolldown [2mv1.0.1[22m
+2026-06-12T06:36:01.4407113Z [34mℹ[39m Using tsdown config: [4mD:\a\Cap-CN\Cap-CN\packages\env\tsdown.config.ts[24m
+2026-06-12T06:36:01.4407820Z [34mℹ[39m entry: [34mindex.ts[39m
+2026-06-12T06:36:01.4408451Z [34mℹ[39m tsconfig: [34mtsconfig.json[39m
+2026-06-12T06:36:01.4409542Z [34mℹ[39m Build start
+2026-06-12T06:36:01.4410238Z [33mWarning: Invalid input options (1 issue found)
+2026-06-12T06:36:01.4411214Z - For the "define". Invalid key: Expected never but received "define". [0m
+2026-06-12T06:36:01.4412340Z [34mℹ[39m [2mdist\[22m[1mindex.js[22m  [2m5.62 kB[22m [2m│ gzip: 1.77 kB[22m
+2026-06-12T06:36:01.4415834Z [34mℹ[39m 1 files, total: 5.62 kB
+2026-06-12T06:36:01.4416497Z [32m✔[39m Build complete in [32m151ms[39m
+2026-06-12T06:36:01.4417246Z ##[endgroup]
+2026-06-12T06:36:02.1527830Z ##[group]@cap/utils:build
+2026-06-12T06:36:02.1528404Z cache miss, executing 526a22cabced9b81
+2026-06-12T06:36:02.1528610Z 
+2026-06-12T06:36:02.1528805Z > @cap/utils@ build D:\a\Cap-CN\Cap-CN\packages\utils
+2026-06-12T06:36:02.1529113Z > tsdown
+2026-06-12T06:36:02.1529209Z 
+2026-06-12T06:36:02.1529755Z [34mℹ[39m tsdown [2mv0.15.6[22m powered by rolldown [2mv1.0.1[22m
+2026-06-12T06:36:02.1530964Z [34mℹ[39m Using tsdown config: [4mD:\a\Cap-CN\Cap-CN\packages\utils\tsdown.config.ts[24m
+2026-06-12T06:36:02.1531572Z [34mℹ[39m entry: [34msrc\index.ts[39m
+2026-06-12T06:36:02.1531934Z [34mℹ[39m target: [34mnode20.0.0[39m
+2026-06-12T06:36:02.1532304Z [34mℹ[39m tsconfig: [34mtsconfig.json[39m
+2026-06-12T06:36:02.1532644Z [34mℹ[39m Build start
+2026-06-12T06:36:02.1533004Z [33mWarning: Invalid input options (1 issue found)
+2026-06-12T06:36:02.1533535Z - For the "define". Invalid key: Expected never but received "define". [0m
+2026-06-12T06:36:02.1534164Z [34mℹ[39m [2mdist\[22m[1mindex.js[22m  [2m3.84 kB[22m [2m│ gzip: 1.47 kB[22m
+2026-06-12T06:36:02.1534634Z [34mℹ[39m 1 files, total: 3.84 kB
+2026-06-12T06:36:02.1535200Z [32m✔[39m Build complete in [32m30ms[39m
+2026-06-12T06:36:02.1535933Z ##[endgroup]
+2026-06-12T06:36:02.9965701Z ##[group]@cap/database:build
+2026-06-12T06:36:02.9966696Z cache miss, executing 9dbcefdad5f397f6
+2026-06-12T06:36:02.9966971Z 
+2026-06-12T06:36:02.9967196Z > @cap/database@ build D:\a\Cap-CN\Cap-CN\packages\database
+2026-06-12T06:36:02.9967528Z > tsdown
+2026-06-12T06:36:02.9967630Z 
+2026-06-12T06:36:02.9968182Z [34mℹ[39m tsdown [2mv0.15.6[22m powered by rolldown [2mv1.0.1[22m
+2026-06-12T06:36:02.9969239Z [34mℹ[39m Using tsdown config: [4mD:\a\Cap-CN\Cap-CN\packages\database\tsdown.config.ts[24m
+2026-06-12T06:36:02.9970412Z [34mℹ[39m entry: [34mcrypto.ts, helpers.ts, index.ts, migrate.ts, schema.ts, auth\auth-options.ts, auth\session.ts, types\index.ts[39m
+2026-06-12T06:36:02.9971110Z [34mℹ[39m target: [34mnode20.0.0[39m
+2026-06-12T06:36:02.9971536Z [34mℹ[39m tsconfig: [34mtsconfig.json[39m
+2026-06-12T06:36:02.9971875Z [34mℹ[39m Build start
+2026-06-12T06:36:02.9972241Z [33mWarning: Invalid input options (1 issue found)
+2026-06-12T06:36:02.9972782Z - For the "define". Invalid key: Expected never but received "define". [0m
+2026-06-12T06:36:02.9973508Z [34mℹ[39m [2mdist\[22m[1mschema.js[22m                 [2m 37.53 kB[22m [2m│ gzip:  6.25 kB[22m
+2026-06-12T06:36:02.9974233Z [34mℹ[39m [2mdist\[22m[1mmigrate.js[22m                [2m  5.80 kB[22m [2m│ gzip:  1.63 kB[22m
+2026-06-12T06:36:02.9974955Z [34mℹ[39m [2mdist\[22m[1mcrypto.js[22m                 [2m  3.86 kB[22m [2m│ gzip:  1.13 kB[22m
+2026-06-12T06:36:02.9975705Z [34mℹ[39m [2mdist\[22m[1mauth\session.js[22m           [2m  0.86 kB[22m [2m│ gzip:  0.41 kB[22m
+2026-06-12T06:36:02.9976443Z [34mℹ[39m [2mdist\[22m[1mindex.js[22m                  [2m  0.67 kB[22m [2m│ gzip:  0.39 kB[22m
+2026-06-12T06:36:02.9977158Z [34mℹ[39m [2mdist\[22m[1mhelpers.js[22m                [2m  0.46 kB[22m [2m│ gzip:  0.25 kB[22m
+2026-06-12T06:36:02.9977888Z [34mℹ[39m [2mdist\[22m[1mauth\auth-options.js[22m      [2m  0.23 kB[22m [2m│ gzip:  0.16 kB[22m
+2026-06-12T06:36:02.9978629Z [34mℹ[39m [2mdist\[22m[1mtypes\index.js[22m            [2m  0.01 kB[22m [2m│ gzip:  0.03 kB[22m
+2026-06-12T06:36:02.9979629Z [34mℹ[39m [2mdist\[22mauth-options-B93QUKxn.js  [2m247.89 kB[22m [2m│ gzip: 50.61 kB[22m
+2026-06-12T06:36:02.9980357Z [34mℹ[39m [2mdist\[22mreact-C_VaR0mj.js         [2m 51.82 kB[22m [2m│ gzip: 11.47 kB[22m
+2026-06-12T06:36:02.9981072Z [34mℹ[39m [2mdist\[22motp-email-94lsOsm2.js     [2m 15.99 kB[22m [2m│ gzip:  4.46 kB[22m
+2026-06-12T06:36:02.9982469Z [34mℹ[39m 11 files, total: 365.11 kB
+2026-06-12T06:36:02.9982861Z [32m✔[39m Build complete in [32m143ms[39m
+2026-06-12T06:36:02.9983317Z ##[endgroup]
+2026-06-12T06:37:07.2972500Z ##[group]@cap/desktop:build
+2026-06-12T06:37:07.2973197Z cache miss, executing 2845cdcf991bded3
+2026-06-12T06:37:07.2973491Z 
+2026-06-12T06:37:07.2973774Z > @cap/desktop@ build D:\a\Cap-CN\Cap-CN\apps\desktop
+2026-06-12T06:37:07.2974209Z > vinxi build
+2026-06-12T06:37:07.2974377Z 
+2026-06-12T06:37:07.2974924Z [2m[34mvinxi[39m[22m [2m[33mv0.5.6[39m[22m
+2026-06-12T06:37:07.2975271Z 
+2026-06-12T06:37:07.2975280Z 
+2026-06-12T06:37:07.2975561Z ⚙  [32mBuilding your app...[39m
+2026-06-12T06:37:07.2976122Z [2m[34mvinxi[39m[22m [2m[33mv0.5.6[39m[22m
+2026-06-12T06:37:07.2976421Z 
+2026-06-12T06:37:07.2976429Z 
+2026-06-12T06:37:07.2976687Z ⚙ [32mBuilding your router ssr...[39m
+2026-06-12T06:37:07.2976958Z 
+2026-06-12T06:37:07.2976965Z 
+2026-06-12T06:37:07.2977520Z [32m📦 Compiling ssr router...[39m
+2026-06-12T06:37:07.2978132Z [2m[34mvinxi[39m[22m building router ssr in http mode
+2026-06-12T06:37:07.2978895Z [36mvite v6.3.5 [32mbuilding SSR bundle for production...[36m[39m
+2026-06-12T06:37:07.2979417Z transforming...
+2026-06-12T06:37:07.2985075Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+2026-06-12T06:37:07.2986990Z [32m✓[39m 22 modules transformed.
+2026-06-12T06:37:07.2991052Z rendering chunks...
+2026-06-12T06:37:07.2996982Z [2m.vinxi/build/ssr/[22m[32m.vite/manifest.json  [39m[1m[2m 0.14 kB[22m[1m[22m
+2026-06-12T06:37:07.2997960Z [2m.vinxi/build/ssr/[22m[36mssr.js               [39m[1m[2m17.63 kB[22m[1m[22m
+2026-06-12T06:37:07.2998496Z [32m✓ built in 1.25s[39m
+2026-06-12T06:37:07.3002614Z [success] build done
+2026-06-12T06:37:07.3003112Z ⚙ [32mBuilt your router ssr successfully[39m
+2026-06-12T06:37:07.3007476Z [2m[34mvinxi[39m[22m [2m[33mv0.5.6[39m[22m
+2026-06-12T06:37:07.3007806Z 
+2026-06-12T06:37:07.3007815Z 
+2026-06-12T06:37:07.3008120Z ⚙ [32mBuilding your router client...[39m
+2026-06-12T06:37:07.3008338Z 
+2026-06-12T06:37:07.3008344Z 
+2026-06-12T06:37:07.3008597Z [32m📦 Compiling client router...[39m
+2026-06-12T06:37:07.3013235Z [2m[34mvinxi[39m[22m building router client in client mode
+2026-06-12T06:37:07.3013841Z [36mvite v6.3.5 [32mbuilding for production...[36m[39m
+2026-06-12T06:37:07.3018935Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+2026-06-12T06:37:07.3019735Z transforming...
+2026-06-12T06:37:07.3023503Z Browserslist: browsers data (caniuse-lite) is 14 months old. Please run:
+2026-06-12T06:37:07.3024096Z   npx update-browserslist-db@latest
+2026-06-12T06:37:07.3024657Z   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+2026-06-12T06:37:07.3028749Z [33m virtual:$vinxi/handler/client (1:96): "default" is not exported by "src/entry-client.tsx", imported by " virtual:$vinxi/handler/client".[39m
+2026-06-12T06:37:07.3029582Z [32m✓[39m 728 modules transformed.
+2026-06-12T06:37:07.3032656Z rendering chunks...
+2026-06-12T06:37:07.3032980Z computing gzip size...
+2026-06-12T06:37:07.3039381Z [2m.vinxi/build/client/_build/[22m[32massets/stride-correction-worker-ByUUGvPa.js            [39m[1m[2m    0.43 kB[22m[1m[22m
+2026-06-12T06:37:07.3040656Z [2m.vinxi/build/client/_build/[22m[32massets/frame-worker-DUrf4zLv.js                        [39m[1m[2m   20.79 kB[22m[1m[22m
+2026-06-12T06:37:07.3042337Z [2m.vinxi/build/client/_build/[22m[32massets/geist-sans-latin-400-normal-gapTbOY8.woff2      [39m[1m[2m   33.40 kB[22m[1m[22m
+2026-06-12T06:37:07.3049590Z [2m.vinxi/build/client/_build/[22m[32massets/geist-sans-latin-500-normal-uokXdC-Q.woff2      [39m[1m[2m   34.72 kB[22m[1m[22m
+2026-06-12T06:37:07.3050921Z [2m.vinxi/build/client/_build/[22m[32massets/dark-B8-Zfy6_.jpg                               [39m[1m[2m   35.26 kB[22m[1m[22m
+2026-06-12T06:37:07.3055045Z [2m.vinxi/build/client/_build/[22m[32massets/geist-sans-latin-700-normal-BmN9tIp5.woff2      [39m[1m[2m   35.48 kB[22m[1m[22m
+2026-06-12T06:37:07.3056324Z [2m.vinxi/build/client/_build/[22m[32massets/light-BcegqCvt.jpg                              [39m[1m[2m   35.87 kB[22m[1m[22m
+2026-06-12T06:37:07.3057670Z [2m.vinxi/build/client/_build/[22m[32massets/geist-sans-latin-400-normal-BOaIZNA2.woff       [39m[1m[2m   38.91 kB[22m[1m[22m
+2026-06-12T06:37:07.3063616Z [2m.vinxi/build/client/_build/[22m[32massets/geist-sans-latin-500-normal-CN2lyvyL.woff       [39m[1m[2m   40.52 kB[22m[1m[22m
+2026-06-12T06:37:07.3064845Z [2m.vinxi/build/client/_build/[22m[32massets/geist-sans-latin-700-normal-CjScfYeH.woff       [39m[1m[2m   41.40 kB[22m[1m[22m
+2026-06-12T06:37:07.3068908Z [2m.vinxi/build/client/_build/[22m[32massets/auto-CPKoGbmb.jpg                               [39m[1m[2m   44.56 kB[22m[1m[22m
+2026-06-12T06:37:07.3070051Z [2m.vinxi/build/client/_build/[22m[32massets/pricing-DMHaqihI.riv                            [39m[1m[2m   61.36 kB[22m[1m[22m
+2026-06-12T06:37:07.3074428Z [2m.vinxi/build/client/_build/[22m[32m.vite/manifest.json                                    [39m[1m[2m  130.19 kB[22m[1m[22m[2m │ gzip:  10.78 kB[22m
+2026-06-12T06:37:07.3075640Z [2m.vinxi/build/client/_build/[22m[32massets/cloud-2-C48ZYBEu.png                            [39m[1m[2m  449.73 kB[22m[1m[22m
+2026-06-12T06:37:07.3076955Z [2m.vinxi/build/client/_build/[22m[32massets/cloud-1-0EtYTpJQ.png                            [39m[1m[2m  555.95 kB[22m[1m[22m
+2026-06-12T06:37:07.3082884Z [2m.vinxi/build/client/_build/[22m[32massets/cloud-3-SWvz_Fyk.png                            [39m[1m[2m  729.92 kB[22m[1m[22m
+2026-06-12T06:37:07.3084024Z [2m.vinxi/build/client/_build/[22m[32massets/tears-and-fireflies-adi-goldstein-CggkdS0h.mp3  [39m[1m[2m1,269.18 kB[22m[1m[22m
+2026-06-12T06:37:07.3088864Z [2m.vinxi/build/client/_build/[22m[32massets/rive-v7Y01x04.wasm                              [39m[1m[2m1,482.02 kB[22m[1m[22m[2m │ gzip: 553.99 kB[22m
+2026-06-12T06:37:07.3090361Z [2m.vinxi/build/client/_build/[22m[35massets/client-Di4Q1pSk.css                             [39m[1m[2m  387.29 kB[22m[1m[22m[2m │ gzip:  55.12 kB[22m
+2026-06-12T06:37:07.3095046Z [2m.vinxi/build/client/_build/[22m[36massets/PresetsDropdown-LCBqfjaO.js                     [39m[1m[2m    0.05 kB[22m[1m[22m[2m │ gzip:   0.07 kB[22m
+2026-06-12T06:37:07.3096562Z [2m.vinxi/build/client/_build/[22m[36massets/OrganizationDropdown-Br-GQ0RK.js                [39m[1m[2m    0.05 kB[22m[1m[22m[2m │ gzip:   0.07 kB[22m
+2026-06-12T06:37:07.3097803Z [2m.vinxi/build/client/_build/[22m[36massets/JNCCF6MP-4sxnBYeu.js                            [39m[1m[2m    0.06 kB[22m[1m[22m[2m │ gzip:   0.08 kB[22m
+2026-06-12T06:37:07.3102243Z [2m.vinxi/build/client/_build/[22m[36massets/index-BMm3EAex.js                               [39m[1m[2m    0.11 kB[22m[1m[22m[2m │ gzip:   0.12 kB[22m
+2026-06-12T06:37:07.3103464Z [2m.vinxi/build/client/_build/[22m[36massets/index-CXxbDVzG.js                               [39m[1m[2m    0.12 kB[22m[1m[22m[2m │ gzip:   0.13 kB[22m
+2026-06-12T06:37:07.3107457Z [2m.vinxi/build/client/_build/[22m[36massets/index-BUIenl4p.js                               [39m[1m[2m    0.14 kB[22m[1m[22m[2m │ gzip:   0.15 kB[22m
+2026-06-12T06:37:07.3109070Z [2m.vinxi/build/client/_build/[22m[36massets/createEventListener-COTD4DE9.js                 [39m[1m[2m    0.18 kB[22m[1m[22m[2m │ gzip:   0.17 kB[22m
+2026-06-12T06:37:07.3113043Z [2m.vinxi/build/client/_build/[22m[36massets/index-DVsOmoxq.js                               [39m[1m[2m    0.18 kB[22m[1m[22m[2m │ gzip:   0.17 kB[22m
+2026-06-12T06:37:07.3117711Z [2m.vinxi/build/client/_build/[22m[36massets/index-DI8RToJa.js                               [39m[1m[2m    0.19 kB[22m[1m[22m[2m │ gzip:   0.15 kB[22m
+2026-06-12T06:37:07.3118899Z [2m.vinxi/build/client/_build/[22m[36massets/app-BYimY9vE.js                                 [39m[1m[2m    0.22 kB[22m[1m[22m[2m │ gzip:   0.19 kB[22m
+2026-06-12T06:37:07.3122821Z [2m.vinxi/build/client/_build/[22m[36massets/OYES4GOP-BG3u-CTb.js                            [39m[1m[2m    0.24 kB[22m[1m[22m[2m │ gzip:   0.20 kB[22m
+2026-06-12T06:37:07.3124152Z [2m.vinxi/build/client/_build/[22m[36massets/index-B-0DYiVx.js                               [39m[1m[2m    0.24 kB[22m[1m[22m[2m │ gzip:   0.20 kB[22m
+2026-06-12T06:37:07.3128590Z [2m.vinxi/build/client/_build/[22m[36massets/combineProps-oHjLfPsP.js                        [39m[1m[2m    0.27 kB[22m[1m[22m[2m │ gzip:   0.20 kB[22m
+2026-06-12T06:37:07.3129922Z [2m.vinxi/build/client/_build/[22m[36massets/FLVHQV4A-CD0_rvWl.js                            [39m[1m[2m    0.28 kB[22m[1m[22m[2m │ gzip:   0.24 kB[22m
+2026-06-12T06:37:07.3131100Z [2m.vinxi/build/client/_build/[22m[36massets/check-CaaBwzMf.js                               [39m[1m[2m    0.29 kB[22m[1m[22m[2m │ gzip:   0.24 kB[22m
+2026-06-12T06:37:07.3135552Z [2m.vinxi/build/client/_build/[22m[36massets/plus-CXsCew6M.js                                [39m[1m[2m    0.29 kB[22m[1m[22m[2m │ gzip:   0.24 kB[22m
+2026-06-12T06:37:07.3136737Z [2m.vinxi/build/client/_build/[22m[36massets/rive-S0lBZ933.js                                [39m[1m[2m    0.29 kB[22m[1m[22m[2m │ gzip:   0.23 kB[22m
+2026-06-12T06:37:07.3141118Z [2m.vinxi/build/client/_build/[22m[36massets/x-Iep56bqS.js                                   [39m[1m[2m    0.29 kB[22m[1m[22m[2m │ gzip:   0.24 kB[22m
+2026-06-12T06:37:07.3142441Z [2m.vinxi/build/client/_build/[22m[36massets/arrow-left-Dy-yOh4w.js                          [39m[1m[2m    0.30 kB[22m[1m[22m[2m │ gzip:   0.24 kB[22m
+2026-06-12T06:37:07.3143943Z [2m.vinxi/build/client/_build/[22m[36massets/loader2-BaudBLDc.js                             [39m[1m[2m    0.30 kB[22m[1m[22m[2m │ gzip:   0.25 kB[22m
+2026-06-12T06:37:07.3152427Z [2m.vinxi/build/client/_build/[22m[36massets/camera-window-CK2bAfOA.js                       [39m[1m[2m    0.33 kB[22m[1m[22m[2m │ gzip:   0.26 kB[22m
+2026-06-12T06:37:07.3154026Z [2m.vinxi/build/client/_build/[22m[36massets/Loader-9N30rspZ.js                              [39m[1m[2m    0.33 kB[22m[1m[22m[2m │ gzip:   0.25 kB[22m
+2026-06-12T06:37:07.3161164Z [2m.vinxi/build/client/_build/[22m[36massets/eventListener-B-Tg85K6.js                       [39m[1m[2m    0.34 kB[22m[1m[22m[2m │ gzip:   0.25 kB[22m
+2026-06-12T06:37:07.3162434Z [2m.vinxi/build/client/_build/[22m[36massets/external-link-DWL_odKC.js                       [39m[1m[2m    0.35 kB[22m[1m[22m[2m │ gzip:   0.27 kB[22m
+2026-06-12T06:37:07.3170245Z [2m.vinxi/build/client/_build/[22m[36massets/circle-off-DTuT3GLn.js                          [39m[1m[2m    0.35 kB[22m[1m[22m[2m │ gzip:   0.28 kB[22m
+2026-06-12T06:37:07.3171997Z [2m.vinxi/build/client/_build/[22m[36massets/rotate-ccw-B8-elZHw.js                          [39m[1m[2m    0.36 kB[22m[1m[22m[2m │ gzip:   0.28 kB[22m
+2026-06-12T06:37:07.3173235Z [2m.vinxi/build/client/_build/[22m[36massets/record-fill-DtPVOoOY.js                         [39m[1m[2m    0.36 kB[22m[1m[22m[2m │ gzip:   0.28 kB[22m
+2026-06-12T06:37:07.3178007Z [2m.vinxi/build/client/_build/[22m[36massets/alert-triangle-COF5XZaD.js                      [39m[1m[2m    0.36 kB[22m[1m[22m[2m │ gzip:   0.28 kB[22m
+2026-06-12T06:37:07.3179267Z [2m.vinxi/build/client/_build/[22m[36massets/SystemAudio-BSnJPlim.js                         [39m[1m[2m    0.36 kB[22m[1m[22m[2m │ gzip:   0.26 kB[22m
+2026-06-12T06:37:07.3183932Z [2m.vinxi/build/client/_build/[22m[36massets/VI7QYH27-CicDwefu.js                            [39m[1m[2m    0.37 kB[22m[1m[22m[2m │ gzip:   0.25 kB[22m
+2026-06-12T06:37:07.3186658Z [2m.vinxi/build/client/_build/[22m[36massets/chevron-down-Dcl97elI.js                        [39m[1m[2m    0.38 kB[22m[1m[22m[2m │ gzip:   0.29 kB[22m
+2026-06-12T06:37:07.3196041Z [2m.vinxi/build/client/_build/[22m[36massets/database-CRwv4NPV.js                            [39m[1m[2m    0.38 kB[22m[1m[22m[2m │ gzip:   0.28 kB[22m
+2026-06-12T06:37:07.3197412Z [2m.vinxi/build/client/_build/[22m[36massets/copy-DrHE_vzE.js                                [39m[1m[2m    0.38 kB[22m[1m[22m[2m │ gzip:   0.29 kB[22m
+2026-06-12T06:37:07.3199165Z [2m.vinxi/build/client/_build/[22m[36massets/screenshot-Di1E2_nU.js                          [39m[1m[2m    0.39 kB[22m[1m[22m[2m │ gzip:   0.30 kB[22m
+2026-06-12T06:37:07.3207372Z [2m.vinxi/build/client/_build/[22m[36massets/index-jiJCvKxr.js                               [39m[1m[2m    0.39 kB[22m[1m[22m[2m │ gzip:   0.28 kB[22m
+2026-06-12T06:37:07.3208660Z [2m.vinxi/build/client/_build/[22m[36massets/Context-pyyM8ihI.js                             [39m[1m[2m    0.42 kB[22m[1m[22m[2m │ gzip:   0.29 kB[22m
+2026-06-12T06:37:07.3215798Z [2m.vinxi/build/client/_build/[22m[36massets/bell-DiFpEcrh.js                                [39m[1m[2m    0.43 kB[22m[1m[22m[2m │ gzip:   0.32 kB[22m
+2026-06-12T06:37:07.3217172Z [2m.vinxi/build/client/_build/[22m[36massets/monitor-bold-EuDOnHMd.js                        [39m[1m[2m    0.44 kB[22m[1m[22m[2m │ gzip:   0.30 kB[22m
+2026-06-12T06:37:07.3219546Z [2m.vinxi/build/client/_build/[22m[36massets/save-D-MzP4_5.js                                [39m[1m[2m    0.46 kB[22m[1m[22m[2m │ gzip:   0.31 kB[22m
+2026-06-12T06:37:07.3227000Z [2m.vinxi/build/client/_build/[22m[36massets/circle-x-0hPMdPHY.js                            [39m[1m[2m    0.49 kB[22m[1m[22m[2m │ gzip:   0.32 kB[22m
+2026-06-12T06:37:07.3229440Z [2m.vinxi/build/client/_build/[22m[36massets/circle-check-Dsucl1Ob.js                        [39m[1m[2m    0.49 kB[22m[1m[22m[2m │ gzip:   0.33 kB[22m
+2026-06-12T06:37:07.3234164Z [2m.vinxi/build/client/_build/[22m[36massets/TargetSelectInfoPill-JdzmzEEV.js                [39m[1m[2m    0.52 kB[22m[1m[22m[2m │ gzip:   0.32 kB[22m
+2026-06-12T06:37:07.3235459Z [2m.vinxi/build/client/_build/[22m[36massets/FN6EICGO-Dqfe6wVE.js                            [39m[1m[2m    0.52 kB[22m[1m[22m[2m │ gzip:   0.34 kB[22m
+2026-06-12T06:37:07.3239940Z [2m.vinxi/build/client/_build/[22m[36massets/eye-off-D4RPRFFs.js                             [39m[1m[2m    0.53 kB[22m[1m[22m[2m │ gzip:   0.35 kB[22m
+2026-06-12T06:37:07.3241365Z [2m.vinxi/build/client/_build/[22m[36massets/index-iAhVNHOt.js                               [39m[1m[2m    0.54 kB[22m[1m[22m[2m │ gzip:   0.39 kB[22m
+2026-06-12T06:37:07.3242551Z [2m.vinxi/build/client/_build/[22m[36massets/index-MwtrQmJ3.js                               [39m[1m[2m    0.55 kB[22m[1m[22m[2m │ gzip:   0.34 kB[22m
+2026-06-12T06:37:07.3247566Z [2m.vinxi/build/client/_build/[22m[36massets/trash-CcUsRCB5.js                               [39m[1m[2m    0.57 kB[22m[1m[22m[2m │ gzip:   0.38 kB[22m
+2026-06-12T06:37:07.3248794Z [2m.vinxi/build/client/_build/[22m[36massets/general-settings-DHSTEphR.js                    [39m[1m[2m    0.58 kB[22m[1m[22m[2m │ gzip:   0.42 kB[22m
+2026-06-12T06:37:07.3252514Z [2m.vinxi/build/client/_build/[22m[36massets/useRequestPermission-C_cSPqbt.js                [39m[1m[2m    0.58 kB[22m[1m[22m[2m │ gzip:   0.37 kB[22m
+2026-06-12T06:37:07.3254255Z [2m.vinxi/build/client/_build/[22m[36massets/index-D2fE10CH.js                               [39m[1m[2m    0.60 kB[22m[1m[22m[2m │ gzip:   0.36 kB[22m
+2026-06-12T06:37:07.3258514Z [2m.vinxi/build/client/_build/[22m[36massets/monitor-CKMgwJif.js                             [39m[1m[2m    0.61 kB[22m[1m[22m[2m │ gzip:   0.36 kB[22m
+2026-06-12T06:37:07.3260294Z [2m.vinxi/build/client/_build/[22m[36massets/titlebar-state-pC6JJZPm.js                      [39m[1m[2m    0.62 kB[22m[1m[22m[2m │ gzip:   0.39 kB[22m
+2026-06-12T06:37:07.3261541Z [2m.vinxi/build/client/_build/[22m[36massets/os-permissions-BT8FbMEJ.js                      [39m[1m[2m    0.62 kB[22m[1m[22m[2m │ gzip:   0.30 kB[22m
+2026-06-12T06:37:07.3265908Z [2m.vinxi/build/client/_build/[22m[36massets/microphone-BtZi0Q8r.js                          [39m[1m[2m    0.63 kB[22m[1m[22m[2m │ gzip:   0.40 kB[22m
+2026-06-12T06:37:07.3267132Z [2m.vinxi/build/client/_build/[22m[36massets/config-header-BStyH1Tl.js                       [39m[1m[2m    0.64 kB[22m[1m[22m[2m │ gzip:   0.44 kB[22m
+2026-06-12T06:37:07.3368996Z [2m.vinxi/build/client/_build/[22m[36massets/path-vUxa_ejL.js                                [39m[1m[2m    0.64 kB[22m[1m[22m[2m │ gzip:   0.34 kB[22m
+2026-06-12T06:37:07.3370878Z [2m.vinxi/build/client/_build/[22m[36massets/image-BQqsrifA.js                               [39m[1m[2m    0.69 kB[22m[1m[22m[2m │ gzip:   0.33 kB[22m
+2026-06-12T06:37:07.3372105Z [2m.vinxi/build/client/_build/[22m[36massets/InfoPill-5o6LovJY.js                            [39m[1m[2m    0.74 kB[22m[1m[22m[2m │ gzip:   0.42 kB[22m
+2026-06-12T06:37:07.3377059Z [2m.vinxi/build/client/_build/[22m[36massets/ratio-Cj3W9eVh.js                               [39m[1m[2m    0.75 kB[22m[1m[22m[2m │ gzip:   0.41 kB[22m
+2026-06-12T06:37:07.3378327Z [2m.vinxi/build/client/_build/[22m[36massets/index-KSSKXlju.js                               [39m[1m[2m    0.75 kB[22m[1m[22m[2m │ gzip:   0.37 kB[22m
+2026-06-12T06:37:07.3383161Z [2m.vinxi/build/client/_build/[22m[36massets/camera-BQ1xQf_z.js                              [39m[1m[2m    0.79 kB[22m[1m[22m[2m │ gzip:   0.46 kB[22m
+2026-06-12T06:37:07.3384401Z [2m.vinxi/build/client/_build/[22m[36massets/index-DhISNCQA.js                               [39m[1m[2m    0.83 kB[22m[1m[22m[2m │ gzip:   0.48 kB[22m
+2026-06-12T06:37:07.3390793Z [2m.vinxi/build/client/_build/[22m[36massets/logo-DnsSqpXQ.js                                [39m[1m[2m    0.83 kB[22m[1m[22m[2m │ gzip:   0.45 kB[22m
+2026-06-12T06:37:07.3392115Z [2m.vinxi/build/client/_build/[22m[36massets/light-B5WNOb5h.js                               [39m[1m[2m    0.85 kB[22m[1m[22m[2m │ gzip:   0.48 kB[22m
+2026-06-12T06:37:07.3393354Z [2m.vinxi/build/client/_build/[22m[36massets/caret-down-Bk7qCKpF.js                          [39m[1m[2m    0.89 kB[22m[1m[22m[2m │ gzip:   0.54 kB[22m
+2026-06-12T06:37:07.3398799Z [2m.vinxi/build/client/_build/[22m[36massets/recording-BFgLFpf4.js                           [39m[1m[2m    0.92 kB[22m[1m[22m[2m │ gzip:   0.57 kB[22m
+2026-06-12T06:37:07.3400019Z [2m.vinxi/build/client/_build/[22m[36massets/stop-circle-Bw0ayBUr.js                         [39m[1m[2m    0.93 kB[22m[1m[22m[2m │ gzip:   0.45 kB[22m
+2026-06-12T06:37:07.3406249Z [2m.vinxi/build/client/_build/[22m[36massets/persisted-CD-f9mtH.js                           [39m[1m[2m    0.95 kB[22m[1m[22m[2m │ gzip:   0.52 kB[22m
+2026-06-12T06:37:07.3408067Z [2m.vinxi/build/client/_build/[22m[36massets/TargetTypeButton-CMqw_ohs.js                    [39m[1m[2m    0.99 kB[22m[1m[22m[2m │ gzip:   0.54 kB[22m
+2026-06-12T06:37:07.3413485Z [2m.vinxi/build/client/_build/[22m[36massets/TargetDropdownButton-BLKPRPvh.js                [39m[1m[2m    1.00 kB[22m[1m[22m[2m │ gzip:   0.52 kB[22m
+2026-06-12T06:37:07.3415180Z [2m.vinxi/build/client/_build/[22m[36massets/components-GeXduH8n.js                          [39m[1m[2m    1.01 kB[22m[1m[22m[2m │ gzip:   0.60 kB[22m
+2026-06-12T06:37:07.3416369Z [2m.vinxi/build/client/_build/[22m[36massets/index-M33yfidE.js                               [39m[1m[2m    1.02 kB[22m[1m[22m[2m │ gzip:   0.56 kB[22m
+2026-06-12T06:37:07.3421877Z [2m.vinxi/build/client/_build/[22m[36massets/index-Bpe2kbTi.js                               [39m[1m[2m    1.03 kB[22m[1m[22m[2m │ gzip:   0.49 kB[22m
+2026-06-12T06:37:07.3423026Z [2m.vinxi/build/client/_build/[22m[36massets/index-DFO9ooFv.js                               [39m[1m[2m    1.04 kB[22m[1m[22m[2m │ gzip:   0.59 kB[22m
+2026-06-12T06:37:07.3427456Z [2m.vinxi/build/client/_build/[22m[36massets/index-Pv7eJR4q.js                               [39m[1m[2m    1.04 kB[22m[1m[22m[2m │ gzip:   0.59 kB[22m
+2026-06-12T06:37:07.3428761Z [2m.vinxi/build/client/_build/[22m[36massets/index-CY7X0x9i.js                               [39m[1m[2m    1.06 kB[22m[1m[22m[2m │ gzip:   0.62 kB[22m
+2026-06-12T06:37:07.3429918Z [2m.vinxi/build/client/_build/[22m[36massets/index-CMaD3rhm.js                               [39m[1m[2m    1.06 kB[22m[1m[22m[2m │ gzip:   0.62 kB[22m
+2026-06-12T06:37:07.3435421Z [2m.vinxi/build/client/_build/[22m[36massets/index-BY__F6Wz.js                               [39m[1m[2m    1.06 kB[22m[1m[22m[2m │ gzip:   0.52 kB[22m
+2026-06-12T06:37:07.3437483Z [2m.vinxi/build/client/_build/[22m[36massets/UKTBL2JL-BuBa2Q3M.js                            [39m[1m[2m    1.15 kB[22m[1m[22m[2m │ gzip:   0.62 kB[22m
+2026-06-12T06:37:07.3443239Z [2m.vinxi/build/client/_build/[22m[36massets/edit-BP1GM0Ez.js                                [39m[1m[2m    1.17 kB[22m[1m[22m[2m │ gzip:   0.63 kB[22m
+2026-06-12T06:37:07.3444658Z [2m.vinxi/build/client/_build/[22m[36massets/index-D6w-b9P6.js                               [39m[1m[2m    1.24 kB[22m[1m[22m[2m │ gzip:   0.42 kB[22m
+2026-06-12T06:37:07.3449442Z [2m.vinxi/build/client/_build/[22m[36massets/event-i83GIek2.js                               [39m[1m[2m    1.29 kB[22m[1m[22m[2m │ gzip:   0.63 kB[22m
+2026-06-12T06:37:07.3450723Z [2m.vinxi/build/client/_build/[22m[36massets/index-Do5r02Sp.js                               [39m[1m[2m    1.35 kB[22m[1m[22m[2m │ gzip:   0.75 kB[22m
+2026-06-12T06:37:07.3451902Z [2m.vinxi/build/client/_build/[22m[36massets/index-DMZsW1Hh.js                               [39m[1m[2m    1.43 kB[22m[1m[22m[2m │ gzip:   0.76 kB[22m
+2026-06-12T06:37:07.3467438Z [2m.vinxi/build/client/_build/[22m[36massets/copy-DGxScngJ.js                                [39m[1m[2m    1.47 kB[22m[1m[22m[2m │ gzip:   0.78 kB[22m
+2026-06-12T06:37:07.3469165Z [2m.vinxi/build/client/_build/[22m[36massets/InfoPill-DKmhMEcU.js                            [39m[1m[2m    1.59 kB[22m[1m[22m[2m │ gzip:   0.67 kB[22m
+2026-06-12T06:37:07.3470639Z [2m.vinxi/build/client/_build/[22m[36massets/notifications-C5wB4pVD.js                       [39m[1m[2m    1.61 kB[22m[1m[22m[2m │ gzip:   0.87 kB[22m
+2026-06-12T06:37:07.3472500Z [2m.vinxi/build/client/_build/[22m[36massets/notifications-B6Ws4F_3.js                       [39m[1m[2m    1.61 kB[22m[1m[22m[2m │ gzip:   0.87 kB[22m
+2026-06-12T06:37:07.3473854Z [2m.vinxi/build/client/_build/[22m[36massets/play-circle-RNp9Jo3t.js                         [39m[1m[2m    1.63 kB[22m[1m[22m[2m │ gzip:   0.71 kB[22m
+2026-06-12T06:37:07.3475196Z [2m.vinxi/build/client/_build/[22m[36massets/search-BmZfHeN3.js                              [39m[1m[2m    1.69 kB[22m[1m[22m[2m │ gzip:   0.81 kB[22m
+2026-06-12T06:37:07.3476538Z [2m.vinxi/build/client/_build/[22m[36massets/core-g5jb2V6a.js                                [39m[1m[2m    1.71 kB[22m[1m[22m[2m │ gzip:   0.75 kB[22m
+2026-06-12T06:37:07.3477922Z [2m.vinxi/build/client/_build/[22m[36massets/mode-select-D0CXRQq2.js                         [39m[1m[2m    1.78 kB[22m[1m[22m[2m │ gzip:   0.94 kB[22m
+2026-06-12T06:37:07.3479058Z [2m.vinxi/build/client/_build/[22m[36massets/mode-select-PRxYsS5v.js                         [39m[1m[2m    1.78 kB[22m[1m[22m[2m │ gzip:   0.94 kB[22m
+2026-06-12T06:37:07.3480202Z [2m.vinxi/build/client/_build/[22m[36massets/settings-DcRAc4Is.js                            [39m[1m[2m    1.80 kB[22m[1m[22m[2m │ gzip:   0.89 kB[22m
+2026-06-12T06:37:07.3481458Z [2m.vinxi/build/client/_build/[22m[36massets/settings-Bp-1AjR-.js                            [39m[1m[2m    1.82 kB[22m[1m[22m[2m │ gzip:   0.78 kB[22m
+2026-06-12T06:37:07.3482581Z [2m.vinxi/build/client/_build/[22m[36massets/ChangeLogButton-I8nlH5ku.js                     [39m[1m[2m    1.97 kB[22m[1m[22m[2m │ gzip:   1.08 kB[22m
+2026-06-12T06:37:07.3483768Z [2m.vinxi/build/client/_build/[22m[36massets/tears-and-fireflies-adi-goldstein-GTGFcbxm.js   [39m[1m[2m    1.99 kB[22m[1m[22m[2m │ gzip:   0.66 kB[22m
+2026-06-12T06:37:07.3484954Z [2m.vinxi/build/client/_build/[22m[36massets/hard-drive-BWFnINY7.js                          [39m[1m[2m    2.09 kB[22m[1m[22m[2m │ gzip:   0.73 kB[22m
+2026-06-12T06:37:07.3486246Z [2m.vinxi/build/client/_build/[22m[36massets/devices-BCYNOX7C.js                             [39m[1m[2m    2.13 kB[22m[1m[22m[2m │ gzip:   0.89 kB[22m
+2026-06-12T06:37:07.3488718Z [2m.vinxi/build/client/_build/[22m[36massets/Button-CJQ-fipb.js                              [39m[1m[2m    2.28 kB[22m[1m[22m[2m │ gzip:   0.99 kB[22m
+2026-06-12T06:37:07.3490671Z [2m.vinxi/build/client/_build/[22m[36massets/store-BxCu8E09.js                               [39m[1m[2m    2.31 kB[22m[1m[22m[2m │ gzip:   0.92 kB[22m
+2026-06-12T06:37:07.3492551Z [2m.vinxi/build/client/_build/[22m[36massets/film-cut-B8fRJ4CQ.js                            [39m[1m[2m    2.39 kB[22m[1m[22m[2m │ gzip:   1.23 kB[22m
+2026-06-12T06:37:07.3494556Z [2m.vinxi/build/client/_build/[22m[36massets/window-capture-occluder-FM912hrc.js             [39m[1m[2m    2.40 kB[22m[1m[22m[2m │ gzip:   0.91 kB[22m
+2026-06-12T06:37:07.3496447Z [2m.vinxi/build/client/_build/[22m[36massets/window-capture-occluder-DvN5ByuM.js             [39m[1m[2m    2.40 kB[22m[1m[22m[2m │ gzip:   0.91 kB[22m
+2026-06-12T06:37:07.3497820Z [2m.vinxi/build/client/_build/[22m[36massets/experimental-BHGnFvTW.js                        [39m[1m[2m    2.41 kB[22m[1m[22m[2m │ gzip:   1.23 kB[22m
+2026-06-12T06:37:07.3498930Z [2m.vinxi/build/client/_build/[22m[36massets/experimental-BXYyntga.js                        [39m[1m[2m    2.41 kB[22m[1m[22m[2m │ gzip:   1.23 kB[22m
+2026-06-12T06:37:07.3500050Z [2m.vinxi/build/client/_build/[22m[36massets/(window-chrome)-DctLtxvV.js                     [39m[1m[2m    2.47 kB[22m[1m[22m[2m │ gzip:   1.25 kB[22m
+2026-06-12T06:37:07.3501222Z [2m.vinxi/build/client/_build/[22m[36massets/ShadowSettings-CP6GPe-Z.js                      [39m[1m[2m    2.66 kB[22m[1m[22m[2m │ gzip:   1.22 kB[22m
+2026-06-12T06:37:07.3502369Z [2m.vinxi/build/client/_build/[22m[36massets/more-vertical-C6pB3ite.js                       [39m[1m[2m    2.67 kB[22m[1m[22m[2m │ gzip:   0.85 kB[22m
+2026-06-12T06:37:07.3503484Z [2m.vinxi/build/client/_build/[22m[36massets/UGE6PPGT-D4AvK-Zu.js                            [39m[1m[2m    2.71 kB[22m[1m[22m[2m │ gzip:   1.32 kB[22m
+2026-06-12T06:37:07.3504602Z [2m.vinxi/build/client/_build/[22m[36massets/MicrophoneSelect-D9jqP-Iq.js                    [39m[1m[2m    2.94 kB[22m[1m[22m[2m │ gzip:   1.42 kB[22m
+2026-06-12T06:37:07.3505718Z [2m.vinxi/build/client/_build/[22m[36massets/CameraSelect-C3HhI8xw.js                        [39m[1m[2m    2.96 kB[22m[1m[22m[2m │ gzip:   1.41 kB[22m
+2026-06-12T06:37:07.3506863Z [2m.vinxi/build/client/_build/[22m[36massets/organization-branding-bbleyQDx.js               [39m[1m[2m    2.99 kB[22m[1m[22m[2m │ gzip:   1.26 kB[22m
+2026-06-12T06:37:07.3508254Z [2m.vinxi/build/client/_build/[22m[36massets/cursor-windows-DJrLTYmL.js                      [39m[1m[2m    3.01 kB[22m[1m[22m[2m │ gzip:   1.11 kB[22m
+2026-06-12T06:37:07.3509359Z [2m.vinxi/build/client/_build/[22m[36massets/changelog-k8tguxMa.js                           [39m[1m[2m    3.01 kB[22m[1m[22m[2m │ gzip:   1.49 kB[22m
+2026-06-12T06:37:07.3511446Z [2m.vinxi/build/client/_build/[22m[36massets/changelog-BGyQ8Rr5.js                           [39m[1m[2m    3.01 kB[22m[1m[22m[2m │ gzip:   1.49 kB[22m
+2026-06-12T06:37:07.3512607Z [2m.vinxi/build/client/_build/[22m[36massets/ZZYKR3VO-D9THCT8r.js                            [39m[1m[2m    3.04 kB[22m[1m[22m[2m │ gzip:   1.34 kB[22m
+2026-06-12T06:37:07.3513701Z [2m.vinxi/build/client/_build/[22m[36massets/warning-bold-B6nOWt-N.js                        [39m[1m[2m    3.08 kB[22m[1m[22m[2m │ gzip:   1.47 kB[22m
+2026-06-12T06:37:07.3514800Z [2m.vinxi/build/client/_build/[22m[36massets/debug-D-UtLWbj.js                               [39m[1m[2m    3.20 kB[22m[1m[22m[2m │ gzip:   1.45 kB[22m
+2026-06-12T06:37:07.3515866Z [2m.vinxi/build/client/_build/[22m[36massets/debug-DcBThKeP.js                               [39m[1m[2m    3.20 kB[22m[1m[22m[2m │ gzip:   1.45 kB[22m
+2026-06-12T06:37:07.3517216Z [2m.vinxi/build/client/_build/[22m[36massets/update-DzaNAqTv.js                              [39m[1m[2m    3.21 kB[22m[1m[22m[2m │ gzip:   1.52 kB[22m
+2026-06-12T06:37:07.3518444Z [2m.vinxi/build/client/_build/[22m[36massets/update-BNPVfiOL.js                              [39m[1m[2m    3.21 kB[22m[1m[22m[2m │ gzip:   1.52 kB[22m
+2026-06-12T06:37:07.3519551Z [2m.vinxi/build/client/_build/[22m[36massets/iconMenuItem-CqcJV6H-.js                        [39m[1m[2m    3.56 kB[22m[1m[22m[2m │ gzip:   1.32 kB[22m
+2026-06-12T06:37:07.3520667Z [2m.vinxi/build/client/_build/[22m[36massets/ModeInfoPanel-CNYLIzjE.js                       [39m[1m[2m    3.86 kB[22m[1m[22m[2m │ gzip:   1.78 kB[22m
+2026-06-12T06:37:07.3522269Z [2m.vinxi/build/client/_build/[22m[36massets/macos-window-material-DWWUF2y9.js               [39m[1m[2m    3.94 kB[22m[1m[22m[2m │ gzip:   1.77 kB[22m
+2026-06-12T06:37:07.3524423Z [2m.vinxi/build/client/_build/[22m[36massets/ModeSelect-C4yDueBo.js                          [39m[1m[2m    3.99 kB[22m[1m[22m[2m │ gzip:   1.94 kB[22m
+2026-06-12T06:37:07.3526404Z [2m.vinxi/build/client/_build/[22m[36massets/action-BCXoT0vD.js                              [39m[1m[2m    4.02 kB[22m[1m[22m[2m │ gzip:   1.98 kB[22m
+2026-06-12T06:37:07.3528446Z [2m.vinxi/build/client/_build/[22m[36massets/index-D0SdizmH.js                               [39m[1m[2m    4.05 kB[22m[1m[22m[2m │ gzip:   1.62 kB[22m
+2026-06-12T06:37:07.3530487Z [2m.vinxi/build/client/_build/[22m[36massets/gear-Cvzjl455.js                                [39m[1m[2m    4.06 kB[22m[1m[22m[2m │ gzip:   1.69 kB[22m
+2026-06-12T06:37:07.3532930Z [2m.vinxi/build/client/_build/[22m[36massets/index-r7A7qRlt.js                               [39m[1m[2m    4.11 kB[22m[1m[22m[2m │ gzip:   2.12 kB[22m
+2026-06-12T06:37:07.3534893Z [2m.vinxi/build/client/_build/[22m[36massets/index-Bm9os6uI.js                               [39m[1m[2m    4.11 kB[22m[1m[22m[2m │ gzip:   2.12 kB[22m
+2026-06-12T06:37:07.3536536Z [2m.vinxi/build/client/_build/[22m[36massets/toast-CM2p9z6w.js                               [39m[1m[2m    4.21 kB[22m[1m[22m[2m │ gzip:   1.83 kB[22m
+2026-06-12T06:37:07.3537693Z [2m.vinxi/build/client/_build/[22m[36massets/message-square-plus-BlPGCCMI.js                 [39m[1m[2m    4.47 kB[22m[1m[22m[2m │ gzip:   1.69 kB[22m
+2026-06-12T06:37:07.3538837Z [2m.vinxi/build/client/_build/[22m[36massets/ShadowSettings-9xog6Lwe.js                      [39m[1m[2m    4.50 kB[22m[1m[22m[2m │ gzip:   1.98 kB[22m
+2026-06-12T06:37:07.3542153Z [2m.vinxi/build/client/_build/[22m[36massets/queries-CQ73ufJ6.js                             [39m[1m[2m    4.77 kB[22m[1m[22m[2m │ gzip:   1.98 kB[22m
+2026-06-12T06:37:07.3544188Z [2m.vinxi/build/client/_build/[22m[36massets/webviewWindow-DMhHJJO3.js                       [39m[1m[2m    4.80 kB[22m[1m[22m[2m │ gzip:   1.43 kB[22m
+2026-06-12T06:37:07.3546575Z [2m.vinxi/build/client/_build/[22m[36massets/cli-D98IW7ke.js                                 [39m[1m[2m    4.84 kB[22m[1m[22m[2m │ gzip:   1.97 kB[22m
+2026-06-12T06:37:07.3548753Z [2m.vinxi/build/client/_build/[22m[36massets/cli-DhuKL-uC.js                                 [39m[1m[2m    4.84 kB[22m[1m[22m[2m │ gzip:   1.97 kB[22m
+2026-06-12T06:37:07.3550911Z [2m.vinxi/build/client/_build/[22m[36massets/transcription-BuzaHPaO.js                       [39m[1m[2m    4.85 kB[22m[1m[22m[2m │ gzip:   2.20 kB[22m
+2026-06-12T06:37:07.3553078Z [2m.vinxi/build/client/_build/[22m[36massets/transcription-Cbo4EAbz.js                       [39m[1m[2m    4.85 kB[22m[1m[22m[2m │ gzip:   2.20 kB[22m
+2026-06-12T06:37:07.3555175Z [2m.vinxi/build/client/_build/[22m[36massets/store-B6zpE3Wo.js                               [39m[1m[2m    4.99 kB[22m[1m[22m[2m │ gzip:   2.09 kB[22m
+2026-06-12T06:37:07.3557171Z [2m.vinxi/build/client/_build/[22m[36massets/menu-DCrVZtKc.js                                [39m[1m[2m    5.18 kB[22m[1m[22m[2m │ gzip:   0.95 kB[22m
+2026-06-12T06:37:07.3559292Z [2m.vinxi/build/client/_build/[22m[36massets/DeviceSelectOverlay-DMibz4o3.js                 [39m[1m[2m    5.23 kB[22m[1m[22m[2m │ gzip:   2.08 kB[22m
+2026-06-12T06:37:07.3561417Z [2m.vinxi/build/client/_build/[22m[36massets/hotkeys-3KixCon4.js                             [39m[1m[2m    5.27 kB[22m[1m[22m[2m │ gzip:   2.21 kB[22m
+2026-06-12T06:37:07.3563419Z [2m.vinxi/build/client/_build/[22m[36massets/hotkeys--yf4l7O5.js                             [39m[1m[2m    5.27 kB[22m[1m[22m[2m │ gzip:   2.21 kB[22m
+2026-06-12T06:37:07.3565460Z [2m.vinxi/build/client/_build/[22m[36massets/feedback-DhdYjDj3.js                            [39m[1m[2m    5.42 kB[22m[1m[22m[2m │ gzip:   2.46 kB[22m
+2026-06-12T06:37:07.3567491Z [2m.vinxi/build/client/_build/[22m[36massets/feedback-_tUqfTHv.js                            [39m[1m[2m    5.42 kB[22m[1m[22m[2m │ gzip:   2.46 kB[22m
+2026-06-12T06:37:07.3569583Z [2m.vinxi/build/client/_build/[22m[36massets/LoaderIcon-BTB27r5-.js                          [39m[1m[2m    6.37 kB[22m[1m[22m[2m │ gzip:   2.38 kB[22m
+2026-06-12T06:37:07.3571204Z [2m.vinxi/build/client/_build/[22m[36massets/auth-9QGT1AVu.js                                [39m[1m[2m    6.47 kB[22m[1m[22m[2m │ gzip:   2.90 kB[22m
+2026-06-12T06:37:07.3572324Z [2m.vinxi/build/client/_build/[22m[36massets/AspectRatioSelect-C0a-kQ7t.js                   [39m[1m[2m    6.61 kB[22m[1m[22m[2m │ gzip:   2.68 kB[22m
+2026-06-12T06:37:07.3573460Z [2m.vinxi/build/client/_build/[22m[36massets/s3-config-Bm1YR_JO.js                           [39m[1m[2m    6.69 kB[22m[1m[22m[2m │ gzip:   2.93 kB[22m
+2026-06-12T06:37:07.3574806Z [2m.vinxi/build/client/_build/[22m[36massets/s3-config-z96cjkyl.js                           [39m[1m[2m    6.69 kB[22m[1m[22m[2m │ gzip:   2.93 kB[22m
+2026-06-12T06:37:07.3575930Z [2m.vinxi/build/client/_build/[22m[36massets/Setting-BDqOO7tN.js                             [39m[1m[2m    6.86 kB[22m[1m[22m[2m │ gzip:   2.66 kB[22m
+2026-06-12T06:37:07.3577032Z [2m.vinxi/build/client/_build/[22m[36massets/screenshots-CcVdC6U8.js                         [39m[1m[2m    7.06 kB[22m[1m[22m[2m │ gzip:   2.99 kB[22m
+2026-06-12T06:37:07.3578117Z [2m.vinxi/build/client/_build/[22m[36massets/screenshots-D5kYoMBh.js                         [39m[1m[2m    7.06 kB[22m[1m[22m[2m │ gzip:   2.99 kB[22m
+2026-06-12T06:37:07.3579540Z [2m.vinxi/build/client/_build/[22m[36massets/index-B6l6zdUN.js                               [39m[1m[2m    7.06 kB[22m[1m[22m[2m │ gzip:   3.07 kB[22m
+2026-06-12T06:37:07.3580613Z [2m.vinxi/build/client/_build/[22m[36massets/editor-skeleton-BejqZtji.js                     [39m[1m[2m    7.27 kB[22m[1m[22m[2m │ gzip:   1.66 kB[22m
+2026-06-12T06:37:07.3581691Z [2m.vinxi/build/client/_build/[22m[36massets/context-DcniPiHS.js                             [39m[1m[2m    7.65 kB[22m[1m[22m[2m │ gzip:   3.38 kB[22m
+2026-06-12T06:37:07.3582922Z [2m.vinxi/build/client/_build/[22m[36massets/capture-area-DPe_DxLE.js                        [39m[1m[2m    7.68 kB[22m[1m[22m[2m │ gzip:   2.90 kB[22m
+2026-06-12T06:37:07.3584025Z [2m.vinxi/build/client/_build/[22m[36massets/capture-area-C03GuSvD.js                        [39m[1m[2m    7.68 kB[22m[1m[22m[2m │ gzip:   2.90 kB[22m
+2026-06-12T06:37:07.3585099Z [2m.vinxi/build/client/_build/[22m[36massets/license-DEiohapy.js                             [39m[1m[2m    7.87 kB[22m[1m[22m[2m │ gzip:   3.15 kB[22m
+2026-06-12T06:37:07.3586177Z [2m.vinxi/build/client/_build/[22m[36massets/license-BVQHUrIU.js                             [39m[1m[2m    7.87 kB[22m[1m[22m[2m │ gzip:   3.15 kB[22m
+2026-06-12T06:37:07.3587251Z [2m.vinxi/build/client/_build/[22m[36massets/routing-DXnYLbrV.js                             [39m[1m[2m    7.95 kB[22m[1m[22m[2m │ gzip:   3.70 kB[22m
+2026-06-12T06:37:07.3588357Z [2m.vinxi/build/client/_build/[22m[36massets/TargetMenuGrid-DwDq4sRH.js                      [39m[1m[2m    8.34 kB[22m[1m[22m[2m │ gzip:   2.68 kB[22m
+2026-06-12T06:37:07.3589496Z [2m.vinxi/build/client/_build/[22m[36massets/google-drive-config-D2HMLW_g.js                 [39m[1m[2m    8.61 kB[22m[1m[22m[2m │ gzip:   3.19 kB[22m
+2026-06-12T06:37:07.3590629Z [2m.vinxi/build/client/_build/[22m[36massets/google-drive-config-DkfnJjSH.js                 [39m[1m[2m    8.61 kB[22m[1m[22m[2m │ gzip:   3.19 kB[22m
+2026-06-12T06:37:07.3591775Z [2m.vinxi/build/client/_build/[22m[36massets/CameraPreviewChrome-C7LhA5X4.js                 [39m[1m[2m    8.61 kB[22m[1m[22m[2m │ gzip:   3.24 kB[22m
+2026-06-12T06:37:07.3592883Z [2m.vinxi/build/client/_build/[22m[36massets/TargetCard-DrmhyCoB.js                          [39m[1m[2m    9.21 kB[22m[1m[22m[2m │ gzip:   3.35 kB[22m
+2026-06-12T06:37:07.3593985Z [2m.vinxi/build/client/_build/[22m[36massets/TargetCard-CJQGU-jJ.js                          [39m[1m[2m    9.22 kB[22m[1m[22m[2m │ gzip:   3.45 kB[22m
+2026-06-12T06:37:07.3595113Z [2m.vinxi/build/client/_build/[22m[36massets/CaptionControlsWindows11-CKWTsln4.js            [39m[1m[2m    9.28 kB[22m[1m[22m[2m │ gzip:   3.55 kB[22m
+2026-06-12T06:37:07.3596245Z [2m.vinxi/build/client/_build/[22m[36massets/ShareButton-CUyeVhzk.js                         [39m[1m[2m   10.03 kB[22m[1m[22m[2m │ gzip:   4.21 kB[22m
+2026-06-12T06:37:07.3597331Z [2m.vinxi/build/client/_build/[22m[36massets/settings-CrTYBkQ1.js                            [39m[1m[2m   10.31 kB[22m[1m[22m[2m │ gzip:   3.92 kB[22m
+2026-06-12T06:37:07.3598387Z [2m.vinxi/build/client/_build/[22m[36massets/info-BSHXpxbW.js                                [39m[1m[2m   10.33 kB[22m[1m[22m[2m │ gzip:   3.68 kB[22m
+2026-06-12T06:37:07.3599425Z [2m.vinxi/build/client/_build/[22m[36massets/web-DT5Lixpb.js                                 [39m[1m[2m   10.77 kB[22m[1m[22m[2m │ gzip:   4.53 kB[22m
+2026-06-12T06:37:07.3600480Z [2m.vinxi/build/client/_build/[22m[36massets/camera-C0pngJME.js                              [39m[1m[2m   11.67 kB[22m[1m[22m[2m │ gzip:   4.65 kB[22m
+2026-06-12T06:37:07.3601550Z [2m.vinxi/build/client/_build/[22m[36massets/camera-DrFX6K73.js                              [39m[1m[2m   11.67 kB[22m[1m[22m[2m │ gzip:   4.65 kB[22m
+2026-06-12T06:37:07.3602639Z [2m.vinxi/build/client/_build/[22m[36massets/recordings-C0zzwmvA.js                          [39m[1m[2m   11.74 kB[22m[1m[22m[2m │ gzip:   4.49 kB[22m
+2026-06-12T06:37:07.3603851Z [2m.vinxi/build/client/_build/[22m[36massets/recordings-DCOPd394.js                          [39m[1m[2m   11.74 kB[22m[1m[22m[2m │ gzip:   4.48 kB[22m
+2026-06-12T06:37:07.3604919Z [2m.vinxi/build/client/_build/[22m[36massets/upgrade-B8rUupbZ.js                             [39m[1m[2m   11.88 kB[22m[1m[22m[2m │ gzip:   4.27 kB[22m
+2026-06-12T06:37:07.3606085Z [2m.vinxi/build/client/_build/[22m[36massets/upgrade-Hauchb9f.js                             [39m[1m[2m   11.88 kB[22m[1m[22m[2m │ gzip:   4.27 kB[22m
+2026-06-12T06:37:07.3607164Z [2m.vinxi/build/client/_build/[22m[36massets/tauri-CTSTI5Ft.js                               [39m[1m[2m   12.24 kB[22m[1m[22m[2m │ gzip:   3.50 kB[22m
+2026-06-12T06:37:07.3608216Z [2m.vinxi/build/client/_build/[22m[36massets/window-BnY_LgU6.js                              [39m[1m[2m   13.24 kB[22m[1m[22m[2m │ gzip:   3.27 kB[22m
+2026-06-12T06:37:07.3609281Z [2m.vinxi/build/client/_build/[22m[36massets/65CAYJLE-Bdx8ZrUa.js                            [39m[1m[2m   13.98 kB[22m[1m[22m[2m │ gzip:   4.97 kB[22m
+2026-06-12T06:37:07.3610385Z [2m.vinxi/build/client/_build/[22m[36massets/recordings-overlay-VjzUxFVk.js                  [39m[1m[2m   13.98 kB[22m[1m[22m[2m │ gzip:   5.20 kB[22m
+2026-06-12T06:37:07.3611575Z [2m.vinxi/build/client/_build/[22m[36massets/recordings-overlay-BxzFGef8.js                  [39m[1m[2m   13.98 kB[22m[1m[22m[2m │ gzip:   5.20 kB[22m
+2026-06-12T06:37:07.3612677Z [2m.vinxi/build/client/_build/[22m[36massets/context-BaICnckJ.js                             [39m[1m[2m   14.53 kB[22m[1m[22m[2m │ gzip:   5.50 kB[22m
+2026-06-12T06:37:07.3614484Z [2m.vinxi/build/client/_build/[22m[36massets/in-progress-recording-3ahwBSE7.js               [39m[1m[2m   15.54 kB[22m[1m[22m[2m │ gzip:   5.65 kB[22m
+2026-06-12T06:37:07.3616386Z [2m.vinxi/build/client/_build/[22m[36massets/in-progress-recording-BeFXoYRz.js               [39m[1m[2m   15.54 kB[22m[1m[22m[2m │ gzip:   5.65 kB[22m
+2026-06-12T06:37:07.3617538Z [2m.vinxi/build/client/_build/[22m[36massets/solid-BK_4Q9Yr.js                               [39m[1m[2m   16.71 kB[22m[1m[22m[2m │ gzip:   6.49 kB[22m
+2026-06-12T06:37:07.3618583Z [2m.vinxi/build/client/_build/[22m[36massets/ui-wY86Y_C7.js                                  [39m[1m[2m   19.55 kB[22m[1m[22m[2m │ gzip:   7.03 kB[22m
+2026-06-12T06:37:07.3619638Z [2m.vinxi/build/client/_build/[22m[36massets/index-CXeXd6S-.js                               [39m[1m[2m   20.56 kB[22m[1m[22m[2m │ gzip:   6.42 kB[22m
+2026-06-12T06:37:07.3620704Z [2m.vinxi/build/client/_build/[22m[36massets/Tooltip-DSpfbWwG.js                             [39m[1m[2m   20.82 kB[22m[1m[22m[2m │ gzip:   7.98 kB[22m
+2026-06-12T06:37:07.3621769Z [2m.vinxi/build/client/_build/[22m[36massets/socket-Cs3Bnk7L.js                              [39m[1m[2m   21.04 kB[22m[1m[22m[2m │ gzip:   7.03 kB[22m
+2026-06-12T06:37:07.3622851Z [2m.vinxi/build/client/_build/[22m[36massets/floating-ui.dom-DzoQ-s65.js                     [39m[1m[2m   21.14 kB[22m[1m[22m[2m │ gzip:   8.15 kB[22m
+2026-06-12T06:37:07.3623946Z [2m.vinxi/build/client/_build/[22m[36massets/selection-hint-BbyCmwX6.js                      [39m[1m[2m   23.60 kB[22m[1m[22m[2m │ gzip:   8.51 kB[22m
+2026-06-12T06:37:07.3625049Z [2m.vinxi/build/client/_build/[22m[36massets/general-CBeeW7WZ.js                             [39m[1m[2m   25.92 kB[22m[1m[22m[2m │ gzip:   9.18 kB[22m
+2026-06-12T06:37:07.3626104Z [2m.vinxi/build/client/_build/[22m[36massets/general-D_6HYhpL.js                             [39m[1m[2m   25.92 kB[22m[1m[22m[2m │ gzip:   9.18 kB[22m
+2026-06-12T06:37:07.3627174Z [2m.vinxi/build/client/_build/[22m[36massets/SwitchTab-DRJNLHxb.js                           [39m[1m[2m   26.43 kB[22m[1m[22m[2m │ gzip:   8.47 kB[22m
+2026-06-12T06:37:07.3628487Z [2m.vinxi/build/client/_build/[22m[36massets/target-select-overlay-DgbwiDM0.js               [39m[1m[2m   29.23 kB[22m[1m[22m[2m │ gzip:   9.91 kB[22m
+2026-06-12T06:37:07.3629637Z [2m.vinxi/build/client/_build/[22m[36massets/target-select-overlay-CUQ_kLH8.js               [39m[1m[2m   29.23 kB[22m[1m[22m[2m │ gzip:   9.91 kB[22m
+2026-06-12T06:37:07.3630898Z [2m.vinxi/build/client/_build/[22m[36massets/TargetTypeButton-DK90orjv.js                    [39m[1m[2m   31.67 kB[22m[1m[22m[2m │ gzip:  10.14 kB[22m
+2026-06-12T06:37:07.3632006Z [2m.vinxi/build/client/_build/[22m[36massets/index-BE-kWOfe.js                               [39m[1m[2m   34.51 kB[22m[1m[22m[2m │ gzip:  10.50 kB[22m
+2026-06-12T06:37:07.3633056Z [2m.vinxi/build/client/_build/[22m[36massets/client-DGBLx6F1.js                              [39m[1m[2m   34.98 kB[22m[1m[22m[2m │ gzip:  12.80 kB[22m
+2026-06-12T06:37:07.3634124Z [2m.vinxi/build/client/_build/[22m[36massets/JL7SEB2K-By3P1iKS.js                            [39m[1m[2m   37.18 kB[22m[1m[22m[2m │ gzip:  11.06 kB[22m
+2026-06-12T06:37:07.3635185Z [2m.vinxi/build/client/_build/[22m[36massets/index-bqONMVgC.js                               [39m[1m[2m   46.42 kB[22m[1m[22m[2m │ gzip:  13.01 kB[22m
+2026-06-12T06:37:07.3636227Z [2m.vinxi/build/client/_build/[22m[36massets/index-Bq-hWJfd.js                               [39m[1m[2m   46.42 kB[22m[1m[22m[2m │ gzip:  13.01 kB[22m
+2026-06-12T06:37:07.3637315Z [2m.vinxi/build/client/_build/[22m[36massets/onboarding-BPqQkP0Q.js                          [39m[1m[2m   59.53 kB[22m[1m[22m[2m │ gzip:  15.21 kB[22m
+2026-06-12T06:37:07.3638387Z [2m.vinxi/build/client/_build/[22m[36massets/onboarding-Zu5ehQ7x.js                          [39m[1m[2m   59.53 kB[22m[1m[22m[2m │ gzip:  15.22 kB[22m
+2026-06-12T06:37:07.3639456Z [2m.vinxi/build/client/_build/[22m[36massets/web-api-Bv_8djUO.js                             [39m[1m[2m   68.82 kB[22m[1m[22m[2m │ gzip:  17.39 kB[22m
+2026-06-12T06:37:07.3640525Z [2m.vinxi/build/client/_build/[22m[36massets/index-BNBEkIdI.js                               [39m[1m[2m  111.49 kB[22m[1m[22m[2m │ gzip:  33.89 kB[22m
+2026-06-12T06:37:07.3641579Z [2m.vinxi/build/client/_build/[22m[36massets/pricing-D-H79VmH.js                             [39m[1m[2m  145.80 kB[22m[1m[22m[2m │ gzip:  44.60 kB[22m
+2026-06-12T06:37:07.3642652Z [2m.vinxi/build/client/_build/[22m[36massets/analytics-CyCXpIM3.js                           [39m[1m[2m  162.00 kB[22m[1m[22m[2m │ gzip:  54.69 kB[22m
+2026-06-12T06:37:07.3643302Z [32m✓ built in 19.69s[39m
+2026-06-12T06:37:07.3643547Z [success] build done
+2026-06-12T06:37:07.3643904Z ⚙ [32mBuilt your router client successfully[39m
+2026-06-12T06:37:07.3644334Z [2m[34mvinxi[39m[22m [2m[33mv0.5.6[39m[22m
+2026-06-12T06:37:07.3644537Z 
+2026-06-12T06:37:07.3644547Z 
+2026-06-12T06:37:07.3644761Z ⚙ [32mBuilding your router server-fns...[39m
+2026-06-12T06:37:07.3644969Z 
+2026-06-12T06:37:07.3644975Z 
+2026-06-12T06:37:07.3645186Z [32m📦 Compiling server-fns router...[39m
+2026-06-12T06:37:07.3645653Z [2m[34mvinxi[39m[22m building router server-fns in http mode
+2026-06-12T06:37:07.3646188Z [36mvite v6.3.5 [32mbuilding SSR bundle for production...[36m[39m
+2026-06-12T06:37:07.3646540Z transforming...
+2026-06-12T06:37:07.3647312Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+2026-06-12T06:37:07.3648176Z Browserslist: browsers data (caniuse-lite) is 14 months old. Please run:
+2026-06-12T06:37:07.3648584Z   npx update-browserslist-db@latest
+2026-06-12T06:37:07.3649030Z   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+2026-06-12T06:37:07.3649543Z [32m✓[39m 536 modules transformed.
+2026-06-12T06:37:07.3649805Z rendering chunks...
+2026-06-12T06:37:07.3650770Z [2m.vinxi/build/server-fns/_server/[22m[32massets/stride-correction-worker-ByUUGvPa.js            [39m[1m[2m    0.43 kB[22m[1m[22m
+2026-06-12T06:37:07.3651855Z [2m.vinxi/build/server-fns/_server/[22m[32massets/frame-worker-DUrf4zLv.js                        [39m[1m[2m   20.79 kB[22m[1m[22m
+2026-06-12T06:37:07.3652818Z [2m.vinxi/build/server-fns/_server/[22m[32m.vite/manifest.json                                    [39m[1m[2m   27.67 kB[22m[1m[22m
+2026-06-12T06:37:07.3654065Z [2m.vinxi/build/server-fns/_server/[22m[32massets/geist-sans-latin-400-normal-gapTbOY8.woff2      [39m[1m[2m   33.40 kB[22m[1m[22m
+2026-06-12T06:37:07.3655167Z [2m.vinxi/build/server-fns/_server/[22m[32massets/geist-sans-latin-500-normal-uokXdC-Q.woff2      [39m[1m[2m   34.72 kB[22m[1m[22m
+2026-06-12T06:37:07.3656184Z [2m.vinxi/build/server-fns/_server/[22m[32massets/dark-B8-Zfy6_.jpg                               [39m[1m[2m   35.26 kB[22m[1m[22m
+2026-06-12T06:37:07.3657230Z [2m.vinxi/build/server-fns/_server/[22m[32massets/geist-sans-latin-700-normal-BmN9tIp5.woff2      [39m[1m[2m   35.48 kB[22m[1m[22m
+2026-06-12T06:37:07.3658264Z [2m.vinxi/build/server-fns/_server/[22m[32massets/light-BcegqCvt.jpg                              [39m[1m[2m   35.87 kB[22m[1m[22m
+2026-06-12T06:37:07.3659295Z [2m.vinxi/build/server-fns/_server/[22m[32massets/geist-sans-latin-400-normal-BOaIZNA2.woff       [39m[1m[2m   38.91 kB[22m[1m[22m
+2026-06-12T06:37:07.3660380Z [2m.vinxi/build/server-fns/_server/[22m[32massets/geist-sans-latin-500-normal-CN2lyvyL.woff       [39m[1m[2m   40.52 kB[22m[1m[22m
+2026-06-12T06:37:07.3661465Z [2m.vinxi/build/server-fns/_server/[22m[32massets/geist-sans-latin-700-normal-CjScfYeH.woff       [39m[1m[2m   41.40 kB[22m[1m[22m
+2026-06-12T06:37:07.3662484Z [2m.vinxi/build/server-fns/_server/[22m[32massets/auto-CPKoGbmb.jpg                               [39m[1m[2m   44.56 kB[22m[1m[22m
+2026-06-12T06:37:07.3663464Z [2m.vinxi/build/server-fns/_server/[22m[32massets/pricing-DMHaqihI.riv                            [39m[1m[2m   61.36 kB[22m[1m[22m
+2026-06-12T06:37:07.3664449Z [2m.vinxi/build/server-fns/_server/[22m[32massets/cloud-2-C48ZYBEu.png                            [39m[1m[2m  449.73 kB[22m[1m[22m
+2026-06-12T06:37:07.3665414Z [2m.vinxi/build/server-fns/_server/[22m[32massets/cloud-1-0EtYTpJQ.png                            [39m[1m[2m  555.95 kB[22m[1m[22m
+2026-06-12T06:37:07.3666420Z [2m.vinxi/build/server-fns/_server/[22m[32massets/cloud-3-SWvz_Fyk.png                            [39m[1m[2m  729.92 kB[22m[1m[22m
+2026-06-12T06:37:07.3667465Z [2m.vinxi/build/server-fns/_server/[22m[32massets/tears-and-fireflies-adi-goldstein-CggkdS0h.mp3  [39m[1m[2m1,269.18 kB[22m[1m[22m
+2026-06-12T06:37:07.3668502Z [2m.vinxi/build/server-fns/_server/[22m[32massets/rive-v7Y01x04.wasm                              [39m[1m[2m1,482.02 kB[22m[1m[22m
+2026-06-12T06:37:07.3669458Z [2m.vinxi/build/server-fns/_server/[22m[35massets/App-CMhBR5en.css                                [39m[1m[2m  387.29 kB[22m[1m[22m
+2026-06-12T06:37:07.3670415Z [2m.vinxi/build/server-fns/_server/[22m[36massets/JNCCF6MP-4sxnBYeu.js                            [39m[1m[2m    0.06 kB[22m[1m[22m
+2026-06-12T06:37:07.3671422Z [2m.vinxi/build/server-fns/_server/[22m[36massets/createEventListener-DGhvFPMm.js                 [39m[1m[2m    0.17 kB[22m[1m[22m
+2026-06-12T06:37:07.3672437Z [2m.vinxi/build/server-fns/_server/[22m[36massets/pricing-bKs1WTMc.js                             [39m[1m[2m    0.31 kB[22m[1m[22m
+2026-06-12T06:37:07.3673388Z [2m.vinxi/build/server-fns/_server/[22m[36massets/check-BB8ycQUG.js                               [39m[1m[2m    0.32 kB[22m[1m[22m
+2026-06-12T06:37:07.3674652Z [2m.vinxi/build/server-fns/_server/[22m[36massets/plus-Dah5zJVc.js                                [39m[1m[2m    0.32 kB[22m[1m[22m
+2026-06-12T06:37:07.3675784Z [2m.vinxi/build/server-fns/_server/[22m[36massets/x-Db_z3b9H.js                                   [39m[1m[2m    0.32 kB[22m[1m[22m
+2026-06-12T06:37:07.3676750Z [2m.vinxi/build/server-fns/_server/[22m[36massets/arrow-left-DDT4eSTx.js                          [39m[1m[2m    0.32 kB[22m[1m[22m
+2026-06-12T06:37:07.3677732Z [2m.vinxi/build/server-fns/_server/[22m[36massets/loader2-d4patYAe.js                             [39m[1m[2m    0.33 kB[22m[1m[22m
+2026-06-12T06:37:07.3678841Z [2m.vinxi/build/server-fns/_server/[22m[36massets/camera-window-CuqEy4LE.js                       [39m[1m[2m    0.34 kB[22m[1m[22m
+2026-06-12T06:37:07.3679834Z [2m.vinxi/build/server-fns/_server/[22m[36massets/VI7QYH27-DTRl1elG.js                            [39m[1m[2m    0.37 kB[22m[1m[22m
+2026-06-12T06:37:07.3681565Z [2m.vinxi/build/server-fns/_server/[22m[36massets/rotate-ccw-mC53qVGI.js                          [39m[1m[2m    0.38 kB[22m[1m[22m
+2026-06-12T06:37:07.3683421Z [2m.vinxi/build/server-fns/_server/[22m[36massets/alert-triangle-DK1crKEW.js                      [39m[1m[2m    0.39 kB[22m[1m[22m
+2026-06-12T06:37:07.3685347Z [2m.vinxi/build/server-fns/_server/[22m[36massets/screenshot-DGUPvGmG.js                          [39m[1m[2m    0.40 kB[22m[1m[22m
+2026-06-12T06:37:07.3687231Z [2m.vinxi/build/server-fns/_server/[22m[36massets/chevron-down-DU_cIWrD.js                        [39m[1m[2m    0.40 kB[22m[1m[22m
+2026-06-12T06:37:07.3689626Z [2m.vinxi/build/server-fns/_server/[22m[36massets/copy-Bk_eTroK.js                                [39m[1m[2m    0.43 kB[22m[1m[22m
+2026-06-12T06:37:07.3691385Z [2m.vinxi/build/server-fns/_server/[22m[36massets/circle-x--fFxi5dp.js                            [39m[1m[2m    0.51 kB[22m[1m[22m
+2026-06-12T06:37:07.3693187Z [2m.vinxi/build/server-fns/_server/[22m[36massets/config-header-C_BOjFEy.js                       [39m[1m[2m    0.56 kB[22m[1m[22m
+2026-06-12T06:37:07.3694958Z [2m.vinxi/build/server-fns/_server/[22m[36massets/general-settings-DHSTEphR.js                    [39m[1m[2m    0.58 kB[22m[1m[22m
+2026-06-12T06:37:07.3695989Z [2m.vinxi/build/server-fns/_server/[22m[36massets/trash-Ci92Etui.js                               [39m[1m[2m    0.60 kB[22m[1m[22m
+2026-06-12T06:37:07.3696984Z [2m.vinxi/build/server-fns/_server/[22m[36massets/os-permissions-BT8FbMEJ.js                      [39m[1m[2m    0.62 kB[22m[1m[22m
+2026-06-12T06:37:07.3698554Z [2m.vinxi/build/server-fns/_server/[22m[36massets/microphone-DmbtriI6.js                          [39m[1m[2m    0.66 kB[22m[1m[22m
+2026-06-12T06:37:07.3700375Z [2m.vinxi/build/server-fns/_server/[22m[36massets/save-BjPoJ1We.js                                [39m[1m[2m    0.79 kB[22m[1m[22m
+2026-06-12T06:37:07.3702179Z [2m.vinxi/build/server-fns/_server/[22m[36massets/camera-C12aO46d.js                              [39m[1m[2m    0.84 kB[22m[1m[22m
+2026-06-12T06:37:07.3704042Z [2m.vinxi/build/server-fns/_server/[22m[36massets/recording-ktnrHdC_.js                           [39m[1m[2m    0.87 kB[22m[1m[22m
+2026-06-12T06:37:07.3705956Z [2m.vinxi/build/server-fns/_server/[22m[36massets/caret-down-CEBuRFco.js                          [39m[1m[2m    0.91 kB[22m[1m[22m
+2026-06-12T06:37:07.3707934Z [2m.vinxi/build/server-fns/_server/[22m[36massets/5WXHJDCZ-Dl8Gg2ve.js                            [39m[1m[2m    0.91 kB[22m[1m[22m
+2026-06-12T06:37:07.3709878Z [2m.vinxi/build/server-fns/_server/[22m[36massets/stop-circle-Dyvd2qJV.js                         [39m[1m[2m    0.97 kB[22m[1m[22m
+2026-06-12T06:37:07.3711844Z [2m.vinxi/build/server-fns/_server/[22m[36massets/UKTBL2JL-DiAOWN01.js                            [39m[1m[2m    1.03 kB[22m[1m[22m
+2026-06-12T06:37:07.3713733Z [2m.vinxi/build/server-fns/_server/[22m[36massets/mode-select-DDfBSIgg.js                         [39m[1m[2m    2.01 kB[22m[1m[22m
+2026-06-12T06:37:07.3716047Z [2m.vinxi/build/server-fns/_server/[22m[36massets/window-capture-occluder-BI14rcoU.js             [39m[1m[2m    2.07 kB[22m[1m[22m
+2026-06-12T06:37:07.3718050Z [2m.vinxi/build/server-fns/_server/[22m[36massets/notifications-QpUi18hv.js                       [39m[1m[2m    2.15 kB[22m[1m[22m
+2026-06-12T06:37:07.3719981Z [2m.vinxi/build/server-fns/_server/[22m[36massets/film-cut-BsgI5rO7.js                            [39m[1m[2m    2.41 kB[22m[1m[22m
+2026-06-12T06:37:07.3722105Z [2m.vinxi/build/server-fns/_server/[22m[36massets/folder-DnI3WzGI.js                              [39m[1m[2m    2.54 kB[22m[1m[22m
+2026-06-12T06:37:07.3723959Z [2m.vinxi/build/server-fns/_server/[22m[36massets/debug-Bx1lq1eS.js                               [39m[1m[2m    2.68 kB[22m[1m[22m
+2026-06-12T06:37:07.3725874Z [2m.vinxi/build/server-fns/_server/[22m[36massets/experimental-C3QeTFzK.js                        [39m[1m[2m    2.69 kB[22m[1m[22m
+2026-06-12T06:37:07.3727930Z [2m.vinxi/build/server-fns/_server/[22m[36massets/restart-DRIv3F_T.js                             [39m[1m[2m    2.76 kB[22m[1m[22m
+2026-06-12T06:37:07.3730014Z [2m.vinxi/build/server-fns/_server/[22m[36massets/organization-branding-CqfPxwPX.js               [39m[1m[2m    2.94 kB[22m[1m[22m
+2026-06-12T06:37:07.3731477Z [2m.vinxi/build/server-fns/_server/[22m[36massets/cursor-windows-BHft4eJG.js                      [39m[1m[2m    3.22 kB[22m[1m[22m
+2026-06-12T06:37:07.3732527Z [2m.vinxi/build/server-fns/_server/[22m[36massets/update-BaC1q8L-.js                              [39m[1m[2m    3.42 kB[22m[1m[22m
+2026-06-12T06:37:07.3733515Z [2m.vinxi/build/server-fns/_server/[22m[36massets/ModeSelect-BcOksl5R.js                          [39m[1m[2m    3.84 kB[22m[1m[22m
+2026-06-12T06:37:07.3734492Z [2m.vinxi/build/server-fns/_server/[22m[36massets/index-D13dpIAh.js                               [39m[1m[2m    4.53 kB[22m[1m[22m
+2026-06-12T06:37:07.3735471Z [2m.vinxi/build/server-fns/_server/[22m[36massets/transcription-oaVeIdrP.js                       [39m[1m[2m    4.73 kB[22m[1m[22m
+2026-06-12T06:37:07.3736436Z [2m.vinxi/build/server-fns/_server/[22m[36massets/cli-BV_Zw__h.js                                 [39m[1m[2m    4.96 kB[22m[1m[22m
+2026-06-12T06:37:07.3737407Z [2m.vinxi/build/server-fns/_server/[22m[36massets/OptionsContext-DlPsdgzG.js                      [39m[1m[2m    5.00 kB[22m[1m[22m
+2026-06-12T06:37:07.3738391Z [2m.vinxi/build/server-fns/_server/[22m[36massets/feedback-BHdmJMjl.js                            [39m[1m[2m    5.13 kB[22m[1m[22m
+2026-06-12T06:37:07.3739348Z [2m.vinxi/build/server-fns/_server/[22m[36massets/hotkeys-AVe_ErQ6.js                             [39m[1m[2m    5.74 kB[22m[1m[22m
+2026-06-12T06:37:07.3740298Z [2m.vinxi/build/server-fns/_server/[22m[36massets/auth-kbeum60P.js                                [39m[1m[2m    6.45 kB[22m[1m[22m
+2026-06-12T06:37:07.3741257Z [2m.vinxi/build/server-fns/_server/[22m[36massets/s3-config-DIdZUYOu.js                           [39m[1m[2m    6.61 kB[22m[1m[22m
+2026-06-12T06:37:07.3742250Z [2m.vinxi/build/server-fns/_server/[22m[36massets/screenshots-Dv1og5Qh.js                         [39m[1m[2m    7.07 kB[22m[1m[22m
+2026-06-12T06:37:07.3743244Z [2m.vinxi/build/server-fns/_server/[22m[36massets/license-BxTY8aO6.js                             [39m[1m[2m    7.45 kB[22m[1m[22m
+2026-06-12T06:37:07.3744231Z [2m.vinxi/build/server-fns/_server/[22m[36massets/capture-area-CmRb0Slm.js                        [39m[1m[2m    7.82 kB[22m[1m[22m
+2026-06-12T06:37:07.3745276Z [2m.vinxi/build/server-fns/_server/[22m[36massets/CameraPreviewChrome-G8OQ-03Z.js                 [39m[1m[2m    8.41 kB[22m[1m[22m
+2026-06-12T06:37:07.3746329Z [2m.vinxi/build/server-fns/_server/[22m[36massets/google-drive-config-7iYFQx1v.js                 [39m[1m[2m    8.48 kB[22m[1m[22m
+2026-06-12T06:37:07.3747328Z [2m.vinxi/build/server-fns/_server/[22m[36massets/index-DutVUGr1.js                               [39m[1m[2m    8.62 kB[22m[1m[22m
+2026-06-12T06:37:07.3748469Z [2m.vinxi/build/server-fns/_server/[22m[36massets/index-DsXZT7V_.js                               [39m[1m[2m    9.00 kB[22m[1m[22m
+2026-06-12T06:37:07.3749418Z [2m.vinxi/build/server-fns/_server/[22m[36massets/Setting-C0Rfn2lm.js                             [39m[1m[2m    9.09 kB[22m[1m[22m
+2026-06-12T06:37:07.3751356Z [2m.vinxi/build/server-fns/_server/[22m[36massets/camera-BuR27NIu.js                              [39m[1m[2m   10.92 kB[22m[1m[22m
+2026-06-12T06:37:07.3752343Z [2m.vinxi/build/server-fns/_server/[22m[36massets/upgrade-BddHWuxW.js                             [39m[1m[2m   11.05 kB[22m[1m[22m
+2026-06-12T06:37:07.3753330Z [2m.vinxi/build/server-fns/_server/[22m[36massets/recordings-BgHNYKFL.js                          [39m[1m[2m   11.97 kB[22m[1m[22m
+2026-06-12T06:37:07.3754337Z [2m.vinxi/build/server-fns/_server/[22m[36massets/MicrophoneSelect-OANWBc6S.js                    [39m[1m[2m   13.45 kB[22m[1m[22m
+2026-06-12T06:37:07.3755354Z [2m.vinxi/build/server-fns/_server/[22m[36massets/warning-bold-CyCoVjXO.js                        [39m[1m[2m   14.04 kB[22m[1m[22m
+2026-06-12T06:37:07.3756348Z [2m.vinxi/build/server-fns/_server/[22m[36massets/selection-hint-Cgs_XLDx.js                      [39m[1m[2m   14.19 kB[22m[1m[22m
+2026-06-12T06:37:07.3757347Z [2m.vinxi/build/server-fns/_server/[22m[36massets/context-DSIEo0h2.js                             [39m[1m[2m   14.43 kB[22m[1m[22m
+2026-06-12T06:37:07.3758357Z [2m.vinxi/build/server-fns/_server/[22m[36massets/in-progress-recording-BensoFRj.js               [39m[1m[2m   17.08 kB[22m[1m[22m
+2026-06-12T06:37:07.3759399Z [2m.vinxi/build/server-fns/_server/[22m[36massets/recordings-overlay-CzsPA765.js                  [39m[1m[2m   17.27 kB[22m[1m[22m
+2026-06-12T06:37:07.3760392Z [2m.vinxi/build/server-fns/_server/[22m[36massets/ui-D78g43gT.js                                  [39m[1m[2m   18.31 kB[22m[1m[22m
+2026-06-12T06:37:07.3761335Z [2m.vinxi/build/server-fns/_server/[22m[36massets/index-bXeMMPtK.js                               [39m[1m[2m   20.39 kB[22m[1m[22m
+2026-06-12T06:37:07.3762288Z [2m.vinxi/build/server-fns/_server/[22m[36massets/socket-EUtO722L.js                              [39m[1m[2m   20.86 kB[22m[1m[22m
+2026-06-12T06:37:07.3763282Z [2m.vinxi/build/server-fns/_server/[22m[36massets/floating-ui.dom-C6t7Gpe0.js                     [39m[1m[2m   21.14 kB[22m[1m[22m
+2026-06-12T06:37:07.3764265Z [2m.vinxi/build/server-fns/_server/[22m[36massets/general-CEroe6o9.js                             [39m[1m[2m   26.55 kB[22m[1m[22m
+2026-06-12T06:37:07.3765268Z [2m.vinxi/build/server-fns/_server/[22m[36massets/target-select-overlay-88lZ3yNN.js               [39m[1m[2m   28.74 kB[22m[1m[22m
+2026-06-12T06:37:07.3767235Z [2m.vinxi/build/server-fns/_server/[22m[36massets/onboarding-DjrhOBO8.js                          [39m[1m[2m   51.89 kB[22m[1m[22m
+2026-06-12T06:37:07.3769092Z [2m.vinxi/build/server-fns/_server/[22m[36mserver-fns.js                                          [39m[1m[2m   64.44 kB[22m[1m[22m
+2026-06-12T06:37:07.3770834Z [2m.vinxi/build/server-fns/_server/[22m[36massets/index-Lo4VJUCp.js                               [39m[1m[2m   79.47 kB[22m[1m[22m
+2026-06-12T06:37:07.3772747Z [2m.vinxi/build/server-fns/_server/[22m[36massets/App-vkBaFBX6.js                                 [39m[1m[2m  124.32 kB[22m[1m[22m
+2026-06-12T06:37:07.3774679Z [2m.vinxi/build/server-fns/_server/[22m[36massets/changelog-D0xjlIJG.js                           [39m[1m[2m  147.66 kB[22m[1m[22m
+2026-06-12T06:37:07.3775843Z [32m✓ built in 10.99s[39m
+2026-06-12T06:37:07.3776263Z [success] build done
+2026-06-12T06:37:07.3776906Z ⚙ [32mBuilt your router server-fns successfully[39m
+2026-06-12T06:37:07.3777300Z 
+2026-06-12T06:37:07.3777564Z 
+2026-06-12T06:37:07.3777919Z ⚙  [32mPreparing app for static...[39m
+2026-06-12T06:37:07.3778702Z [success] [vinxi] Generated public [36m.output/public[39m
+2026-06-12T06:37:07.3779357Z [info] [vinxi] Initializing prerenderer
+2026-06-12T06:37:07.3780299Z [info] [vinxi] Building Nitro Server (preset: `nitro-prerender`, compatibility date: `2024-12-01`)
+2026-06-12T06:37:07.3781338Z [success] [vinxi] Nitro Server built
+2026-06-12T06:37:07.3782038Z [success] [vinxi] You can preview this build using `npx serve .output/public`
+2026-06-12T06:37:07.3782853Z [info] [vinxi] Prerendering 1 initial routes with crawler
+2026-06-12T06:37:07.3783595Z [log] [vinxi] [90m  ├─ / (29ms)[39m
+2026-06-12T06:37:07.3784215Z [info] [vinxi] Prerendered 1 routes in 12.615 seconds
+2026-06-12T06:37:07.3785069Z [success] [vinxi] You can preview this build using `npx serve .output/public`
+2026-06-12T06:37:07.3786075Z ##[endgroup]
+2026-06-12T06:37:07.3786260Z 
+2026-06-12T06:37:07.3786454Z  Tasks:    5 successful, 5 total
+2026-06-12T06:37:07.3786906Z Cached:    0 cached, 5 total
+2026-06-12T06:37:07.3787285Z   Time:    1m7.685s 
+2026-06-12T06:37:07.3787486Z 
+2026-06-12T06:37:07.3788190Z  WARNING  no output files found for task @cap/desktop#build. Please check your `outputs` key in `turbo.json`
+2026-06-12T06:37:20.8024895Z [1m[32m   Compiling[0m serde_core v1.0.225
+2026-06-12T06:37:20.8046480Z [1m[32m   Compiling[0m windows_x86_64_msvc v0.52.6
+2026-06-12T06:37:20.8048779Z [1m[32m   Compiling[0m log v0.4.28
+2026-06-12T06:37:20.8076032Z [1m[32m   Compiling[0m memchr v2.7.5
+2026-06-12T06:37:21.3868855Z [1m[32m   Compiling[0m windows-targets v0.52.6
+2026-06-12T06:37:21.4406602Z [1m[32m   Compiling[0m smallvec v1.15.1
+2026-06-12T06:37:21.9828091Z [1m[32m   Compiling[0m windows-sys v0.61.0
+2026-06-12T06:37:22.0958942Z [1m[32m   Compiling[0m itoa v1.0.15
+2026-06-12T06:37:22.2721159Z [1m[32m   Compiling[0m pin-project-lite v0.2.16
+2026-06-12T06:37:22.3735026Z [1m[32m   Compiling[0m bytes v1.10.1
+2026-06-12T06:37:23.8837274Z [1m[32m   Compiling[0m windows-link v0.2.0
+2026-06-12T06:37:23.9429721Z [1m[32m   Compiling[0m windows-sys v0.59.0
+2026-06-12T06:37:24.1676556Z [1m[32m   Compiling[0m stable_deref_trait v1.2.0
+2026-06-12T06:37:24.2340403Z [1m[32m   Compiling[0m windows-link v0.1.3
+2026-06-12T06:37:24.2928034Z [1m[32m   Compiling[0m thiserror v2.0.16
+2026-06-12T06:37:24.3804620Z [1m[32m   Compiling[0m getrandom v0.3.3
+2026-06-12T06:37:24.6333162Z [1m[32m   Compiling[0m zerofrom v0.1.6
+2026-06-12T06:37:24.7801472Z [1m[32m   Compiling[0m percent-encoding v2.3.2
+2026-06-12T06:37:25.1998675Z [1m[32m   Compiling[0m serde v1.0.225
+2026-06-12T06:37:25.2360653Z [1m[32m   Compiling[0m yoke v0.8.0
+2026-06-12T06:37:25.5144034Z [1m[32m   Compiling[0m fnv v1.0.7
+2026-06-12T06:37:25.5951185Z [1m[32m   Compiling[0m ryu v1.0.20
+2026-06-12T06:37:26.0542545Z [1m[32m   Compiling[0m zerovec v0.11.4
+2026-06-12T06:37:26.3817944Z [1m[32m   Compiling[0m bitflags v2.9.4
+2026-06-12T06:37:27.1314691Z [1m[32m   Compiling[0m windows-result v0.3.4
+2026-06-12T06:37:27.8108938Z [1m[32m   Compiling[0m allocator-api2 v0.2.21
+2026-06-12T06:37:27.8393032Z [1m[32m   Compiling[0m equivalent v1.0.2
+2026-06-12T06:37:27.9547411Z [1m[32m   Compiling[0m foldhash v0.1.5
+2026-06-12T06:37:28.5991847Z [1m[32m   Compiling[0m hashbrown v0.15.5
+2026-06-12T06:37:29.6225731Z [1m[32m   Compiling[0m thiserror v1.0.69
+2026-06-12T06:37:29.7186075Z [1m[32m   Compiling[0m serde_json v1.0.145
+2026-06-12T06:37:34.2155193Z [1m[32m   Compiling[0m winapi-util v0.1.11
+2026-06-12T06:37:34.5452114Z [1m[32m   Compiling[0m same-file v1.0.6
+2026-06-12T06:37:34.7215516Z [1m[32m   Compiling[0m walkdir v2.5.0
+2026-06-12T06:37:34.9752228Z [1m[32m   Compiling[0m tauri-utils v2.7.0
+2026-06-12T06:37:35.3753607Z [1m[32m   Compiling[0m socket2 v0.6.0
+2026-06-12T06:37:35.4482990Z [1m[32m   Compiling[0m mio v1.0.4
+2026-06-12T06:37:36.9557225Z [1m[32m   Compiling[0m tokio v1.47.1
+2026-06-12T06:37:38.2190121Z [1m[32m   Compiling[0m tinystr v0.8.1
+2026-06-12T06:37:38.5008463Z [1m[32m   Compiling[0m writeable v0.6.1
+2026-06-12T06:37:39.5230911Z [1m[32m   Compiling[0m litemap v0.8.0
+2026-06-12T06:37:39.8264061Z [1m[32m   Compiling[0m icu_locale_core v2.0.0
+2026-06-12T06:37:42.8988260Z [1m[32m   Compiling[0m indexmap v2.11.4
+2026-06-12T06:37:43.7902406Z [1m[32m   Compiling[0m potential_utf v0.1.3
+2026-06-12T06:37:44.0075857Z [1m[32m   Compiling[0m zerotrie v0.2.2
+2026-06-12T06:37:44.0199146Z [1m[32m   Compiling[0m futures-core v0.3.31
+2026-06-12T06:37:44.1890804Z [1m[32m   Compiling[0m icu_collections v2.0.0
+2026-06-12T06:37:44.7408283Z [1m[32m   Compiling[0m icu_provider v2.0.0
+2026-06-12T06:37:45.4006617Z [1m[32m   Compiling[0m icu_properties_data v2.0.1
+2026-06-12T06:37:45.6324722Z [1m[32m   Compiling[0m icu_normalizer_data v2.0.0
+2026-06-12T06:37:45.6864090Z [1m[32m   Compiling[0m icu_normalizer v2.0.0
+2026-06-12T06:37:45.7042976Z [1m[32m   Compiling[0m icu_properties v2.0.1
+2026-06-12T06:37:47.9117763Z [1m[32m   Compiling[0m scopeguard v1.2.0
+2026-06-12T06:37:48.0021024Z [1m[32m   Compiling[0m lock_api v0.4.13
+2026-06-12T06:37:48.3298925Z [1m[32m   Compiling[0m idna_adapter v1.2.1
+2026-06-12T06:37:48.4837914Z [1m[32m   Compiling[0m uuid v1.18.1
+2026-06-12T06:37:49.4332063Z [1m[32m   Compiling[0m http v1.3.1
+2026-06-12T06:37:49.6558713Z [1m[32m   Compiling[0m form_urlencoded v1.2.2
+2026-06-12T06:37:49.9958924Z [1m[32m   Compiling[0m windows-strings v0.4.2
+2026-06-12T06:37:51.0102964Z [1m[32m   Compiling[0m utf8_iter v1.0.4
+2026-06-12T06:37:51.2043563Z [1m[32m   Compiling[0m idna v1.1.0
+2026-06-12T06:37:53.1286222Z [1m[32m   Compiling[0m parking_lot_core v0.9.11
+2026-06-12T06:37:53.8547573Z [1m[32m   Compiling[0m byteorder v1.5.0
+2026-06-12T06:37:54.1467745Z [1m[32m   Compiling[0m parking_lot v0.12.4
+2026-06-12T06:37:55.1047196Z [1m[32m   Compiling[0m url v2.5.7
+2026-06-12T06:37:56.0189650Z [1m[32m   Compiling[0m tracing-core v0.1.34
+2026-06-12T06:37:57.9142736Z [1m[32m   Compiling[0m powerfmt v0.2.0
+2026-06-12T06:37:58.2910641Z [1m[32m   Compiling[0m futures-sink v0.3.31
+2026-06-12T06:37:58.3870082Z [1m[32m   Compiling[0m deranged v0.5.3
+2026-06-12T06:37:59.2732550Z [1m[32m   Compiling[0m time-core v0.1.6
+2026-06-12T06:37:59.4712953Z [1m[32m   Compiling[0m num-conv v0.1.0
+2026-06-12T06:37:59.6279339Z [1m[32m   Compiling[0m tracing v0.1.41
+2026-06-12T06:38:00.2212536Z [1m[32m   Compiling[0m num-integer v0.1.46
+2026-06-12T06:38:00.2501004Z [1m[32m   Compiling[0m aho-corasick v1.1.4
+2026-06-12T06:38:00.5273797Z [1m[32m   Compiling[0m time v0.3.43
+2026-06-12T06:38:00.9475079Z [1m[32m   Compiling[0m regex-syntax v0.8.6
+2026-06-12T06:38:07.3448933Z [1m[32m   Compiling[0m regex-automata v0.4.10
+2026-06-12T06:38:12.1516606Z [1m[32m   Compiling[0m bitflags v1.3.2
+2026-06-12T06:38:12.6996038Z [1m[32m   Compiling[0m new_debug_unreachable v1.0.6
+2026-06-12T06:38:12.7585826Z [1m[32m   Compiling[0m futures-io v0.3.31
+2026-06-12T06:38:13.0108858Z [1m[32m   Compiling[0m anyhow v1.0.99
+2026-06-12T06:38:13.0187999Z [1m[32m   Compiling[0m slab v0.4.11
+2026-06-12T06:38:13.2518356Z [1m[32m   Compiling[0m regex v1.11.2
+2026-06-12T06:38:14.2090308Z [1m[32m   Compiling[0m futures-channel v0.3.31
+2026-06-12T06:38:14.3672859Z [1m[32m   Compiling[0m siphasher v1.0.1
+2026-06-12T06:38:14.4969479Z [1m[32m   Compiling[0m unicode-ident v1.0.19
+2026-06-12T06:38:14.6287591Z [1m[32m   Compiling[0m pin-utils v0.1.0
+2026-06-12T06:38:14.6412167Z [1m[32m   Compiling[0m profiling v1.0.17
+2026-06-12T06:38:14.6898806Z [1m[32m   Compiling[0m futures-task v0.3.31
+2026-06-12T06:38:14.7047377Z [1m[32m   Compiling[0m lazy_static v1.5.0
+2026-06-12T06:38:14.7867638Z [1m[32m   Compiling[0m windows-sys v0.60.2
+2026-06-12T06:38:14.8763896Z [1m[32m   Compiling[0m futures-util v0.3.31
+2026-06-12T06:38:14.9017985Z [1m[32m   Compiling[0m minimal-lexical v0.2.1
+2026-06-12T06:38:15.3322708Z [1m[32m   Compiling[0m utf-8 v0.7.6
+2026-06-12T06:38:15.5620059Z [1m[32m   Compiling[0m mime v0.3.17
+2026-06-12T06:38:16.2988448Z [1m[32m   Compiling[0m siphasher v0.3.11
+2026-06-12T06:38:16.5679496Z [1m[32m   Compiling[0m nom v7.1.3
+2026-06-12T06:38:19.4995934Z [1m[32m   Compiling[0m cookie v0.18.1
+2026-06-12T06:38:19.8442428Z [1m[32m   Compiling[0m zerocopy v0.8.27
+2026-06-12T06:38:22.3362090Z [1m[32m   Compiling[0m phf_shared v0.11.3
+2026-06-12T06:38:22.5729384Z [1m[32m   Compiling[0m num-bigint v0.4.6
+2026-06-12T06:38:22.6328188Z [1m[32m   Compiling[0m getrandom v0.2.16
+2026-06-12T06:38:22.8434987Z [1m[32m   Compiling[0m precomputed-hash v0.1.1
+2026-06-12T06:38:22.9129251Z [1m[32m   Compiling[0m mac v0.1.1
+2026-06-12T06:38:22.9798624Z [1m[32m   Compiling[0m futf v0.1.5
+2026-06-12T06:38:23.1179061Z [1m[32m   Compiling[0m phf_shared v0.10.0
+2026-06-12T06:38:23.4817916Z [1m[32m   Compiling[0m dtoa v1.0.10
+2026-06-12T06:38:23.6640982Z [1m[32m   Compiling[0m dtoa-short v0.3.5
+2026-06-12T06:38:23.8273766Z [1m[32m   Compiling[0m phf v0.10.1
+2026-06-12T06:38:24.0126154Z [1m[32m   Compiling[0m tendril v0.4.3
+2026-06-12T06:38:24.1474726Z [1m[32m   Compiling[0m string_cache v0.8.9
+2026-06-12T06:38:24.3472828Z [1m[32m   Compiling[0m phf v0.11.3
+2026-06-12T06:38:24.5384113Z [1m[32m   Compiling[0m num-rational v0.4.2
+2026-06-12T06:38:24.5463345Z [1m[32m   Compiling[0m ppv-lite86 v0.2.21
+2026-06-12T06:38:25.0989238Z [1m[32m   Compiling[0m phf_shared v0.8.0
+2026-06-12T06:38:25.4029189Z [1m[32m   Compiling[0m fxhash v0.2.1
+2026-06-12T06:38:25.5098663Z [1m[32m   Compiling[0m unic-common v0.9.0
+2026-06-12T06:38:25.6091013Z [1m[32m   Compiling[0m alloc-no-stdlib v2.0.4
+2026-06-12T06:38:25.8197428Z [1m[32m   Compiling[0m nodrop v0.1.14
+2026-06-12T06:38:25.9017550Z [1m[32m   Compiling[0m matches v0.1.10
+2026-06-12T06:38:25.9615103Z [1m[32m   Compiling[0m dyn-clone v1.0.20
+2026-06-12T06:38:26.1448980Z [1m[32m   Compiling[0m unic-char-range v0.9.0
+2026-06-12T06:38:26.3091138Z [1m[32m   Compiling[0m unic-char-property v0.9.0
+2026-06-12T06:38:26.4185639Z [1m[32m   Compiling[0m cssparser v0.29.6
+2026-06-12T06:38:26.7818122Z [1m[32m   Compiling[0m servo_arc v0.2.0
+2026-06-12T06:38:26.9970637Z [1m[32m   Compiling[0m alloc-stdlib v0.2.2
+2026-06-12T06:38:27.1024080Z [1m[32m   Compiling[0m unic-ucd-version v0.9.0
+2026-06-12T06:38:27.1674484Z [1m[32m   Compiling[0m markup5ever v0.14.1
+2026-06-12T06:38:28.2576351Z [1m[32m   Compiling[0m typeid v1.0.3
+2026-06-12T06:38:28.3540815Z [1m[32m   Compiling[0m phf v0.8.0
+2026-06-12T06:38:28.4833409Z [1m[32m   Compiling[0m itertools v0.12.1
+2026-06-12T06:38:29.0475258Z [1m[32m   Compiling[0m tokio-util v0.7.16
+2026-06-12T06:38:29.1956337Z [1m[32m   Compiling[0m semver v1.0.27
+2026-06-12T06:38:30.3153867Z [1m[32m   Compiling[0m hashbrown v0.12.3
+2026-06-12T06:38:30.7178562Z [1m[32m   Compiling[0m winnow v1.0.3
+2026-06-12T06:38:30.8411948Z [1m[32m   Compiling[0m proc-macro2 v1.0.101
+2026-06-12T06:38:31.0830431Z [1m[32m   Compiling[0m indexmap v1.9.3
+2026-06-12T06:38:31.3845677Z [1m[32m   Compiling[0m toml_parser v1.1.2+spec-1.1.0
+2026-06-12T06:38:31.7774087Z [1m[32m   Compiling[0m selectors v0.24.0
+2026-06-12T06:38:33.8698645Z [1m[32m   Compiling[0m camino v1.2.0
+2026-06-12T06:38:34.3691262Z [1m[32m   Compiling[0m erased-serde v0.4.8
+2026-06-12T06:38:34.9662946Z [1m[32m   Compiling[0m html5ever v0.29.1
+2026-06-12T06:38:35.4581425Z [1m[32m   Compiling[0m unic-ucd-ident v0.9.0
+2026-06-12T06:38:35.4911885Z [1m[32m   Compiling[0m brotli-decompressor v5.0.0
+2026-06-12T06:38:36.1477802Z [1m[32m   Compiling[0m cfb v0.7.3
+2026-06-12T06:38:36.9070338Z [1m[32m   Compiling[0m jsonptr v0.6.3
+2026-06-12T06:38:37.1543122Z [1m[32m   Compiling[0m cargo-platform v0.1.9
+2026-06-12T06:38:37.9410933Z [1m[32m   Compiling[0m chrono v0.4.42
+2026-06-12T06:38:38.7251387Z [1m[32m   Compiling[0m serde_spanned v1.1.0
+2026-06-12T06:38:38.8292425Z [1m[32m   Compiling[0m toml_datetime v0.7.2
+2026-06-12T06:38:38.8701182Z [1m[32m   Compiling[0m toml_writer v1.1.1+spec-1.1.0
+2026-06-12T06:38:39.1976828Z [1m[32m   Compiling[0m winnow v0.7.13
+2026-06-12T06:38:39.5989975Z [1m[32m   Compiling[0m schemars v0.8.22
+2026-06-12T06:38:42.2825136Z [1m[32m   Compiling[0m toml v0.9.7
+2026-06-12T06:38:42.5321361Z [1m[32m   Compiling[0m cargo_metadata v0.19.2
+2026-06-12T06:38:42.7807530Z [1m[32m   Compiling[0m json-patch v3.0.1
+2026-06-12T06:38:45.1255858Z [1m[32m   Compiling[0m infer v0.19.0
+2026-06-12T06:38:46.6797935Z [1m[32m   Compiling[0m brotli v8.0.2
+2026-06-12T06:38:47.2259366Z [1m[32m   Compiling[0m kuchikiki v0.8.8-speedreader
+2026-06-12T06:38:49.2691800Z [1m[32m   Compiling[0m urlpattern v0.3.0
+2026-06-12T06:38:49.8668487Z [1m[32m   Compiling[0m serde-untagged v0.1.9
+2026-06-12T06:38:50.3178122Z [1m[32m   Compiling[0m quote v1.0.40
+2026-06-12T06:38:50.6559083Z [1m[32m   Compiling[0m serde_with v3.14.0
+2026-06-12T06:38:51.4907805Z [1m[32m   Compiling[0m specta v2.0.0-rc.20
+2026-06-12T06:38:54.7307561Z [1m[32m   Compiling[0m tower-service v0.3.3
+2026-06-12T06:38:54.8123041Z [1m[32m   Compiling[0m httparse v1.10.1
+2026-06-12T06:38:54.9648230Z [1m[32m   Compiling[0m untrusted v0.9.0
+2026-06-12T06:38:55.0883631Z [1m[32m   Compiling[0m ring v0.17.14
+2026-06-12T06:38:55.1799726Z [1m[32m   Compiling[0m http-body v1.0.1
+2026-06-12T06:38:55.3497778Z [1m[32m   Compiling[0m try-lock v0.2.5
+2026-06-12T06:38:55.4465874Z [1m[32m   Compiling[0m want v0.3.1
+2026-06-12T06:38:55.6807548Z [1m[32m   Compiling[0m httpdate v1.0.3
+2026-06-12T06:38:56.3424796Z [1m[32m   Compiling[0m base64 v0.22.1
+2026-06-12T06:38:57.1930590Z [1m[32m   Compiling[0m tauri-plugin v2.4.0
+2026-06-12T06:38:58.0950860Z [1m[32m   Compiling[0m windows-sys v0.52.0
+2026-06-12T06:39:03.4790983Z [1m[32m   Compiling[0m sync_wrapper v1.0.2
+2026-06-12T06:39:03.5714588Z [1m[32m   Compiling[0m encoding_rs v0.8.35
+2026-06-12T06:39:03.6380986Z [1m[32m   Compiling[0m tower-layer v0.3.3
+2026-06-12T06:39:03.8660782Z [1m[32m   Compiling[0m http-body-util v0.1.3
+2026-06-12T06:39:04.2139106Z [1m[32m   Compiling[0m windows-registry v0.5.3
+2026-06-12T06:39:04.9177344Z [1m[32m   Compiling[0m atomic-waker v1.1.2
+2026-06-12T06:39:05.0349436Z [1m[32m   Compiling[0m zeroize v1.8.1
+2026-06-12T06:39:05.0568776Z [1m[32m   Compiling[0m ipnet v2.11.0
+2026-06-12T06:39:05.2775093Z [1m[32m   Compiling[0m rustls-pki-types v1.12.0
+2026-06-12T06:39:06.8612398Z [1m[32m   Compiling[0m h2 v0.4.12
+2026-06-12T06:39:07.5444614Z [1m[32m   Compiling[0m rustls-webpki v0.103.6
+2026-06-12T06:39:12.9961277Z [1m[32m   Compiling[0m hyper v1.7.0
+2026-06-12T06:39:13.2213779Z [1m[32m   Compiling[0m serde_urlencoded v0.7.1
+2026-06-12T06:39:13.5736740Z [1m[32m   Compiling[0m schannel v0.1.28
+2026-06-12T06:39:15.3739575Z [1m[32m   Compiling[0m hyper-util v0.1.17
+2026-06-12T06:39:19.8256704Z [1m[32m   Compiling[0m vswhom-sys v0.1.3
+2026-06-12T06:39:20.4124035Z [1m[32m   Compiling[0m subtle v2.6.1
+2026-06-12T06:39:20.5930968Z [1m[32m   Compiling[0m rustls v0.23.31
+2026-06-12T06:39:23.7512178Z [1m[32m   Compiling[0m native-tls v0.2.14
+2026-06-12T06:39:24.3033160Z [1m[32m   Compiling[0m typenum v1.18.0
+2026-06-12T06:39:25.1303698Z [1m[32m   Compiling[0m tower v0.5.2
+2026-06-12T06:39:26.1469267Z [1m[32m   Compiling[0m futures-executor v0.3.31
+2026-06-12T06:39:26.8519935Z [1m[32m   Compiling[0m psl-types v2.0.11
+2026-06-12T06:39:26.9540142Z [1m[32m   Compiling[0m publicsuffix v2.3.0
+2026-06-12T06:39:27.1088309Z [1m[32m   Compiling[0m generic-array v0.14.7
+2026-06-12T06:39:27.3083549Z [1m[32m   Compiling[0m tokio-rustls v0.26.3
+2026-06-12T06:39:27.6320302Z [1m[32m   Compiling[0m tokio-native-tls v0.3.1
+2026-06-12T06:39:27.8339783Z [1m[32m   Compiling[0m webpki-roots v1.0.2
+2026-06-12T06:39:27.9650519Z [1m[32m   Compiling[0m unicase v2.8.1
+2026-06-12T06:39:28.0098692Z [1m[32m   Compiling[0m rustc-hash v1.1.0
+2026-06-12T06:39:28.1033595Z [1m[32m   Compiling[0m iri-string v0.7.8
+2026-06-12T06:39:28.3611659Z [1m[32m   Compiling[0m mime_guess v2.0.5
+2026-06-12T06:39:29.2085411Z [1m[32m   Compiling[0m hyper-rustls v0.27.7
+2026-06-12T06:39:29.9799522Z [1m[32m   Compiling[0m hyper-tls v0.6.0
+2026-06-12T06:39:30.3917532Z [1m[32m   Compiling[0m tower-http v0.6.6
+2026-06-12T06:39:32.1185251Z [1m[32m   Compiling[0m vswhom v0.1.0
+2026-06-12T06:39:32.2308694Z [1m[32m   Compiling[0m cookie_store v0.21.1
+2026-06-12T06:39:32.5390434Z [1m[32m   Compiling[0m winreg v0.55.0
+2026-06-12T06:39:33.1770481Z [1m[32m   Compiling[0m option-ext v0.2.0
+2026-06-12T06:39:33.2472419Z [1m[32m   Compiling[0m dirs-sys v0.5.0
+2026-06-12T06:39:33.3714418Z [1m[32m   Compiling[0m reqwest v0.12.24 (https://github.com/CapSoftware/reqwest?rev=9b5ecbd5210a9510fde766015cabb724c1e70d2e#9b5ecbd5)
+2026-06-12T06:39:35.5148882Z [1m[32m   Compiling[0m embed-resource v3.0.5
+2026-06-12T06:39:35.9274860Z [1m[32m   Compiling[0m block-buffer v0.10.4
+2026-06-12T06:39:36.0725984Z [1m[32m   Compiling[0m crypto-common v0.1.6
+2026-06-12T06:39:36.1884755Z [1m[32m   Compiling[0m digest v0.10.7
+2026-06-12T06:39:36.4407677Z [1m[32m   Compiling[0m tauri-winres v0.3.3
+2026-06-12T06:39:37.1597404Z [1m[32m   Compiling[0m dirs v6.0.0
+2026-06-12T06:39:37.2495989Z [1m[32m   Compiling[0m rand_core v0.6.4
+2026-06-12T06:39:37.5788623Z [1m[32m   Compiling[0m cargo_toml v0.22.3
+2026-06-12T06:39:45.7812511Z [1m[32m   Compiling[0m cpufeatures v0.2.17
+2026-06-12T06:39:45.8486234Z [1m[32m   Compiling[0m anstyle-wincon v3.0.10
+2026-06-12T06:39:46.4765687Z [1m[32m   Compiling[0m tauri-build v2.4.1
+2026-06-12T06:39:49.6882995Z [1m[32m   Compiling[0m rand_chacha v0.3.1
+2026-06-12T06:39:50.2026035Z [1m[32m   Compiling[0m anstyle-query v1.1.4
+2026-06-12T06:39:50.4958885Z [1m[32m   Compiling[0m unicode-segmentation v1.12.0
+2026-06-12T06:39:51.4765747Z [1m[32m   Compiling[0m anstream v0.6.20
+2026-06-12T06:39:51.5300993Z [1m[32m   Compiling[0m rand v0.8.5
+2026-06-12T06:39:52.6437164Z [1m[32m   Compiling[0m sha1 v0.10.6
+2026-06-12T06:39:52.9482685Z [1m[32m   Compiling[0m nu-ansi-term v0.50.1
+2026-06-12T06:39:53.1716777Z [1m[32m   Compiling[0m sharded-slab v0.1.7
+2026-06-12T06:39:53.9648381Z [1m[32m   Compiling[0m matchers v0.2.0
+2026-06-12T06:39:54.1144796Z [1m[32m   Compiling[0m tracing-log v0.2.0
+2026-06-12T06:39:54.2316035Z [1m[32m   Compiling[0m half v2.6.0
+2026-06-12T06:39:54.6175580Z [1m[32m   Compiling[0m data-encoding v2.9.0
+2026-06-12T06:39:55.2734726Z [1m[32m   Compiling[0m clap_builder v4.5.47
+2026-06-12T06:39:59.4574927Z [1m[32m   Compiling[0m tungstenite v0.24.0
+2026-06-12T06:40:03.6086841Z [1m[32m   Compiling[0m tracing-subscriber v0.3.20
+2026-06-12T06:40:07.8253278Z [1m[32m   Compiling[0m tauri v2.8.5
+2026-06-12T06:40:11.5798193Z [1m[32m   Compiling[0m clap v4.5.47
+2026-06-12T06:40:11.7796348Z [1m[32m   Compiling[0m tokio-tungstenite v0.24.0
+2026-06-12T06:40:12.1377250Z [1m[32m   Compiling[0m axum-core v0.4.5
+2026-06-12T06:40:12.8292001Z [1m[32m   Compiling[0m workspace-hack v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\workspace-hack)
+2026-06-12T06:40:13.0257963Z [1m[32m   Compiling[0m serde_path_to_error v0.1.20
+2026-06-12T06:40:13.2612378Z [1m[32m   Compiling[0m matchit v0.7.3
+2026-06-12T06:40:13.7380433Z [1m[32m   Compiling[0m raw-window-handle v0.6.2
+2026-06-12T06:40:13.9938095Z [1m[32m   Compiling[0m windows-core v0.61.2
+2026-06-12T06:40:14.1808783Z [1m[32m   Compiling[0m fdeflate v0.3.7
+2026-06-12T06:40:15.3752040Z [1m[32m   Compiling[0m axum v0.7.9
+2026-06-12T06:40:15.6253597Z [1m[32m   Compiling[0m windows-numerics v0.2.0
+2026-06-12T06:40:15.9867078Z [1m[32m   Compiling[0m windows-strings v0.3.1
+2026-06-12T06:40:16.4827780Z [1m[32m   Compiling[0m equator v0.4.2
+2026-06-12T06:40:16.8245713Z [1m[32m   Compiling[0m windows-threading v0.1.0
+2026-06-12T06:40:16.9259225Z [1m[32m   Compiling[0m windows-future v0.2.1
+2026-06-12T06:40:16.9717501Z [1m[32m   Compiling[0m aligned-vec v0.6.4
+2026-06-12T06:40:17.2751071Z [1m[32m   Compiling[0m windows-collections v0.2.0
+2026-06-12T06:40:17.5359350Z [1m[32m   Compiling[0m zune-inflate v0.2.54
+2026-06-12T06:40:17.6765908Z [1m[32m   Compiling[0m bit_field v0.10.3
+2026-06-12T06:40:17.8510987Z [1m[32m   Compiling[0m lebe v0.5.3
+2026-06-12T06:40:18.1555229Z [1m[32m   Compiling[0m exr v1.73.0
+2026-06-12T06:40:18.5073110Z [1m[32m   Compiling[0m windows v0.61.3
+2026-06-12T06:40:27.3149021Z [1m[32m   Compiling[0m v_frame v0.3.9
+2026-06-12T06:40:27.6157245Z [1m[32m   Compiling[0m qoi v0.4.1
+2026-06-12T06:40:27.9347451Z [1m[32m   Compiling[0m zune-core v0.4.12
+2026-06-12T06:40:28.2949531Z [1m[32m   Compiling[0m zune-jpeg v0.4.21
+2026-06-12T06:40:29.7701197Z [1m[32m   Compiling[0m av1-grain v0.2.4
+2026-06-12T06:40:30.6313674Z [1m[32m   Compiling[0m windows-core v0.60.1
+2026-06-12T06:40:31.8967431Z [1m[32m   Compiling[0m maybe-rayon v0.1.1
+2026-06-12T06:40:31.9690874Z [1m[32m   Compiling[0m bitstream-io v2.6.0
+2026-06-12T06:40:32.4445617Z [1m[32m   Compiling[0m byteorder-lite v0.1.0
+2026-06-12T06:40:32.7992030Z [1m[32m   Compiling[0m image-webp v0.2.4
+2026-06-12T06:40:34.4605221Z [1m[32m   Compiling[0m rav1e v0.7.1
+2026-06-12T06:40:38.2782521Z [1m[32m   Compiling[0m fax v0.2.6
+2026-06-12T06:40:38.9192619Z [1m[32m   Compiling[0m avif-serialize v0.8.6
+2026-06-12T06:40:40.3276880Z [1m[32m   Compiling[0m pxfm v0.1.23
+2026-06-12T06:40:46.4871886Z [1m[32m   Compiling[0m moxcms v0.7.5
+2026-06-12T06:40:51.9791982Z [1m[32m   Compiling[0m ravif v0.11.20
+2026-06-12T06:41:02.0784888Z [1m[32m   Compiling[0m tiff v0.10.3
+2026-06-12T06:41:07.2721481Z [1m[32m   Compiling[0m png v0.18.0
+2026-06-12T06:41:13.2499429Z [1m[32m   Compiling[0m image v0.25.8
+2026-06-12T06:41:39.8282360Z [1m[32m   Compiling[0m windows-collections v0.1.1
+2026-06-12T06:41:40.1612546Z [1m[32m   Compiling[0m windows-future v0.1.1
+2026-06-12T06:41:40.7735585Z [1m[32m   Compiling[0m windows-numerics v0.1.1
+2026-06-12T06:41:41.1607942Z [1m[32m   Compiling[0m dpi v0.1.2
+2026-06-12T06:41:41.6992859Z [1m[32m   Compiling[0m windows-version v0.1.5
+2026-06-12T06:41:41.8134415Z [1m[32m   Compiling[0m webview2-com-sys v0.38.0
+2026-06-12T06:41:42.3259044Z [1m[32m   Compiling[0m windows v0.60.0
+2026-06-12T06:42:11.7846299Z [1m[32m   Compiling[0m rand_core v0.9.3
+2026-06-12T06:42:12.1127088Z [1m[32m   Compiling[0m webview2-com-macros v0.8.1
+2026-06-12T06:42:13.3535707Z [1m[32m   Compiling[0m webview2-com v0.38.0
+2026-06-12T06:42:14.6382345Z [1m[32m   Compiling[0m rand_chacha v0.9.0
+2026-06-12T06:42:16.5234423Z [1m[32m   Compiling[0m png v0.17.16
+2026-06-12T06:42:18.8115505Z [1m[32m   Compiling[0m keyboard-types v0.7.0
+2026-06-12T06:42:23.1905584Z [1m[32m   Compiling[0m softbuffer v0.4.6
+2026-06-12T06:42:23.7584415Z [1m[32m   Compiling[0m wry v0.53.3
+2026-06-12T06:42:24.3226511Z [1m[32m   Compiling[0m tauri-runtime v2.8.0
+2026-06-12T06:42:24.6244385Z [1m[32m   Compiling[0m sha2 v0.10.9
+2026-06-12T06:42:25.3072193Z [1m[32m   Compiling[0m ico v0.4.0
+2026-06-12T06:42:26.2255762Z [1m[32m   Compiling[0m rand v0.9.2
+2026-06-12T06:42:26.7719972Z [1m[32m   Compiling[0m tauri-runtime-wry v2.8.1
+2026-06-12T06:42:27.1528381Z [1m[32m   Compiling[0m tauri-codegen v2.4.0
+2026-06-12T06:42:33.1881960Z [1m[32m   Compiling[0m muda v0.17.1
+2026-06-12T06:42:34.0476713Z [1m[32m   Compiling[0m tao v0.34.3 (D:\a\Cap-CN\Cap-CN\vendor\tao)
+2026-06-12T06:42:34.9965407Z [1m[32m   Compiling[0m serialize-to-javascript-impl v0.1.2
+2026-06-12T06:42:35.7980865Z [1m[32m   Compiling[0m serialize-to-javascript v0.1.2
+2026-06-12T06:42:36.0535159Z [1m[32m   Compiling[0m tray-icon v0.21.1
+2026-06-12T06:42:39.9208906Z [1m[32m   Compiling[0m tauri-macros v2.4.0
+2026-06-12T06:42:41.8705185Z [1m[32m   Compiling[0m window-vibrancy v0.6.0
+2026-06-12T06:42:42.1612829Z [1m[32m   Compiling[0m windows-result v0.1.2
+2026-06-12T06:42:42.7739884Z [1m[32m   Compiling[0m serde_repr v0.1.20
+2026-06-12T06:42:44.0468085Z [1m[32m   Compiling[0m http-range v0.1.5
+2026-06-12T06:42:44.2728924Z [1m[32m   Compiling[0m heck v0.5.0
+2026-06-12T06:42:44.6287861Z [1m[32m   Compiling[0m windows-core v0.54.0
+2026-06-12T06:42:45.6393958Z [1m[32m   Compiling[0m windows_x86_64_msvc v0.48.5
+2026-06-12T06:42:45.6998276Z [1m[32m   Compiling[0m ffmpeg-sys-next v7.1.3
+2026-06-12T06:42:47.3924195Z [1m[32m   Compiling[0m windows v0.54.0
+2026-06-12T06:42:48.9693745Z [1m[32m   Compiling[0m debugid v0.8.0
+2026-06-12T06:42:49.4598203Z [1m[32m   Compiling[0m dasp_sample v0.11.0
+2026-06-12T06:42:49.8079643Z [1m[32m   Compiling[0m ffmpeg-next v7.1.0 (https://github.com/CapSoftware/rust-ffmpeg?rev=49db1fede112#49db1fed)
+2026-06-12T06:42:55.5796201Z [1m[32m   Compiling[0m windows-targets v0.48.5
+2026-06-12T06:42:55.6396804Z [1m[32m   Compiling[0m windows-result v0.2.0
+2026-06-12T06:42:56.2137404Z [1m[32m   Compiling[0m fastrand v2.3.0
+2026-06-12T06:42:56.6081140Z [1m[32m   Compiling[0m windows-strings v0.1.0
+2026-06-12T06:42:57.4647351Z [1m[32m   Compiling[0m windows-core v0.58.0
+2026-06-12T06:42:58.9813155Z [1m[32m   Compiling[0m concurrent-queue v2.5.0
+2026-06-12T06:42:59.2260508Z [1m[32m   Compiling[0m hex v0.4.3
+2026-06-12T06:42:59.6272742Z [1m[32m   Compiling[0m tinyvec_macros v0.1.1
+2026-06-12T06:42:59.6871485Z [1m[32m   Compiling[0m tinyvec v1.10.0
+2026-06-12T06:43:00.2580770Z [1m[32m   Compiling[0m windows v0.58.0
+2026-06-12T06:43:21.8279237Z [1m[32m   Compiling[0m termcolor v1.4.1
+2026-06-12T06:43:22.9430125Z [1m[32m   Compiling[0m libloading v0.8.8
+2026-06-12T06:43:24.5910815Z [1m[32m   Compiling[0m bit-vec v0.8.0
+2026-06-12T06:43:25.0013267Z [1m[32m   Compiling[0m unicode-width v0.2.1
+2026-06-12T06:43:25.3850870Z [1m[32m   Compiling[0m codespan-reporting v0.12.0
+2026-06-12T06:43:27.4278010Z [1m[32m   Compiling[0m bit-set v0.8.0
+2026-06-12T06:43:27.6495449Z [1m[32m   Compiling[0m strum v0.26.3
+2026-06-12T06:43:27.7345381Z [1m[32m   Compiling[0m slotmap v1.0.7
+2026-06-12T06:43:27.9447944Z [1m[32m   Compiling[0m sentry-types v0.42.0
+2026-06-12T06:43:28.4419700Z [1m[32m   Compiling[0m tempfile v3.23.0
+2026-06-12T06:43:29.9695660Z [1m[32m   Compiling[0m windows-sys v0.48.0
+2026-06-12T06:43:37.5246297Z [1m[32m   Compiling[0m futures v0.3.31
+2026-06-12T06:43:37.6030623Z [1m[32m   Compiling[0m spirv v0.3.0+sdk-1.3.268.0
+2026-06-12T06:43:41.0059469Z [1m[32m   Compiling[0m gpu-alloc-types v0.3.0
+2026-06-12T06:43:41.6311752Z [1m[32m   Compiling[0m gpu-descriptor-types v0.2.0
+2026-06-12T06:43:42.1148449Z [1m[32m   Compiling[0m num-complex v0.4.6
+2026-06-12T06:43:43.0991321Z [1m[32m   Compiling[0m parking v2.2.1
+2026-06-12T06:43:43.3781862Z [1m[32m   Compiling[0m cpal v0.15.3 (https://github.com/CapSoftware/cpal?rev=3cc779a7b4ca#3cc779a7)
+2026-06-12T06:43:46.0581924Z [1m[32m   Compiling[0m hexf-parse v0.2.1
+2026-06-12T06:43:46.2857126Z [1m[32m   Compiling[0m presser v0.3.1
+2026-06-12T06:43:46.4383801Z [1m[32m   Compiling[0m gpu-allocator v0.27.0
+2026-06-12T06:43:49.4480480Z [1m[32m   Compiling[0m naga v25.0.1
+2026-06-12T06:43:54.1197985Z [1m[32m   Compiling[0m gpu-descriptor v0.3.2
+2026-06-12T06:43:54.5621035Z [1m[32m   Compiling[0m gpu-alloc v0.6.0
+2026-06-12T06:43:55.7321768Z [1m[32m   Compiling[0m sentry-core v0.42.0
+2026-06-12T06:44:03.3140397Z [1m[32m   Compiling[0m ureq v3.1.0
+2026-06-12T06:44:08.2381177Z [1m[32m   Compiling[0m glutin_wgl_sys v0.6.1
+2026-06-12T06:44:08.4138016Z [1m[32m   Compiling[0m ash v0.38.0+1.3.281
+2026-06-12T06:44:23.8221512Z [1m[32m   Compiling[0m khronos-egl v6.0.0
+2026-06-12T06:44:24.4572676Z [1m[32m   Compiling[0m wgpu-types v25.0.0
+2026-06-12T06:44:29.8368417Z [1m[32m   Compiling[0m ordered-float v4.6.0
+2026-06-12T06:44:30.2768151Z [1m[32m   Compiling[0m glow v0.16.0
+2026-06-12T06:44:32.1374922Z [1m[32m   Compiling[0m memmap2 v0.9.8
+2026-06-12T06:44:32.5764005Z [1m[32m   Compiling[0m static_assertions v1.1.0
+2026-06-12T06:44:32.6464530Z [1m[32m   Compiling[0m unicode-properties v0.1.3
+2026-06-12T06:44:32.9160126Z [1m[32m   Compiling[0m range-alloc v0.1.4
+2026-06-12T06:44:33.0379827Z [1m[32m   Compiling[0m unicode-script v0.5.7
+2026-06-12T06:44:34.2592193Z [1m[32m   Compiling[0m renderdoc-sys v1.1.0
+2026-06-12T06:44:34.4825865Z [1m[32m   Compiling[0m rawpointer v0.2.1
+2026-06-12T06:44:34.5594128Z [1m[32m   Compiling[0m matrixmultiply v0.3.10
+2026-06-12T06:44:35.9314317Z [1m[32m   Compiling[0m wgpu-hal v25.0.2 (D:\a\Cap-CN\Cap-CN\vendor\wgpu-hal)
+2026-06-12T06:44:36.4532724Z [1m[32m   Compiling[0m ort-sys v2.0.0-rc.12
+2026-06-12T06:44:39.6243033Z [1m[32m   Compiling[0m font-types v0.9.0
+2026-06-12T06:44:40.3821065Z [1m[32m   Compiling[0m core_maths v0.1.1
+2026-06-12T06:44:40.4935731Z [1m[32m   Compiling[0m float-cmp v0.9.0
+2026-06-12T06:44:40.6483194Z [1m[32m   Compiling[0m rustc-demangle v0.1.26
+2026-06-12T06:44:42.6675837Z [1m[32m   Compiling[0m wgpu-core-deps-windows-linux-android v25.0.0
+2026-06-12T06:44:42.7333714Z [1m[32m   Compiling[0m backtrace v0.3.75
+2026-06-12T06:44:42.8728631Z [1m[32m   Compiling[0m strict-num v0.1.1
+2026-06-12T06:44:43.0514544Z [1m[32m   Compiling[0m ttf-parser v0.25.1
+2026-06-12T06:44:44.0549853Z [1m[32m   Compiling[0m read-fonts v0.29.3
+2026-06-12T06:44:55.1737937Z [1m[32m   Compiling[0m cap-media-info v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\media-info)
+2026-06-12T06:44:55.7956644Z [1m[32m   Compiling[0m cap-d3d-adapter v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\d3d-adapter)
+2026-06-12T06:44:56.9867987Z [1m[32m   Compiling[0m nanorand v0.7.0
+2026-06-12T06:44:57.5292456Z [1m[32m   Compiling[0m spin v0.9.8
+2026-06-12T06:44:57.7914036Z [1m[32m   Compiling[0m arrayref v0.3.9
+2026-06-12T06:44:57.8579629Z [1m[32m   Compiling[0m rustix v0.38.44
+2026-06-12T06:44:58.4547650Z [1m[32m   Compiling[0m prettyplease v0.2.37
+2026-06-12T06:44:58.6946809Z [1m[32m   Compiling[0m unicode-bidi v0.3.18
+2026-06-12T06:45:01.0206836Z [1m[32m   Compiling[0m tiny-skia-path v0.11.4
+2026-06-12T06:45:03.8456844Z [1m[32m   Compiling[0m flume v0.11.1
+2026-06-12T06:45:09.4926774Z [1m[32m   Compiling[0m wgpu-core v25.0.2
+2026-06-12T06:45:13.9758663Z [1m[32m   Compiling[0m skrifa v0.31.3
+2026-06-12T06:45:24.9770432Z [1m[32m   Compiling[0m sentry-backtrace v0.42.0
+2026-06-12T06:45:26.1772905Z [1m[32m   Compiling[0m ndarray v0.17.2
+2026-06-12T06:45:27.2760066Z [1m[32m   Compiling[0m event-listener v5.4.1
+2026-06-12T06:45:27.7838865Z [1m[32m   Compiling[0m dirs-sys v0.4.1
+2026-06-12T06:45:27.9522733Z [1m[32m   Compiling[0m os_info v3.12.0
+2026-06-12T06:45:29.1316203Z [1m[32m   Compiling[0m tauri-plugin-fs v2.4.2
+2026-06-12T06:45:31.6548516Z [1m[32m   Compiling[0m kurbo v0.11.3
+2026-06-12T06:45:32.6612310Z [1m[32m   Compiling[0m errno v0.3.14
+2026-06-12T06:45:32.8924963Z [1m[32m   Compiling[0m scroll_derive v0.12.1
+2026-06-12T06:45:34.3864115Z [1m[32m   Compiling[0m memoffset v0.9.1
+2026-06-12T06:45:34.6881390Z [1m[32m   Compiling[0m unicode-ccc v0.4.0
+2026-06-12T06:45:34.9129947Z [1m[32m   Compiling[0m ttf-parser v0.20.0
+2026-06-12T06:45:37.5909775Z [1m[32m   Compiling[0m sys-locale v0.3.2
+2026-06-12T06:45:37.8453900Z [1m[32m   Compiling[0m zeno v0.3.3
+2026-06-12T06:45:37.8565160Z [1m[32m   Compiling[0m unicode-ccc v0.2.0
+2026-06-12T06:45:38.0756588Z [1m[32m   Compiling[0m ttf-parser v0.21.1
+2026-06-12T06:45:39.7028288Z [1m[32m   Compiling[0m yazi v0.2.1
+2026-06-12T06:45:41.9839081Z [1m[32m   Compiling[0m unicode-bidi-mirroring v0.4.0
+2026-06-12T06:45:42.1233315Z [1m[32m   Compiling[0m unicode-bidi-mirroring v0.2.0
+2026-06-12T06:45:42.2675985Z [1m[32m   Compiling[0m data-url v0.3.2
+2026-06-12T06:45:43.5912782Z [1m[32m   Compiling[0m rustybuzz v0.14.1
+2026-06-12T06:45:45.0871012Z [1m[32m   Compiling[0m rustybuzz v0.20.1
+2026-06-12T06:45:49.7833872Z [1m[32m   Compiling[0m swash v0.2.5
+2026-06-12T06:46:01.2701266Z [1m[32m   Compiling[0m fontdb v0.16.2
+2026-06-12T06:46:03.4679459Z [1m[32m   Compiling[0m scroll v0.12.0
+2026-06-12T06:46:03.8736328Z [1m[32m   Compiling[0m svgtypes v0.15.3
+2026-06-12T06:46:04.0305872Z [1m[32m   Compiling[0m strum v0.27.2
+2026-06-12T06:46:04.4200049Z [1m[32m   Compiling[0m ort v2.0.0-rc.12
+2026-06-12T06:46:06.9495609Z [1m[32m   Compiling[0m event-listener-strategy v0.5.4
+2026-06-12T06:46:07.0819220Z [1m[32m   Compiling[0m wgpu v25.0.2
+2026-06-12T06:46:10.1310260Z [1m[32m   Compiling[0m findshlibs v0.10.2
+2026-06-12T06:46:10.6759447Z [1m[32m   Compiling[0m fontdb v0.23.0
+2026-06-12T06:46:11.4677226Z [1m[32m   Compiling[0m cap-mediafoundation-utils v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\mediafoundation-utils)
+2026-06-12T06:46:11.7368835Z [1m[32m   Compiling[0m crossterm_winapi v0.9.1
+2026-06-12T06:46:12.5653110Z [1m[32m   Compiling[0m home v0.5.11
+2026-06-12T06:46:12.7730836Z [1m[32m   Compiling[0m tokio-stream v0.1.17
+2026-06-12T06:46:13.3562058Z [1m[32m   Compiling[0m http v0.2.12
+2026-06-12T06:46:13.6271270Z [1m[32m   Compiling[0m hostname v0.4.1
+2026-06-12T06:46:13.7827935Z [1m[32m   Compiling[0m range-map v0.2.0
+2026-06-12T06:46:14.0613495Z [1m[32m   Compiling[0m euclid v0.22.11
+2026-06-12T06:46:15.1932712Z [1m[32m   Compiling[0m simplecss v0.2.2
+2026-06-12T06:46:16.9299505Z [1m[32m   Compiling[0m pin-project-internal v1.1.10
+2026-06-12T06:46:17.4138429Z [1m[32m   Compiling[0m smart-default v0.7.1
+2026-06-12T06:46:18.3959749Z [1m[32m   Compiling[0m crash-context v0.6.3
+2026-06-12T06:46:18.4676145Z [1m[32m   Compiling[0m self_cell v1.2.0
+2026-06-12T06:46:18.5650062Z [1m[32m   Compiling[0m smol_str v0.2.2
+2026-06-12T06:46:18.6309095Z [1m[32m   Compiling[0m rustc-hash v2.1.1
+2026-06-12T06:46:18.7451470Z [1m[32m   Compiling[0m minidump-writer v0.8.9
+2026-06-12T06:46:19.0041753Z [1m[32m   Compiling[0m unicode-linebreak v0.1.5
+2026-06-12T06:46:19.0699276Z [1m[32m   Compiling[0m bindgen v0.69.5
+2026-06-12T06:46:19.4061469Z [1m[32m   Compiling[0m rustls v0.21.12
+2026-06-12T06:46:19.4683277Z [1m[32m   Compiling[0m xmlwriter v0.1.0
+2026-06-12T06:46:19.6414984Z [1m[32m   Compiling[0m svg_fmt v0.4.5
+2026-06-12T06:46:19.6583367Z [1m[32m   Compiling[0m imagesize v0.13.0
+2026-06-12T06:46:20.1538983Z [1m[32m   Compiling[0m unty v0.0.4
+2026-06-12T06:46:20.2274464Z [1m[32m   Compiling[0m once_cell v1.21.3
+2026-06-12T06:46:20.2558397Z [1m[32m   Compiling[0m roxmltree v0.20.0
+2026-06-12T06:46:20.2720343Z [1m[32m   Compiling[0m unicode-vo v0.1.0
+2026-06-12T06:46:20.4545635Z [1m[32m   Compiling[0m rangemap v1.6.0
+2026-06-12T06:46:20.5227614Z [1m[32m   Compiling[0m pico-args v0.5.0
+2026-06-12T06:46:20.9774566Z [1m[32m   Compiling[0m usvg v0.45.1
+2026-06-12T06:46:21.0797307Z [1m[32m   Compiling[0m cosmic-text v0.14.2
+2026-06-12T06:46:21.3915795Z [1m[32m   Compiling[0m which v4.4.2
+2026-06-12T06:46:22.1503226Z [1m[32m   Compiling[0m pin-project v1.1.10
+2026-06-12T06:46:22.2341827Z [1m[32m   Compiling[0m bincode v2.0.1
+2026-06-12T06:46:23.9850267Z [1m[32m   Compiling[0m etagere v0.2.15
+2026-06-12T06:46:24.5714109Z [1m[32m   Compiling[0m minidump-common v0.21.2
+2026-06-12T06:46:24.8439854Z [1m[32m   Compiling[0m sentry-contexts v0.42.0
+2026-06-12T06:46:25.3480617Z [1m[32m   Compiling[0m crossterm v0.25.0
+2026-06-12T06:46:28.4218521Z [1m[32m   Compiling[0m sentry-debug-images v0.42.0
+2026-06-12T06:46:29.1979523Z [1m[32m   Compiling[0m async-lock v3.4.1
+2026-06-12T06:46:30.4087032Z [1m[32m   Compiling[0m cap-cursor-info v0.0.0 (D:\a\Cap-CN\Cap-CN\crates\cursor-info)
+2026-06-12T06:46:31.4606191Z [1m[32m   Compiling[0m ntapi v0.4.2
+2026-06-12T06:46:32.4934832Z [1m[32m   Compiling[0m sentry-panic v0.42.0
+2026-06-12T06:46:33.0231879Z [1m[32m   Compiling[0m sentry-anyhow v0.42.0
+2026-06-12T06:46:33.5514910Z [1m[32m   Compiling[0m tiny-skia v0.11.4
+2026-06-12T06:46:35.3495804Z [1m[32m   Compiling[0m ndarray v0.16.1
+2026-06-12T06:46:37.2626416Z [1m[32m   Compiling[0m any_spawner v0.2.0
+2026-06-12T06:46:37.5131352Z [1m[32m   Compiling[0m ffmpeg-hw-device v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\ffmpeg-hw-device)
+2026-06-12T06:46:37.7676980Z [1m[32m   Compiling[0m onig_sys v69.9.1
+2026-06-12T06:46:38.2747702Z [1m[32m   Compiling[0m newline-converter v0.3.0
+2026-06-12T06:46:38.3813590Z [1m[32m   Compiling[0m fuzzy-matcher v0.3.7
+2026-06-12T06:46:40.2686398Z [1m[32m   Compiling[0m jpeg-decoder v0.3.2
+2026-06-12T06:46:40.3528033Z [1m[32m   Compiling[0m sct v0.7.1
+2026-06-12T06:46:40.6826376Z [1m[32m   Compiling[0m rustls-webpki v0.101.7
+2026-06-12T06:46:42.8937704Z [1m[32m   Compiling[0m itertools v0.14.0
+2026-06-12T06:46:44.1852387Z [1m[32m   Compiling[0m opentelemetry v0.31.0
+2026-06-12T06:46:45.1685552Z [1m[32m   Compiling[0m send_wrapper v0.6.0
+2026-06-12T06:46:45.3005089Z [1m[32m   Compiling[0m lru v0.12.5
+2026-06-12T06:46:45.3997343Z [1m[32m   Compiling[0m relative-path v1.9.3
+2026-06-12T06:46:45.5118003Z [1m[32m   Compiling[0m derive_builder_core v0.20.2
+2026-06-12T06:46:46.1631873Z [1m[32m   Compiling[0m or_poisoned v0.1.0
+2026-06-12T06:46:46.2418818Z [1m[32m   Compiling[0m num_cpus v1.17.0
+2026-06-12T06:46:46.4145437Z [1m[32m   Compiling[0m guardian v1.3.0
+2026-06-12T06:46:46.5431958Z [1m[32m   Compiling[0m error-code v3.3.2
+2026-06-12T06:46:46.7400521Z [1m[32m   Compiling[0m unicode-width v0.1.14
+2026-06-12T06:46:47.0990698Z [1m[32m   Compiling[0m lazycell v1.3.0
+2026-06-12T06:46:48.0255103Z [1m[32m   Compiling[0m derive_builder_macro v0.20.2
+2026-06-12T06:46:48.8912320Z [1m[32m   Compiling[0m inquire v0.7.5
+2026-06-12T06:46:49.8787106Z [1m[32m   Compiling[0m windows-win v3.0.0
+2026-06-12T06:46:50.0451408Z [1m[32m   Compiling[0m reactive_graph v0.1.8
+2026-06-12T06:46:50.7104047Z [1m[32m   Compiling[0m cap-video-decode v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\video-decode)
+2026-06-12T06:46:53.5481601Z [1m[32m   Compiling[0m cap-project v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\project)
+2026-06-12T06:46:54.3011596Z [1m[32m   Compiling[0m glyphon v0.9.0
+2026-06-12T06:46:55.7941442Z [1m[32m   Compiling[0m prost-derive v0.14.1
+2026-06-12T06:47:00.0460461Z [1m[32m   Compiling[0m tiff v0.9.1
+2026-06-12T06:47:02.5681141Z [1m[32m   Compiling[0m cap-camera-effects v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\camera-effects)
+2026-06-12T06:47:05.1200725Z [1m[32m   Compiling[0m resvg v0.45.1
+2026-06-12T06:47:12.6565104Z [1m[32m   Compiling[0m sentry v0.42.0
+2026-06-12T06:47:15.4605311Z [1m[32m   Compiling[0m h2 v0.3.27
+2026-06-12T06:47:15.5181449Z [1m[32m   Compiling[0m http-body v0.4.6
+2026-06-12T06:47:15.8462780Z [1m[32m   Compiling[0m cap-camera-mediafoundation v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\camera-mediafoundation)
+2026-06-12T06:47:18.5012131Z [1m[32m   Compiling[0m dirs v5.0.1
+2026-06-12T06:47:18.6123615Z [1m[32m   Compiling[0m cap-camera-directshow v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\camera-directshow)
+2026-06-12T06:47:20.8051997Z [1m[32m   Compiling[0m polling v3.11.0
+2026-06-12T06:47:21.6157302Z [1m[32m   Compiling[0m cap-flags v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\flags)
+2026-06-12T06:47:21.8685224Z [1m[32m   Compiling[0m socket2 v0.5.10
+2026-06-12T06:47:23.3206374Z [1m[32m   Compiling[0m tauri-plugin-deep-link v2.4.3
+2026-06-12T06:47:23.4963840Z [1m[32m   Compiling[0m symphonia-core v0.5.4
+2026-06-12T06:47:25.7105175Z [1m[32m   Compiling[0m futures-intrusive v0.5.0
+2026-06-12T06:47:26.6200760Z [1m[32m   Compiling[0m ahash v0.8.12
+2026-06-12T06:47:26.8705377Z [1m[32m   Compiling[0m cmake v0.1.54
+2026-06-12T06:47:27.6551858Z [1m[32m   Compiling[0m strength_reduce v0.2.4
+2026-06-12T06:47:28.0696227Z [1m[32m   Compiling[0m esaxx-rs v0.1.10
+2026-06-12T06:47:28.0961693Z [1m[32m   Compiling[0m fs_extra v1.3.0
+2026-06-12T06:47:28.2584760Z [1m[32m   Compiling[0m bezier_easing v0.1.1
+2026-06-12T06:47:28.4353131Z [1m[32m   Compiling[0m cap-rendering v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\rendering)
+2026-06-12T06:47:28.4694461Z [1m[32m   Compiling[0m transpose v0.2.3
+2026-06-12T06:47:28.4928445Z [1m[32m   Compiling[0m whisper-rs-sys v0.9.0
+2026-06-12T06:47:28.6698567Z [1m[32m   Compiling[0m symphonia-metadata v0.5.4
+2026-06-12T06:47:30.6534067Z [1m[32m   Compiling[0m hyper v0.14.32
+2026-06-12T06:47:31.4358141Z [1m[32m   Compiling[0m minidumper v0.8.3
+2026-06-12T06:47:32.6319712Z [1m[32m   Compiling[0m cap-camera-windows v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\camera-windows)
+2026-06-12T06:47:33.4712966Z [1m[32m   Compiling[0m image v0.24.9
+2026-06-12T06:47:34.4715449Z [1m[32m   Compiling[0m prost v0.14.1
+2026-06-12T06:47:35.1963288Z [1m[32m   Compiling[0m tokio-rustls v0.24.1
+2026-06-12T06:47:35.4884621Z [1m[32m   Compiling[0m cap-frame-converter v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\frame-converter)
+2026-06-12T06:47:41.8344305Z [1m[32m   Compiling[0m clipboard-win v5.4.1
+2026-06-12T06:47:42.2857725Z [1m[32m   Compiling[0m derive_builder v0.20.2
+2026-06-12T06:47:42.4030376Z [1m[32m   Compiling[0m opentelemetry_sdk v0.31.0
+2026-06-12T06:47:42.9217966Z [1m[32m   Compiling[0m sysinfo v0.32.1
+2026-06-12T06:47:52.5238247Z [1m[32m   Compiling[0m tonic v0.14.2
+2026-06-12T06:47:56.5162326Z [1m[32m   Compiling[0m crash-handler v0.6.3
+2026-06-12T06:47:56.8679997Z [1m[32m   Compiling[0m directories v5.0.1
+2026-06-12T06:47:57.2166575Z [1m[32m   Compiling[0m scap-direct3d v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\scap-direct3d)
+2026-06-12T06:47:58.4654171Z [1m[32m   Compiling[0m cap-media v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\media)
+2026-06-12T06:47:58.7371606Z [1m[32m   Compiling[0m cap-audio v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\audio)
+2026-06-12T06:48:02.6906733Z [1m[32m   Compiling[0m windows v0.48.0
+2026-06-12T06:48:09.0184760Z [1m[32m   Compiling[0m tauri-plugin-clipboard-manager v2.3.0
+2026-06-12T06:48:10.4788697Z [1m[32m   Compiling[0m tauri-plugin-opener v2.5.0
+2026-06-12T06:48:10.7146234Z [1m[32m   Compiling[0m tauri-plugin-global-shortcut v2.3.0
+2026-06-12T06:48:12.5035997Z [1m[32m   Compiling[0m tauri-plugin-notification v2.3.1
+2026-06-12T06:48:12.6169374Z [1m[32m   Compiling[0m tauri-plugin-window-state v2.4.0
+2026-06-12T06:48:14.3299045Z [1m[32m   Compiling[0m tauri-plugin-oauth v2.0.0 (https://github.com/FabianLars/tauri-plugin-oauth?branch=v2#f941c99c)
+2026-06-12T06:48:14.4986447Z [1m[32m   Compiling[0m tauri-plugin-http v2.5.2
+2026-06-12T06:48:15.8185389Z [1m[32m   Compiling[0m tauri-plugin-sentry v0.5.0
+2026-06-12T06:48:16.0237261Z [1m[32m   Compiling[0m tauri-plugin-positioner v2.3.0
+2026-06-12T06:48:16.3424540Z [1m[32m   Compiling[0m tauri-plugin-dialog v2.4.0
+2026-06-12T06:48:17.7558263Z [1m[32m   Compiling[0m tauri-plugin-os v2.3.1
+2026-06-12T06:48:17.8829820Z [1m[32m   Compiling[0m tauri-plugin-process v2.3.0
+2026-06-12T06:48:18.4483075Z [1m[32m   Compiling[0m tauri-plugin-store v2.4.0
+2026-06-12T06:48:19.8416944Z [1m[32m   Compiling[0m tauri-plugin-shell v2.3.1
+2026-06-12T06:48:19.9864878Z [1m[32m   Compiling[0m castaway v0.2.4
+2026-06-12T06:48:20.1026609Z [1m[32m   Compiling[0m ringbuf v0.4.8
+2026-06-12T06:48:20.1778594Z [1m[32m   Compiling[0m primal-check v0.3.4
+2026-06-12T06:48:20.6726815Z [1m[32m   Compiling[0m quick-xml v0.37.5
+2026-06-12T06:48:21.9628875Z [1m[32m   Compiling[0m monostate-impl v0.1.18
+2026-06-12T06:48:22.6681444Z [1m[32m   Compiling[0m macro_rules_attribute-proc_macro v0.2.2
+2026-06-12T06:48:23.1120417Z [1m[32m   Compiling[0m base64 v0.13.1
+2026-06-12T06:48:23.4500599Z [1m[32m   Compiling[0m base64 v0.21.7
+2026-06-12T06:48:23.6469762Z [1m[32m   Compiling[0m rfd v0.15.4
+2026-06-12T06:48:23.8224256Z [1m[32m   Compiling[0m eyre v0.6.12
+2026-06-12T06:48:23.8743481Z [1m[32m   Compiling[0m cpal v0.15.3
+2026-06-12T06:48:24.1326342Z [1m[32m   Compiling[0m rustls-pemfile v1.0.4
+2026-06-12T06:48:24.3576528Z [1m[32m   Compiling[0m gifski v1.34.0
+2026-06-12T06:48:24.3834851Z [1m[32m   Compiling[0m macro_rules_attribute v0.2.2
+2026-06-12T06:48:24.4508176Z [1m[32m   Compiling[0m spm_precompiled v0.1.4
+2026-06-12T06:48:24.7360637Z [1m[32m   Compiling[0m rayon-cond v0.4.0
+2026-06-12T06:48:24.9555721Z [1m[32m   Compiling[0m monostate v0.1.18
+2026-06-12T06:48:25.3909557Z [1m[32m   Compiling[0m tauri-winrt-notification v0.7.2
+2026-06-12T06:48:25.4332079Z [1m[32m   Compiling[0m rustfft v6.4.1
+2026-06-12T06:48:26.6973152Z [1m[32m   Compiling[0m compact_str v0.9.0
+2026-06-12T06:48:29.1006241Z [1m[32m   Compiling[0m device_query v4.0.1
+2026-06-12T06:48:30.5826626Z [1m[32m   Compiling[0m cap-utils v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\utils)
+2026-06-12T06:48:31.8773399Z [1m[32m   Compiling[0m minidumper-child v0.2.2
+2026-06-12T06:48:33.1241877Z [1m[32m   Compiling[0m tonic-prost v0.14.2
+2026-06-12T06:48:33.3290217Z [1m[32m   Compiling[0m cap-enc-ffmpeg v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\enc-ffmpeg)
+2026-06-12T06:48:33.6771832Z [1m[32m   Compiling[0m scap-targets v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\scap-targets)
+2026-06-12T06:48:41.0684391Z [1m[32m   Compiling[0m hyper-rustls v0.24.2
+2026-06-12T06:48:41.3658619Z [1m[32m   Compiling[0m onig v6.5.1
+2026-06-12T06:48:43.4509305Z [1m[32m   Compiling[0m cap-camera v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\camera)
+2026-06-12T06:48:48.3061292Z [1m[32m   Compiling[0m symphonia-bundle-mp3 v0.5.4
+2026-06-12T06:48:50.1688467Z [1m[32m   Compiling[0m futures-lite v2.6.1
+2026-06-12T06:48:51.1460419Z [1m[32m   Compiling[0m winreg v0.50.0
+2026-06-12T06:48:52.1479495Z [1m[32m   Compiling[0m windows-core v0.59.0
+2026-06-12T06:48:52.2634114Z [1m[32m   Compiling[0m specta-serde v0.0.7
+2026-06-12T06:48:52.9327352Z [1m[32m   Compiling[0m open v5.3.2
+2026-06-12T06:48:53.2038254Z [1m[32m   Compiling[0m ogg v0.8.0
+2026-06-12T06:48:53.3669993Z [1m[32m   Compiling[0m dary_heap v0.3.8
+2026-06-12T06:48:53.5541264Z [1m[32m   Compiling[0m unicode-normalization-alignments v0.1.12
+2026-06-12T06:48:53.5754478Z [1m[32m   Compiling[0m sync_wrapper v0.1.2
+2026-06-12T06:48:53.6476568Z [1m[32m   Compiling[0m hound v3.5.1
+2026-06-12T06:48:54.0888543Z [1m[32m   Compiling[0m inventory v0.3.21
+2026-06-12T06:48:54.1931419Z [1m[32m   Compiling[0m indenter v0.3.4
+2026-06-12T06:48:54.2010253Z [1m[32m   Compiling[0m unicode_categories v0.1.1
+2026-06-12T06:48:54.2888925Z [1m[32m   Compiling[0m webpki-roots v0.25.4
+2026-06-12T06:48:54.3880800Z [1m[32m   Compiling[0m downcast-rs v2.0.2
+2026-06-12T06:48:54.4204081Z [1m[32m   Compiling[0m reqwest v0.11.27
+2026-06-12T06:48:54.4610205Z [1m[32m   Compiling[0m kameo v0.17.2
+2026-06-12T06:48:54.5458301Z [1m[32m   Compiling[0m tokenizers v0.22.2
+2026-06-12T06:48:56.9981633Z [1m[32m   Compiling[0m cap-fail v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\fail)
+2026-06-12T06:48:57.4627009Z [1m[32m   Compiling[0m lewton v0.10.2
+2026-06-12T06:49:01.7973194Z [1m[32m   Compiling[0m windows v0.59.0
+2026-06-12T06:49:05.7355079Z [1m[32m   Compiling[0m specta-typescript v0.0.7
+2026-06-12T06:49:09.1545107Z [1m[32m   Compiling[0m notify-rust v4.11.7
+2026-06-12T06:49:10.1861041Z [1m[32m   Compiling[0m symphonia v0.5.4
+2026-06-12T06:49:10.4710588Z [1m[32m   Compiling[0m cap-camera-ffmpeg v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\camera-ffmpeg)
+2026-06-12T06:49:11.9053082Z [1m[32m   Compiling[0m cap-enc-gif v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\enc-gif)
+2026-06-12T06:49:12.3385433Z [1m[32m   Compiling[0m cap-cursor-capture v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\cursor-capture)
+2026-06-12T06:49:12.5833168Z [1m[32m   Compiling[0m opentelemetry-proto v0.31.0
+2026-06-12T06:49:19.0465655Z [1m[32m   Compiling[0m realfft v3.5.0
+2026-06-12T06:49:19.2938368Z [1m[32m   Compiling[0m sentry-rust-minidump v0.13.0
+2026-06-12T06:49:24.1974467Z [1m[32m   Compiling[0m cap-editor v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\editor)
+2026-06-12T06:49:26.1168142Z [1m[32m   Compiling[0m scap-ffmpeg v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\scap-ffmpeg)
+2026-06-12T06:49:26.4398261Z [1m[32m   Compiling[0m cap-enc-mediafoundation v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\enc-mediafoundation)
+2026-06-12T06:49:26.7531636Z [1m[32m   Compiling[0m arboard v3.6.1
+2026-06-12T06:49:28.3874635Z [1m[32m   Compiling[0m opentelemetry-http v0.31.0
+2026-06-12T06:49:29.7008945Z [1m[32m   Compiling[0m sysinfo v0.35.2
+2026-06-12T06:49:29.9873025Z [1m[32m   Compiling[0m cap-mediafoundation-ffmpeg v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\mediafoundation-ffmpeg)
+2026-06-12T06:49:30.8509769Z [1m[32m   Compiling[0m scap-cpal v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\scap-cpal)
+2026-06-12T06:49:31.0682751Z [1m[32m   Compiling[0m cap-timestamp v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\timestamp)
+2026-06-12T06:49:31.7907104Z [1m[32m   Compiling[0m retry v2.1.0
+2026-06-12T06:49:32.0679005Z [1m[32m   Compiling[0m global-hotkey v0.7.0
+2026-06-12T06:49:34.1469459Z [1m[32m   Compiling[0m cap-desktop v0.5.1 (D:\a\Cap-CN\Cap-CN\apps\desktop\src-tauri)
+2026-06-12T06:49:37.1920913Z [1m[32m   Compiling[0m mp4 v0.14.0
+2026-06-12T06:49:38.1615383Z [1m[32m   Compiling[0m shared_child v1.1.1
+2026-06-12T06:49:38.5561038Z [1m[32m   Compiling[0m cap-muxer-protocol v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\cap-muxer-protocol)
+2026-06-12T06:49:38.9749787Z [1m[32m   Compiling[0m os_pipe v1.2.2
+2026-06-12T06:49:39.1577857Z [1m[32m   Compiling[0m tauri-specta-macros v2.0.0-rc.16
+2026-06-12T06:49:39.9466670Z [1m[32m   Compiling[0m gethostname v1.0.2
+2026-06-12T06:49:40.1777538Z [1m[32m   Compiling[0m async-stream-impl v0.3.6
+2026-06-12T06:49:41.5467268Z [1m[32m   Compiling[0m replace_with v0.1.8
+2026-06-12T06:49:41.6468596Z [1m[32m   Compiling[0m dotenvy v0.15.7
+2026-06-12T06:49:42.3388995Z [1m[32m   Compiling[0m claxon v0.4.3
+2026-06-12T06:49:43.0930726Z [1m[32m   Compiling[0m twox-hash v2.1.2
+2026-06-12T06:49:43.2799265Z [1m[32m   Compiling[0m lz4_flex v0.11.5
+2026-06-12T06:49:43.3863640Z [1m[32m   Compiling[0m rodio v0.19.0
+2026-06-12T06:49:44.1034612Z [1m[32m   Compiling[0m dotenvy_macro v0.15.7
+2026-06-12T06:49:44.8946790Z [1m[32m   Compiling[0m cap-recording v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\recording)
+2026-06-12T06:49:47.8151799Z [1m[32m   Compiling[0m async-stream v0.3.6
+2026-06-12T06:49:48.8620021Z [1m[32m   Compiling[0m tauri-specta v2.0.0-rc.20
+2026-06-12T06:49:50.0220423Z [1m[32m   Compiling[0m cap-export v0.1.0 (D:\a\Cap-CN\Cap-CN\crates\export)
+2026-06-12T06:49:56.0397073Z [1m[31merror[0m[1m:[0m failed to run custom build command for `cap-desktop v0.5.1 (D:\a\Cap-CN\Cap-CN\apps\desktop\src-tauri)`
+2026-06-12T06:49:56.0398353Z 
+2026-06-12T06:49:56.0398661Z Caused by:
+2026-06-12T06:49:56.0399842Z   process didn't exit successfully: `D:\a\Cap-CN\Cap-CN\target\release\build\cap-desktop-8a116116afe07a50\build-script-build` (exit code: 1)
+2026-06-12T06:49:56.0401109Z   --- stdout
+2026-06-12T06:49:56.0401666Z   cargo:rerun-if-env-changed=TAURI_CONFIG
+2026-06-12T06:49:56.0402361Z   cargo:rustc-check-cfg=cfg(desktop)
+2026-06-12T06:49:56.0403017Z   cargo:rustc-cfg=desktop
+2026-06-12T06:49:56.0403617Z   cargo:rustc-check-cfg=cfg(mobile)
+2026-06-12T06:49:56.0404504Z   cargo:rerun-if-changed=D:\a\Cap-CN\Cap-CN\apps\desktop\src-tauri\tauri.conf.json
+2026-06-12T06:49:56.0405769Z   cargo:rerun-if-changed=D:\a\Cap-CN\Cap-CN\apps\desktop\src-tauri\tauri.windows.conf.json
+2026-06-12T06:49:56.0406856Z   cargo:rustc-env=TAURI_ANDROID_PACKAGE_NAME_APP_NAME=dev
+2026-06-12T06:49:56.0407783Z   cargo:rustc-env=TAURI_ANDROID_PACKAGE_NAME_PREFIX=so_cap_desktop
+2026-06-12T06:49:56.0408637Z   cargo:rustc-check-cfg=cfg(dev)
+2026-06-12T06:49:56.0410209Z   cargo:PERMISSION_FILES_PATH=D:\a\Cap-CN\Cap-CN\target\x86_64-pc-windows-msvc\release\build\cap-desktop-474fa545657d0e60\out\app-manifest\__app__-permission-files
+2026-06-12T06:49:56.0411680Z   cargo:rerun-if-changed=capabilities
+2026-06-12T06:49:56.0954210Z   Permission updater:default not found, expected one of clipboard-manager:default, clipboard-manager:allow-clear, clipboard-manager:allow-read-image, clipboard-manager:allow-read-text, clipboard-manager:allow-write-html, clipboard-manager:allow-write-image, clipboard-manager:allow-write-text, clipboard-manager:deny-clear, clipboard-manager:deny-read-image, clipboard-manager:deny-read-text, clipboard-manager:deny-write-html, clipboard-manager:deny-write-image, clipboard-manager:deny-write-text, core:default, core:app:default, core:app:allow-app-hide, core:app:allow-app-show, core:app:allow-bundle-type, core:app:allow-default-window-icon, core:app:allow-fetch-data-store-identifiers, core:app:allow-identifier, core:app:allow-name, core:app:allow-remove-data-store, core:app:allow-set-app-theme, core:app:allow-set-dock-visibility, core:app:allow-tauri-version, core:app:allow-version, core:app:deny-app-hide, core:app:deny-app-show, core:app:deny-bundle-type, core:app:deny-default-window-icon, core:app:deny-fetch-data-store-identifiers, core:app:deny-identifier, core:app:deny-name, core:app:deny-remove-data-store, core:app:deny-set-app-theme, core:app:deny-set-dock-visibility, core:app:deny-tauri-version, core:app:deny-version, core:event:default, core:event:allow-emit, core:event:allow-emit-to, core:event:allow-listen, core:event:allow-unlisten, core:event:deny-emit, core:event:deny-emit-to, core:event:deny-listen, core:event:deny-unlisten, core:image:default, core:image:allow-from-bytes, core:image:allow-from-path, core:image:allow-new, core:image:allow-rgba, core:image:allow-size, core:image:deny-from-bytes, core:image:deny-from-path, core:image:deny-new, core:image:deny-rgba, core:image:deny-size, core:menu:default, core:menu:allow-append, core:menu:allow-create-default, core:menu:allow-get, core:menu:allow-insert, core:menu:allow-is-checked, core:menu:allow-is-enabled, core:menu:allow-items, core:menu:allow-new, core:menu:allow-popup, core:menu:allow-prepend, core:menu:allow-remove, core:menu:allow-remove-at, core:menu:allow-set-accelerator, core:menu:allow-set-as-app-menu, core:menu:allow-set-as-help-menu-for-nsapp, core:menu:allow-set-as-window-menu, core:menu:allow-set-as-windows-menu-for-nsapp, core:menu:allow-set-checked, core:menu:allow-set-enabled, core:menu:allow-set-icon, core:menu:allow-set-text, core:menu:allow-text, core:menu:deny-append, core:menu:deny-create-default, core:menu:deny-get, core:menu:deny-insert, core:menu:deny-is-checked, core:menu:deny-is-enabled, core:menu:deny-items, core:menu:deny-new, core:menu:deny-popup, core:menu:deny-prepend, core:menu:deny-remove, core:menu:deny-remove-at, core:menu:deny-set-accelerator, core:menu:deny-set-as-app-menu, core:menu:deny-set-as-help-menu-for-nsapp, core:menu:deny-set-as-window-menu, core:menu:deny-set-as-windows-menu-for-nsapp, core:menu:deny-set-checked, core:menu:deny-set-enabled, core:menu:deny-set-icon, core:menu:deny-set-text, core:menu:deny-text, core:path:default, core:path:allow-basename, core:path:allow-dirname, core:path:allow-extname, core:path:allow-is-absolute, core:path:allow-join, core:path:allow-normalize, core:path:allow-resolve, core:path:allow-resolve-directory, core:path:deny-basename, core:path:deny-dirname, core:path:deny-extname, core:path:deny-is-absolute, core:path:deny-join, core:path:deny-normalize, core:path:deny-resolve, core:path:deny-resolve-directory, core:resources:default, core:resources:allow-close, core:resources:deny-close, core:tray:default, core:tray:allow-get-by-id, core:tray:allow-new, core:tray:allow-remove-by-id, core:tray:allow-set-icon, core:tray:allow-set-icon-as-template, core:tray:allow-set-menu, core:tray:allow-set-show-menu-on-left-click, core:tray:allow-set-temp-dir-path, core:tray:allow-set-title, core:tray:allow-set-tooltip, core:tray:allow-set-visible, core:tray:deny-get-by-id, core:tray:deny-new, core:tray:deny-remove-by-id, core:tray:deny-set-icon, core:tray:deny-set-icon-as-template, core:tray:deny-set-menu, core:tray:deny-set-show-menu-on-left-click, core:tray:deny-set-temp-dir-path, core:tray:deny-set-title, core:tray:deny-set-tooltip, core:tray:deny-set-visible, core:webview:default, core:webview:allow-clear-all-browsing-data, core:webview:allow-create-webview, core:webview:allow-create-webview-window, core:webview:allow-get-all-webviews, core:webview:allow-internal-toggle-devtools, core:webview:allow-print, core:webview:allow-reparent, core:webview:allow-set-webview-auto-resize, core:webview:allow-set-webview-background-color, core:webview:allow-set-webview-focus, core:webview:allow-set-webview-position, core:webview:allow-set-webview-size, core:webview:allow-set-webview-zoom, core:webview:allow-webview-close, core:webview:allow-webview-hide, core:webview:allow-webview-position, core:webview:allow-webview-show, core:webview:allow-webview-size, core:webview:deny-clear-all-browsing-data, core:webview:deny-create-webview, core:webview:deny-create-webview-window, core:webview:deny-get-all-webviews, core:webview:deny-internal-toggle-devtools, core:webview:deny-print, core:webview:deny-reparent, core:webview:deny-set-webview-auto-resize, core:webview:deny-set-webview-background-color, core:webview:deny-set-webview-focus, core:webview:deny-set-webview-position, core:webview:deny-set-webview-size, core:webview:deny-set-webview-zoom, core:webview:deny-webview-close, core:webview:deny-webview-hide, core:webview:deny-webview-position, core:webview:deny-webview-show, core:webview:deny-webview-size, core:window:default, core:window:allow-available-monitors, core:window:allow-center, core:window:allow-close, core:window:allow-create, core:window:allow-current-monitor, core:window:allow-cursor-position, core:window:allow-destroy, core:window:allow-get-all-windows, core:window:allow-hide, core:window:allow-inner-position, core:window:allow-inner-size, core:window:allow-internal-toggle-maximize, core:window:allow-is-always-on-top, core:window:allow-is-closable, core:window:allow-is-decorated, core:window:allow-is-enabled, core:window:allow-is-focused, core:window:allow-is-fullscreen, core:window:allow-is-maximizable, core:window:allow-is-maximized, core:window:allow-is-minimizable, core:window:allow-is-minimized, core:window:allow-is-resizable, core:window:allow-is-visible, core:window:allow-maximize, core:window:allow-minimize, core:window:allow-monitor-from-point, core:window:allow-outer-position, core:window:allow-outer-size, core:window:allow-primary-monitor, core:window:allow-request-user-attention, core:window:allow-scale-factor, core:window:allow-set-always-on-bottom, core:window:allow-set-always-on-top, core:window:allow-set-background-color, core:window:allow-set-badge-count, core:window:allow-set-badge-label, core:window:allow-set-closable, core:window:allow-set-content-protected, core:window:allow-set-cursor-grab, core:window:allow-set-cursor-icon, core:window:allow-set-cursor-position, core:window:allow-set-cursor-visible, core:window:allow-set-decorations, core:window:allow-set-effects, core:window:allow-set-enabled, core:window:allow-set-focus, core:window:allow-set-focusable, core:window:allow-set-fullscreen, core:window:allow-set-icon, core:window:allow-set-ignore-cursor-events, core:window:allow-set-max-size, core:window:allow-set-maximizable, core:window:allow-set-min-size, core:window:allow-set-minimizable, core:window:allow-set-overlay-icon, core:window:allow-set-position, core:window:allow-set-progress-bar, core:window:allow-set-resizable, core:window:allow-set-shadow, core:window:allow-set-simple-fullscreen, core:window:allow-set-size, core:window:allow-set-size-constraints, core:window:allow-set-skip-taskbar, core:window:allow-set-theme, core:window:allow-set-title, core:window:allow-set-title-bar-style, core:window:allow-set-visible-on-all-workspaces, core:window:allow-show, core:window:allow-start-dragging, core:window:allow-start-resize-dragging, core:window:allow-theme, core:window:allow-title, core:window:allow-toggle-maximize, core:window:allow-unmaximize, core:window:allow-unminimize, core:window:deny-available-monitors, core:window:deny-center, core:window:deny-close, core:window:deny-create, core:window:deny-current-monitor, core:window:deny-cursor-position, core:window:deny-destroy, core:window:deny-get-all-windows, core:window:deny-hide, core:window:deny-inner-position, core:window:deny-inner-size, core:window:deny-internal-toggle-maximize, core:window:deny-is-always-on-top, core:window:deny-is-closable, core:window:deny-is-decorated, core:window:deny-is-enabled, core:window:deny-is-focused, core:window:deny-is-fullscreen, core:window:deny-is-maximizable, core:window:deny-is-maximized, core:window:deny-is-minimizable, core:window:deny-is-minimized, core:window:deny-is-resizable, core:window:deny-is-visible, core:window:deny-maximize, core:window:deny-minimize, core:window:deny-monitor-from-point, core:window:deny-outer-position, core:window:deny-outer-size, core:window:deny-primary-monitor, core:window:deny-request-user-attention, core:window:deny-scale-factor, core:window:deny-set-always-on-bottom, core:window:deny-set-always-on-top, core:window:deny-set-background-color, core:window:deny-set-badge-count, core:window:deny-set-badge-label, core:window:deny-set-closable, core:window:deny-set-content-protected, core:window:deny-set-cursor-grab, core:window:deny-set-cursor-icon, core:window:deny-set-cursor-position, core:window:deny-set-cursor-visible, core:window:deny-set-decorations, core:window:deny-set-effects, core:window:deny-set-enabled, core:window:deny-set-focus, core:window:deny-set-focusable, core:window:deny-set-fullscreen, core:window:deny-set-icon, core:window:deny-set-ignore-cursor-events, core:window:deny-set-max-size, core:window:deny-set-maximizable, core:window:deny-set-min-size, core:window:deny-set-minimizable, core:window:deny-set-overlay-icon, core:window:deny-set-position, core:window:deny-set-progress-bar, core:window:deny-set-resizable, core:window:deny-set-shadow, core:window:deny-set-simple-fullscreen, core:window:deny-set-size, core:window:deny-set-size-constraints, core:window:deny-set-skip-taskbar, core:window:deny-set-theme, core:window:deny-set-title, core:window:deny-set-title-bar-style, core:window:deny-set-visible-on-all-workspaces, core:window:deny-show, core:window:deny-start-dragging, core:window:deny-start-resize-dragging, core:window:deny-theme, core:window:deny-title, core:window:deny-toggle-maximize, core:window:deny-unmaximize, core:window:deny-unminimize, deep-link:default, deep-link:allow-get-current, deep-link:allow-is-registered, deep-link:allow-register, deep-link:allow-unregister, deep-link:deny-get-current, deep-link:deny-is-registered, deep-link:deny-register, deep-link:deny-unregister, dialog:default, dialog:allow-ask, dialog:allow-confirm, dialog:allow-message, dialog:allow-open, dialog:allow-save, dialog:deny-ask, dialog:deny-confirm, dialog:deny-message, dialog:deny-open, dialog:deny-save, fs:default, fs:allow-copy-file, fs:allow-create, fs:allow-exists, fs:allow-fstat, fs:allow-ftruncate, fs:allow-lstat, fs:allow-mkdir, fs:allow-open, fs:allow-read, fs:allow-read-dir, fs:allow-read-file, fs:allow-read-text-file, fs:allow-read-text-file-lines, fs:allow-read-text-file-lines-next, fs:allow-remove, fs:allow-rename, fs:allow-seek, fs:allow-size, fs:allow-stat, fs:allow-truncate, fs:allow-unwatch, fs:allow-watch, fs:allow-write, fs:allow-write-file, fs:allow-write-text-file, fs:create-app-specific-dirs, fs:deny-copy-file, fs:deny-create, fs:deny-exists, fs:deny-fstat, fs:deny-ftruncate, fs:deny-lstat, fs:deny-mkdir, fs:deny-open, fs:deny-read, fs:deny-read-dir, fs:deny-read-file, fs:deny-read-text-file, fs:deny-read-text-file-lines, fs:deny-read-text-file-lines-next, fs:deny-remove, fs:deny-rename, fs:deny-seek, fs:deny-size, fs:deny-stat, fs:deny-truncate, fs:deny-unwatch, fs:deny-watch, fs:deny-webview-data-linux, fs:deny-webview-data-windows, fs:deny-write, fs:deny-write-file, fs:deny-write-text-file, fs:read-all, fs:read-app-specific-dirs-recursive, fs:read-dirs, fs:read-files, fs:read-meta, fs:scope, fs:scope-app, fs:scope-app-index, fs:scope-app-recursive, fs:scope-appcache, fs:scope-appcache-index, fs:scope-appcache-recursive, fs:scope-appconfig, fs:scope-appconfig-index, fs:scope-appconfig-recursive, fs:scope-appdata, fs:scope-appdata-index, fs:scope-appdata-recursive, fs:scope-applocaldata, fs:scope-applocaldata-index, fs:scope-applocaldata-recursive, fs:scope-applog, fs:scope-applog-index, fs:scope-applog-recursive, fs:scope-audio, fs:scope-audio-index, fs:scope-audio-recursive, fs:scope-cache, fs:scope-cache-index, fs:scope-cache-recursive, fs:scope-config, fs:scope-config-index, fs:scope-config-recursive, fs:scope-data, fs:scope-data-index, fs:scope-data-recursive, fs:scope-desktop, fs:scope-desktop-index, fs:scope-desktop-recursive, fs:scope-document, fs:scope-document-index, fs:scope-document-recursive, fs:scope-download, fs:scope-download-index, fs:scope-download-recursive, fs:scope-exe, fs:scope-exe-index, fs:scope-exe-recursive, fs:scope-font, fs:scope-font-index, fs:scope-font-recursive, fs:scope-home, fs:scope-home-index, fs:scope-home-recursive, fs:scope-localdata, fs:scope-localdata-index, fs:scope-localdata-recursive, fs:scope-log, fs:scope-log-index, fs:scope-log-recursive, fs:scope-picture, fs:scope-picture-index, fs:scope-picture-recursive, fs:scope-public, fs:scope-public-index, fs:scope-public-recursive, fs:scope-resource, fs:scope-resource-index, fs:scope-resource-recursive, fs:scope-runtime, fs:scope-runtime-index, fs:scope-runtime-recursive, fs:scope-temp, fs:scope-temp-index, fs:scope-temp-recursive, fs:scope-template, fs:scope-template-index, fs:scope-template-recursive, fs:scope-video, fs:scope-video-index, fs:scope-video-recursive, fs:write-all, fs:write-files, fs:allow-app-meta, fs:allow-app-meta-recursive, fs:allow-app-read, fs:allow-app-read-recursive, fs:allow-app-write, fs:allow-app-write-recursive, fs:allow-appcache-meta, fs:allow-appcache-meta-recursive, fs:allow-appcache-read, fs:allow-appcache-read-recursive, fs:allow-appcache-write, fs:allow-appcache-write-recursive, fs:allow-appconfig-meta, fs:allow-appconfig-meta-recursive, fs:allow-appconfig-read, fs:allow-appconfig-read-recursive, fs:allow-appconfig-write, fs:allow-appconfig-write-recursive, fs:allow-appdata-meta, fs:allow-appdata-meta-recursive, fs:allow-appdata-read, fs:allow-appdata-read-recursive, fs:allow-appdata-write, fs:allow-appdata-write-recursive, fs:allow-applocaldata-meta, fs:allow-applocaldata-meta-recursive, fs:allow-applocaldata-read, fs:allow-applocaldata-read-recursive, fs:allow-applocaldata-write, fs:allow-applocaldata-write-recursive, fs:allow-applog-meta, fs:allow-applog-meta-recursive, fs:allow-applog-read, fs:allow-applog-read-recursive, fs:allow-applog-write, fs:allow-applog-write-recursive, fs:allow-audio-meta, fs:allow-audio-meta-recursive, fs:allow-audio-read, fs:allow-audio-read-recursive, fs:allow-audio-write, fs:allow-audio-write-recursive, fs:allow-cache-meta, fs:allow-cache-meta-recursive, fs:allow-cache-read, fs:allow-cache-read-recursive, fs:allow-cache-write, fs:allow-cache-write-recursive, fs:allow-config-meta, fs:allow-config-meta-recursive, fs:allow-config-read, fs:allow-config-read-recursive, fs:allow-config-write, fs:allow-config-write-recursive, fs:allow-data-meta, fs:allow-data-meta-recursive, fs:allow-data-read, fs:allow-data-read-recursive, fs:allow-data-write, fs:allow-data-write-recursive, fs:allow-desktop-meta, fs:allow-desktop-meta-recursive, fs:allow-desktop-read, fs:allow-desktop-read-recursive, fs:allow-desktop-write, fs:allow-desktop-write-recursive, fs:allow-document-meta, fs:allow-document-meta-recursive, fs:allow-document-read, fs:allow-document-read-recursive, fs:allow-document-write, fs:allow-document-write-recursive, fs:allow-download-meta, fs:allow-download-meta-recursive, fs:allow-download-read, fs:allow-download-read-recursive, fs:allow-download-write, fs:allow-download-write-recursive, fs:allow-exe-meta, fs:allow-exe-meta-recursive, fs:allow-exe-read, fs:allow-exe-read-recursive, fs:allow-exe-write, fs:allow-exe-write-recursive, fs:allow-font-meta, fs:allow-font-meta-recursive, fs:allow-font-read, fs:allow-font-read-recursive, fs:allow-font-write, fs:allow-font-write-recursive, fs:allow-home-meta, fs:allow-home-meta-recursive, fs:allow-home-read, fs:allow-home-read-recursive, fs:allow-home-write, fs:allow-home-write-recursive, fs:allow-localdata-meta, fs:allow-localdata-meta-recursive, fs:allow-localdata-read, fs:allow-localdata-read-recursive, fs:allow-localdata-write, fs:allow-localdata-write-recursive, fs:allow-log-meta, fs:allow-log-meta-recursive, fs:allow-log-read, fs:allow-log-read-recursive, fs:allow-log-write, fs:allow-log-write-recursive, fs:allow-picture-meta, fs:allow-picture-meta-recursive, fs:allow-picture-read, fs:allow-picture-read-recursive, fs:allow-picture-write, fs:allow-picture-write-recursive, fs:allow-public-meta, fs:allow-public-meta-recursive, fs:allow-public-read, fs:allow-public-read-recursive, fs:allow-public-write, fs:allow-public-write-recursive, fs:allow-resource-meta, fs:allow-resource-meta-recursive, fs:allow-resource-read, fs:allow-resource-read-recursive, fs:allow-resource-write, fs:allow-resource-write-recursive, fs:allow-runtime-meta, fs:allow-runtime-meta-recursive, fs:allow-runtime-read, fs:allow-runtime-read-recursive, fs:allow-runtime-write, fs:allow-runtime-write-recursive, fs:allow-temp-meta, fs:allow-temp-meta-recursive, fs:allow-temp-read, fs:allow-temp-read-recursive, fs:allow-temp-write, fs:allow-temp-write-recursive, fs:allow-template-meta, fs:allow-template-meta-recursive, fs:allow-template-read, fs:allow-template-read-recursive, fs:allow-template-write, fs:allow-template-write-recursive, fs:allow-video-meta, fs:allow-video-meta-recursive, fs:allow-video-read, fs:allow-video-read-recursive, fs:allow-video-write, fs:allow-video-write-recursive, fs:deny-default, global-shortcut:default, global-shortcut:allow-is-registered, global-shortcut:allow-register, global-shortcut:allow-register-all, global-shortcut:allow-unregister, global-shortcut:allow-unregister-all, global-shortcut:deny-is-registered, global-shortcut:deny-register, global-shortcut:deny-register-all, global-shortcut:deny-unregister, global-shortcut:deny-unregister-all, http:default, http:allow-fetch, http:allow-fetch-cancel, http:allow-fetch-read-body, http:allow-fetch-send, http:deny-fetch, http:deny-fetch-cancel, http:deny-fetch-read-body, http:deny-fetch-send, notification:default, notification:allow-batch, notification:allow-cancel, notification:allow-check-permissions, notification:allow-create-channel, notification:allow-delete-channel, notification:allow-get-active, notification:allow-get-pending, notification:allow-is-permission-granted, notification:allow-list-channels, notification:allow-notify, notification:allow-permission-state, notification:allow-register-action-types, notification:allow-register-listener, notification:allow-remove-active, notification:allow-request-permission, notification:allow-show, notification:deny-batch, notification:deny-cancel, notification:deny-check-permissions, notification:deny-create-channel, notification:deny-delete-channel, notification:deny-get-active, notification:deny-get-pending, notification:deny-is-permission-granted, notification:deny-list-channels, notification:deny-notify, notification:deny-permission-state, notification:deny-register-action-types, notification:deny-register-listener, notification:deny-remove-active, notification:deny-request-permission, notification:deny-show, oauth:allow-cancel, oauth:allow-start, oauth:deny-cancel, oauth:deny-start, opener:default, opener:allow-default-urls, opener:allow-open-path, opener:allow-open-url, opener:allow-reveal-item-in-dir, opener:deny-open-path, opener:deny-open-url, opener:deny-reveal-item-in-dir, os:default, os:allow-arch, os:allow-exe-extension, os:allow-family, os:allow-hostname, os:allow-locale, os:allow-os-type, os:allow-platform, os:allow-version, os:deny-arch, os:deny-exe-extension, os:deny-family, os:deny-hostname, os:deny-locale, os:deny-os-type, os:deny-platform, os:deny-version, positioner:default, positioner:allow-move-window, positioner:allow-move-window-constrained, positioner:allow-set-tray-icon-state, positioner:deny-move-window, positioner:deny-move-window-constrained, positioner:deny-set-tray-icon-state, process:default, process:allow-exit, process:allow-restart, process:deny-exit, process:deny-restart, sentry:default, sentry:allow-breadcrumb, sentry:allow-envelope, sentry:allow-event, sentry:deny-breadcrumb, sentry:deny-envelope, sentry:deny-event, shell:default, shell:allow-execute, shell:allow-kill, shell:allow-open, shell:allow-spawn, shell:allow-stdin-write, shell:deny-execute, shell:deny-kill, shell:deny-open, shell:deny-spawn, shell:deny-stdin-write, store:default, store:allow-clear, store:allow-delete, store:allow-entries, store:allow-get, store:allow-get-store, store:allow-has, store:allow-keys, store:allow-length, store:allow-load, store:allow-reload, store:allow-reset, store:allow-save, store:allow-set, store:allow-values, store:deny-clear, store:deny-delete, store:deny-entries, store:deny-get, store:deny-get-store, store:deny-has, store:deny-keys, store:deny-length, store:deny-load, store:deny-reload, store:deny-reset, store:deny-save, store:deny-set, store:deny-values, window-state:default, window-state:allow-filename, window-state:allow-restore-state, window-state:allow-save-window-state, window-state:deny-filename, window-state:deny-restore-state, window-state:deny-save-window-state
+2026-06-12T06:49:56.1104796Z [1m[33mwarning[0m[1m:[0m build failed, waiting for other jobs to finish...
+2026-06-12T06:50:45.6386087Z failed to build app: failed to build app
+2026-06-12T06:50:45.6400044Z        Error failed to build app: failed to build app
+2026-06-12T06:50:45.6554622Z  ELIFECYCLE  Command failed with exit code 1.
+2026-06-12T06:50:46.4059928Z ##[error]Process completed with exit code 1.
