@@ -48,13 +48,21 @@ jobs:
         env:
           CI: false
 
-      - name: Clear signing keys and build
+      - name: Disable signing
         shell: pwsh
         run: |
           # Remove any cached signing keys
           Remove-Item -Path "$env:USERPROFILE\.tauri" -Recurse -Force -ErrorAction SilentlyContinue
           Remove-Item -Path "$env:LOCALAPPDATA\tauri" -Recurse -Force -ErrorAction SilentlyContinue
-          echo "Cleared cached signing keys"
+          # Clear pubkey from prod config
+          $prodConf = 'apps/desktop/src-tauri/tauri.prod.conf.json'
+          if (Test-Path $prodConf) {
+            $content = Get-Content $prodConf -Raw | ConvertFrom-Json
+            $content.plugins.updater.pubkey = ''
+            $content | ConvertTo-Json -Depth 10 | Set-Content $prodConf
+            Write-Output "Cleared pubkey from prod config"
+          }
+          echo "Signing disabled"
 
       - name: Build Tauri app (no signing)
         continue-on-error: true
