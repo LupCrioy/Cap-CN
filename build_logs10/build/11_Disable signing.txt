@@ -1,0 +1,22 @@
+﻿2026-06-12T02:22:04.6493460Z ##[group]Run # Remove any cached signing keys
+2026-06-12T02:22:04.6493882Z [36;1m# Remove any cached signing keys[0m
+2026-06-12T02:22:04.6494340Z [36;1mRemove-Item -Path "$env:USERPROFILE\.tauri" -Recurse -Force -ErrorAction SilentlyContinue[0m
+2026-06-12T02:22:04.6494883Z [36;1mRemove-Item -Path "$env:LOCALAPPDATA\tauri" -Recurse -Force -ErrorAction SilentlyContinue[0m
+2026-06-12T02:22:04.6495299Z [36;1m# Clear pubkey from prod config[0m
+2026-06-12T02:22:04.6495626Z [36;1m$prodConf = 'apps/desktop/src-tauri/tauri.prod.conf.json'[0m
+2026-06-12T02:22:04.6496002Z [36;1mif (Test-Path $prodConf) {[0m
+2026-06-12T02:22:04.6496333Z [36;1m  $content = Get-Content $prodConf -Raw | ConvertFrom-Json[0m
+2026-06-12T02:22:04.6496685Z [36;1m  $content.plugins.updater.pubkey = ''[0m
+2026-06-12T02:22:04.6497040Z [36;1m  $content | ConvertTo-Json -Depth 10 | Set-Content $prodConf[0m
+2026-06-12T02:22:04.6497439Z [36;1m  Write-Output "Cleared pubkey from prod config"[0m
+2026-06-12T02:22:04.6497763Z [36;1m}[0m
+2026-06-12T02:22:04.6497930Z [36;1mecho "Signing disabled"[0m
+2026-06-12T02:22:04.6526193Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-06-12T02:22:04.6526530Z env:
+2026-06-12T02:22:04.6526801Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-12T02:22:04.6527125Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-12T02:22:04.6527416Z   CARGO_INCREMENTAL: 0
+2026-06-12T02:22:04.6527645Z   CARGO_TERM_COLOR: always
+2026-06-12T02:22:04.6527873Z ##[endgroup]
+2026-06-12T02:22:05.3658467Z Cleared pubkey from prod config
+2026-06-12T02:22:05.3661115Z Signing disabled

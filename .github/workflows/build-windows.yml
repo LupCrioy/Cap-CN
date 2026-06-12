@@ -51,18 +51,12 @@ jobs:
       - name: Disable signing
         shell: pwsh
         run: |
+          # Remove prod config entirely (it contains updater pubkey)
+          Remove-Item -Path "apps/desktop/src-tauri/tauri.prod.conf.json" -Force -ErrorAction SilentlyContinue
           # Remove any cached signing keys
           Remove-Item -Path "$env:USERPROFILE\.tauri" -Recurse -Force -ErrorAction SilentlyContinue
           Remove-Item -Path "$env:LOCALAPPDATA\tauri" -Recurse -Force -ErrorAction SilentlyContinue
-          # Clear pubkey from prod config
-          $prodConf = 'apps/desktop/src-tauri/tauri.prod.conf.json'
-          if (Test-Path $prodConf) {
-            $content = Get-Content $prodConf -Raw | ConvertFrom-Json
-            $content.plugins.updater.pubkey = ''
-            $content | ConvertTo-Json -Depth 10 | Set-Content $prodConf
-            Write-Output "Cleared pubkey from prod config"
-          }
-          echo "Signing disabled"
+          Write-Output "Signing disabled (prod config removed)"
 
       - name: Build Tauri app (no signing)
         continue-on-error: true

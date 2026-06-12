@@ -1,0 +1,13 @@
+﻿2026-06-12T01:05:46.0008724Z ##[group]Run # Remove any cached signing keys
+2026-06-12T01:05:46.0009286Z [36;1m# Remove any cached signing keys[0m
+2026-06-12T01:05:46.0009946Z [36;1mRemove-Item -Path "$env:USERPROFILE\.tauri" -Recurse -Force -ErrorAction SilentlyContinue[0m
+2026-06-12T01:05:46.0010748Z [36;1mRemove-Item -Path "$env:LOCALAPPDATA\tauri" -Recurse -Force -ErrorAction SilentlyContinue[0m
+2026-06-12T01:05:46.0011309Z [36;1mecho "Cleared cached signing keys"[0m
+2026-06-12T01:05:46.0043617Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-06-12T01:05:46.0044490Z env:
+2026-06-12T01:05:46.0045052Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-12T01:05:46.0045625Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-12T01:05:46.0046006Z   CARGO_INCREMENTAL: 0
+2026-06-12T01:05:46.0046296Z   CARGO_TERM_COLOR: always
+2026-06-12T01:05:46.0046578Z ##[endgroup]
+2026-06-12T01:05:46.5208357Z Cleared cached signing keys

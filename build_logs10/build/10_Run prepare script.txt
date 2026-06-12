@@ -1,0 +1,17 @@
+﻿2026-06-12T02:22:00.9029502Z ##[group]Run pnpm run preparescript
+2026-06-12T02:22:00.9029976Z [36;1mpnpm run preparescript[0m
+2026-06-12T02:22:00.9774364Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-06-12T02:22:00.9774717Z env:
+2026-06-12T02:22:00.9774996Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-12T02:22:00.9775334Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-12T02:22:00.9775596Z   CARGO_INCREMENTAL: 0
+2026-06-12T02:22:00.9775858Z   CARGO_TERM_COLOR: always
+2026-06-12T02:22:00.9776251Z   CI: false
+2026-06-12T02:22:00.9776454Z ##[endgroup]
+2026-06-12T02:22:04.4196158Z 
+2026-06-12T02:22:04.4196847Z > @cap/desktop@ preparescript D:\a\Cap-CN\Cap-CN\apps\desktop
+2026-06-12T02:22:04.4197275Z > node scripts/prepare.js
+2026-06-12T02:22:04.4197451Z 
+2026-06-12T02:22:04.4966875Z --- Preparing sidecars and configs...
+2026-06-12T02:22:04.4970360Z Updating Platform (win32) Tauri config...
+2026-06-12T02:22:04.4992914Z --- Preparation finished

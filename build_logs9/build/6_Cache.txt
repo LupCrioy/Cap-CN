@@ -1,0 +1,25 @@
+﻿2026-06-12T00:44:33.2431708Z ##[group]Run actions/cache@v4
+2026-06-12T00:44:33.2432090Z with:
+2026-06-12T00:44:33.2432577Z   path: ~/.cargo
+apps/desktop/src-tauri/target
+
+2026-06-12T00:44:33.2433181Z   key: Windows-tauri-50cdf3e29ba23f9d6a3bb6c1fd999865f2246d6228dbae7c4b913bb96ad6f7bd
+2026-06-12T00:44:33.2433768Z   enableCrossOsArchive: false
+2026-06-12T00:44:33.2434079Z   fail-on-cache-miss: false
+2026-06-12T00:44:33.2434358Z   lookup-only: false
+2026-06-12T00:44:33.2434607Z   save-always: false
+2026-06-12T00:44:33.2434839Z env:
+2026-06-12T00:44:33.2435162Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-12T00:44:33.2435623Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-12T00:44:33.2435951Z   CARGO_INCREMENTAL: 0
+2026-06-12T00:44:33.2436212Z   CARGO_TERM_COLOR: always
+2026-06-12T00:44:33.2436475Z ##[endgroup]
+2026-06-12T00:44:33.7422081Z Cache hit for: Windows-tauri-50cdf3e29ba23f9d6a3bb6c1fd999865f2246d6228dbae7c4b913bb96ad6f7bd
+2026-06-12T00:44:34.9355685Z Received 121634816 of 437542676 (27.8%), 115.1 MBs/sec
+2026-06-12T00:44:35.9521772Z Received 264241152 of 437542676 (60.4%), 124.5 MBs/sec
+2026-06-12T00:44:36.9648961Z Received 394264576 of 437542676 (90.1%), 123.8 MBs/sec
+2026-06-12T00:44:37.5569877Z Received 437542676 of 437542676 (100.0%), 115.0 MBs/sec
+2026-06-12T00:44:37.5576266Z Cache Size: ~417 MB (437542676 B)
+2026-06-12T00:44:37.5680254Z [command]"C:\Program Files\Git\usr\bin\tar.exe" -xf D:/a/_temp/c0ac482e-2b44-4c2c-b7ca-d0ddaa87a82e/cache.tzst -P -C D:/a/Cap-CN/Cap-CN --force-local --use-compress-program "zstd -d"
+2026-06-12T00:45:42.7201979Z Cache restored successfully
+2026-06-12T00:45:42.7530757Z Cache restored from key: Windows-tauri-50cdf3e29ba23f9d6a3bb6c1fd999865f2246d6228dbae7c4b913bb96ad6f7bd
