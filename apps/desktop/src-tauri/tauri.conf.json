@@ -27,7 +27,7 @@
 		}
 	},
 	"plugins": {
-		"updater": { "active": false },
+		"updater": { "active": false, "pubkey": "" },
 		"deep-link": {
 			"desktop": {
 				"schemes": ["cap-desktop"]
