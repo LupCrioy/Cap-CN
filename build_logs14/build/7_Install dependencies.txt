@@ -1,0 +1,81 @@
+﻿2026-06-12T09:33:15.5676406Z ##[group]Run pnpm install
+2026-06-12T09:33:15.5676778Z [36;1mpnpm install[0m
+2026-06-12T09:33:15.5992083Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-06-12T09:33:15.5992440Z env:
+2026-06-12T09:33:15.5992704Z   PNPM_HOME: C:\Users\runneradmin\setup-pnpm\node_modules\.bin
+2026-06-12T09:33:15.5993047Z   CARGO_HOME: C:\Users\runneradmin\.cargo
+2026-06-12T09:33:15.5993301Z   CARGO_INCREMENTAL: 0
+2026-06-12T09:33:15.5993511Z   CARGO_TERM_COLOR: always
+2026-06-12T09:33:15.5993722Z ##[endgroup]
+2026-06-12T09:33:23.8220854Z Scope: all 22 workspace projects
+2026-06-12T09:33:23.9812954Z Lockfile is up to date, resolution step is skipped
+2026-06-12T09:33:24.2981351Z Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-06-12T09:33:24.6561892Z Packages: +2914
+2026-06-12T09:33:24.6562378Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-06-12T09:33:25.3248039Z Progress: resolved 2914, reused 0, downloaded 0, added 0
+2026-06-12T09:33:26.3298702Z Progress: resolved 2914, reused 0, downloaded 27, added 16
+2026-06-12T09:33:27.3308674Z Progress: resolved 2914, reused 0, downloaded 92, added 80
+2026-06-12T09:33:28.3317060Z Progress: resolved 2914, reused 0, downloaded 209, added 202
+2026-06-12T09:33:29.3325785Z Progress: resolved 2914, reused 0, downloaded 409, added 406
+2026-06-12T09:33:30.3355188Z Progress: resolved 2914, reused 0, downloaded 590, added 588
+2026-06-12T09:33:31.3368390Z Progress: resolved 2914, reused 0, downloaded 646, added 639
+2026-06-12T09:33:32.3372974Z Progress: resolved 2914, reused 0, downloaded 749, added 744
+2026-06-12T09:33:33.3435796Z Progress: resolved 2914, reused 0, downloaded 802, added 800
+2026-06-12T09:33:34.3453938Z Progress: resolved 2914, reused 0, downloaded 828, added 822
+2026-06-12T09:33:35.3499822Z Progress: resolved 2914, reused 0, downloaded 893, added 887
+2026-06-12T09:33:36.3597880Z Progress: resolved 2914, reused 0, downloaded 933, added 931
+2026-06-12T09:33:37.3600766Z Progress: resolved 2914, reused 0, downloaded 973, added 974
+2026-06-12T09:33:38.3739742Z Progress: resolved 2914, reused 0, downloaded 1065, added 1065
+2026-06-12T09:33:39.3748116Z Progress: resolved 2914, reused 0, downloaded 1091, added 1091
+2026-06-12T09:33:40.4144883Z Progress: resolved 2914, reused 0, downloaded 1140, added 1139
+2026-06-12T09:33:41.4144483Z Progress: resolved 2914, reused 0, downloaded 1153, added 1152
+2026-06-12T09:33:42.4201820Z Progress: resolved 2914, reused 0, downloaded 1177, added 1175
+2026-06-12T09:33:43.4258075Z Progress: resolved 2914, reused 0, downloaded 1243, added 1242
+2026-06-12T09:33:44.4268401Z Progress: resolved 2914, reused 0, downloaded 1322, added 1325
+2026-06-12T09:33:45.4272093Z Progress: resolved 2914, reused 0, downloaded 1400, added 1401
+2026-06-12T09:33:46.4350918Z Progress: resolved 2914, reused 0, downloaded 1429, added 1430
+2026-06-12T09:33:47.4429480Z Progress: resolved 2914, reused 0, downloaded 1447, added 1446
+2026-06-12T09:33:48.4437219Z Progress: resolved 2914, reused 0, downloaded 1540, added 1543
+2026-06-12T09:33:49.4500827Z Progress: resolved 2914, reused 0, downloaded 1603, added 1626
+2026-06-12T09:33:50.4893754Z Progress: resolved 2914, reused 0, downloaded 1712, added 1739
+2026-06-12T09:33:51.4928082Z Progress: resolved 2914, reused 0, downloaded 1725, added 1749
+2026-06-12T09:33:52.4938763Z Progress: resolved 2914, reused 0, downloaded 1738, added 1761
+2026-06-12T09:33:53.4975765Z Progress: resolved 2914, reused 0, downloaded 1738, added 1762
+2026-06-12T09:33:54.5005229Z Progress: resolved 2914, reused 0, downloaded 1741, added 1766
+2026-06-12T09:33:55.5008320Z Progress: resolved 2914, reused 0, downloaded 1757, added 1776
+2026-06-12T09:33:56.5084047Z Progress: resolved 2914, reused 0, downloaded 1768, added 1789
+2026-06-12T09:33:57.5098689Z Progress: resolved 2914, reused 0, downloaded 1775, added 1799
+2026-06-12T09:33:58.5115026Z Progress: resolved 2914, reused 0, downloaded 1792, added 1814
+2026-06-12T09:33:59.5117485Z Progress: resolved 2914, reused 0, downloaded 1846, added 1873
+2026-06-12T09:34:00.5124402Z Progress: resolved 2914, reused 0, downloaded 1933, added 1957
+2026-06-12T09:34:01.5135288Z Progress: resolved 2914, reused 0, downloaded 1979, added 2008
+2026-06-12T09:34:02.5205875Z Progress: resolved 2914, reused 0, downloaded 2053, added 2082
+2026-06-12T09:34:03.5156256Z Progress: resolved 2914, reused 0, downloaded 2176, added 2205
+2026-06-12T09:34:04.5245592Z Progress: resolved 2914, reused 0, downloaded 2215, added 2243
+2026-06-12T09:34:05.5260051Z Progress: resolved 2914, reused 0, downloaded 2321, added 2348
+2026-06-12T09:34:06.5277089Z Progress: resolved 2914, reused 0, downloaded 2399, added 2433
+2026-06-12T09:34:07.5292025Z Progress: resolved 2914, reused 0, downloaded 2489, added 2524
+2026-06-12T09:34:08.5296204Z Progress: resolved 2914, reused 0, downloaded 2541, added 2575
+2026-06-12T09:34:09.5349122Z Progress: resolved 2914, reused 0, downloaded 2572, added 2609
+2026-06-12T09:34:10.5355147Z Progress: resolved 2914, reused 0, downloaded 2610, added 2651
+2026-06-12T09:34:11.5361920Z Progress: resolved 2914, reused 0, downloaded 2627, added 2659
+2026-06-12T09:34:12.5371258Z Progress: resolved 2914, reused 0, downloaded 2655, added 2693
+2026-06-12T09:34:13.5444677Z Progress: resolved 2914, reused 0, downloaded 2688, added 2720
+2026-06-12T09:34:14.5420931Z Progress: resolved 2914, reused 0, downloaded 2712, added 2746
+2026-06-12T09:34:15.5466877Z Progress: resolved 2914, reused 0, downloaded 2804, added 2843
+2026-06-12T09:34:16.5487323Z Progress: resolved 2914, reused 0, downloaded 2862, added 2913
+2026-06-12T09:34:16.6130554Z Progress: resolved 2914, reused 0, downloaded 2862, added 2914, done
+2026-06-12T09:34:18.8989834Z 
+2026-06-12T09:34:18.8990434Z devDependencies:
+2026-06-12T09:34:18.8990744Z + @biomejs/biome 2.2.0
+2026-06-12T09:34:18.8991004Z + @clack/prompts 0.10.1
+2026-06-12T09:34:18.8991298Z + @effect/language-service 0.44.0
+2026-06-12T09:34:18.8991567Z + dotenv-cli 11.0.0
+2026-06-12T09:34:18.8991775Z + mysql2 3.15.2
+2026-06-12T09:34:18.8991999Z + tsdown 0.15.6
+2026-06-12T09:34:18.8992485Z + turbo 2.5.3
+2026-06-12T09:34:18.8992691Z + typescript 5.8.3
+2026-06-12T09:34:18.8992825Z 
+2026-06-12T09:34:18.8996131Z ╭ Warning ─────────────────────────────────────────────────────────────────────╮│                                                                              ││   Ignored build scripts: @nestjs/core, @parcel/watcher, @swc/core,           ││   aws-sdk, cbor-extract, core-js, esbuild, ffmpeg-static,                    ││   msgpackr-extract, node-av, protobufjs, sharp, unrs-resolver, workerd.      ││   Run "pnpm approve-builds" to pick which dependencies should be allowed     ││   to run scripts.                                                            ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+2026-06-12T09:34:18.8998436Z 
+2026-06-12T09:34:19.2178429Z Done in 58.2s using pnpm v10.5.2
