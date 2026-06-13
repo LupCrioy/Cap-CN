@@ -35,7 +35,7 @@ const ChangelogButton = () => {
 	);
 
 	const handleChangelogClick = () => {
-		commands.showWindow({ 设置: { page: "changelog" } });
+		commands.showWindow({ Settings: { page: "changelog" } });
 		getCurrentWindow().hide();
 		const version = currentVersion();
 		if (version) {

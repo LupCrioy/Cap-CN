@@ -64,7 +64,7 @@ const Mode = (props: ModeProps) => {
 		try {
 			localStorage.setItem("cap.settings.scrollToSection", section);
 		} catch {}
-		await commands.showWindow({ 设置: { page: "general" } });
+		await commands.showWindow({ Settings: { page: "general" } });
 		await events.requestScrollToSettingsSection.emit({ section });
 	};
 

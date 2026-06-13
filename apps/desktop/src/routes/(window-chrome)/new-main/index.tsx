@@ -2556,7 +2556,7 @@ function Page() {
 							<button
 								type="button"
 								onClick={async () => {
-									await commands.showWindow({ 设置: { page: "general" } });
+									await commands.showWindow({ Settings: { page: "general" } });
 									getCurrentWindow().hide();
 								}}
 								class="flex items-center justify-center size-5 focus:outline-hidden"
@@ -2736,7 +2736,7 @@ function Page() {
 									}}
 									onViewAll={async () => {
 										await commands.showWindow({
-											设置: { page: "recordings" },
+											Settings: { page: "recordings" },
 										});
 										getCurrentWindow().hide();
 									}}
@@ -2766,7 +2766,7 @@ function Page() {
 									}}
 									onViewAll={async () => {
 										await commands.showWindow({
-											设置: { page: "screenshots" },
+											Settings: { page: "screenshots" },
 										});
 										getCurrentWindow().hide();
 									}}
