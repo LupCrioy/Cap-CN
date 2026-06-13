@@ -28,7 +28,7 @@ export default function () {
 			)}
 		>
 			<Suspense fallback={<EditorSkeleton />}>
-				<编辑器 />
+				<Editor />
 			</Suspense>
 		</div>
 	);

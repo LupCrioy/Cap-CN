@@ -93,12 +93,13 @@ const Mode = (props: ModeProps) => {
 							as="button"
 							type="button"
 							onClick={() => {
+								if (button.mode === "instant") return;
 								setOptions({ mode: button.mode });
 								commands.setRecordingMode(button.mode);
 							}}
 							class={cx(
 								"relative flex justify-center items-center rounded-full transition-all duration-200 size-7 focus:outline-none",
-								isSelected()
+								button.mode === "instant" || isSelected()
 									? "ring-2 ring-offset-1 ring-offset-gray-1 bg-gray-7 hover:bg-gray-7 ring-blue-500"
 									: "bg-gray-3 hover:bg-gray-7",
 							)}

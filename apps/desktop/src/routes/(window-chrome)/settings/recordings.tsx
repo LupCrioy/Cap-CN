@@ -185,7 +185,7 @@ export default function Recordings() {
 	const handleOpenEditor = (path: string) => {
 		trackEvent("recording_editor_clicked");
 		commands.showWindow({
-			编辑器: { project_path: path },
+			Editor: { project_path: path },
 		});
 	};
 

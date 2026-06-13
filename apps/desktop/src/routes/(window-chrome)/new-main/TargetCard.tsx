@@ -258,7 +258,7 @@ export default function TargetCard(props: TargetCardProps) {
 		const recording = recordingTarget();
 		if (!recording) return;
 		commands.showWindow({
-			编辑器: { project_path: recording.path },
+			Editor: { project_path: recording.path },
 		});
 	};
 

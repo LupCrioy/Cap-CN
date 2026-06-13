@@ -26,7 +26,7 @@ export function EditorErrorScreen(props: {
 	const recoverMutation = createMutation(() => ({
 		mutationFn: async () => {
 			const result = await commands.recoverRecording(props.projectPath);
-			await commands.showWindow({ 编辑器: { project_path: result } });
+			await commands.showWindow({ Editor: { project_path: result } });
 			return result;
 		},
 		onSuccess: () => {

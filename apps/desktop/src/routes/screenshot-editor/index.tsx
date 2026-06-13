@@ -28,7 +28,7 @@ export default function ScreenshotEditorRoute() {
 			)}
 		>
 			<ScreenshotEditorProvider>
-				<编辑器 />
+				<Editor />
 			</ScreenshotEditorProvider>
 		</div>
 	);

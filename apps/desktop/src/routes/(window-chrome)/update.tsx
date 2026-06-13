@@ -2,7 +2,7 @@ import { Button } from "@cap/ui-solid";
 import { useNavigate } from "@solidjs/router";
 import { getCurrentWindow, UserAttentionType } from "@tauri-apps/api/window";
 import { relaunch } from "@tauri-apps/plugin-process";
-import { check } from "@tauri-apps/plugin-updater";
+
 import { createResource, createSignal, Match, Show, Switch } from "solid-js";
 
 export default function () {
@@ -11,11 +11,11 @@ export default function () {
 
 	const [update] = createResource(async () => {
 		try {
-			const update = await check();
+			// update check disabled
 			if (!update) return;
 			return update;
 		} catch (e) {
-			console.error("Failed to check for updates:", e);
+			console.error("check updates disabled");
 			setUpdateError("Unable to check for updates.");
 			return;
 		}

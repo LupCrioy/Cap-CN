@@ -332,7 +332,7 @@ export default function () {
 																	}),
 																);
 																commands.showWindow({
-																	编辑器: { project_path: media.path },
+																	Editor: { project_path: media.path },
 																});
 															}}
 														>
