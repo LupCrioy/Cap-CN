@@ -365,7 +365,7 @@ export function OrganizationDropdown() {
 		const availability = organizationSelection.availability();
 		if (availability === "loading") return "加载中 organizations";
 		if (availability === "unavailable") return "无法加载组织列表";
-		return "Organization branding requires sign in";
+		return "组织品牌设置需要登录";
 	});
 	const fallbackDescription = createMemo(() => {
 		const availability = organizationSelection.availability();

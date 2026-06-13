@@ -34,7 +34,7 @@ function ShareButton() {
 			// Check authentication first
 			const existingAuth = await authStore.get();
 			if (!existingAuth) {
-				throw new Error("You need to sign in to share recordings");
+				throw new Error("需要登录才能分享录制");
 			}
 
 			const metadata = await commands.getVideoMetadata(projectPath);
@@ -113,11 +113,11 @@ function ShareButton() {
 					);
 
 			if (result === "NotAuthenticated") {
-				throw new Error("You need to sign in to share recordings");
+				throw new Error("需要登录才能分享录制");
 			} else if (result === "PlanCheckFailed")
-				throw new Error("Failed to verify your subscription status");
+				throw new Error("验证订阅状态失败");
 			else if (result === "UpgradeRequired")
-				throw new Error("This feature requires an upgraded plan");
+				throw new Error("此功能需要升级计划");
 
 			setUploadState({ type: "link-copied" });
 

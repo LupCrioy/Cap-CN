@@ -624,7 +624,7 @@ export const [EditorContextProvider, useEditorContext] = createContextProvider(
 				const config = serializeProjectConfiguration(project);
 				await commands.setProjectConfig(config);
 			} catch (error) {
-				console.error("Failed to persist project config", error);
+				console.error("保存项目配置失败", error);
 			} finally {
 				saveInFlight = false;
 				if (shouldResave) {
@@ -687,7 +687,7 @@ export const [EditorContextProvider, useEditorContext] = createContextProvider(
 			generalSettingsStore
 				.set({ editorPreviewQuality: quality })
 				.catch((error) => {
-					console.error("Failed to persist preview quality setting", error);
+					console.error("保存预览画质设置失败", error);
 				});
 		};
 
@@ -900,7 +900,7 @@ export const [EditorContextProvider, useEditorContext] = createContextProvider(
 						setProject("timeline", "keyboardSegments", segments);
 					});
 				} catch (error) {
-					console.error("Failed to initialize keyboard segments", error);
+					console.error("初始化键盘片段失败", error);
 				}
 			})();
 		});
@@ -972,7 +972,7 @@ export type { EditorPreviewQuality } from "~/utils/tauri";
 
 function transformMeta({ pretty_name, ...rawMeta }: RecordingMeta) {
 	if ("fps" in rawMeta) {
-		throw new Error("Instant mode recordings cannot be edited");
+		throw new Error("即时模式录制无法编辑");
 	}
 
 	let meta:

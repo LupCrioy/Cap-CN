@@ -704,11 +704,11 @@ export function ExportPage() {
 						);
 
 				if (result === "NotAuthenticated")
-					throw new Error("You need to sign in to share recordings");
+					throw new Error("需要登录才能分享录制");
 				else if (result === "PlanCheckFailed")
-					throw new Error("Failed to verify your subscription status");
+					throw new Error("验证订阅状态失败");
 				else if (result === "UpgradeRequired")
-					throw new Error("This feature requires an upgraded plan");
+					throw new Error("此功能需要升级计划");
 			} finally {
 				await releaseExportSession();
 			}
@@ -913,7 +913,7 @@ export function ExportPage() {
 											isDisabled()
 												? cursorOnly()
 													? "Cursor-only exports can only be saved to a file or clipboard"
-													: "Transparent exports can only be saved to a file or clipboard"
+													: "透明导出只能保存到文件或剪贴板"
 												: undefined;
 										const button = (
 											<button
