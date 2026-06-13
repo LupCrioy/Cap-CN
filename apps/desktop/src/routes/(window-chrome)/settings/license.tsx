@@ -30,12 +30,12 @@ export default function Page() {
 						<div class="flex flex-col items-center p-6 mx-auto space-y-3 w-full max-w-md text-white rounded-3xl border bg-gray-2 border-gray-3">
 							<div class="flex flex-col gap-2 items-center">
 								<h3 class="text-2xl font-medium text-gray-12">
-									Cap Pro 许可证
+									Cap 专业版 许可证
 								</h3>
 							</div>
 							<p class="text-center text-gray-11">
 								Your account is upgraded to{" "}
-								<span class="font-semibold text-blue-500">Cap Pro</span> and
+								<span class="font-semibold text-blue-500">Cap 专业版</span> and
 								already includes a commercial license.
 							</p>
 						</div>
@@ -109,7 +109,7 @@ function LicenseKeyActivate(props: {
 				{(generalSettings) => {
 					const [licenseKey, setLicenseKey] = createSignal("");
 					const instanceId = generalSettings().instanceId;
-					if (!instanceId) throw new Error("No instance ID found");
+					if (!instanceId) throw new Error("未找到实例 ID");
 
 					const activateLicenseKey = createMutation(() => ({
 						mutationFn: async (vars: { licenseKey: string }) => {
@@ -277,9 +277,9 @@ function CommercialLicensePurchase() {
 						<ul class="flex flex-col gap-2 list-none">
 							{[
 								"Commercial Use of Cap Recorder + 编辑器",
-								"Community Support",
-								"Local-only features",
-								"Perpetual license option",
+								"社区支持",
+								"仅本地功能",
+								"永久许可证选项",
 							].map((feature) => (
 								<li class="flex justify-start items-center">
 									<div class="flex justify-center items-center p-0 m-0 w-6 h-6">

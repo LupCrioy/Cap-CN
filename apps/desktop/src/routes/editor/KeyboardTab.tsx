@@ -127,7 +127,7 @@ export function KeyboardTab(props: {
 
 	return (
 		<Field
-			name="Show keyboard"
+			name="显示键盘"
 			value={
 				<Toggle checked={getSetting("enabled")} onChange={setKeyboardVisible} />
 			}
@@ -288,7 +288,7 @@ export function KeyboardTab(props: {
 						</KSelect>
 					</Field>
 
-					<Field name="Font Weight" icon={<IconLucideKeyboard />}>
+					<Field name="字体粗细" icon={<IconLucideKeyboard />}>
 						<KSelect
 							options={TEXT_WEIGHT_OPTIONS}
 							optionValue="value"
@@ -346,7 +346,7 @@ export function KeyboardTab(props: {
 					<Field name="Animation" icon={<IconLucideKeyboard />}>
 						<div class="space-y-3">
 							<div class="flex flex-col gap-2">
-								<span class="text-gray-11 text-sm">Fade Duration</span>
+								<span class="text-gray-11 text-sm">淡入淡出时长</span>
 								<Slider
 									value={[getSetting("fadeDuration") * 100]}
 									onChange={(v) => updateSetting("fadeDuration", v[0] / 100)}
@@ -436,15 +436,15 @@ export function KeyboardTab(props: {
 							{isGenerating()
 								? "Generating..."
 								: hasKeyboardSegments()
-									? "Regenerate Keyboard Segments"
-									: "Generate Keyboard Segments"}
+									? "重新生成键盘片段"
+									: "生成键盘片段"}
 						</Button>
 					</div>
 
 					<Show when={selectedSegment()}>
 						{(seg) => (
 							<Field
-								name="Selected Segment Override"
+								name="选中片段覆盖"
 								icon={<IconLucideKeyboard />}
 							>
 								<div class="space-y-3">
@@ -465,7 +465,7 @@ export function KeyboardTab(props: {
 											}
 										/>
 									</Subfield>
-									<Subfield name="End Time">
+									<Subfield name="结束时间">
 										<Input
 											type="number"
 											value={seg().end.toFixed(2)}
@@ -497,7 +497,7 @@ export function KeyboardTab(props: {
 											}
 										/>
 									</Subfield>
-									<Subfield name="Fade Duration Override">
+									<Subfield name="淡入淡出时长覆盖">
 										<Slider
 											value={[
 												(seg().fadeDurationOverride ??
@@ -542,7 +542,7 @@ export function KeyboardTab(props: {
 						<div class="text-center text-sm text-gray-11 py-4">
 							<p>No keyboard segments yet.</p>
 							<p class="text-xs mt-1 text-gray-10">
-								Click "Generate Keyboard Segments" to create segments from
+								Click "生成键盘片段" to create segments from
 								recorded keyboard presses.
 							</p>
 						</div>

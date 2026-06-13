@@ -21,7 +21,7 @@ type ModeButtonConfig = {
 const MODE_BUTTONS: ModeButtonConfig[] = [
 	{
 		mode: "instant",
-		label: "Instant mode",
+		label: "即时模式",
 		description:
 			"No rendering required — uploads on the fly so you can share the link the moment you stop.",
 		settingsSection: "instant-quality",
@@ -30,7 +30,7 @@ const MODE_BUTTONS: ModeButtonConfig[] = [
 	},
 	{
 		mode: "studio",
-		label: "Studio mode",
+		label: "工作室模式",
 		description:
 			"Records at the highest quality for local rendering later. Opens the Cap editor when you're done.",
 		settingsSection: "studio-quality",
@@ -39,7 +39,7 @@ const MODE_BUTTONS: ModeButtonConfig[] = [
 	},
 	{
 		mode: "screenshot",
-		label: "Screenshot mode",
+		label: "截图模式",
 		description: "Capture and annotate stills.",
 		settingsSection: null,
 		icon: (p) => <IconCapScreenshot {...p} />,

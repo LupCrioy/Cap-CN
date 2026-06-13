@@ -70,44 +70,44 @@ interface ModeDetail {
 const modes: ModeDetail[] = [
 	{
 		id: "instant",
-		title: "Instant Mode",
+		title: "即时模式",
 		tagline: "Record & share in seconds",
 		description:
-			"Your recording uploads as you capture. Stop recording and instantly get a shareable link — no waiting.",
+			"录制过程中自动上传，停止录制即刻获得分享链接——无需等待。",
 		icon: IconCapInstant,
 		features: [
 			"Instant shareable link",
 			"Background uploading",
-			"AI transcription & summary",
-			"Browser-based playback",
+			"AI 转录与摘要",
+			"浏览器播放",
 		],
 	},
 	{
 		id: "studio",
-		title: "Studio Mode",
+		title: "工作室模式",
 		tagline: "Professional editing tools",
 		description:
-			"Record in full quality locally, then use the built-in editor to add backgrounds, padding, cursor effects, and more.",
+			"以全质量本地录制，然后使用内置编辑器添加背景、内边距、光标效果等。",
 		icon: IconCapFilmCut,
 		features: [
 			"Full quality local recording",
-			"Built-in editor & effects",
-			"Custom backgrounds & padding",
+			"内置编辑器与特效",
+			"自定义背景与内边距",
 			"Export or share when ready",
 		],
 	},
 	{
 		id: "screenshot",
 		title: "Screenshot Mode",
-		tagline: "Capture & beautify instantly",
+		tagline: "快速截图美化",
 		description:
-			"Take screenshots with a single hotkey, add annotations and beautiful backgrounds, then share or copy instantly.",
+			"使用快捷键截图，添加标注和精美背景，即时分享或复制。",
 		icon: IconCapScreenshot,
 		features: [
 			"Instant hotkey capture",
-			"Annotation & drawing tools",
+			"标注与绘图工具",
 			"Beautiful backgrounds",
-			"Copy, save, or share",
+			"复制、保存或分享",
 		],
 	},
 ];
@@ -125,20 +125,20 @@ const setupPermissions: readonly SetupPermission[] = [
 		name: "Screen Recording",
 		key: "screenRecording",
 		description:
-			"Click Grant to allow when macOS asks, or pick Cap in System Settings if needed. Restart the app after allowing screen recording.",
+			"点击授权允许，或在系统设置中添加 Cap。授权屏幕录制后需要重启应用。",
 		requiresManualGrant: false,
 	},
 	{
 		name: "Accessibility",
 		key: "accessibility",
 		description:
-			"During recording, Cap collects mouse activity locally to generate automatic zoom in segments.",
+			"录制时，Cap 在本地收集鼠标活动以自动生成缩放片段。",
 		requiresManualGrant: false,
 	},
 	{
 		name: "Microphone",
 		key: "microphone",
-		description: "This permission is required to record audio in your Caps.",
+		description: "录制音频需要此权限。",
 		requiresManualGrant: false,
 		optional: true,
 	},
@@ -146,7 +146,7 @@ const setupPermissions: readonly SetupPermission[] = [
 		name: "Camera",
 		key: "camera",
 		description:
-			"This permission is required to record your camera in your Caps.",
+			"录制摄像头需要此权限。",
 		requiresManualGrant: false,
 		optional: true,
 	},
@@ -960,19 +960,19 @@ function ShortcutsStep(props: { active: boolean }) {
 	const settingsAreas = [
 		{
 			title: "Keyboard Shortcuts",
-			desc: "Global hotkeys for recording, screenshots, and switching modes",
+			desc: "录制、截图和切换模式的全局快捷键",
 		},
 		{
 			title: "Custom S3 Storage",
-			desc: "Connect your own S3-compatible bucket for full control over your recordings",
+			desc: "连接你自己的 S3 兼容存储桶，完全掌控录制文件",
 		},
 		{
 			title: "Custom Domain",
-			desc: "Use your own domain for shareable links instead of cap.link",
+			desc: "使用你自己的域名替代 cap.link",
 		},
 		{
 			title: "Recording Preferences",
-			desc: "FPS, quality, countdown timer, cursor effects, and more",
+			desc: "帧率、画质、倒计时、光标效果等",
 		},
 	];
 
@@ -1084,7 +1084,7 @@ function FaqStep(props: { active: boolean }) {
 						.
 					</p>
 				</FaqItem>
-				<FaqItem question="What's the difference between Instant and Studio?">
+				<FaqItem question="即时模式和工作室模式有什么区别？">
 					<p class="text-[13px] text-gray-10 leading-relaxed">
 						Instant mode uploads as you record — stop recording and you'll have
 						a shareable link immediately. Studio mode records locally in full
@@ -1092,20 +1092,20 @@ function FaqStep(props: { active: boolean }) {
 						sharing.
 					</p>
 				</FaqItem>
-				<FaqItem question="Where are my recordings stored?">
+				<FaqItem question="我的录制文件存在哪里？">
 					<p class="text-[13px] text-gray-10 leading-relaxed">
 						All recordings are stored locally on your computer. In Instant mode,
 						they're also uploaded to Cap's cloud for easy sharing. You can
 						manage storage in Settings.
 					</p>
 				</FaqItem>
-				<FaqItem question="Can I change my shortcuts later?">
+				<FaqItem question="之后可以修改快捷键吗？">
 					<p class="text-[13px] text-gray-10 leading-relaxed">
 						Head to Settings → Shortcuts at any time to customize all your
 						keyboard shortcuts.
 					</p>
 				</FaqItem>
-				<FaqItem question="How does sharing work?">
+				<FaqItem question="分享功能怎么用？">
 					<p class="text-[13px] text-gray-10 leading-relaxed">
 						In Instant mode, you get a shareable link automatically when you
 						stop recording. In Studio mode, export your edited video and share
@@ -1219,7 +1219,7 @@ function StartRecordingClickMock(props: {
 	});
 
 	const modeLabel = () =>
-		props.mode === "studio" ? "Studio Mode" : "Instant Mode";
+		props.mode === "studio" ? "工作室模式" : "即时模式";
 
 	const cursorW = () => (ostype() === "windows" ? 24 : 22);
 	const cursorH = () => (ostype() === "windows" ? 34 : 32);
@@ -1999,13 +1999,13 @@ function PermissionsStep(props: {
 	const maybePromptRestartForPermission = async (permission: OSPermission) => {
 		const message =
 			permission === "accessibility"
-				? "After enabling Accessibility for Cap in System Settings, macOS may keep showing it as denied until you restart the app."
+				? "在系统设置中启用辅助功能后，macOS 可能仍显示为拒绝，直到重启应用。"
 				: "After adding Cap in System Settings, you'll need to restart the app for the permission to take effect.";
 		const shouldRestart = await ask(message, {
 			title: "Restart Required",
 			kind: "info",
 			okLabel: "Restart, I've granted permission",
-			cancelLabel: "No, I still need to add it",
+			cancelLabel: "还没有，需要添加",
 		});
 		if (shouldRestart) {
 			await relaunch();

@@ -151,7 +151,7 @@ function BrandSettingsDialog(props: {
 
 	const selectLogoFile = (file: File) => {
 		if (!isSupportedLogoContentType(file.type)) {
-			toast.error("Unsupported logo file type");
+			toast.error("不支持的 Logo 文件类型");
 			return;
 		}
 		if (file.size > ORGANIZATION_LOGO_MAX_BYTES) {
@@ -197,14 +197,14 @@ function BrandSettingsDialog(props: {
 				},
 			);
 
-			toast.success("Organization branding updated");
+			toast.success("组织品牌信息已更新");
 			props.onSaved(updatedOrganization);
 			props.onOpenChange(false);
 		} catch (error) {
 			toast.error(
 				error instanceof Error
 					? error.message
-					: "Failed to update organization branding",
+					: "更新组织品牌信息失败",
 			);
 		} finally {
 			setSaving(false);
@@ -364,7 +364,7 @@ export function OrganizationDropdown() {
 	const fallbackTitle = createMemo(() => {
 		const availability = organizationSelection.availability();
 		if (availability === "loading") return "加载中 organizations";
-		if (availability === "unavailable") return "Unable to load organizations";
+		if (availability === "unavailable") return "无法加载组织列表";
 		return "Organization branding requires sign in";
 	});
 	const fallbackDescription = createMemo(() => {

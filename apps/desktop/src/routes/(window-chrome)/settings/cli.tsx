@@ -38,7 +38,7 @@ export default function CliSettings() {
 	const installButtonLabel = () => {
 		if (isInstalling())
 			return status()?.installed ? "Repairing..." : "Installing...";
-		return status()?.installed ? "Repair" : "Install CLI";
+		return status()?.installed ? "Repair" : "安装 CLI";
 	};
 
 	const handleInstall = async () => {
@@ -46,9 +46,9 @@ export default function CliSettings() {
 
 		try {
 			mutate(await installCli());
-			toast.success("Cap CLI installed");
+			toast.success("Cap CLI 已安装");
 		} catch (error) {
-			toast.error(errorMessage(error, "Failed to install CLI"));
+			toast.error(errorMessage(error, "安装 CLI 失败"));
 			await refetch();
 		} finally {
 			setIsInstalling(false);
@@ -60,9 +60,9 @@ export default function CliSettings() {
 
 		try {
 			mutate(await uninstallCli());
-			toast.success("Cap CLI removed");
+			toast.success("Cap CLI 已移除");
 		} catch (error) {
-			toast.error(errorMessage(error, "Failed to remove CLI"));
+			toast.error(errorMessage(error, "移除 CLI 失败"));
 			await refetch();
 		} finally {
 			setIsUninstalling(false);
@@ -71,14 +71,14 @@ export default function CliSettings() {
 
 	const copyPathCommand = async (command: string) => {
 		await writeText(command);
-		toast.success("Copied to clipboard");
+		toast.success("已复制到剪贴板");
 	};
 
 	return (
 		<div class="cap-settings-page flex flex-col h-full custom-scroll">
 			<SettingsPageContent>
 				<Section
-					title="Command Line"
+					title="命令行"
 					description="Install the Cap command for terminals, agents, scripts, and local automation."
 				>
 					<SectionCard padded>
@@ -115,7 +115,7 @@ export default function CliSettings() {
 											<p class="text-[13px] text-gray-12">
 												{currentStatus().installed
 													? "Installed"
-													: "Not installed"}
+													: "未安装"}
 											</p>
 											<p class="text-xs leading-snug text-gray-10">
 												The desktop app installs a local{" "}

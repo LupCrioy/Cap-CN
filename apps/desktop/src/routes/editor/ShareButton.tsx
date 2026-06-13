@@ -126,7 +126,7 @@ function ShareButton() {
 		onError: (error) => {
 			console.error(error);
 			commands.globalMessageDialog(
-				error instanceof Error ? error.message : "Failed to upload recording",
+				error instanceof Error ? error.message : "上传录制失败",
 			);
 		},
 		onSettled() {
@@ -193,7 +193,7 @@ function ShareButton() {
 						<div class="flex gap-3 items-center">
 							<Tooltip
 								content={
-									upload.isPending ? "Reuploading video" : "Reupload video"
+									upload.isPending ? "正在重新上传" : "重新上传视频"
 								}
 							>
 								<Button
@@ -215,7 +215,7 @@ function ShareButton() {
 									)}
 								</Button>
 							</Tooltip>
-							<Tooltip content="Open link">
+							<Tooltip content="打开链接">
 								<div class="rounded-xl px-3 py-2 flex flex-row items-center gap-1.5 bg-gray-3 hover:bg-gray-4 transition-colors duration-100">
 									<a
 										href={
@@ -236,7 +236,7 @@ function ShareButton() {
 											customDomain.data?.domain_verified
 										}
 									>
-										<Tooltip content="Select link">
+										<Tooltip content="选择链接">
 											<KSelect
 												value={linkToDisplay()}
 												onChange={(value) => value && setLinkToDisplay(value)}
@@ -297,7 +297,7 @@ function ShareButton() {
 			</Show>
 			<Dialog.Root open={!upload.isIdle}>
 				<DialogContent
-					title={"Reupload Recording"}
+					title={"重新上传录制"}
 					confirm={null}
 					close={null}
 					class="text-gray-12 dark:text-gray-12"

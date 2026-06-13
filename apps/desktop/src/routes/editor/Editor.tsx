@@ -311,10 +311,10 @@ function Inner() {
 				const resumeExport = await ask(
 					"An export is currently running. Keep this editor open to continue it, or quit the editor and cancel the export.",
 					{
-						title: "导出 in Progress",
+						title: "导出进行中",
 						kind: "warning",
 						okLabel: "继续录制 导出",
-						cancelLabel: "Quit 编辑器",
+						cancelLabel: "退出编辑器",
 					},
 				);
 
@@ -625,7 +625,7 @@ function Inner() {
 											"bg-gray-3/55 dark:bg-gray-4/50": isResizingTimeline(),
 										}}
 										onMouseDown={handleTimelineResizeStart}
-										aria-label="Resize timeline height"
+										aria-label="调整时间轴高度"
 									>
 										<For each={TIMELINE_RESIZE_GRIP_MARKS}>
 											{() => (
@@ -650,7 +650,7 @@ function Inner() {
 									class="flex-none flex items-center justify-center cursor-col-resize select-none group z-10"
 									style={{ width: "12px" }}
 									onMouseDown={handleSplitResizeStart}
-									aria-label="Resize transcript panel"
+									aria-label="调整转录面板大小"
 									role="separator"
 									aria-orientation="vertical"
 								>
@@ -740,7 +740,7 @@ function Dialogs() {
 
 								return (
 									<DialogContent
-										title="Create Preset"
+										title="创建预设"
 										confirm={
 											<Dialog.ConfirmButton
 												disabled={createPreset.isPending}
@@ -757,7 +757,7 @@ function Dialogs() {
 											placeholder="Enter preset name..."
 											onInput={(e) => setForm("name", e.currentTarget.value)}
 										/>
-										<Subfield name="Set as default" class="mt-4">
+										<Subfield name="设为默认" class="mt-4">
 											<Toggle
 												checked={form.default}
 												onChange={(checked) => setForm("default", checked)}
@@ -788,7 +788,7 @@ function Dialogs() {
 
 								return (
 									<DialogContent
-										title="Rename Preset"
+										title="重命名预设"
 										confirm={
 											<Dialog.ConfirmButton
 												disabled={renamePreset.isPending}
@@ -1216,7 +1216,7 @@ function Dialogs() {
 													>
 														<img
 															class="shadow-sm pointer-events-none max-h-[70vh]"
-															alt="Current frame"
+															alt="当前帧"
 															onError={() => {
 																const failedSource = frameSource();
 																logCropProfile("preview-image-failed", {

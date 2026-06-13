@@ -638,7 +638,7 @@ export function Timeline(props: {
 			return;
 		}
 
-		if (e.code === "Backspace" || (e.code === "删除" && hasNoModifiers)) {
+		if (e.code === "Backspace" || (e.code === "Delete" && hasNoModifiers)) {
 			const selection = editorState.timeline.selection;
 			if (!selection) return;
 
@@ -841,7 +841,7 @@ export function Timeline(props: {
 						<TimelineMarkings />
 					</div>
 					<div class="absolute bottom-0 z-30">
-						<Tooltip content="Add track">
+						<Tooltip content="添加轨道">
 							<TrackManager
 								options={trackOptions()}
 								onToggle={handleToggleTrack}

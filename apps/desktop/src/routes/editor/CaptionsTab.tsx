@@ -75,11 +75,11 @@ const MODEL_OPTIONS: ModelOption[] = [
 		label: "Recommended",
 		modelName: "parakeet-tdt-0.6b-v3 int8",
 		size: "~640MB",
-		description: "Best balance for most recordings",
+		description: "适合大多数录制的最佳平衡",
 	},
 	{
 		name: "best-max",
-		label: "High Accuracy",
+		label: "高精度",
 		modelName: "parakeet-tdt-0.6b-v3",
 		size: "~2.4GB",
 		description: "Larger download, higher accuracy",
@@ -89,7 +89,7 @@ const MODEL_OPTIONS: ModelOption[] = [
 		modelName: "whisper.cpp small",
 		label: "Small",
 		size: "466MB",
-		description: "Smallest download",
+		description: "最小下载体积",
 	},
 	{
 		name: "medium",
@@ -101,7 +101,7 @@ const MODEL_OPTIONS: ModelOption[] = [
 ];
 
 const LANGUAGE_OPTIONS: LanguageOption[] = [
-	{ code: "auto", label: "Auto Detect" },
+	{ code: "auto", label: "自动检测" },
 	{ code: "en", label: "English" },
 	{ code: "es", label: "Spanish" },
 	{ code: "fr", label: "French" },
@@ -390,7 +390,7 @@ export function CaptionsTab(props: {
 			toast.success("Transcription model downloaded successfully!");
 		} catch (error) {
 			console.error("Error downloading model:", error);
-			toast.error("Failed to download transcription model");
+			toast.error("下载转录模型失败");
 		} finally {
 			setIsDownloading(false);
 			setDownloadingModel(null);
@@ -510,7 +510,7 @@ export function CaptionsTab(props: {
 									<div class="min-w-0 flex-1 text-left">
 										<div class="flex items-center gap-1.5">
 											<span class="truncate font-medium">
-												{selectedModelOption()?.label || "Select a model"}
+												{selectedModelOption()?.label || "选择模型"}
 											</span>
 											<Show when={selectedModelOption()}>
 												<Tooltip
@@ -592,7 +592,7 @@ export function CaptionsTab(props: {
 												(l) => l.code === state.selectedOption(),
 											);
 											return (
-												<span>{language?.label || "Select a language"}</span>
+												<span>{language?.label || "选择语言"}</span>
 											);
 										}}
 									</KSelect.Value>
@@ -662,8 +662,8 @@ export function CaptionsTab(props: {
 										{isGenerating()
 											? "Generating..."
 											: hasCaptions()
-												? "Regenerate Captions"
-												: "Generate Captions"}
+												? "重新生成字幕"
+												: "生成字幕"}
 									</Button>
 								</Show>
 							</Show>
@@ -868,7 +868,7 @@ export function CaptionsTab(props: {
 									/>
 								</div>
 								<div class="flex flex-col gap-2">
-									<span class="text-gray-11 text-sm">Fade Duration</span>
+									<span class="text-gray-11 text-sm">淡入淡出时长</span>
 									<Slider
 										value={[getSetting("fadeDuration") * 100]}
 										onChange={(v) =>
@@ -886,7 +886,7 @@ export function CaptionsTab(props: {
 							</div>
 						</Field>
 
-						<Field name="Font Weight" icon={<IconCapMessageBubble />}>
+						<Field name="字体粗细" icon={<IconCapMessageBubble />}>
 							<KSelect
 								options={TEXT_WEIGHT_OPTIONS}
 								optionValue="value"
@@ -942,8 +942,8 @@ export function CaptionsTab(props: {
 							</KSelect>
 						</Field>
 
-						<Field name="导出 Options" icon={<IconCapMessageBubble />}>
-							<Subfield name="导出 with Subtitles">
+						<Field name="导出选项" icon={<IconCapMessageBubble />}>
+							<Subfield name="导出字幕">
 								<Toggle
 									checked={getSetting("exportWithSubtitles")}
 									onChange={(checked) =>
@@ -964,7 +964,7 @@ export function CaptionsTab(props: {
 						{(() => {
 							return (
 								<Field
-									name="Selected Caption Override"
+									name="选中字幕覆盖"
 									icon={<IconCapMessageBubble />}
 								>
 									<Show when={selectedCaptionSegment()}>
@@ -985,7 +985,7 @@ export function CaptionsTab(props: {
 														}
 													/>
 												</Subfield>
-												<Subfield name="End Time">
+												<Subfield name="结束时间">
 													<Input
 														type="number"
 														value={seg().end.toFixed(2)}
@@ -998,7 +998,7 @@ export function CaptionsTab(props: {
 														}
 													/>
 												</Subfield>
-												<Subfield name="Caption Text">
+												<Subfield name="字幕文字">
 													<Input
 														type="text"
 														value={seg().text}
@@ -1015,7 +1015,7 @@ export function CaptionsTab(props: {
 														}
 													/>
 												</Subfield>
-												<Subfield name="Fade Duration Override">
+												<Subfield name="淡入淡出时长覆盖">
 													<Slider
 														value={[
 															(seg().fadeDurationOverride ??

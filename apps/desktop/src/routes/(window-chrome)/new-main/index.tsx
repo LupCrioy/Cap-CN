@@ -374,8 +374,8 @@ function CameraListItem(props: {
 			<button
 				type="button"
 				disabled={props.disabled}
-				title="Device settings"
-				aria-label="Device settings"
+				title="设备设置"
+				aria-label="设备设置"
 				onPointerDown={(event) => event.stopPropagation()}
 				onClick={(event) => {
 					event.preventDefault();
@@ -469,8 +469,8 @@ function MicrophoneListItem(props: {
 			<button
 				type="button"
 				disabled={props.disabled}
-				title="Device settings"
-				aria-label="Device settings"
+				title="设备设置"
+				aria-label="设备设置"
 				onPointerDown={(event) => event.stopPropagation()}
 				onClick={(event) => {
 					event.preventDefault();
@@ -1088,28 +1088,28 @@ function TargetMenuPanel(props: TargetMenuPanelProps & SharedTargetMenuProps) {
 	};
 	const placeholder =
 		props.variant === "display"
-			? "Search displays"
+			? "搜索显示器"
 			: props.variant === "window"
-				? "Search windows"
+				? "搜索窗口"
 				: props.variant === "recording"
-					? "Search recordings"
+					? "搜索录制"
 					: props.variant === "screenshot"
-						? "Search screenshots"
+						? "搜索截图"
 						: props.variant === "camera"
 							? "Search cameras"
 							: "Search microphones";
 	const noResultsMessage =
 		props.variant === "display"
-			? "No matching displays"
+			? "无匹配显示器"
 			: props.variant === "window"
-				? "No matching windows"
+				? "无匹配窗口"
 				: props.variant === "recording"
-					? "No matching recordings"
+					? "无匹配录制"
 					: props.variant === "screenshot"
-						? "No matching screenshots"
+						? "无匹配截图"
 						: props.variant === "camera"
-							? "No matching cameras"
-							: "No matching microphones";
+							? "无匹配摄像头"
+							: "无匹配麦克风";
 
 	const handleVideoImport = async () => {
 		try {
@@ -1399,7 +1399,7 @@ function TargetMenuPanel(props: TargetMenuPanelProps & SharedTargetMenuProps) {
 					class="flex h-[36px] gap-1 items-center shrink-0 rounded-md px-2 text-xs
 					text-gray-11 transition-colors hover:text-gray-12 hover:bg-gray-4
 					focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-blue-9 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-1"
-					aria-label={inSettingsMode() ? "Back to list" : "Back"}
+					aria-label={inSettingsMode() ? "返回列表" : "Back"}
 				>
 					<IconLucideArrowLeft class="size-3 text-gray-11" />
 					<span class="font-medium text-gray-12">Back</span>
@@ -2449,7 +2449,7 @@ function Page() {
 									});
 								}}
 								aria-haspopup="menu"
-								aria-label="Choose display"
+								aria-label="选择显示器"
 							/>
 						</div>
 						<div
@@ -2466,7 +2466,7 @@ function Page() {
 								onClick={() => {
 									toggleTargetMode("window");
 								}}
-								name="Window"
+								name="窗口"
 								class="flex-1 rounded-none border-0 focus-visible:ring-0 focus-visible:ring-offset-0 pl-5"
 							/>
 							<TargetDropdownButton
@@ -2487,7 +2487,7 @@ function Page() {
 									});
 								}}
 								aria-haspopup="menu"
-								aria-label="Choose window"
+								aria-label="选择窗口"
 							/>
 						</div>
 					</div>
@@ -2509,7 +2509,7 @@ function Page() {
 							onClick={() => {
 								toggleTargetMode("camera");
 							}}
-							name="Camera Only"
+							name="仅摄像头"
 							class="flex-1"
 						/>
 					</div>
@@ -2701,7 +2701,7 @@ function Page() {
 									targets={recordingsData()}
 									isLoading={recordings.isPending}
 									errorMessage={
-										recordings.error ? "Failed to load recordings" : undefined
+										recordings.error ? "加载录制失败" : undefined
 									}
 									onSelect={async (recording) => {
 										if (recording.mode === "studio") {
@@ -2751,7 +2751,7 @@ function Page() {
 									targets={screenshotsData()}
 									isLoading={screenshots.isPending}
 									errorMessage={
-										screenshots.error ? "Failed to load screenshots" : undefined
+										screenshots.error ? "加载截图失败" : undefined
 									}
 									onSelect={async (screenshot) => {
 										await commands.showWindow({

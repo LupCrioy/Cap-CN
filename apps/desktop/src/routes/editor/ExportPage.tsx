@@ -53,7 +53,7 @@ export const COMPRESSION_OPTIONS: Array<{
 	bpp: number;
 }> = [
 	{ label: "Maximum", value: "Maximum", bpp: 0.3 },
-	{ label: "Social Media", value: "Social", bpp: 0.15 },
+	{ label: "社交媒体", value: "Social", bpp: 0.15 },
 	{ label: "Web", value: "Web", bpp: 0.08 },
 	{ label: "Potato", value: "Potato", bpp: 0.04 },
 ];
@@ -93,7 +93,7 @@ export const EXPORT_TO_OPTIONS = [
 		description: "复制 to paste anywhere",
 	},
 	{
-		label: "Shareable Link",
+		label: "分享链接",
 		value: "link",
 		icon: IconCapLink,
 		description: "分享 via Cap cloud",
@@ -188,11 +188,11 @@ export function ExportPage() {
 
 	const isCancellationError = (error: unknown) =>
 		error instanceof SilentError ||
-		error === "导出 cancelled" ||
-		error === "保存 dialog cancelled" ||
+		error === "Export cancelled" ||
+		error === "Save dialog cancelled" ||
 		(error instanceof Error &&
-			(error.message === "导出 cancelled" ||
-				error.message === "保存 dialog cancelled"));
+			(error.message === "Export cancelled" ||
+				error.message === "Save dialog cancelled"));
 
 	const [_settings, setSettings] = makePersisted(
 		createStore<设置>({
@@ -509,7 +509,7 @@ export function ExportPage() {
 		isMovCursorOnlyExport() ? "mov" : settings.format === "Gif" ? "gif" : "mp4";
 	const exportedAssetLabel = () =>
 		isMovCursorOnlyExport()
-			? "Cursor track"
+			? "光标轨道"
 			: settings.format === "Gif"
 				? "GIF"
 				: "Recording";
@@ -536,7 +536,7 @@ export function ExportPage() {
 				try {
 					await remove(path);
 				} catch (e) {
-					console.error("Failed to delete cancelled file", e);
+					console.error("删除已取消的文件失败", e);
 				}
 			}
 		}
@@ -570,7 +570,7 @@ export function ExportPage() {
 				return;
 			}
 			commands.globalMessageDialog(
-				error instanceof Error ? error.message : "Failed to copy recording",
+				error instanceof Error ? error.message : "复制录制失败",
 			);
 			setExportState(reconcile({ type: "idle" }));
 		},
@@ -725,7 +725,7 @@ export function ExportPage() {
 			console.error(error);
 			if (!(error instanceof SilentError)) {
 				commands.globalMessageDialog(
-					error instanceof Error ? error.message : "Failed to upload recording",
+					error instanceof Error ? error.message : "上传录制失败",
 				);
 			}
 
@@ -766,7 +766,7 @@ export function ExportPage() {
 						class="flex items-center gap-1.5"
 					>
 						<IconLucideArrowLeft class="size-4" />
-						<span>Back to 编辑器</span>
+						<span>返回编辑器</span>
 					</Button>
 					<div data-tauri-drag-region class="flex-1 h-full" />
 					{ostype() === "windows" && <CaptionControlsWindows11 />}
@@ -793,7 +793,7 @@ export function ExportPage() {
 												<IconLucideImage class="size-12 text-gray-8" />
 												<span class="text-sm">
 													{previewUnavailable()
-														? "Preview unavailable"
+														? "预览不可用"
 														: "Generating preview..."}
 												</span>
 											</div>
@@ -1005,7 +1005,7 @@ export function ExportPage() {
 							</Suspense>
 						</Field>
 
-						<Field name="Format" icon={<IconLucideVideo class="size-4" />}>
+						<Field name="格式" icon={<IconLucideVideo class="size-4" />}>
 							<div class="flex gap-1.5">
 								<For each={FORMAT_OPTIONS}>
 									{(option) => {
@@ -1082,7 +1082,7 @@ export function ExportPage() {
 						</Field>
 
 						<Field
-							name="Resolution"
+							name="分辨率"
 							icon={<IconLucideMonitor class="size-4" />}
 						>
 							<div class="flex gap-1.5">
@@ -1115,7 +1115,7 @@ export function ExportPage() {
 							</div>
 						</Field>
 
-						<Field name="Frame Rate" icon={<IconLucideGauge class="size-4" />}>
+						<Field name="帧率" icon={<IconLucideGauge class="size-4" />}>
 							<div class="flex gap-1.5">
 								<For each={shouldUseGifMode() ? GIF_FPS_OPTIONS : FPS_OPTIONS}>
 									{(option) => (
@@ -1143,7 +1143,7 @@ export function ExportPage() {
 
 						<Show when={settings.format === "Mp4" && !cursorOnly()}>
 							<Field
-								name="Quality"
+								name="画质"
 								icon={<IconLucideSparkles class="size-4" />}
 							>
 								<div class="grid grid-cols-4 gap-1.5">
@@ -1168,7 +1168,7 @@ export function ExportPage() {
 														setSettings("compression", option.value);
 													}}
 												>
-													{option.label === "Social Media"
+													{option.label === "社交媒体"
 														? "Social"
 														: option.label}
 												</button>
@@ -1219,7 +1219,7 @@ export function ExportPage() {
 						</Show>
 
 						<Field
-							name="Advanced Options"
+							name="高级选项"
 							icon={<IconLucideSparkles class="size-4" />}
 						>
 							<button
@@ -1232,7 +1232,7 @@ export function ExportPage() {
 								)}
 								onClick={() => setAdvancedMode(!advancedMode())}
 							>
-								<span>{advancedMode() ? "Hide options" : "Show options"}</span>
+								<span>{advancedMode() ? "隐藏选项" : "显示选项"}</span>
 								<IconCapChevronDown
 									class={cx(
 										"size-4 transition-transform",
@@ -1334,7 +1334,7 @@ export function ExportPage() {
 														type="button"
 														role="switch"
 														aria-checked={forceFfmpegDecoder()}
-														aria-label="Force FFmpeg decoder"
+														aria-label="强制使用 FFmpeg 解码器"
 														class="flex items-center gap-2 text-xs text-gray-11 hover:text-gray-12 transition-colors w-full"
 														onClick={() =>
 															setForceFfmpegDecoder(!forceFfmpegDecoder())
@@ -1358,7 +1358,7 @@ export function ExportPage() {
 															/>
 														</div>
 														<div class="text-left">
-															<span class="block">Force FFmpeg decoder</span>
+															<span class="block">强制使用 FFmpeg 解码器</span>
 															<span class="text-[10px] text-gray-9">
 																跳过 hardware decoder (auto-fallback enabled)
 															</span>
@@ -1385,7 +1385,7 @@ export function ExportPage() {
 									class="text-xs font-medium text-gray-12 transition-colors hover:underline underline-offset-2"
 									onClick={handleBack}
 								>
-									Back to 编辑器
+									返回编辑器
 								</button>
 							</div>
 						) : (
@@ -1424,7 +1424,7 @@ export function ExportPage() {
 									class="text-xs font-medium text-gray-12 transition-colors hover:underline underline-offset-2"
 									onClick={handleBack}
 								>
-									Back to 编辑器
+									返回编辑器
 								</button>
 							</div>
 						)}
@@ -1440,7 +1440,7 @@ export function ExportPage() {
 			>
 				<div class="p-4">
 					<div class="flex items-center justify-between mb-4">
-						<h2 class="text-gray-12 font-medium">Quality Preview</h2>
+						<h2 class="text-gray-12 font-medium">画质预览</h2>
 						<button
 							type="button"
 							onClick={() => setPreviewDialogOpen(false)}
@@ -1511,7 +1511,7 @@ export function ExportPage() {
 														heading={
 															renderState.type === "rendering"
 																? `Rendering ${exportMediumLabel()}`
-																: "Preparing export"
+																: "正在准备导出"
 														}
 														state={renderState}
 														onCancel={handleCancel}
@@ -1519,11 +1519,11 @@ export function ExportPage() {
 												)}
 											</Match>
 											<Match when={copyState.type === "copying"}>
-												<ActiveExport heading="Copying to clipboard" />
+												<ActiveExport heading="正在复制到剪贴板" />
 											</Match>
 											<Match when={copyState.type === "done"}>
 												<CompletedExport
-													title="Copied to clipboard"
+													title="已复制到剪贴板"
 													subtitle={`Your ${exportMediumLabel()} is ready to paste`}
 												/>
 											</Match>
@@ -1550,7 +1550,7 @@ export function ExportPage() {
 														heading={
 															renderState.type === "rendering"
 																? `Rendering ${exportMediumLabel()}`
-																: "Preparing export"
+																: "正在准备导出"
 														}
 														state={renderState}
 														onCancel={handleCancel}
@@ -1558,7 +1558,7 @@ export function ExportPage() {
 												)}
 											</Match>
 											<Match when={saveState.type === "copying"}>
-												<ActiveExport heading="Saving to file" />
+												<ActiveExport heading="正在保存到文件" />
 											</Match>
 											<Match when={saveState.type === "done"}>
 												<CompletedExport
@@ -1600,7 +1600,7 @@ export function ExportPage() {
 														heading={
 															renderState.type === "rendering"
 																? `Rendering ${exportMediumLabel()}`
-																: "Preparing export"
+																: "正在准备导出"
 														}
 														state={renderState}
 														onCancel={handleCancel}
@@ -1609,8 +1609,8 @@ export function ExportPage() {
 											</Match>
 											<Match when={uploadState.type === "done"}>
 												<CompletedExport
-													title="Upload complete"
-													subtitle="Your Cap has been uploaded successfully"
+													title="上传完成"
+													subtitle="您的录制已成功上传"
 												/>
 											</Match>
 										</Switch>
@@ -1709,7 +1709,7 @@ export function ExportPage() {
 										}}
 									>
 										<IconLucideArrowLeft class="size-4" />
-										Back to 编辑器
+										返回编辑器
 									</Button>
 								</div>
 							</Show>

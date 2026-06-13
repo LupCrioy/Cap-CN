@@ -237,7 +237,7 @@ export default function () {
 																		return "Saved video";
 																	} else {
 																		if (state.type === "rendering")
-																			return "Rendering image";
+																			return "渲染图片";
 																		if (state.type === "saving")
 																			return "Saving image";
 																		return "Saved image";
@@ -267,7 +267,7 @@ export default function () {
 																	state.type === "rendering"
 																		? "Rendering video"
 																		: state.type === "uploading"
-																			? "Creating shareable link"
+																			? "创建分享链接"
 																			: "Shareable link copied"
 																}
 																progressPercentage={actionProgressPercentage(
@@ -367,7 +367,7 @@ export default function () {
 														tooltipText={
 															recordingMeta.data?.sharing
 																? "复制 Shareable Link"
-																: "Create Shareable Link"
+																: "创建分享链接"
 														}
 														tooltipPlacement="left"
 														onClick={() => upload.mutate()}
@@ -637,11 +637,11 @@ function createRecordingMutations(
 		mutationFn: async () => {
 			const meta = recordingMeta.data;
 			if (!meta) {
-				throw new Error("Recording metadata not available");
+				throw new Error("录制元数据不可用");
 			}
 
 			const defaultName = isRecording
-				? "Cap Recording"
+				? "Cap 录制"
 				: media.path.split(".cap/")[1];
 			const suggestedName = meta.pretty_name || defaultName;
 
@@ -801,9 +801,9 @@ function createRecordingMutations(
 
 			switch (res) {
 				case "NotAuthenticated":
-					throw new Error("Not authenticated");
+					throw new Error("未登录");
 				case "PlanCheckFailed":
-					throw new Error("Plan check failed");
+					throw new Error("计划检查失败");
 				case "UpgradeRequired":
 					onEvent("upgradeRequired");
 					return;

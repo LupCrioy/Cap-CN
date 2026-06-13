@@ -28,14 +28,14 @@ const ACTION_TEXT = {
 	restartRecording: "重启 recording",
 	stopRecording: "停止 recording",
 	togglePauseRecording: "暂停/resume recording",
-	cycleRecordingMode: "Cycle recording mode",
-	openRecordingPicker: "Open recording picker",
-	openRecordingPickerDisplay: "Record display",
-	openRecordingPickerWindow: "Record window",
-	openRecordingPickerArea: "Record area",
-	screenshotDisplay: "Screenshot current display",
-	screenshotWindow: "Screenshot current window",
-	screenshotArea: "Screenshot area picker",
+	cycleRecordingMode: "切换录制模式",
+	openRecordingPicker: "打开录制选择器",
+	openRecordingPickerDisplay: "录制显示器",
+	openRecordingPickerWindow: "录制窗口",
+	openRecordingPickerArea: "录制区域",
+	screenshotDisplay: "截取当前屏幕",
+	screenshotWindow: "截取当前窗口",
+	screenshotArea: "区域截图",
 } satisfies { [K in HotkeyAction]?: string };
 
 export default function () {
@@ -102,7 +102,7 @@ function Inner(props: { initialStore: HotkeysStore | null }) {
 			<SettingsPageContent>
 				<Section
 					title="Shortcuts"
-					description="Configure system-wide keyboard shortcuts to control Cap."
+					description="配置系统级快捷键来控制 Cap。"
 				>
 					<SectionCard class="flex flex-col gap-3 p-4">
 						<Index each={actions()}>

@@ -25,7 +25,7 @@ export default function Page() {
 
 					if (response.status !== 200) {
 						console.error("[更新日志] Error status:", response.status);
-						throw new Error("Failed to fetch changelog");
+						throw new Error("获取更新日志失败");
 					}
 					return response.body;
 				} catch (error) {

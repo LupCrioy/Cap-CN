@@ -10,26 +10,26 @@ import { TextInput } from "./TextInput";
 
 export const FONT_OPTIONS = [
 	{ value: "System Sans-Serif", label: "System Sans-Serif" },
-	{ value: "System Serif", label: "System Serif" },
-	{ value: "System Monospace", label: "System Monospace" },
+	{ value: "系统衬线字体", label: "系统衬线字体" },
+	{ value: "系统等宽字体", label: "系统等宽字体" },
 ];
 
 export const CAPTION_POSITION_OPTIONS = [
-	{ value: "top-left", label: "Top Left" },
-	{ value: "top-center", label: "Top Center" },
-	{ value: "top-right", label: "Top Right" },
-	{ value: "bottom-left", label: "Bottom Left" },
-	{ value: "bottom-center", label: "Bottom Center" },
-	{ value: "bottom-right", label: "Bottom Right" },
+	{ value: "top-left", label: "顶部靠左" },
+	{ value: "top-center", label: "顶部居中" },
+	{ value: "top-right", label: "顶部靠右" },
+	{ value: "bottom-left", label: "底部靠左" },
+	{ value: "bottom-center", label: "底部居中" },
+	{ value: "bottom-right", label: "底部靠右" },
 ];
 
 export const KEYBOARD_POSITION_OPTIONS = [
-	{ value: "top-left", label: "Top Left" },
-	{ value: "top-center", label: "Top Center" },
-	{ value: "top-right", label: "Top Right" },
-	{ value: "bottom-left", label: "Bottom Left" },
-	{ value: "bottom-center", label: "Bottom Center" },
-	{ value: "bottom-right", label: "Bottom Right" },
+	{ value: "top-left", label: "顶部靠左" },
+	{ value: "top-center", label: "顶部居中" },
+	{ value: "top-right", label: "顶部靠右" },
+	{ value: "bottom-left", label: "底部靠左" },
+	{ value: "bottom-center", label: "底部居中" },
+	{ value: "bottom-right", label: "底部靠右" },
 ];
 
 export const TEXT_WEIGHT_OPTIONS = [

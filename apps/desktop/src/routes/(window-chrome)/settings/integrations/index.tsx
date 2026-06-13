@@ -124,9 +124,9 @@ export default function AppsTab() {
 											onClick={() => handleAppClick(app)}
 										>
 											{managedByOrganization()
-												? "Managed by your organization"
+												? "由您的组织管理"
 												: app.pro && !isPro()
-													? "Upgrade to Pro"
+													? "升级到专业版"
 													: "Configure"}
 										</Button>
 									</div>

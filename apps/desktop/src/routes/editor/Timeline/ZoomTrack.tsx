@@ -180,7 +180,7 @@ export function ZoomTrack(props: {
 					items: [
 						{
 							id: "generateZoomSegments",
-							text: "Generate zoom segments from clicks",
+							text: "从点击位置生成缩放片段",
 							action: handleGenerateZoomSegments,
 						},
 					],
@@ -322,13 +322,13 @@ export function ZoomTrack(props: {
 								>
 									{isGeneratingAutoZoom()
 										? "Generating..."
-										: "Click to generate zoom segments"}
+										: "点击生成缩放片段"}
 								</Button>
 								<button
 									type="button"
 									class="flex shrink-0 justify-center items-center rounded-full outline-hidden text-gray-11 hover:text-gray-12 hover:bg-gray-5 focus-visible:ring-2 focus-visible:ring-gray-8 size-8 transition-colors"
 									disabled={isGeneratingAutoZoom()}
-									aria-label="Dismiss for this session"
+									aria-label="本次会话忽略"
 									onClick={() => setSessionDismissedGenerateZoomPrompt(true)}
 								>
 									<IconLucideX class="size-4" />

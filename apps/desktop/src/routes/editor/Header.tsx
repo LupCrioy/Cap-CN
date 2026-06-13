@@ -135,7 +135,7 @@ export function Header() {
 				await commands.addExistingRecordingToEditor(sourcePath);
 			toast.success(
 				importedCount === 1
-					? "Recording imported"
+					? "录制已导入"
 					: `${importedCount} recordings imported`,
 				{ id: toastId },
 			);
@@ -252,7 +252,7 @@ export function Header() {
 			toast.success("Captions regenerated!");
 		} catch (error) {
 			console.error("Error regenerating captions:", error);
-			toast.error("Failed to regenerate captions");
+			toast.error("重新生成字幕失败");
 		} finally {
 			setEditorState("captions", "isGenerating", false);
 		}
@@ -287,7 +287,7 @@ export function Header() {
 						console.log({ path: `${editorInstance.path}/` });
 						revealItemInDir(`${editorInstance.path}/`);
 					}}
-					tooltipText="Open recording bundle"
+					tooltipText="打开录制包"
 					leftIcon={<IconLucideFolder class="w-5" />}
 				/>
 				<EditorButton
@@ -410,7 +410,7 @@ export function Header() {
 							</Show>
 							{editorState.captions.isGenerating
 								? "Regenerating..."
-								: "Regenerate captions"}
+								: "重新生成字幕"}
 						</button>
 						<Show when={!editorState.captions.isGenerating}>
 							<div class="w-px h-4 bg-gray-6" />
@@ -517,12 +517,12 @@ function ImportRecordingDialog(props: {
 							props.onSearch("");
 						}
 					}}
-					placeholder="Search recordings"
+					placeholder="搜索录制"
 					autoCapitalize="off"
 					autocorrect="off"
 					autocomplete="off"
 					spellcheck={false}
-					aria-label="Search recordings"
+					aria-label="搜索录制"
 				/>
 				<div class="min-h-[12rem] max-h-[20rem] overflow-y-auto custom-scroll rounded-lg border border-gray-3 bg-gray-2">
 					<Show
@@ -597,7 +597,7 @@ function ImportRecordingItem(props: {
 				>
 					<img
 						class="size-12 shrink-0 rounded-md object-cover"
-						alt="Recording thumbnail"
+						alt="录制缩略图"
 						src={convertFileSrc(props.recording.thumbnailPath)}
 						onError={() => setImageExists(false)}
 					/>

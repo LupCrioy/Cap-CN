@@ -47,17 +47,17 @@ type Recording = {
 const Tabs = [
 	{
 		id: "all",
-		label: "Show all",
+		label: "显示全部",
 	},
 	{
 		id: "instant",
 		icon: <IconCapInstant class="invert size-3 dark:invert-0" />,
-		label: "Instant",
+		label: "即时",
 	},
 	{
 		id: "studio",
 		icon: <IconCapFilmCut class="invert size-3 dark:invert-0" />,
-		label: "Studio",
+		label: "工作室",
 	},
 ] satisfies { id: string; label: string; icon?: JSX.Element }[];
 
@@ -161,7 +161,7 @@ export default function Recordings() {
 	const emptyMessage = createMemo(() => {
 		const tabLabel =
 			activeTab() === "all" ? "recordings" : `${activeTab()} recordings`;
-		const prefix = trimmedSearch() ? "No matching" : "No";
+		const prefix = trimmedSearch() ? "无匹配" : "No";
 		return `${prefix} ${tabLabel}`;
 	});
 
@@ -203,7 +203,7 @@ export default function Recordings() {
 			<SettingsPageContent class="max-w-none space-y-4">
 				<Section
 					title="录制管理"
-					description="Manage your recordings and perform actions."
+					description="管理你的录制文件。​"
 					right={
 						<Button
 							variant="gray"
@@ -261,7 +261,7 @@ export default function Recordings() {
 									autocorrect="off"
 									autocomplete="off"
 									spellcheck={false}
-									aria-label="Search recordings"
+									aria-label="搜索录制"
 								/>
 							</div>
 						</div>
@@ -358,7 +358,7 @@ function RecordingItem(props: {
 				>
 					<img
 						class="object-cover rounded-sm size-12"
-						alt="Recording thumbnail"
+						alt="录制缩略图"
 						src={`${convertFileSrc(
 							props.recording.thumbnailPath,
 						)}?t=${Date.now()}`}
@@ -430,7 +430,7 @@ function RecordingItem(props: {
 					<Show when={props.recording.meta.sharing}>
 						{(sharing) => (
 							<TooltipIconButton
-								tooltipText="Open link"
+								tooltipText="打开链接"
 								onClick={() => shell.open(sharing().link)}
 							>
 								<IconCapLink class="size-4" />
@@ -445,7 +445,7 @@ function RecordingItem(props: {
 								!(await confirm(
 									"The recording failed so this file may have issues in the editor! If your having issues recovering the file please reach out to support!",
 									{
-										title: "Recording is potentially corrupted",
+										title: "录制文件可能已损坏",
 										kind: "warning",
 									},
 								))
@@ -493,7 +493,7 @@ function RecordingItem(props: {
 								<Show when={props.recording.meta.sharing}>
 									{(sharing) => (
 										<TooltipIconButton
-											tooltipText="Open link"
+											tooltipText="打开链接"
 											onClick={() => shell.open(sharing().link)}
 										>
 											<IconCapLink class="size-4" />
@@ -505,7 +505,7 @@ function RecordingItem(props: {
 					}}
 				</Show>
 				<TooltipIconButton
-					tooltipText="Open recording bundle"
+					tooltipText="打开录制包"
 					onClick={() => {
 						props.onOpenFolder();
 					}}
@@ -515,7 +515,7 @@ function RecordingItem(props: {
 				<TooltipIconButton
 					tooltipText="删除"
 					onClick={async () => {
-						if (!(await ask("Are you sure you want to delete this recording?")))
+						if (!(await ask("确定要删除此录制吗？")))
 							return;
 						await remove(props.recording.path, { recursive: true });
 

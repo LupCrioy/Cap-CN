@@ -457,7 +457,7 @@ function TranscriptEditor(props: {
 		const selected = selectedIndices();
 		if (selected.size === 0) return;
 
-		if (e.key === "Backspace" || e.key === "删除") {
+		if (e.key === "Backspace" || e.key === "Delete") {
 			e.preventDefault();
 			const indices = [...selected];
 			if (indices.length === 1) {
@@ -563,7 +563,7 @@ function TranscriptEditor(props: {
 						<IconCapCaptions class="size-10 mb-3 text-gray-7" />
 						<span class="text-sm">No transcript available</span>
 						<span class="text-xs mt-1">
-							Generate captions in the editor first
+							先在编辑器生成字幕
 						</span>
 					</div>
 				}

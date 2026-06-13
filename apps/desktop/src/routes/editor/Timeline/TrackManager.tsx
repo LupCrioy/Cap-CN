@@ -57,7 +57,7 @@ export function TrackManager(props: {
 				menu.popup();
 			}
 		} catch (error) {
-			console.error("Failed to open track menu", error);
+			console.error("打开轨道菜单失败", error);
 		}
 	};
 
@@ -71,7 +71,7 @@ export function TrackManager(props: {
 			onMouseDown={(e) => e.stopPropagation()}
 		>
 			<IconLucidePlus class="size-3.5" />
-			<span>Add track</span>
+			<span>添加轨道</span>
 		</button>
 	);
 }

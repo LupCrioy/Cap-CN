@@ -151,7 +151,7 @@ function AppearanceSection(props: {
 	return (
 		<Section
 			title="Appearance"
-			description="Match Cap to your system theme or pick a fixed look."
+			description="让 Cap 跟随系统主题，或选择固定外观。"
 		>
 			<SectionCard padded>
 				<div
@@ -485,17 +485,17 @@ function Inner(props: { initialStore: GeneralSettingsStore | null }) {
 				{ostype === "macos" && (
 					<Section
 						title="App"
-						description="Choose how Cap shows up on your system."
+						description="选择 Cap 在系统中的显示方式。"
 					>
 						<SectionRows>
 							<ToggleSettingItem
-								label="Always show dock icon"
-								description="Keep Cap in the dock even when no windows are open."
+								label="始终显示 Dock 图标"
+								description="即使没有窗口打开也保留 Cap 在 Dock 中。"
 								value={!settings.hideDockIcon}
 								onChange={(v) => handleChange("hideDockIcon", !v)}
 							/>
 							<ToggleSettingItem
-								label="System notifications"
+								label="系统通知"
 								description="Show notifications for clipboard copies, saved files, and more. You may need to allow Cap in your system's notification settings."
 								value={!!settings.enableNotifications}
 								onChange={async (value) => {
@@ -534,12 +534,12 @@ function Inner(props: { initialStore: GeneralSettingsStore | null }) {
 
 				<Section
 					title="Recording"
-					description="Behaviour while you record and after you stop."
+					description="录制中及录制后的行为设置。"
 				>
 					<SectionRows>
 						<SelectSettingItem
 							label="Countdown"
-							description="Wait before the recording starts."
+							description="录制开始前的等待时间。"
 							value={settings.recordingCountdown ?? 0}
 							onChange={(value) => handleChange("recordingCountdown", value)}
 							options={[
@@ -550,8 +550,8 @@ function Inner(props: { initialStore: GeneralSettingsStore | null }) {
 							]}
 						/>
 						<SelectSettingItem
-							label="Main window when recording starts"
-							description="What happens to the main window once a recording begins."
+							label="录制开始时主窗口"
+							description="录制开始后主窗口的行为。"
 							value={settings.mainWindowRecordingStartBehaviour ?? "close"}
 							onChange={(value) =>
 								handleChange("mainWindowRecordingStartBehaviour", value)
@@ -562,26 +562,26 @@ function Inner(props: { initialStore: GeneralSettingsStore | null }) {
 							]}
 						/>
 						<SelectSettingItem
-							label="After a Studio recording"
-							description="What happens once you stop a Studio recording."
+							label="工作室模式录制完成后"
+							description="停止工作室模式录制后的行为。"
 							value={settings.postStudioRecordingBehaviour ?? "openEditor"}
 							onChange={(value) =>
 								handleChange("postStudioRecordingBehaviour", value)
 							}
 							options={[
-								{ text: "Open editor", value: "openEditor" },
-								{ text: "Show in overlay", value: "showOverlay" },
+								{ text: "打开编辑器", value: "openEditor" },
+								{ text: "在覆盖层中显示", value: "showOverlay" },
 							]}
 						/>
 						<SelectSettingItem
-							label="After deleting a recording"
-							description="Whether the recording window should reopen."
+							label="删除录制后"
+							description="是否重新打开录制窗口。"
 							value={settings.postDeletionBehaviour ?? "doNothing"}
 							onChange={(value) => handleChange("postDeletionBehaviour", value)}
 							options={[
-								{ text: "Do nothing", value: "doNothing" },
+								{ text: "不做任何操作", value: "doNothing" },
 								{
-									text: "Reopen recording window",
+									text: "重新打开录制窗口",
 									value: "reopenRecordingWindow",
 								},
 							]}
@@ -595,7 +595,7 @@ function Inner(props: { initialStore: GeneralSettingsStore | null }) {
 							}
 						/>
 						<ToggleSettingItem
-							label="Crash-recoverable recording"
+							label="崩溃可恢复录制"
 							description="Record in fragments that can be recovered after a crash or power loss. Slightly larger files during capture."
 							value={settings.crashRecoveryRecording ?? true}
 							onChange={(value) =>
@@ -603,31 +603,31 @@ function Inner(props: { initialStore: GeneralSettingsStore | null }) {
 							}
 						/>
 						<ToggleSettingItem
-							label="Custom cursor capture (Studio)"
-							description="Capture cursor state separately so you can adjust size and smoothing in the editor."
+							label="自定义光标捕获（工作室模式）"
+							description="单独捕获光标状态，可在编辑器中调整大小和平滑度。"
 							value={!!settings.custom_cursor_capture2}
 							onChange={(value) =>
 								handleChange("custom_cursor_capture2", value)
 							}
 						/>
 						<ToggleSettingItem
-							label="Auto zoom on clicks"
-							description="Automatically add zoom segments around mouse clicks in Studio recordings."
+							label="点击时自动缩放"
+							description="在工作室模式录制中自动在鼠标点击处添加缩放片段。"
 							value={!!settings.autoZoomOnClicks}
 							onChange={(value) => handleChange("autoZoomOnClicks", value)}
 						/>
 						<ToggleSettingItem
-							label="Capture keyboard presses"
-							description="Record key presses so you can add keyboard overlays in the editor."
+							label="捕获键盘按键"
+							description="记录按键操作，可在编辑器中添加键盘覆盖层。"
 							value={!!settings.captureKeyboardEvents}
 							onChange={(value) => handleChange("captureKeyboardEvents", value)}
 						/>
 						<SelectSettingItem
-							label="Max capture framerate"
+							label="最大捕获帧率"
 							description={
 								(settings.maxFps ?? 60) > 60
 									? "Maximum framerate for screen capture. Higher values may cause drops or increased CPU usage on some systems."
-									: "Maximum framerate for screen capture."
+									: "屏幕捕获的最大帧率。"
 							}
 							value={settings.maxFps ?? 60}
 							onChange={(value) => handleChange("maxFps", value)}
@@ -716,19 +716,19 @@ const STUDIO_QUALITY_TIERS: StudioQualityTier[] = [
 	{
 		value: "compatibility",
 		label: "Compatibility",
-		summary: "Lower bitrate to keep older or low-power machines smooth.",
-		bestFor: "Older Intel Macs, 8GB MacBook Air, weaker laptops.",
+		summary: "低比特率，适合老旧或低性能设备。",
+		bestFor: "旧款 Intel Mac、8GB MacBook Air、较弱笔记本。",
 	},
 	{
 		value: "balanced",
 		label: "Balanced",
-		summary: "Sharp footage with sensible CPU and disk usage.",
-		bestFor: "Most modern Macs and PCs with 16GB+ RAM.",
+		summary: "画质清晰，CPU 和磁盘占用适中。",
+		bestFor: "适合大多数 16GB+ 内存的现代电脑。",
 	},
 	{
 		value: "ultra",
 		label: "Ultra",
-		summary: "Maximum detail for color-graded, large-display edits.",
+		summary: "最高细节，适合调色和大屏编辑。",
 		bestFor: "M-series Pro/Max, discrete GPUs, 32GB+ RAM, NVMe.",
 	},
 ];
@@ -740,14 +740,14 @@ type InstantResolutionTier = {
 };
 
 const INSTANT_RESOLUTION_TIERS: InstantResolutionTier[] = [
-	{ value: 1280, label: "720p", summary: "Smallest size, low bandwidth." },
+	{ value: 1280, label: "720p", summary: "最小体积，低带宽。" },
 	{
 		value: 1920,
 		label: "1080p",
-		summary: "Recommended. Sharp on most networks.",
+		summary: "推荐。在大多数网络下画质清晰。",
 	},
-	{ value: 2560, label: "1440p", summary: "More detail for desktop content." },
-	{ value: 3840, label: "4K", summary: "Max clarity. Needs fast upload." },
+	{ value: 2560, label: "1440p", summary: "更多细节，适合桌面内容。" },
+	{ value: 3840, label: "4K", summary: "最高清晰度，需要快速上传。" },
 ];
 
 function SegmentedControl<T extends string | number>(props: {
@@ -844,7 +844,7 @@ function InstantQualitySetting(props: {
 			(t) => (
 				<div class="flex gap-3 items-center px-4 py-3 rounded-xl border shadow-lg bg-gray-1 border-gray-4 text-gray-12">
 					<p class="text-sm">
-						Upgrade to Cap Pro to record 即时模式 videos above 720p.
+						Upgrade to Cap 专业版 to record 即时模式 videos above 720p.
 					</p>
 					<button
 						type="button"
@@ -869,7 +869,7 @@ function InstantQualitySetting(props: {
 			description={
 				props.hasCapPro
 					? "Choose the maximum upload resolution for Instant recordings."
-					: "Instant recordings are locked to 720p. Cap Pro unlocks higher resolutions."
+					: "Instant recordings are locked to 720p. Cap 专业版 unlocks higher resolutions."
 			}
 		>
 			<div class="flex flex-col items-end gap-1.5">
@@ -911,8 +911,8 @@ function CapProSection(props: {
 }) {
 	return (
 		<Section
-			title="Cap Pro"
-			description="设置 available with a Cap Pro license."
+			title="Cap 专业版"
+			description="设置 available with a Cap 专业版 license."
 			pro
 		>
 			<SectionRows>
@@ -939,7 +939,7 @@ function QualitySection(props: {
 	return (
 		<Section
 			title="Quality"
-			description="Pick the right profile for local Studio recordings."
+			description="为本地工作室模式录制选择合适的配置。"
 		>
 			<SectionCard>
 				<StudioQualitySubsection
@@ -1074,7 +1074,7 @@ function DefaultProjectNameCard(props: {
 		return (
 			<button
 				type="button"
-				title="Click to copy"
+				title="点击复制"
 				class="px-1.5 py-0.5 mx-0.5 font-mono text-[11px] rounded-md transition-[background-color,color,transform] duration-150 ease-out cursor-pointer bg-gray-3 hover:bg-gray-4 active:scale-95 text-gray-12"
 				onClick={() => commands.writeClipboardString(props.children)}
 			>
@@ -1085,8 +1085,8 @@ function DefaultProjectNameCard(props: {
 
 	return (
 		<Section
-			title="Default project name"
-			description="Template used for new recordings and exported files."
+			title="默认项目名称"
+			description="用于新建录制和导出文件的名称模板。"
 			right={
 				<>
 					<Button
@@ -1239,7 +1239,7 @@ function ExcludedWindowsCard(props: {
 		}
 
 		if (!windows.length) {
-			console.log("No available windows to exclude");
+			console.log("没有可排除的窗口");
 			return;
 		}
 
@@ -1274,11 +1274,11 @@ function ExcludedWindowsCard(props: {
 
 	return (
 		<Section
-			title="Excluded windows"
+			title="排除的窗口"
 			description={
 				props.isWindows
 					? "Hide windows from recordings. On Windows, only Cap-related windows can be excluded."
-					: "Hide windows from recordings."
+					: "从录制中隐藏指定窗口。"
 			}
 			right={
 				<>
@@ -1356,7 +1356,7 @@ function ExcludedWindowsCard(props: {
 											type="button"
 											class="flex justify-center items-center rounded-full transition-colors size-5 text-gray-10 hover:bg-gray-5 hover:text-gray-12"
 											onClick={() => void props.onRemove(index())}
-											aria-label="Remove excluded window"
+											aria-label="移除排除的窗口"
 										>
 											<IconLucideX class="size-3" />
 										</button>

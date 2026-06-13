@@ -72,7 +72,7 @@ export function AnnotationLayer(props: {
 	createEffect(() => {
 		const handleKeyDown = (e: KeyboardEvent) => {
 			if (textEditingId()) return;
-			if (e.key === "Backspace" || e.key === "删除") {
+			if (e.key === "Backspace" || e.key === "Delete") {
 				const id = selectedAnnotationId();
 				if (id) {
 					projectHistory.push(); // 保存 current state before delete

@@ -188,7 +188,7 @@ export default function S3ConfigPage() {
 								<Show when={managedByOrganization()}>
 									{(organization) => (
 										<p class="text-xs leading-relaxed text-gray-10">
-											Managed by your organization: {organization().name}
+											由您的组织管理: {organization().name}
 										</p>
 									)}
 								</Show>

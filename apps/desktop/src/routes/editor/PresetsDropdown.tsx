@@ -99,7 +99,7 @@ export function PresetsDropdown() {
 													<DropdownItem
 														onSelect={() => presets.setDefault(i())}
 													>
-														Set as default
+														设为默认
 													</DropdownItem>
 													<DropdownItem
 														onSelect={() =>

@@ -22,7 +22,7 @@ const sendFeedbackAction = action(async (feedback: string) => {
 		headers: await protectedHeaders(),
 	});
 
-	if (response.status !== 200) throw new Error("Failed to submit feedback");
+	if (response.status !== 200) throw new Error("提交反馈失败");
 	return response.body;
 });
 
@@ -47,10 +47,10 @@ export default function FeedbackTab() {
 		setUploadingLogs(true);
 		try {
 			await commands.uploadLogs();
-			toast.success("Logs uploaded successfully");
+			toast.success("日志上传成功");
 		} catch (error) {
-			toast.error("Failed to upload logs");
-			console.error("Failed to upload logs:", error);
+			toast.error("上传日志失败");
+			console.error("上传日志失败:", error);
 		} finally {
 			setUploadingLogs(false);
 		}
@@ -106,7 +106,7 @@ export default function FeedbackTab() {
 				</Section>
 
 				<Section
-					title="Join the Community"
+					title="加入社区"
 					description="Have questions, want to share ideas, or just hang out? Join the Cap Discord community."
 				>
 					<Button
@@ -119,7 +119,7 @@ export default function FeedbackTab() {
 				</Section>
 
 				<Section
-					title="Debug Information"
+					title="调试信息"
 					description="Upload your logs to help us diagnose issues with Cap. No personal information is included."
 				>
 					<Button
@@ -128,11 +128,11 @@ export default function FeedbackTab() {
 						variant="gray"
 						disabled={uploadingLogs()}
 					>
-						{uploadingLogs() ? "Uploading..." : "Upload Logs"}
+						{uploadingLogs() ? "Uploading..." : "上传日志"}
 					</Button>
 				</Section>
 
-				<Section title="System Information">
+				<Section title="系统信息">
 					<Show
 						when={!diagnostics.loading && diagnostics()}
 						fallback={
@@ -181,7 +181,7 @@ export default function FeedbackTab() {
 												}`}
 											>
 												屏幕 Capture:{" "}
-												{captureSupported ? "Supported" : "Not Supported"}
+												{captureSupported ? "Supported" : "不支持"}
 											</span>
 										</div>
 									</div>

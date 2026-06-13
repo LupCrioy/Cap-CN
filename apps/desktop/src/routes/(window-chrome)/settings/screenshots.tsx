@@ -82,7 +82,7 @@ export default function Screenshots() {
 	);
 
 	const emptyMessage = createMemo(() => {
-		const prefix = trimmedSearch() ? "No matching" : "No";
+		const prefix = trimmedSearch() ? "无匹配" : "No";
 		return `${prefix} screenshots`;
 	});
 
@@ -129,7 +129,7 @@ export default function Screenshots() {
 			<SettingsPageContent class="max-w-none space-y-4">
 				<Section
 					title="截图"
-					description="Manage your screenshots and perform actions."
+					description="管理你的截图。​"
 					right={
 						<Button
 							variant="gray"
@@ -171,7 +171,7 @@ export default function Screenshots() {
 									autocorrect="off"
 									autocomplete="off"
 									spellcheck={false}
-									aria-label="Search screenshots"
+									aria-label="搜索截图"
 								/>
 							</div>
 						</div>
@@ -245,7 +245,7 @@ function ScreenshotItem(props: {
 				>
 					<img
 						class="object-cover rounded-sm size-12"
-						alt="Screenshot thumbnail"
+						alt="截图缩略图"
 						src={convertFileSrc(props.screenshot.path)}
 						onError={() => setImageExists(false)}
 					/>
@@ -256,14 +256,14 @@ function ScreenshotItem(props: {
 			</div>
 			<div class="flex gap-2 items-center">
 				<TooltipIconButton
-					tooltipText="Open folder"
+					tooltipText="打开文件夹"
 					onClick={props.onOpenFolder}
 				>
 					<IconLucideFolder class="size-4" />
 				</TooltipIconButton>
 
 				<TooltipIconButton
-					tooltipText="Open in editor"
+					tooltipText="在编辑器中打开"
 					onClick={props.onOpenEditor}
 				>
 					<IconLucideEdit class="size-4" />
@@ -280,7 +280,7 @@ function ScreenshotItem(props: {
 					tooltipText="删除"
 					onClick={async () => {
 						if (
-							!(await ask("Are you sure you want to delete this screenshot?"))
+							!(await ask("确定要删除此截图吗？"))
 						)
 							return;
 						const parent = props.screenshot.path.replace(/[/\\][^/\\]+$/, "");
