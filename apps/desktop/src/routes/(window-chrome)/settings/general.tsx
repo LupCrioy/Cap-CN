@@ -376,7 +376,7 @@ function Inner(props: { initialStore: GeneralSettingsStore | null }) {
 			const refreshed = (await refetchWindows()) ?? windows() ?? [];
 			return refreshed.filter(isWindowAvailable);
 		} catch (error) {
-			console.error("Failed to refresh available windows", error);
+			console.error("刷新可用窗口失败", error);
 			return availableWindows();
 		}
 	};

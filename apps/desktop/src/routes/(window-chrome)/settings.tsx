@@ -63,7 +63,7 @@ async function loadProfileImageObjectUrl(signal: AbortSignal) {
 		headers: await protectedHeaders(),
 		signal,
 	});
-	if (!response.ok) throw new Error("Failed to load profile image");
+	if (!response.ok) throw new Error("加载头像失败");
 
 	const contentType = response.headers.get("content-type");
 	if (contentType && !contentType.toLowerCase().startsWith("image/")) {
@@ -197,7 +197,7 @@ export default function Settings(props: RouteSectionProps) {
 		},
 		{
 			href: "hotkeys",
-			name: "Shortcuts",
+			name: "快捷键",
 			icon: IconCapHotkeys,
 		},
 		{
@@ -217,7 +217,7 @@ export default function Settings(props: RouteSectionProps) {
 		},
 		{
 			href: "transcription",
-			name: "Transcription",
+			name: "转录",
 			icon: IconCapCaptions,
 		},
 		{
@@ -248,7 +248,7 @@ export default function Settings(props: RouteSectionProps) {
 	];
 	const accountName = createMemo(() => {
 		if (!auth()) return "Click to sign in";
-		if (!userProfile.isSuccess) return "Signed in";
+		if (!userProfile.isSuccess) return "已登录";
 
 		const name = userProfile.data?.name?.trim();
 		if (name) return name;
@@ -256,7 +256,7 @@ export default function Settings(props: RouteSectionProps) {
 		const email = userProfile.data?.email?.trim();
 		if (email) return email;
 
-		return "Signed in";
+		return "已登录";
 	});
 	const accountRemoteImageUrl = createMemo(() => {
 		if (!userProfile.isSuccess) return null;

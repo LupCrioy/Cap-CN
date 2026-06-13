@@ -354,12 +354,12 @@ fn create_mode_submenu(app: &AppHandle) -> tauri::Result<Submenu<tauri::Wry>> {
     let submenu = Submenu::with_id(app, "select_mode", "Select Mode", true)?;
 
     let modes = [
-        (TrayItem::ModeStudio, RecordingMode::Studio, "Studio"),
-        (TrayItem::ModeInstant, RecordingMode::Instant, "Instant"),
+        (TrayItem::ModeStudio, RecordingMode::Studio, "工作室模式"),
+        (TrayItem::ModeInstant, RecordingMode::Instant, "即时模式"),
         (
             TrayItem::ModeScreenshot,
             RecordingMode::Screenshot,
-            "Screenshot",
+            "截图模式",
         ),
     ];
 
@@ -398,7 +398,7 @@ fn build_tray_menu(app: &AppHandle, cache: &PreviousItemsCache) -> tauri::Result
                     false,
                     None::<&str>,
                 )?,
-                &MenuItem::with_id(app, TrayItem::Quit, "Quit Cap", true, None::<&str>)?,
+                &MenuItem::with_id(app, TrayItem::Quit, "退出 Cap", true, None::<&str>)?,
             ],
         );
     }
@@ -422,21 +422,21 @@ fn build_tray_menu(app: &AppHandle, cache: &PreviousItemsCache) -> tauri::Result
         menu.append(&MenuItem::with_id(
             app,
             TrayItem::RecordDisplay,
-            "Screenshot Display",
+            "截图显示器",
             true,
             None::<&str>,
         )?)?;
         menu.append(&MenuItem::with_id(
             app,
             TrayItem::RecordWindow,
-            "Screenshot Window",
+            "截图窗口",
             true,
             None::<&str>,
         )?)?;
         menu.append(&MenuItem::with_id(
             app,
             TrayItem::RecordArea,
-            "Screenshot Area",
+            "截图区域",
             true,
             None::<&str>,
         )?)?;
@@ -444,28 +444,28 @@ fn build_tray_menu(app: &AppHandle, cache: &PreviousItemsCache) -> tauri::Result
         menu.append(&MenuItem::with_id(
             app,
             TrayItem::RecordDisplay,
-            "Record Display",
+            "录制显示器",
             true,
             None::<&str>,
         )?)?;
         menu.append(&MenuItem::with_id(
             app,
             TrayItem::RecordWindow,
-            "Record Window",
+            "录制窗口",
             true,
             None::<&str>,
         )?)?;
         menu.append(&MenuItem::with_id(
             app,
             TrayItem::RecordArea,
-            "Record Area",
+            "录制区域",
             true,
             None::<&str>,
         )?)?;
         menu.append(&MenuItem::with_id(
             app,
             TrayItem::TakeScreenshot,
-            "Take a Screenshot",
+            "截图",
             true,
             None::<&str>,
         )?)?;
@@ -474,7 +474,7 @@ fn build_tray_menu(app: &AppHandle, cache: &PreviousItemsCache) -> tauri::Result
     menu.append(&MenuItem::with_id(
         app,
         TrayItem::ImportVideo,
-        "Import Video...",
+        "导入视频...",
         true,
         None::<&str>,
     )?)?;
@@ -501,7 +501,7 @@ fn build_tray_menu(app: &AppHandle, cache: &PreviousItemsCache) -> tauri::Result
     menu.append(&MenuItem::with_id(
         app,
         TrayItem::OpenSettings,
-        "Settings",
+        "设置",
         true,
         None::<&str>,
     )?)?;
@@ -524,7 +524,7 @@ fn build_tray_menu(app: &AppHandle, cache: &PreviousItemsCache) -> tauri::Result
     menu.append(&MenuItem::with_id(
         app,
         TrayItem::Quit,
-        "Quit Cap",
+        "退出 Cap",
         true,
         None::<&str>,
     )?)?;
@@ -763,7 +763,7 @@ pub fn create_tray(app: &AppHandle) -> tauri::Result<()> {
                                     tracing::error!("Failed to import video: {e}");
                                     app.dialog()
                                         .message(format!("Failed to import video: {e}"))
-                                        .title("Import Error")
+                                        .title("导入错误")
                                         .kind(tauri_plugin_dialog::MessageDialogKind::Error)
                                         .blocking_show();
                                 }
