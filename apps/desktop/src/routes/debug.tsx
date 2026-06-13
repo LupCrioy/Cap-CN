@@ -18,19 +18,8 @@ export default function Debug() {
 	});
 
 	const checkForUpdates = async () => {
-		setIsChecking(true);
-		setUpdateStatus("Checking...");
-		try {
-			const update = await check();
-			if (update) {
-				setUpdateStatus(`Update available: v${update.version}`);
-			} else {
-				setUpdateStatus("No update available");
-			}
-		} catch (e) {
-			setUpdateStatus(`Error: ${e}`);
-		}
-		setIsChecking(false);
+		// Update check disabled
+		setUpdateStatus("检查更新已禁用");
 	};
 
 	const simulateUpdatePopup = async () => {

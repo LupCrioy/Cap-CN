@@ -19,6 +19,7 @@ import {
 } from "solid-js";
 import { CapErrorBoundary } from "~/components/CapErrorBoundary";
 import { createSignInMutation } from "~/utils/auth";
+import { authStore, userProfileStore } from "~/store";
 
 import { trackEvent } from "~/utils/analytics";
 
